@@ -1,6 +1,5 @@
 #if !defined(using_map_DATUM)
 	#include "mini_areas.dm"
-	#include "mini_jobs.dm"
 	#include "mini_shuttles.dm"
 	#include "mini_unit_testing.dm"
 

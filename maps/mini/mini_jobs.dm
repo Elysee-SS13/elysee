@@ -39,7 +39,6 @@
 
 /*** NUMBER OF POSITIONS ***/
 /* COMMAND */
-// Captain
 // HOP
 
 /* SECURITY */
