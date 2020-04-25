@@ -15554,8 +15554,8 @@
 	pixel_z = 0
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
-	icon_state = "intact";
-	dir = 5
+	dir = 5;
+	icon_state = "intact"
 	},
 /obj/structure/closet/crate/freezer,
 /obj/item/weapon/reagent_containers/ivbag/nanoblood,
@@ -17482,6 +17482,9 @@
 	network = list("Medical, Engineering")
 	},
 /obj/machinery/vitals_monitor,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/surgery2)
 "eOb" = (
@@ -17534,7 +17537,6 @@
 	pixel_x = -2;
 	pixel_y = 24
 	},
-/obj/item/weapon/storage/firstaid/adv,
 /obj/item/weapon/reagent_containers/spray/sterilizine,
 /obj/item/weapon/reagent_containers/spray/cleaner/drone,
 /turf/simulated/floor/tiled/dark,
@@ -18197,6 +18199,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/table/standard,
+/obj/item/weapon/storage/firstaid/adv,
 /turf/simulated/floor/tiled/dark,
 /area/medical/surgery2)
 "fDJ" = (
@@ -26606,7 +26609,8 @@
 	pixel_y = -28
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 1
+	dir = 1;
+	id_tag = null
 	},
 /obj/structure/cable/green,
 /turf/simulated/floor/tiled/white,
@@ -27226,7 +27230,13 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftstarboard)
 "qab" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume,
+/obj/machinery/atmospherics/unary/outlet_injector{
+	dir = 2;
+	frequency = 1441;
+	icon_state = "map_injector";
+	id = "xenobot_in";
+	use_power = 1
+	},
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -27261,7 +27271,20 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury)
 "qcb" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/machinery/atmospherics/unary/vent_pump/tank{
+	dir = 2;
+	external_pressure_bound = 0;
+	external_pressure_bound_default = 0;
+	icon_state = "map_vent_in";
+	id_tag = "xenobot_out";
+	initialize_directions = 2;
+	internal_pressure_bound = 2000;
+	internal_pressure_bound_default = 2000;
+	pressure_checks = 2;
+	pressure_checks_default = 2;
+	pump_direction = 0;
+	use_power = 0
+	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology/xenoflora)
 "qdb" = (
@@ -28016,9 +28039,11 @@
 /area/rnd/xenobiology/xenoflora)
 "rab" = (
 /obj/machinery/computer/air_control{
+	input_tag = "xenobot_in";
 	name = "Xenoflora Gas Monitor";
-	sensor_tag = "xenobot_sensor";
-	sensor_name = "Xenoflora Environment"
+	output_tag = "xenobot_out";
+	sensor_name = "Xenoflora Environment";
+	sensor_tag = "xenobot_sensor"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible{
 	icon_state = "intact";
