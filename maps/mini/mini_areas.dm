@@ -96,3 +96,9 @@
 /area/telecomms
 	name="\improper Telecomms"
 	icon_state ="blue"
+
+
+/area/shuttle/arrival
+	name = "\improper Arrival Shuttle"
+	icon_state = "shuttle"
+	req_access = list(access_cent_general)

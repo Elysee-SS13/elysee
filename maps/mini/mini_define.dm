@@ -30,7 +30,7 @@
 	department_money = 0
 	salary_modifier = 0.2
 
-/datum/map/bearcat/setup_map()
+/datum/map/mini/setup_map()
 	..()
 	SStrade.traders += new /datum/trader/xeno_shop
 	SStrade.traders += new /datum/trader/medical
