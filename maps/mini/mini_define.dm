@@ -10,6 +10,7 @@
 	boss_short    = "Captain"
 	company_name  = "NanoTrasen"
 	company_short = "NT"
+	usable_email_tlds = list("novis.net")
 	overmap_event_areas = 11
 
 	default_law_type = /datum/ai_laws/corporate
@@ -30,8 +31,21 @@
 	department_money = 0
 	salary_modifier = 0.2
 
+
+	//Signaux NTNET
+	station_levels = list(1, 2, 3)
+	contact_levels = list(1, 2, 3)
+	player_levels = list(1, 2, 3)
+
 /datum/map/mini/setup_map()
 	..()
 	SStrade.traders += new /datum/trader/xeno_shop
 	SStrade.traders += new /datum/trader/medical
 	SStrade.traders += new /datum/trader/mining
+
+
+
+/datum/map/torch/get_map_info()
+	. = list()
+	. +=  "Ministation est une station de formation intergalactique. Elle offre un environnement d'apprentissage convenable pour tous les novices qui souhaitent apprendre a gerer une station spatiale.."
+	return jointext(., "<br>")
