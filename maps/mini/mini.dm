@@ -3,10 +3,13 @@
 	#include "mini_shuttles.dm"
 	#include "mini_unit_testing.dm"
 	#include "mini_presets.dm"
+	#include "mini_security_state.dm"
 
 	#include "mini.dmm"
 	#include "z1_admin.dmm"
 	#include "z2_transit.dmm"
+
+	#include "items/items.dm"
 
 
 	#include "../away/empty.dmm"

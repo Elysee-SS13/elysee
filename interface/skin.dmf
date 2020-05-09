@@ -225,7 +225,7 @@ macro "borghotkeymode"
 		name = "."
 		command = "move-down"
 
-macro "macro"
+macro "hotkeymode_fr"
 	elem 
 		name = "Tab"
 		command = ".winset \"mainwindow.macro=hotkeymode hotkey_toggle.is-checked=true mapwindow.map.focus=true input.background-color=#f0f0f0\""
@@ -287,16 +287,255 @@ macro "macro"
 		name = "Delete"
 		command = "delete-key-pressed"
 	elem 
-		name = "CTRL+1"
+		name = "&"
 		command = "a-intent help"
 	elem 
-		name = "CTRL+2"
-		command = "a-intent disarm"
+		name = "CTRL+&"
+		command = "a-intent help"
 	elem 
-		name = "CTRL+3"
+		name = "\""
 		command = "a-intent grab"
 	elem 
-		name = "CTRL+4"
+		name = "CTRL+\""
+		command = "a-intent grab"
+	elem 
+		name = "'"
+		command = "a-intent harm"
+	elem 
+		name = "CTRL+'"
+		command = "a-intent harm"
+	elem 
+		name = "("
+		command = ".me"
+	elem 
+		name = "A"
+		command = ".northwest"
+	elem 
+		name = "CTRL+A+REP"
+		command = ".moveleft"
+	elem 
+		name = "D+REP"
+		command = ".moveright"
+	elem 
+		name = "CTRL+D+REP"
+		command = ".moveright"
+	elem 
+		name = "E"
+		command = "quick-equip"
+	elem 
+		name = "CTRL+E"
+		command = "quick-equip"
+	elem 
+		name = "F"
+		command = "a-intent left"
+	elem 
+		name = "CTRL+F"
+		command = "a-intent left"
+	elem 
+		name = "G"
+		command = "a-intent right"
+	elem 
+		name = "CTRL+G"
+		command = "a-intent right"
+	elem 
+		name = "H"
+		command = "holster"
+	elem 
+		name = "CTRL+H"
+		command = "holster"
+	elem 
+		name = "J"
+		command = "toggle-gun-mode"
+	elem 
+		name = "CTRL+J"
+		command = "toggle-gun-mode"
+	elem 
+		name = "O"
+		command = "ooc"
+	elem 
+		name = "CTRL+Q"
+		command = ".northwest"
+	elem 
+		name = "Q+REP"
+		command = ".moveleft"
+	elem 
+		name = "R"
+		command = ".southwest"
+	elem 
+		name = "CTRL+R"
+		command = ".southwest"
+	elem "s_key"
+		name = "S+REP"
+		command = ".movedown"
+	elem 
+		name = "CTRL+S+REP"
+		command = ".movedown"
+	elem 
+		name = "T"
+		command = ".say"
+	elem 
+		name = "W"
+		command = "Activate-Held-Object"
+	elem 
+		name = "CTRL+W+REP"
+		command = ".moveup"
+	elem 
+		name = "X"
+		command = ".northeast"
+	elem 
+		name = "CTRL+X"
+		command = ".northeast"
+	elem 
+		name = "Y"
+		command = "Activate-Held-Object"
+	elem 
+		name = "CTRL+Y"
+		command = "Activate-Held-Object"
+	elem 
+		name = "CTRL+Z"
+		command = "Activate-Held-Object"
+	elem "w_key"
+		name = "Z+REP"
+		command = ".moveup"
+	elem 
+		name = "Numpad1"
+		command = "body-r-leg"
+	elem 
+		name = "Numpad2"
+		command = "body-groin"
+	elem 
+		name = "Numpad3"
+		command = "body-l-leg"
+	elem 
+		name = "Numpad4"
+		command = "body-r-arm"
+	elem 
+		name = "Numpad5"
+		command = "body-chest"
+	elem 
+		name = "Numpad6"
+		command = "body-l-arm"
+	elem 
+		name = "Numpad8"
+		command = "body-toggle-head"
+	elem 
+		name = "F1"
+		command = "adminhelp"
+	elem 
+		name = "CTRL+SHIFT+F1+REP"
+		command = ".options"
+	elem 
+		name = "F2"
+		command = "ooc"
+	elem 
+		name = "F2+REP"
+		command = ".screenshot auto"
+	elem 
+		name = "SHIFT+F2+REP"
+		command = ".screenshot"
+	elem 
+		name = "F3"
+		command = ".say"
+	elem 
+		name = "F4"
+		command = ".me"
+	elem 
+		name = "F5"
+		command = "msay"
+	elem 
+		name = "F6"
+		command = "Player-Panel-New"
+	elem 
+		name = "F7"
+		command = "Admin-PM"
+	elem 
+		name = "F8"
+		command = "Invisimin"
+	elem 
+		name = "F12"
+		command = "F12"
+	elem 
+		name = ","
+		command = "move-upwards"
+	elem 
+		name = ";"
+		command = "move-down"
+	elem 
+		name = "SHIFT"
+		command = "setmovingquickly"
+	elem 
+		name = "SHIFT+UP"
+		command = "setmovingslowly"
+
+macro "macro"
+	elem 
+		name = "Tab"
+		command = ".winset \"mainwindow.macro=hotkeymode_fr hotkey_toggle.is-checked=true mapwindow.map.focus=true input.background-color=#0080ff\""
+	elem 
+		name = "Center+REP"
+		command = ".center"
+	elem 
+		name = "Northeast"
+		command = ".northeast"
+	elem 
+		name = "Southeast"
+		command = ".southeast"
+	elem 
+		name = "Southwest"
+		command = ".southwest"
+	elem 
+		name = "Northwest"
+		command = ".northwest"
+	elem 
+		name = "ALT+West"
+		command = "westfaceperm"
+	elem 
+		name = "CTRL+West"
+		command = "westface"
+	elem 
+		name = "West+REP"
+		command = ".moveleft"
+	elem 
+		name = "ALT+North"
+		command = "northfaceperm"
+	elem 
+		name = "CTRL+North"
+		command = "northface"
+	elem 
+		name = "North+REP"
+		command = ".moveup"
+	elem 
+		name = "ALT+East"
+		command = "eastfaceperm"
+	elem 
+		name = "CTRL+East"
+		command = "eastface"
+	elem 
+		name = "East+REP"
+		command = ".moveright"
+	elem 
+		name = "ALT+South"
+		command = "southfaceperm"
+	elem 
+		name = "CTRL+South"
+		command = "southface"
+	elem 
+		name = "South+REP"
+		command = ".movedown"
+	elem 
+		name = "Insert"
+		command = "a-intent right"
+	elem 
+		name = "Delete"
+		command = "delete-key-pressed"
+	elem 
+		name = "CTRL+&"
+		command = "a-intent help"
+	elem 
+		name = "CTRL+\""
+		command = "a-intent grab"
+	elem 
+		name = "CTRL+'"
 		command = "a-intent harm"
 	elem 
 		name = "CTRL+A+REP"
@@ -359,6 +598,12 @@ macro "macro"
 		name = "CTRL+Numpad8"
 		command = "body-toggle-head"
 	elem 
+		name = "CTRL+Add"
+		command = "move-upwards"
+	elem 
+		name = "CTRL+Subtract"
+		command = "move-down"
+	elem 
 		name = "F1"
 		command = "adminhelp"
 	elem 
@@ -394,12 +639,6 @@ macro "macro"
 	elem 
 		name = "F12"
 		command = "F12"
-	elem 
-		name = "CTRL+Add"
-		command = "move-upwards"
-	elem 
-		name = "CTRL+Subtract"
-		command = "move-down"
 
 macro "hotkeymode"
 	elem 
@@ -463,31 +702,25 @@ macro "hotkeymode"
 		name = "Delete"
 		command = "delete-key-pressed"
 	elem 
-		name = "1"
+		name = "&"
 		command = "a-intent help"
 	elem 
-		name = "CTRL+1"
+		name = "CTRL+&"
 		command = "a-intent help"
 	elem 
-		name = "2"
-		command = "a-intent disarm"
-	elem 
-		name = "CTRL+2"
-		command = "a-intent disarm"
-	elem 
-		name = "3"
+		name = "\""
 		command = "a-intent grab"
 	elem 
-		name = "CTRL+3"
+		name = "CTRL+\""
 		command = "a-intent grab"
 	elem 
-		name = "4"
+		name = "'"
 		command = "a-intent harm"
 	elem 
-		name = "CTRL+4"
+		name = "CTRL+'"
 		command = "a-intent harm"
 	elem 
-		name = "5"
+		name = "("
 		command = ".me"
 	elem 
 		name = "A+REP"
@@ -637,7 +870,7 @@ macro "hotkeymode"
 		name = ","
 		command = "move-upwards"
 	elem 
-		name = "."
+		name = ";"
 		command = "move-down"
 	elem 
 		name = "SHIFT"
@@ -1033,7 +1266,6 @@ window "mapwindow"
 		size = 640x480
 		anchor1 = 0,0
 		anchor2 = 100,100
-		background-color = none
 		is-visible = false
 		is-disabled = true
 		saved-params = ""

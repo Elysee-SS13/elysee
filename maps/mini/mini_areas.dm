@@ -21,6 +21,7 @@
 	name = "\improper Escape Hall"
 	icon_state = "red"
 
+
 /area/janitor
 	name = "\improper Janitor"
 	icon_state = "janitor"
@@ -32,6 +33,11 @@
 	icon_state="blue"
 	req_access = list(access_hop)
 
+/area/crew_quarters/heads/office/cos
+	icon_state = "heads_hos"
+	name = "\improper Command - CoS' Office"
+	req_access = list(access_hos)
+
 /area/cent_hall
 	name="\improper Central Hall"
 	icon_state="cent_hall"
@@ -40,7 +46,7 @@
 /area/maintenance/engineering
 	name="\improper Engineering Maintenance"
 	icon_state="sub_maint_aft"
-	req_access = list(access_engine_equip)
+	req_access = list(access_maint_tunnels)
 
 /area/maintenance/cafeteria
 	name="\improper Cafeteria Maintenance"
@@ -54,7 +60,7 @@
 /area/maintenance/command
 	name="\improper Command Maintenance"
 	icon_state="sub_maint_aft"
-	req_access = list(access_engine_equip)
+	req_access = list(access_maint_tunnels)
 
 
 /area/cafeteria
@@ -121,6 +127,12 @@
 	icon_state="blue"
 	req_access = list(access_bridge)
 
+/area/nuke
+	name="\improper Nuke"
+	icon_state="green"
+	req_access = list(access_bridge)
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
+
 /area/telecomms
 	name="\improper Telecomms"
 	icon_state ="blue"
@@ -128,6 +140,15 @@
 
 /area/shuttle/arrival
 	name = "\improper Arrival Shuttle"
+	icon_state = "shuttle"
+	req_access = list(access_cent_general)
+
+/area/shuttle/emergency/centcom
+	icon_state = "shuttle"
+	req_access = list(access_cent_general)
+
+
+/area/shuttle/escape_pod1/centcom
 	icon_state = "shuttle"
 	req_access = list(access_cent_general)
 

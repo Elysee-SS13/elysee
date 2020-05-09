@@ -5,6 +5,7 @@
 
 	station_name  = "NSS Novis"
 	station_short = "Novis"
+	dock_name = "CentCom"
 
 	boss_name     = "Captain"
 	boss_short    = "Captain"
@@ -14,8 +15,7 @@
 	overmap_event_areas = 11
 
 	default_law_type = /datum/ai_laws/corporate
-
-	evac_controller_type = /datum/evacuation_controller/lifepods
+	evac_controller_type = /datum/evacuation_controller/shuttle
 
 	allowed_spawns = list("Cryogenic Storage")
 	default_spawn = "Cryogenic Storage"
