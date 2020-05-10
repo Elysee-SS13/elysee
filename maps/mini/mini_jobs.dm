@@ -101,6 +101,11 @@
 
 	supervisors = "the head of personnel"
 
+/datum/job/mining
+	supervisors = "the head of the personnel"
+	total_positions = 0
+	spawn_positions = 0
+
 /* SERVICE/CIVILIAN */
 // Bartender
 // Janitor

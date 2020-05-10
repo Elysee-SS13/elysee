@@ -20,9 +20,9 @@
 	allowed_spawns = list("Cryogenic Storage")
 	default_spawn = "Cryogenic Storage"
 
-	emergency_shuttle_leaving_dock = "Attention all hands: the escape pods have been launched, maintaining burn for %ETA%."
+	emergency_shuttle_leaving_dock = "Attention all hands: the emergency has been launched, waiting for %ETA%."
 
-	emergency_shuttle_called_message = "Attention all hands: emergency evacuation procedures are now in effect. Escape pods will launch in %ETA%"
+	emergency_shuttle_called_message = "Attention all hands: emergency evacuation procedures are now in effect. Emergency Shuttle will launch in %ETA%"
 	emergency_shuttle_called_sound = sound('sound/AI/torch/abandonship.ogg', volume = 45)
 
 	emergency_shuttle_recall_message = "Attention all hands: emergency evacuation sequence aborted. Return to normal operating conditions."
@@ -45,7 +45,7 @@
 
 
 
-/datum/map/torch/get_map_info()
+/datum/map/mini/get_map_info()
 	. = list()
-	. +=  "Ministation est une station de formation intergalactique. Elle offre un environnement d'apprentissage convenable pour tous les novices qui souhaitent apprendre a gerer une station spatiale.."
+	. +=  "Bienvenue sur le NSS Novis, station de classe Ministation. Cet espace est propice a la formation des nouveaux equipages de la flotte spatiale de SolGov financ&eacute par la megacorporation Nanotrasen."
 	return jointext(., "<br>")

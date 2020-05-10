@@ -147,6 +147,10 @@
 	icon_state = "shuttle"
 	req_access = list(access_cent_general)
 
+/area/shuttle/mining/station
+	icon_state = "shuttle"
+	req_access = list(access_mining)
+
 
 /area/shuttle/escape_pod1/centcom
 	icon_state = "shuttle"
