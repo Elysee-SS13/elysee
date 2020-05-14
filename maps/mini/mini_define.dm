@@ -28,14 +28,14 @@
 	emergency_shuttle_recall_message = "Attention all hands: emergency evacuation sequence aborted. Return to normal operating conditions."
 
 	starting_money = 5000
-	department_money = 0
+	department_money = 500
 	salary_modifier = 0.2
 
 
 	//Signaux NTNET
-	station_levels = list(1, 2, 3)
-	contact_levels = list(1, 2, 3)
-	player_levels = list(1, 2, 3)
+	station_levels = list(1, 2, 3, 4)
+	contact_levels = list(1, 2, 3, 4)
+	player_levels = list(1, 2, 3, 4)
 
 /datum/map/mini/setup_map()
 	..()
