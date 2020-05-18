@@ -58,9 +58,9 @@
 /turf/simulated/floor/exoplanet/water/shallow,
 /area/mine/explored)
 "ar" = (
-/obj/structure/table/standard,
-/turf/simulated/floor/tiled,
-/area/cargo)
+/obj/effect/shuttle_landmark/orb/nav7,
+/turf/simulated/floor/asteroid,
+/area/mine/explored)
 "as" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	tag = "icon-spline_fancy (NORTHEAST)";
@@ -227,13 +227,12 @@
 /turf/simulated/floor/exoplanet/water/shallow,
 /area/mine/unexplored)
 "cJ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /turf/simulated/wall,
 /area/cargo)
 "dv" = (
-/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/airlock/external{
+	id_tag = null
+	},
 /turf/simulated/floor/tiled,
 /area/cargo)
 "eM" = (
@@ -250,14 +249,13 @@
 /turf/simulated/floor/exoplanet/water/shallow,
 /area/mine/explored)
 "hP" = (
-/obj/structure/closet/crate,
+/obj/item/frame/light_switch{
+	pixel_x = -24
+	},
 /turf/simulated/floor/tiled,
 /area/cargo)
 "ki" = (
-/obj/machinery/light/spot{
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/asteroid,
 /area/cargo)
 "ma" = (
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -266,11 +264,15 @@
 /turf/simulated/floor/exoplanet/water/shallow,
 /area/mine/unexplored)
 "mJ" = (
-/obj/structure/closet/emcloset,
+/obj/machinery/light/spot{
+	dir = 8
+	},
 /turf/simulated/floor/tiled,
 /area/cargo)
 "ot" = (
-/obj/machinery/atmospherics/portables_connector,
+/obj/machinery/atmospherics/portables_connector{
+	dir = 4
+	},
 /obj/machinery/portable_atmospherics/canister/air/airlock,
 /turf/simulated/floor/tiled,
 /area/cargo)
@@ -284,17 +286,22 @@
 /turf/simulated/floor/exoplanet/water/shallow,
 /area/mine/explored)
 "rJ" = (
-/obj/machinery/power/smes{
-	charge = 100e+006
-	},
-/obj/structure/cable/yellow{
-	d2 = 2;
-	icon_state = "0-2"
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/cargo)
 "st" = (
-/obj/effect/shuttle_landmark/orb/nav7,
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/cargo)
+"ti" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 4
+	},
 /turf/simulated/floor/asteroid,
 /area/mine/explored)
 "vc" = (
@@ -304,7 +311,15 @@
 /turf/simulated/floor/exoplanet/water/shallow,
 /area/mine/unexplored)
 "vi" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/item/frame/air_alarm{
+	pixel_y = 20
+	},
+/turf/simulated/floor/tiled,
+/area/cargo)
+"wg" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
 /turf/simulated/wall,
 /area/cargo)
 "wM" = (
@@ -351,6 +366,132 @@
 /turf/simulated/floor/exoplanet/water/shallow,
 /area/mine/explored)
 "Fe" = (
+/obj/structure/closet/crate,
+/turf/simulated/floor/tiled,
+/area/cargo)
+"Gl" = (
+/obj/effect/floor_decal/spline/fancy/wood/corner{
+	dir = 4
+	},
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 6
+	},
+/turf/simulated/floor/exoplanet/water/shallow,
+/area/mine/explored)
+"Hk" = (
+/obj/machinery/power/smes{
+	charge = 100e+006
+	},
+/obj/structure/cable/yellow{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/tiled,
+/area/cargo)
+"KW" = (
+/obj/item/device/radio/intercom{
+	dir = 4;
+	pixel_x = -22
+	},
+/turf/simulated/floor/tiled,
+/area/cargo)
+"Le" = (
+/obj/effect/floor_decal/spline/fancy/wood/corner{
+	dir = 4
+	},
+/turf/simulated/floor/exoplanet/water/shallow,
+/area/mine/unexplored)
+"LR" = (
+/turf/simulated/floor/tiled,
+/area/cargo)
+"LT" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 1
+	},
+/obj/effect/floor_decal/spline/fancy/wood,
+/turf/simulated/floor/exoplanet/water/shallow,
+/area/mine/explored)
+"MX" = (
+/obj/effect/floor_decal/spline/fancy/wood/corner{
+	dir = 8
+	},
+/turf/simulated/floor/exoplanet/water/shallow,
+/area/mine/unexplored)
+"Nk" = (
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "APC";
+	pixel_x = 26
+	},
+/turf/simulated/floor/tiled,
+/area/cargo)
+"Nu" = (
+/obj/machinery/atmospherics/portables_connector,
+/obj/machinery/portable_atmospherics/canister/air/airlock,
+/turf/simulated/floor/tiled,
+/area/cargo)
+"NQ" = (
+/turf/simulated/floor/exoplanet/water/shallow,
+/area/mine/unexplored)
+"Ol" = (
+/obj/effect/floor_decal/spline/fancy/wood/corner{
+	dir = 8
+	},
+/obj/effect/floor_decal/spline/fancy/wood/corner{
+	dir = 4
+	},
+/turf/simulated/wall/sandstone,
+/area/mine/explored)
+"PA" = (
+/obj/effect/wallframe_spawn/reinforced,
+/turf/simulated/floor/tiled,
+/area/cargo)
+"PW" = (
+/obj/structure/table/standard,
+/turf/simulated/floor/tiled,
+/area/cargo)
+"Qy" = (
+/obj/structure/bed/chair{
+	dir = 8
+	},
+/obj/machinery/light/spot{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/cargo)
+"Rr" = (
+/obj/effect/floor_decal/spline/fancy/wood,
+/turf/simulated/floor/exoplanet/water/shallow,
+/area/mine/unexplored)
+"RE" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/wall,
+/area/cargo)
+"Ss" = (
+/obj/structure/closet/emcloset,
+/turf/simulated/floor/tiled,
+/area/cargo)
+"SY" = (
+/obj/structure/fountain,
+/mob/living/simple_animal/hostile/retaliate/parrot/space,
+/turf/simulated/floor/airless/stone,
+/area/mine/explored)
+"TP" = (
+/obj/structure/totem,
+/turf/simulated/floor/fixed/alium/airless,
+/area/mine/explored)
+"WE" = (
+/obj/machinery/door/airlock/external{
+	id_tag = "mining_outpost_in"
+	},
+/turf/simulated/floor/tiled,
+/area/cargo)
+"WS" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock{
 	dir = 1;
 	id_tag = "mining_outpost_pump"
@@ -369,128 +510,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/cargo)
-"Gl" = (
-/obj/effect/floor_decal/spline/fancy/wood/corner{
-	dir = 4
-	},
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 6
-	},
-/turf/simulated/floor/exoplanet/water/shallow,
-/area/mine/explored)
-"Hk" = (
-/obj/effect/wallframe_spawn/reinforced,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled,
-/area/cargo)
-"KW" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
-	},
-/turf/simulated/wall,
-/area/cargo)
-"Le" = (
-/obj/effect/floor_decal/spline/fancy/wood/corner{
-	dir = 4
-	},
-/turf/simulated/floor/exoplanet/water/shallow,
-/area/mine/unexplored)
-"LR" = (
-/obj/structure/bed/chair{
-	dir = 8
-	},
-/obj/machinery/light/spot{
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
-/area/cargo)
-"LT" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 1
-	},
-/obj/effect/floor_decal/spline/fancy/wood,
-/turf/simulated/floor/exoplanet/water/shallow,
-/area/mine/explored)
-"MX" = (
-/obj/effect/floor_decal/spline/fancy/wood/corner{
-	dir = 8
-	},
-/turf/simulated/floor/exoplanet/water/shallow,
-/area/mine/unexplored)
-"Nk" = (
-/obj/machinery/portable_atmospherics/canister/air/airlock,
-/obj/machinery/atmospherics/portables_connector,
-/turf/simulated/floor/tiled,
-/area/mine/unexplored)
-"Nu" = (
-/obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/machinery/power/apc{
-	dir = 4;
-	name = "APC";
-	pixel_x = 26
-	},
-/turf/simulated/floor/tiled,
-/area/cargo)
-"NQ" = (
-/turf/simulated/floor/exoplanet/water/shallow,
-/area/mine/unexplored)
-"Ol" = (
-/obj/effect/floor_decal/spline/fancy/wood/corner{
-	dir = 8
-	},
-/obj/effect/floor_decal/spline/fancy/wood/corner{
-	dir = 4
-	},
-/turf/simulated/wall/sandstone,
-/area/mine/explored)
-"PA" = (
-/obj/machinery/light/spot,
-/turf/simulated/floor/tiled,
-/area/cargo)
-"PW" = (
-/turf/simulated/floor/tiled,
-/area/cargo)
-"Qy" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock{
-	dir = 1;
-	id_tag = null
-	},
-/turf/simulated/floor/tiled,
-/area/cargo)
-"Rr" = (
-/obj/effect/floor_decal/spline/fancy/wood,
-/turf/simulated/floor/exoplanet/water/shallow,
-/area/mine/unexplored)
-"RE" = (
-/obj/machinery/door/airlock/external,
-/turf/simulated/floor/tiled,
-/area/cargo)
-"Ss" = (
-/turf/simulated/wall,
-/area/mine/unexplored)
-"SY" = (
-/obj/structure/fountain,
-/mob/living/simple_animal/hostile/retaliate/parrot/space,
-/turf/simulated/floor/airless/stone,
-/area/mine/explored)
-"TP" = (
-/obj/structure/totem,
-/turf/simulated/floor/fixed/alium/airless,
-/area/mine/explored)
-"WE" = (
-/obj/machinery/atmospherics/unary/vent_pump/siphon/on/atmos{
-	dir = 4
-	},
-/turf/simulated/floor/asteroid,
-/area/mine/explored)
-"WS" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/tiled,
-/area/cargo)
 "XC" = (
 /obj/machinery/door/airlock/external{
 	id_tag = "mining_outpost_out"
@@ -498,12 +517,17 @@
 /turf/simulated/floor/tiled,
 /area/cargo)
 "YP" = (
-/obj/machinery/door/airlock/external{
-	id_tag = "mining_outpost_in"
-	},
+/obj/machinery/light/spot,
 /turf/simulated/floor/tiled,
 /area/cargo)
 "Zp" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/turf/simulated/floor/tiled,
+/area/cargo)
+"Zt" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
 /turf/simulated/wall,
 /area/cargo)
 
@@ -9667,7 +9691,7 @@ ae
 ae
 ae
 ae
-ae
+ar
 ae
 ae
 ae
@@ -10279,13 +10303,13 @@ ae
 ae
 ae
 ae
+cJ
+cJ
+cJ
 ae
 ae
 ae
-ae
-ae
-ae
-ae
+ti
 ae
 ae
 ae
@@ -10481,13 +10505,13 @@ ae
 ae
 ae
 ae
-ae
-ae
-ae
-ae
-ae
-ae
-ae
+cJ
+ot
+cJ
+cJ
+cJ
+WE
+Zt
 ae
 ae
 ae
@@ -10681,15 +10705,15 @@ ae
 ae
 ae
 ae
-ae
-ae
-ae
-ae
-ae
-ae
-ae
-ae
-ae
+cJ
+cJ
+cJ
+rJ
+cJ
+Nu
+RE
+WS
+Zt
 ae
 ae
 ae
@@ -10882,16 +10906,16 @@ ae
 ae
 ae
 ae
+ae
+dv
+hP
+mJ
 st
-ae
-ae
-ae
-ae
-ae
-ae
-ae
-ae
-ae
+cJ
+PA
+cJ
+XC
+Zt
 ae
 ae
 ae
@@ -11085,15 +11109,15 @@ ae
 ae
 ae
 ae
-ae
-ae
-ae
-ae
-ae
-ae
-ae
-ae
-ae
+cJ
+cJ
+cJ
+vi
+KW
+LR
+LR
+YP
+Zt
 ae
 ae
 ae
@@ -11288,14 +11312,14 @@ ae
 ae
 ae
 ae
-ae
-ae
-ae
-ae
-ae
-ae
-ae
-ae
+ki
+cJ
+Fe
+LR
+PW
+LR
+Zp
+wg
 ae
 ae
 an
@@ -11491,13 +11515,13 @@ ae
 ae
 ae
 ae
-ae
-ae
-ae
-ae
-ae
-ae
-ae
+cJ
+Hk
+Nk
+Qy
+Ss
+Ss
+cJ
 ae
 ae
 an
@@ -11693,13 +11717,13 @@ ae
 ae
 ae
 ae
-ae
-ae
-ae
-ae
-ae
-ae
-ae
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
 ae
 ae
 an
@@ -13109,7 +13133,7 @@ ae
 ae
 ae
 ae
-WE
+ae
 ae
 an
 an
@@ -13305,13 +13329,13 @@ ah
 ah
 ae
 ae
-Zp
-RE
-Zp
-Zp
-Zp
-YP
-cJ
+ah
+ah
+ah
+ah
+ah
+ah
+ah
 an
 an
 an
@@ -13505,15 +13529,15 @@ ah
 ah
 ah
 ah
-Ss
-Ss
-Zp
-PW
-Zp
-ot
-vi
-Fe
-cJ
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+ah
 an
 an
 an
@@ -13707,15 +13731,15 @@ ah
 ah
 ah
 ah
-Ss
-Nk
-Hk
-Qy
-Zp
-dv
-Zp
-XC
-cJ
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+ah
 ah
 ah
 ah
@@ -13909,15 +13933,15 @@ an
 an
 an
 an
-Ss
-Ss
-Zp
-ki
-PW
-PW
-PW
-PA
-cJ
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+ah
 an
 ah
 ah
@@ -14111,15 +14135,15 @@ ad
 an
 an
 an
-an
-an
-Zp
-hP
-PW
-ar
-PW
-WS
-KW
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+ah
 ah
 ah
 ah
@@ -14313,15 +14337,15 @@ ad
 ad
 ae
 ae
-ae
 ad
-Zp
-rJ
-Nu
-LR
-mJ
-mJ
-Zp
+ad
+ah
+ah
+ah
+ah
+ah
+ah
+ah
 ah
 ah
 ad
@@ -14517,13 +14541,13 @@ ae
 ad
 ad
 ad
-Zp
-Zp
-Zp
-Zp
-Zp
-Zp
-Zp
+ah
+ah
+ah
+ah
+ah
+ah
+ah
 ad
 ae
 ae
