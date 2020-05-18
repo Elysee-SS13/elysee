@@ -3873,6 +3873,9 @@
 	pixel_y = 10
 	},
 /obj/item/weapon/storage/box/monkeycubes,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/science)
 "iK" = (
@@ -6194,6 +6197,9 @@
 /obj/effect/floor_decal/industrial/loading{
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/science)
 "nN" = (
@@ -6866,10 +6872,10 @@
 /turf/simulated/floor/tiled,
 /area/security)
 "pw" = (
-/obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
 	dir = 1
 	},
+/obj/machinery/disposal,
 /turf/simulated/floor/tiled,
 /area/janitor)
 "px" = (
@@ -8965,6 +8971,9 @@
 /obj/item/weapon/material/minihoe{
 	pixel_y = -6
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/science)
 "ud" = (
@@ -10710,6 +10719,9 @@
 	tag = "icon-tube_map (EAST)";
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/science)
 "Co" = (
@@ -10754,6 +10766,9 @@
 /obj/machinery/firealarm{
 	dir = 1;
 	pixel_y = -24
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/science)
@@ -10833,6 +10848,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hop)
+"CS" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/science)
 "CT" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 8
@@ -11136,6 +11157,10 @@
 	dir = 4
 	},
 /obj/machinery/portable_atmospherics/hydroponics,
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c"
+	},
 /turf/simulated/floor/tiled/white,
 /area/science)
 "EV" = (
@@ -11459,6 +11484,13 @@
 	},
 /turf/simulated/floor/tiled,
 /area/engineering/engineering_bay)
+"Ho" = (
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/wall/r_wall,
+/area/science)
 "Hp" = (
 /obj/structure/sign/warning{
 	pixel_y = 32
@@ -11920,6 +11952,12 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/science)
+"JZ" = (
+/obj/structure/disposaloutlet{
+	dir = 4
+	},
+/turf/space,
+/area/space)
 "Ka" = (
 /obj/structure/table/standard,
 /obj/machinery/door/window/southright{
@@ -12024,6 +12062,12 @@
 	},
 /turf/simulated/wall/prepainted,
 /area/cent_hall)
+"KC" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/wall/prepainted,
+/area/space)
 "KD" = (
 /obj/structure/lattice,
 /obj/machinery/light/small{
@@ -12407,6 +12451,12 @@
 	},
 /obj/machinery/disposal,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
+/obj/structure/sign/warning/vacuum{
+	pixel_y = -24
+	},
 /turf/simulated/floor/tiled/white,
 /area/science)
 "Nt" = (
@@ -12673,11 +12723,14 @@
 /turf/simulated/floor/plating,
 /area/maintenance/command)
 "Pp" = (
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
 /obj/effect/floor_decal/corner/mauve{
 	dir = 10
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/disposal,
 /turf/simulated/floor/tiled/white,
 /area/science)
 "Px" = (
@@ -12831,6 +12884,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/telecomms)
+"Qr" = (
+/obj/structure/disposaloutlet{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/science)
 "Qt" = (
 /obj/machinery/door/airlock/hatch/maintenance,
 /turf/simulated/floor/tiled,
@@ -12925,6 +12984,9 @@
 	dir = 10
 	},
 /obj/machinery/portable_atmospherics/hydroponics,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/science)
 "QQ" = (
@@ -13318,6 +13380,9 @@
 /obj/machinery/vending/hydronutrients/generic{
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/science)
 "TZ" = (
@@ -13508,6 +13573,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/science)
+"UZ" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/wall/prepainted,
+/area/science)
 "Vf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
@@ -13614,6 +13685,9 @@
 	},
 /obj/machinery/portable_atmospherics/hydroponics,
 /obj/machinery/light/spot,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/science)
 "VC" = (
@@ -50390,7 +50464,7 @@ PP
 aU
 Fz
 Fz
-Fz
+Qr
 UA
 su
 gh
@@ -50647,7 +50721,7 @@ Cr
 IS
 Fz
 Fz
-Fz
+CS
 UA
 xT
 tR
@@ -50904,7 +50978,7 @@ gc
 FM
 ri
 ri
-Fz
+CS
 UA
 BG
 DS
@@ -53218,7 +53292,7 @@ BI
 BY
 BY
 BY
-BY
+UZ
 UA
 Ik
 DS
@@ -55532,7 +55606,7 @@ BY
 AL
 Un
 ES
-UA
+Ho
 gk
 gk
 SM
@@ -55789,7 +55863,7 @@ RR
 Yj
 Yj
 Yj
-RR
+KC
 RW
 RW
 RW
@@ -56046,7 +56120,7 @@ RW
 RW
 RW
 RW
-RW
+JZ
 RW
 RW
 RW
