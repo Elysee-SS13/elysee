@@ -3,6 +3,7 @@
 /datum/shuttle/autodock/ferry/mining_shuttle
 	name = "Mining Shuttle"
 	warmup_time = 1
+	arrive_time = 1
 	shuttle_area = /area/shuttle/mining/station
 	waypoint_offsite = "nav_orb_7"
 	waypoint_station ="nav_mining_station"

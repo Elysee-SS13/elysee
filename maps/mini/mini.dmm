@@ -13761,6 +13761,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/science)
+"Xc" = (
+/obj/machinery/cooker/fryer,
+/turf/simulated/floor/tiled/white,
+/area/cafeteria/kitchen)
 "Xh" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -50588,7 +50592,7 @@ uO
 sK
 iO
 NN
-jp
+Xc
 jp
 ub
 us
