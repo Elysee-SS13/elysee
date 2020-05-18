@@ -252,10 +252,14 @@
 /obj/item/frame/light_switch{
 	pixel_x = -24
 	},
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	dir = 8;
+	frequency = 1380;
+	id_tag = "docker_mining_controller";
+	name = "mining shuttle controller";
+	pixel_x = 22
+	},
 /turf/simulated/floor/tiled,
-/area/cargo)
-"ki" = (
-/turf/simulated/floor/asteroid,
 /area/cargo)
 "ma" = (
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -11312,7 +11316,7 @@ ae
 ae
 ae
 ae
-ki
+ae
 cJ
 Fe
 LR
