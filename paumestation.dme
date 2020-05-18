@@ -3173,7 +3173,7 @@
 #include "maps\away\away_sites.dm"
 #include "maps\away\mining\mining.dm"
 #include "maps\away\mining\mining_areas.dm"
-#include "maps\away\mining\mining-orb.dmm"
+#include "maps\away\mining\mining-orb-mini.dmm"
 #include "maps\away_sites_testing\away_sites_testing_define.dm"
 #include "maps\mini\mini.dm"
 #include "maps\mini\mini_define.dm"
