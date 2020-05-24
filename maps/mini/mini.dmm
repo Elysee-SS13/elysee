@@ -1219,7 +1219,7 @@
 /turf/simulated/wall/prepainted,
 /area/maintenance/engineering)
 "cL" = (
-/obj/machinery/r_n_d/protolathe,
+/obj/machinery/fabricator,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/engine_monitor)
 "cM" = (
@@ -4123,6 +4123,9 @@
 /area/command)
 "jp" = (
 /obj/structure/table/marble,
+/obj/item/weapon/book/manual/chef_recipes{
+	pixel_y = 8
+	},
 /turf/simulated/floor/tiled/white,
 /area/cafeteria/kitchen)
 "jq" = (
@@ -6351,6 +6354,9 @@
 /area/engineering/atmos)
 "of" = (
 /obj/structure/closet/secure_closet/freezer/meat,
+/obj/machinery/light/spot{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white,
 /area/cafeteria/kitchen)
 "og" = (
@@ -7955,6 +7961,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/machinery/light/spot{
+	dir = 1
+	},
 /turf/simulated/floor/wood/walnut,
 /area/cafeteria)
 "rP" = (
@@ -8523,13 +8532,13 @@
 /turf/simulated/floor/tiled/white,
 /area/medbay)
 "tb" = (
-/obj/machinery/r_n_d/protolathe,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/machinery/fabricator,
 /turf/simulated/floor/wood/walnut,
 /area/cafeteria)
 "tc" = (
@@ -8918,8 +8927,8 @@
 /turf/space,
 /area/shuttle/mining/station)
 "tX" = (
-/obj/machinery/r_n_d/protolathe,
 /obj/effect/floor_decal/industrial/warning,
+/obj/machinery/fabricator,
 /turf/simulated/floor/tiled,
 /area/cargo)
 "tY" = (
@@ -9071,6 +9080,10 @@
 /area/telecomms)
 "us" = (
 /obj/machinery/gibber,
+/obj/machinery/light/spot{
+	tag = "icon-tube_map (EAST)";
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/cafeteria/kitchen)
 "ut" = (
@@ -12389,6 +12402,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/command)
+"Na" = (
+/obj/machinery/firealarm{
+	pixel_y = 24
+	},
+/turf/simulated/floor/tiled/white,
+/area/cafeteria/kitchen)
 "Nb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -12517,12 +12536,10 @@
 /area/security)
 "NN" = (
 /obj/structure/table/marble,
-/obj/item/weapon/book/manual/chef_recipes{
-	pixel_y = 8
+/obj/machinery/light/spot{
+	dir = 1
 	},
-/obj/machinery/firealarm{
-	pixel_y = 24
-	},
+/obj/machinery/cooker/oven,
 /turf/simulated/floor/tiled/white,
 /area/cafeteria/kitchen)
 "NV" = (
@@ -12855,7 +12872,6 @@
 /turf/simulated/floor/tiled/white,
 /area/science)
 "Qf" = (
-/obj/machinery/fabricator,
 /obj/machinery/light/spot{
 	dir = 8
 	},
@@ -13530,10 +13546,10 @@
 /turf/simulated/wall/r_wall,
 /area/eva)
 "UO" = (
-/obj/structure/table/standard,
 /obj/effect/floor_decal/corner/yellow{
 	dir = 9
 	},
+/obj/machinery/fabricator,
 /turf/simulated/floor/tiled,
 /area/science)
 "UQ" = (
@@ -50227,7 +50243,7 @@ Jw
 Yl
 cu
 tL
-Ca
+Na
 xQ
 ui
 Ca
