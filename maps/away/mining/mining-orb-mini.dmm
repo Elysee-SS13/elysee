@@ -231,7 +231,7 @@
 /area/cargo)
 "dv" = (
 /obj/machinery/door/airlock/external{
-	id_tag = null
+	id_tag = "mining_shuttle_hatch"
 	},
 /turf/simulated/floor/tiled,
 /area/cargo)
@@ -241,6 +241,10 @@
 	},
 /turf/simulated/floor/exoplanet/water/shallow,
 /area/mine/unexplored)
+"fv" = (
+/obj/structure/cable/yellow,
+/turf/simulated/wall,
+/area/cargo)
 "fA" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 9
@@ -252,10 +256,15 @@
 /obj/item/frame/light_switch{
 	pixel_x = -24
 	},
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	dir = 8;
+	frequency = 1380;
+	id_tag = "docker_mining_controller";
+	name = "mining shuttle controller";
+	pixel_x = 22;
+	tag_door = "mining_shuttle_hatch"
+	},
 /turf/simulated/floor/tiled,
-/area/cargo)
-"ki" = (
-/turf/simulated/floor/asteroid,
 /area/cargo)
 "ma" = (
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -284,6 +293,14 @@
 	dir = 1
 	},
 /turf/simulated/floor/exoplanet/water/shallow,
+/area/mine/explored)
+"pJ" = (
+/obj/structure/cable/yellow{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/asteroid,
 /area/mine/explored)
 "rJ" = (
 /obj/effect/wallframe_spawn/reinforced,
@@ -382,9 +399,11 @@
 /obj/machinery/power/smes{
 	charge = 100e+006
 	},
+/obj/structure/cable/yellow,
 /obj/structure/cable/yellow{
+	d1 = 1;
 	d2 = 2;
-	icon_state = "0-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
 /area/cargo)
@@ -418,11 +437,6 @@
 /turf/simulated/floor/exoplanet/water/shallow,
 /area/mine/unexplored)
 "Nk" = (
-/obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
 /obj/machinery/power/apc{
 	dir = 4;
 	name = "APC";
@@ -472,6 +486,15 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/wall,
 /area/cargo)
+"RF" = (
+/obj/structure/cable/yellow,
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/wall,
+/area/cargo)
 "Ss" = (
 /obj/structure/closet/emcloset,
 /turf/simulated/floor/tiled,
@@ -484,6 +507,14 @@
 "TP" = (
 /obj/structure/totem,
 /turf/simulated/floor/fixed/alium/airless,
+/area/mine/explored)
+"Wy" = (
+/obj/structure/cable/yellow{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/asteroid,
 /area/mine/explored)
 "WE" = (
 /obj/machinery/door/airlock/external{
@@ -519,6 +550,14 @@
 "YP" = (
 /obj/machinery/light/spot,
 /turf/simulated/floor/tiled,
+/area/cargo)
+"YW" = (
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/wall,
 /area/cargo)
 "Zp" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
@@ -11312,7 +11351,7 @@ ae
 ae
 ae
 ae
-ki
+ae
 cJ
 Fe
 LR
@@ -11514,8 +11553,8 @@ ae
 ae
 ae
 ae
-ae
-cJ
+pJ
+RF
 Hk
 Nk
 Qy
@@ -11716,9 +11755,9 @@ ae
 ae
 ae
 ae
-ae
-cJ
-cJ
+Wy
+YW
+fv
 cJ
 cJ
 cJ
