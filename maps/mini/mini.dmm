@@ -9492,7 +9492,7 @@
 	id_tag = "docker_mining_controller";
 	name = "mining shuttle controller";
 	pixel_y = 16;
-	tag_door = null
+	tag_door = "mining_shuttle_hatch"
 	},
 /obj/structure/table/standard,
 /obj/item/clothing/glasses/meson,
