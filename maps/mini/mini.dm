@@ -10,6 +10,7 @@
 	#include "z2_transit.dmm"
 
 	#include "items/items.dm"
+	#include "machinery/machinery.dm"
 
 
 	#include "../away/empty.dmm"

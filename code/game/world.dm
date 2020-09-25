@@ -69,7 +69,7 @@
 
 	enable_debugger()
 	//set window title
-	name = "[server_name] - [GLOB.using_map.full_name] - <a href=\"https://discord.gg/uj9YNvA\">DISCORD</a>"
+	name = "[server_name] - [GLOB.using_map.full_name]"
 
 	//logs
 	SetupLogs()

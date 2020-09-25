@@ -137,6 +137,11 @@ area/space/atmosalert()
 	icon_state = "brig"
 	req_access = list(access_brig)
 
+/area/security/detective
+	icon_state = "detective"
+	name = "\improper Security - Detective"
+	req_access = list(access_forensics_lockers)
+
 /area/security/prison
 	name = "\improper Security - Prison Wing"
 	icon_state = "sec_prison"
