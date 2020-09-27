@@ -119,6 +119,17 @@ area/space/atmosalert()
 /area/medical
 	req_access = list(access_medical)
 
+/area/medical/equipstorage
+	name = "\improper Infirmary Equipment Storage"
+	icon_state = "medbay4"
+	ambience = list('sound/ambience/signal.ogg')
+	req_access = list(access_medical_equip)
+
+/area/medical/infirmary
+	name = "\improper Infirmary Hallway"
+	icon_state = "medbay"
+	req_access = list(access_medical)
+
 /area/medical/virology
 	name = "\improper Virology"
 	icon_state = "virology"
