@@ -340,11 +340,11 @@
 	if(alien == IS_DIONA)
 		return
 	if(alien == IS_SKRELL)
-		M.take_organ_damage(2.4 * removed, 0)
+		M.take_organ_damage(2.4 * removed, 0, ORGAN_DAMAGE_FLESH_ONLY)
 		if(M.losebreath < 22.5)
 			M.losebreath++
 	else
-		M.take_organ_damage(3 * removed, 0)
+		M.take_organ_damage(3 * removed, 0, ORGAN_DAMAGE_FLESH_ONLY)
 		if(M.losebreath < 15)
 			M.losebreath++
 
@@ -412,6 +412,7 @@
 	metabolism = REM * 0.5
 	overdose = REAGENTS_OVERDOSE
 	value = 2.5
+	scannable = TRUE
 
 /datum/reagent/soporific/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	if(alien == IS_DIONA)

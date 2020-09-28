@@ -14,18 +14,32 @@
 		user.visible_message(SPAN_NOTICE("\The [user] bonks \the [src] harmlessly with \the [I]."))
 		return
 
-	if(LAZYLEN(pilots) && (!hatch_closed || !prob(body.pilot_coverage)))
-		var/mob/living/pilot = pick(pilots)
-		return pilot.resolve_item_attack(I, user, def_zone)
+	switch(def_zone)
+		if(BP_HEAD , BP_CHEST, BP_MOUTH, BP_EYES)
+			if(LAZYLEN(pilots) && (!hatch_closed || !prob(body.pilot_coverage)))
+				var/mob/living/pilot = pick(pilots)
+				var/zone = pilot.resolve_item_attack(I, user, def_zone)
+				if(zone)
+					var/datum/attack_result/AR = new()
+					AR.hit_zone = zone
+					AR.attackee = pilot
+					return AR
 
 	return def_zone //Careful with effects, mechs shouldn't be stunned
-
+	
 /mob/living/exosuit/hitby(atom/movable/AM, var/datum/thrownthing/TT)
 	if(LAZYLEN(pilots) && (!hatch_closed || !prob(body.pilot_coverage)))
 		var/mob/living/pilot = pick(pilots)
 		return pilot.hitby(AM, TT)
 	. = ..()
 
+/mob/living/exosuit/bullet_act(obj/item/projectile/P, def_zone, used_weapon)
+	switch(def_zone)
+		if(BP_HEAD , BP_CHEST, BP_MOUTH, BP_EYES)
+			if(LAZYLEN(pilots) && (!hatch_closed || !prob(body.pilot_coverage)))
+				var/mob/living/pilot = pick(pilots)
+				return pilot.bullet_act(P, def_zone, used_weapon)
+	..()
 
 /mob/living/exosuit/get_armors_by_zone(def_zone, damage_type, damage_flags)
 	. = ..()
@@ -35,7 +49,7 @@
 			. += body_armor
 
 /mob/living/exosuit/updatehealth()
-	maxHealth = body.mech_health
+	maxHealth = body ? body.mech_health : 0
 	health = maxHealth-(getFireLoss()+getBruteLoss())
 
 /mob/living/exosuit/adjustFireLoss(var/amount, var/obj/item/mech_component/MC = pick(list(arms, legs, body, head)))

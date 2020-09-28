@@ -110,7 +110,7 @@ var/list/slot_equipment_priority = list( \
 /mob/proc/equip_to_storage_or_drop(obj/item/newitem)
 	var/stored = equip_to_storage(newitem)
 	if(!stored && newitem)
-		newitem.forceMove(loc)
+		newitem.dropInto(loc)
 	return stored
 
 //These procs handle putting s tuff in your hand. It's probably best to use these rather than setting l_hand = ...etc
@@ -183,7 +183,7 @@ var/list/slot_equipment_priority = list( \
 	Removes the object from any slots the mob might have, calling the appropriate icon update proc.
 	Does nothing else.
 
-	>>>> *** DO NOT CALL THIS PROC DIRECTLY *** <<<<
+	*** DO NOT CALL THIS PROC DIRECTLY ***
 
 	It is meant to be called only by other inventory procs.
 	It's probably okay to use it if you are transferring the item between slots on the same mob,

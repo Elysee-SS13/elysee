@@ -220,10 +220,6 @@
 		O.status |= ORGAN_CUT_AWAY
 	else
 		O = ..()
-	if(O.species)
-		// This is a very hacky way of doing of what organ/New() does if it has an owner
-		O.w_class = max(O.w_class + mob_size_difference(O.species.mob_size, MOB_MEDIUM), 1)
-
 	visible_message(SPAN_INFO("\The [src] churns for a moment, injects its stored DNA into the biomass, then spits out \a [O]."))
 	playsound(src.loc, 'sound/machines/ding.ogg', 50, 1)
 	return O
@@ -279,7 +275,8 @@
 	for(var/organ in loaded_species.has_organ)
 		organs += loaded_species.has_organ[organ]
 	for(var/organ in loaded_species.has_limbs)
-		organs += loaded_species.has_limbs[organ]["path"]
+		if ((loaded_species.name == SPECIES_NABBER) || (organ == BP_GROIN))
+			organs += loaded_species.has_limbs[organ]["path"]
 	for(var/organ in organs)
 		var/obj/item/organ/O = organ
 		if(check_printable(organ))

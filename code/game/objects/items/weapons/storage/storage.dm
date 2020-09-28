@@ -39,6 +39,7 @@
 
 	if ((ishuman(usr) || isrobot(usr) || issmall(usr)) && !usr.incapacitated())
 		if(over_object == usr && Adjacent(usr)) // this must come before the screen objects only block
+			src.add_fingerprint(usr)
 			src.open(usr)
 			return TRUE
 
@@ -57,6 +58,15 @@
 				if(BP_L_HAND)
 					usr.put_in_l_hand(src)
 
+/obj/item/weapon/storage/AltClick(var/mob/usr)
+
+	if(!canremove)
+		return
+
+	if ((ishuman(usr) || isrobot(usr) || issmall(usr)) && !usr.incapacitated() && Adjacent(usr))
+		src.add_fingerprint(usr)
+		src.open(usr)
+		return TRUE
 
 /obj/item/weapon/storage/proc/return_inv()
 
@@ -131,7 +141,7 @@
 	if(W.anchored)
 		return 0
 
-	if(can_hold.len)
+	if(length(can_hold))
 		if(!is_type_in_list(W, can_hold))
 			if(!stop_messages && ! istype(W, /obj/item/weapon/hand_labeler))
 				to_chat(user, "<span class='notice'>\The [src] cannot hold \the [W].</span>")
@@ -289,7 +299,8 @@
 		src.open(user)
 	else
 		..()
-		storage_ui.on_hand_attack(user)
+		if (storage_ui)
+			storage_ui.on_hand_attack(user)
 	src.add_fingerprint(user)
 	return
 

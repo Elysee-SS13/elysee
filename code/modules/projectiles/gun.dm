@@ -8,6 +8,7 @@
 /datum/firemode
 	var/name = "default"
 	var/list/settings = list()
+	var/list/original_settings
 
 /datum/firemode/New(obj/item/weapon/gun/gun, list/properties = null)
 	..()
@@ -24,8 +25,18 @@
 			settings[propname] = propvalue
 
 /datum/firemode/proc/apply_to(obj/item/weapon/gun/gun)
+	LAZYINITLIST(original_settings)
+
 	for(var/propname in settings)
+		original_settings[propname] = gun.vars[propname]
 		gun.vars[propname] = settings[propname]
+
+/datum/firemode/proc/restore_original_settings(obj/item/weapon/gun/gun)
+	if (LAZYLEN(original_settings))
+		for (var/propname in original_settings)
+			gun.vars[propname] = original_settings[propname]
+
+		LAZYCLEARLIST(original_settings)
 
 //Parent gun type. Guns are weapons that can be aimed at mobs and act over a distance
 /obj/item/weapon/gun
@@ -203,7 +214,7 @@
 		if(user.a_intent == I_HURT && !user.skill_fail_prob(SKILL_WEAPONS, 100, SKILL_EXPERT, 0.5)) //reflex un-safeying
 			toggle_safety(user)
 		else
-			handle_click_empty(user)
+			handle_click_safety(user)
 			return
 
 	if(world.time < next_fire_time)
@@ -269,48 +280,55 @@
 		src.visible_message("*click click*")
 	playsound(src.loc, 'sound/weapons/empty.ogg', 100, 1)
 
+/obj/item/weapon/gun/proc/handle_click_safety(mob/user)
+	user.visible_message(SPAN_WARNING("[user] squeezes the trigger of \the [src] but it doesn't move!"), SPAN_WARNING("You squeeze the trigger but it doesn't move!"), range = 3)
+
 //called after successfully firing
 /obj/item/weapon/gun/proc/handle_post_fire(mob/user, atom/target, var/pointblank=0, var/reflex=0)
 	if(fire_anim)
 		flick(fire_anim, src)
 
-	if(!silenced)
-		if(reflex)
-			user.visible_message(
-				"<span class='reflex_shoot'><b>\The [user] fires \the [src][pointblank ? " point blank at \the [target]":""] by reflex!</b></span>",
-				"<span class='reflex_shoot'>You fire \the [src] by reflex!</span>",
-				"You hear a [fire_sound_text]!"
-			)
+	if (user)
+		var/user_message = SPAN_WARNING("You fire \the [src][pointblank ? " point blank":""] at \the [target][reflex ? " by reflex" : ""]!")
+		if (silenced)
+			to_chat(user, user_message)
 		else
 			user.visible_message(
-				"<span class='danger'>\The [user] fires \the [src][pointblank ? " point blank at \the [target]":""]!</span>",
-				"<span class='warning'>You fire \the [src]!</span>",
-				"You hear a [fire_sound_text]!"
-				)
+				SPAN_DANGER("\The [user] fires \the [src][pointblank ? " point blank":""] at \the [target][reflex ? " by reflex" : ""]!"),
+				user_message,
+				SPAN_DANGER("You hear a [fire_sound_text]!")
+			)
 
-	if(one_hand_penalty)
-		if(!src.is_held_twohanded(user))
-			switch(one_hand_penalty)
-				if(4 to 6)
-					if(prob(50)) //don't need to tell them every single time
-						to_chat(user, "<span class='warning'>Your aim wavers slightly.</span>")
-				if(6 to 8)
-					to_chat(user, "<span class='warning'>You have trouble keeping \the [src] on target with just one hand.</span>")
-				if(8 to INFINITY)
-					to_chat(user, "<span class='warning'>You struggle to keep \the [src] on target with just one hand!</span>")
-		else if(!user.can_wield_item(src))
-			switch(one_hand_penalty)
-				if(4 to 6)
-					if(prob(50)) //don't need to tell them every single time
-						to_chat(user, "<span class='warning'>Your aim wavers slightly.</span>")
-				if(6 to 8)
-					to_chat(user, "<span class='warning'>You have trouble holding \the [src] steady.</span>")
-				if(8 to INFINITY)
-					to_chat(user, "<span class='warning'>You struggle to hold \the [src] steady!</span>")
+		if (pointblank)
+			admin_attack_log(user, target,
+				"shot point blank with \a [type]",
+				"shot point blank with \a [type]",
+				"shot point blank (\a [type])"
+			)
 
-	if(screen_shake)
-		spawn()
-			shake_camera(user, screen_shake+1, screen_shake)
+		if(one_hand_penalty)
+			if(!src.is_held_twohanded(user))
+				switch(one_hand_penalty)
+					if(4 to 6)
+						if(prob(50)) //don't need to tell them every single time
+							to_chat(user, "<span class='warning'>Your aim wavers slightly.</span>")
+					if(6 to 8)
+						to_chat(user, "<span class='warning'>You have trouble keeping \the [src] on target with just one hand.</span>")
+					if(8 to INFINITY)
+						to_chat(user, "<span class='warning'>You struggle to keep \the [src] on target with just one hand!</span>")
+			else if(!user.can_wield_item(src))
+				switch(one_hand_penalty)
+					if(4 to 6)
+						if(prob(50)) //don't need to tell them every single time
+							to_chat(user, "<span class='warning'>Your aim wavers slightly.</span>")
+					if(6 to 8)
+						to_chat(user, "<span class='warning'>You have trouble holding \the [src] steady.</span>")
+					if(8 to INFINITY)
+						to_chat(user, "<span class='warning'>You struggle to hold \the [src] steady!</span>")
+
+		if(screen_shake)
+			spawn()
+				shake_camera(user, screen_shake+1, screen_shake)
 
 	if(combustion)
 		var/turf/curloc = get_turf(src)
@@ -429,7 +447,7 @@
 
 	mouthshoot = 1
 	M.visible_message("<span class='danger'>[user] sticks their gun in their mouth, ready to pull the trigger...</span>")
-	if(!do_after(user, 40, progress=0))
+	if(!do_after(user, 40, do_flags = DO_DEFAULT & ~DO_SHOW_PROGRESS))
 		M.visible_message("<span class='notice'>[user] decided life was worth living</span>")
 		mouthshoot = 0
 		return
@@ -509,6 +527,9 @@
 	var/next_mode = get_next_firemode()
 	if(!next_mode || next_mode == sel_mode)
 		return null
+
+	var/datum/firemode/old_mode = firemodes[sel_mode]
+	old_mode.restore_original_settings(src)
 
 	sel_mode = next_mode
 	var/datum/firemode/new_mode = firemodes[sel_mode]

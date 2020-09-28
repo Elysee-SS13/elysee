@@ -168,12 +168,6 @@
 			if(prob(2))
 				var/obj/effect/spider/spiderling/S = new /obj/effect/spider/spiderling(M.loc)
 				M.visible_message("<span class='warning'>\The [M] coughs up \the [S]!</span>")
-		else if(M.mind && GLOB.godcult.is_antagonist(M.mind))
-			if(volume > 5)
-				M.adjustHalLoss(5)
-				M.adjustBruteLoss(1)
-				if(prob(10)) //Only annoy them a /bit/
-					to_chat(M,"<span class='danger'>You feel your insides curdle and burn!</span> \[<a href='?src=\ref[src];deconvert=\ref[M]'>Give Into Purity</a>\]")
 
 /datum/reagent/water/holywater/Topic(href, href_list)
 	. = ..()
@@ -305,6 +299,7 @@
 		else
 			H.clean_blood(1)
 			return
+	M.update_icons()
 	M.clean_blood()
 
 /datum/reagent/lube
@@ -474,41 +469,6 @@
 		M.co2_alert = 0
 	if(warning_message && prob(warning_prob))
 		to_chat(M, "<span class='warning'>You feel [warning_message].</span>")
-
-/datum/reagent/anfo
-	name = "ANFO"
-	description = "Ammonia Nitrate Fuel Oil mix, an explosive compound known for centuries. Safe to handle, can be set off with a small explosion."
-	taste_description = "fertilizer and fuel"
-	reagent_state = SOLID
-	color = "#dbc3c3"
-	var/boompower = 1
-
-/datum/reagent/anfo/ex_act(obj/item/weapon/reagent_containers/holder, severity)
-	var/activated_volume = volume
-	switch(severity)
-		if(2)
-			if(prob(max(0, 2*(volume - 120))))
-				activated_volume = rand(volume/4, volume)
-		if(3)
-			if(prob(max(0, 2*(volume - 60))))
-				activated_volume = rand(0, max(volume, 120))
-	if(activated_volume < 30) //whiff
-		return
-	var/turf/T = get_turf(holder)
-	if(T)
-		var/adj_power = round(boompower * activated_volume/60)
-		var/datum/gas_mixture/products = new(_temperature = 5 * PHORON_FLASHPOINT)
-		var/gas_moles = 3 * volume
-		products.adjust_multi(GAS_CO2, 0.5 * gas_moles, GAS_NITROGEN, 0.3 * gas_moles, GAS_STEAM, 0.2 * gas_moles)
-		T.assume_air(products)
-		explosion(T, adj_power, adj_power + 1, adj_power*2 + 2)
-		remove_self(activated_volume)
-
-/datum/reagent/anfo/plus
-	name = "ANFO+"
-	description = "Ammonia Nitrate Fuel Oil, with aluminium powder, an explosive compound known for centuries. Safe to handle, can be set off with a small explosion."
-	color = "#ffe8e8"
-	boompower = 2
 
 /datum/reagent/dye
 	name = "Dye"

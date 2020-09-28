@@ -765,7 +765,8 @@ About the new airlock wires panel:
 			set_airlock_overlays(AIRLOCK_DENY)
 			if(density && arePowerSystemsOn())
 				flick("deny", src)
-				if(secured_wires)
+				if(secured_wires && world.time > next_clicksound)
+					next_clicksound = world.time + CLICKSOUND_INTERVAL
 					playsound(loc, open_failure_access_denied, 50, 0)
 			update_icon(AIRLOCK_CLOSED)
 		if("emag")
@@ -1081,8 +1082,12 @@ About the new airlock wires panel:
 				to_chat(user, "<span class='warning'>The panel is broken, and cannot be closed.</span>")
 			else
 				src.p_open = 0
+				user.visible_message(SPAN_NOTICE("[user.name] closes the maintenance panel on \the [src]."), SPAN_NOTICE("You close the maintenance panel on \the [src]."))
+				playsound(src.loc, "sound/items/Screwdriver.ogg", 20)
 		else
 			src.p_open = 1
+			user.visible_message(SPAN_NOTICE("[user.name] opens the maintenance panel on \the [src]."), SPAN_NOTICE("You open the maintenance panel on \the [src]."))
+			playsound(src.loc, "sound/items/Screwdriver.ogg", 20)
 		src.update_icon()
 	else if(isWirecutter(C))
 		return src.attack_hand(user)
@@ -1146,7 +1151,7 @@ About the new airlock wires panel:
 				else
 					to_chat(user, "<span class='warning'>You need to be wielding \the [C] to do that.</span>")
 
-	else if(istype(C, /obj/item/device/floor_painter))
+	else if(istype(C, /obj/item/device/paint_sprayer))
 		return
 
 	else
@@ -1366,7 +1371,7 @@ About the new airlock wires panel:
 		brace = A
 		brace.airlock = src
 		brace.forceMove(src)
-		if(brace.electronics)
+		if(brace.electronics && !length(brace.req_access))
 			brace.electronics.set_access(src)
 			brace.update_access()
 		update_icon()

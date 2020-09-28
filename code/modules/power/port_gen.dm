@@ -164,7 +164,7 @@
 	if(overheating) to_chat(user, "<span class='danger'>\The [src] is overheating!</span>")
 
 /obj/machinery/power/port_gen/pacman/proc/process_exhaust()
-	var/datum/gas_mixture/environment = loc.return_air()
+	var/datum/gas_mixture/environment = loc?.return_air()
 	if(environment)
 		environment.adjust_gas(GAS_CO, 0.05*power_output)
 
@@ -343,6 +343,9 @@
 	data["fuel_capacity"] = round(max_sheets * 1000, 0.1)
 	data["fuel_usage"] = active ? round((power_output / time_per_sheet) * 1000) : 0
 	data["fuel_type"] = sheet_name
+	data["uses_coolant"] = !!reagents
+	data["coolant_stored"] = reagents?.total_volume
+	data["coolant_capacity"] = reagents?.maximum_volume
 
 
 
@@ -451,7 +454,7 @@
 /obj/machinery/power/port_gen/pacman/super/potato
 	name = "nuclear reactor"
 	desc = "PTTO-3, an industrial all-in-one nuclear power plant by Neo-Chernobyl GmbH. It uses uranium and vodka as a fuel source. Rated for 150 kW max safe output."
-	power_gen = 30000			//Watts output per power_output level
+	power_gen = 30000		//Watts output per power_output level
 	icon_state = "potato"
 	max_safe_output = 4
 	max_power_output = 8	//The maximum power setting without emagging.
@@ -461,9 +464,12 @@
 	rad_power = 12
 	atom_flags = ATOM_FLAG_OPEN_CONTAINER
 	anchored = 1
+	var/coolant_volume = 120
+	var/coolant_use = 1
+	var/coolant_reagent = /datum/reagent/ethanol/vodka
 
 /obj/machinery/power/port_gen/pacman/super/potato/New()
-	create_reagents(120)
+	create_reagents(coolant_volume)
 	..()
 
 /obj/machinery/power/port_gen/pacman/super/potato/examine(mob/user)
@@ -471,10 +477,10 @@
 	to_chat(user, "Auxilary tank shows [reagents.total_volume]u of liquid in it.")
 
 /obj/machinery/power/port_gen/pacman/super/potato/UseFuel()
-	if(reagents.has_reagent("vodka"))
+	if(reagents.has_reagent(coolant_reagent))
 		rad_power = 4
 		temperature_gain = 60
-		reagents.remove_any(1)
+		reagents.remove_any(coolant_use)
 		if(prob(2))
 			audible_message("<span class='notice'>[src] churns happily</span>")
 	else
@@ -500,6 +506,19 @@
 				playsound(get_turf(src), 'sound/machines/synth_no.ogg', 50, 0)
 		return
 	..()
+
+/obj/machinery/power/port_gen/pacman/super/potato/reactor
+	name = "nuclear reactor"
+	desc = "ICRER-2, an industrial-yet-compact nuclear fusion reactor powered by sheets of uranium and liquid coolant. Rated for 180 KW maximum safe output on a full coolant tank for one hour. Exceeding this is likely to result in nuclear detonation and is not recommended."
+	icon_state = "potato"
+	max_safe_output = 5
+	max_power_output = 8
+	temperature_gain = 70
+	max_temperature = 500
+	rad_power = 8
+	coolant_use = 0.2
+	coolant_volume = 360
+	coolant_reagent = /datum/reagent/coolant
 
 /obj/machinery/power/port_gen/pacman/mrs
 	name = "M.R.S.P.A.C.M.A.N.-type Portable Generator"

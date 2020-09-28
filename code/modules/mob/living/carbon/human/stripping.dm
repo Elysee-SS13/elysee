@@ -17,17 +17,17 @@
 		if("pockets")
 			if(stripping)
 				visible_message("<span class='danger'>\The [user] is trying to empty [src]'s pockets!</span>")
-				if(do_after(user, HUMAN_STRIP_DELAY, src, progress = 0))
+				if(do_after(user, HUMAN_STRIP_DELAY, src, do_flags = DO_DEFAULT & ~DO_SHOW_PROGRESS))
 					empty_pockets(user)
 			else
 				//should it be possible to discreetly slip something into someone's pockets?
 				visible_message("<span class='danger'>\The [user] is trying to stuff \a [held] into [src]'s pocket!</span>")
-				if(do_after(user, HUMAN_STRIP_DELAY, src, progress = 0))
+				if(do_after(user, HUMAN_STRIP_DELAY, src, do_flags = DO_DEFAULT & ~DO_SHOW_PROGRESS))
 					place_in_pockets(held, user)
 			return
 		if("sensors")
 			visible_message("<span class='danger'>\The [user] is trying to set \the [src]'s sensors!</span>")
-			if(do_after(user, HUMAN_STRIP_DELAY, src, progress = 0))
+			if(do_after(user, HUMAN_STRIP_DELAY, src, do_flags = DO_DEFAULT & ~DO_SHOW_PROGRESS))
 				toggle_sensors(user)
 			return
 		if ("lock_sensors")
@@ -35,7 +35,7 @@
 				return
 			var/obj/item/clothing/under/subject_uniform = w_uniform
 			visible_message(SPAN_DANGER("\The [user] is trying to [subject_uniform.has_sensor == SUIT_LOCKED_SENSORS ? "un" : ""]lock \the [src]'s sensors!"))
-			if (do_after(user, HUMAN_STRIP_DELAY, src, progress = 0))
+			if (do_after(user, HUMAN_STRIP_DELAY, src, do_flags = DO_DEFAULT & ~DO_SHOW_PROGRESS))
 				if (subject_uniform != w_uniform)
 					to_chat(user, SPAN_WARNING("\The [src] is not wearing \the [subject_uniform] anymore."))
 					return
@@ -51,7 +51,7 @@
 			return
 		if("internals")
 			visible_message("<span class='danger'>\The [usr] is trying to set \the [src]'s internals!</span>")
-			if(do_after(user, HUMAN_STRIP_DELAY, src, progress = 0))
+			if(do_after(user, HUMAN_STRIP_DELAY, src, do_flags = DO_DEFAULT & ~DO_SHOW_PROGRESS))
 				toggle_internals(user)
 			return
 		if("tie")
@@ -64,7 +64,7 @@
 				return
 			visible_message("<span class='danger'>\The [user] is trying to remove \the [src]'s [A.name]!</span>")
 
-			if(!do_after(user, HUMAN_STRIP_DELAY, src, progress = 0))
+			if(!do_after(user, HUMAN_STRIP_DELAY, src, do_flags = DO_DEFAULT & ~DO_SHOW_PROGRESS))
 				return
 
 			if(!A || holder.loc != src || !(A in holder.accessories))
@@ -104,7 +104,7 @@
 			admin_attack_log(user, src, "Attempted to strip \a [target_slot]", "Target of a failed strip of \a [target_slot].", "attempted to strip \a [target_slot] from")
 	else if(user.unEquip(held))
 		var/obj/item/clothing/C = get_equipped_item(text2num(slot_to_strip_text))
-		if(istype(C) && C.can_attach_accessory(held))
+		if(istype(C) && C.can_attach_accessory(held, user))
 			C.attach_accessory(user, held)
 		else if(!equip_to_slot_if_possible(held, text2num(slot_to_strip_text), del_on_fail=0, disable_warning=1, redraw_mob=1))
 			user.put_in_active_hand(held)

@@ -1,5 +1,11 @@
 #define SAVE_RESET -1
 
+#define JOB_PRIORITY_HIGH   0x1
+#define JOB_PRIORITY_MEDIUM 0x2
+#define JOB_PRIORITY_LOW    0x4
+#define JOB_PRIORITY_LIKELY 0x3
+#define JOB_PRIORITY_PICKED 0x7
+
 datum/preferences
 	//doohickeys for savefiles
 	var/path
@@ -81,7 +87,7 @@ datum/preferences
 		dat += "<a href='?src=\ref[src];reload=1'>Reload slot</a>"
 
 	else
-		dat += "Please create an account to save your preferences."
+		dat += "Please create an account to save your preferences. If you have an account and are seeing this, please adminhelp for assistance."
 
 	dat += "<br>"
 	dat += player_setup.header()
@@ -100,7 +106,7 @@ datum/preferences
 
 	if(href_list["preference"] == "open_whitelist_forum")
 		if(config.forumurl)
-			user << link(config.forumurl)
+			send_link(user, config.forumurl)
 		else
 			to_chat(user, "<span class='danger'>The forum URL is not set in the server configuration.</span>")
 			return
@@ -145,14 +151,6 @@ datum/preferences
 	if(be_random_name)
 		var/decl/cultural_info/culture = SSculture.get_culture(cultural_info[TAG_CULTURE])
 		if(culture) real_name = culture.get_random_name(gender)
-
-	if(config.humans_need_surnames)
-		var/firstspace = findtext(real_name, " ")
-		var/name_length = length(real_name)
-		if(!firstspace)	//we need a surname
-			real_name += " [pick(GLOB.last_names)]"
-		else if(firstspace == name_length)
-			real_name += "[pick(GLOB.last_names)]"
 
 	character.fully_replace_character_name(real_name)
 
@@ -243,7 +241,7 @@ datum/preferences
 			var/underwear_item_name = all_underwear[underwear_category_name]
 			var/datum/category_item/underwear/UWD = underwear_category.items_by_name[underwear_item_name]
 			var/metadata = all_underwear_metadata[underwear_category_name]
-			var/obj/item/underwear/UW = UWD.create_underwear(metadata)
+			var/obj/item/underwear/UW = UWD.create_underwear(character, metadata)
 			if(UW)
 				UW.ForceEquipUnderwear(character, FALSE)
 		else
@@ -315,7 +313,7 @@ datum/preferences
 		var/name
 		for(var/i=1, i<= config.character_slots, i++)
 			S.cd = GLOB.using_map.character_load_path(S, i)
-			S["real_name"] >> name
+			from_save(S["real_name"], name)
 			if(!name)	name = "Character[i]"
 			if(i==default_slot)
 				name = "<b>[name]</b>"
@@ -332,3 +330,74 @@ datum/preferences
 		panel.close()
 		panel = null
 	close_browser(user, "window=saves")
+
+/datum/preferences/proc/selected_jobs_titles(priority = JOB_PRIORITY_PICKED)
+	. = list()
+	if (priority & JOB_PRIORITY_HIGH)
+		. |= job_high
+	if (priority & JOB_PRIORITY_MEDIUM)
+		. |= job_medium
+	if (priority & JOB_PRIORITY_LOW)
+		. |= job_low
+
+/datum/preferences/proc/selected_jobs_list(priority = JOB_PRIORITY_PICKED)
+	. = list()
+	for (var/title in selected_jobs_titles(priority))
+		var/datum/job/job = SSjobs.get_by_title(title)
+		if (!job)
+			continue
+		. += job
+
+/datum/preferences/proc/selected_jobs_assoc(priority = JOB_PRIORITY_PICKED)
+	. = list()
+	for (var/title in selected_jobs_titles(priority))
+		var/datum/job/job = SSjobs.get_by_title(title)
+		if (!job)
+			continue
+		.[title] = job
+
+/datum/preferences/proc/selected_branches_list(priority = JOB_PRIORITY_PICKED)
+	. = list()
+	for (var/datum/job/job in selected_jobs_list(priority))
+		var/name = branches[job.title]
+		if (!name)
+			continue
+		. |= mil_branches.get_branch(name)
+
+/datum/preferences/proc/selected_branches_assoc(priority = JOB_PRIORITY_PICKED)
+	. = list()
+	for (var/datum/job/job in selected_jobs_list(priority))
+		var/name = branches[job.title]
+		if (!name || .[name])
+			continue
+		.[name] = mil_branches.get_branch(name)
+
+/datum/preferences/proc/for_each_selected_job(datum/callback/callback, priority = JOB_PRIORITY_LIKELY)
+	. = list()
+	if (!islist(priority))
+		priority = selected_jobs_assoc(priority)
+	for (var/title in priority)
+		var/datum/job/job = priority[title]
+		.[title] = callback.Invoke(job)
+
+/datum/preferences/proc/for_each_selected_job_multi(list/callbacks, priority = JOB_PRIORITY_LIKELY)
+	. = list()
+	if (!islist(priority))
+		priority = selected_jobs_assoc(priority)
+	for (var/callback in callbacks)
+		. += for_each_selected_job(callback, priority)
+
+/datum/preferences/proc/for_each_selected_branch(datum/callback/callback, priority = JOB_PRIORITY_LIKELY)
+	. = list()
+	if (!islist(priority))
+		priority = selected_branches_assoc(priority)
+	for (var/name in priority)
+		var/datum/mil_branch/branch = priority[name]
+		.[name] = callback.Invoke(branch)
+
+/datum/preferences/proc/for_each_selected_branch_multi(list/callbacks, priority = JOB_PRIORITY_LIKELY)
+	. = list()
+	if (!islist(priority))
+		priority = selected_branches_assoc(priority)
+	for (var/callback in callbacks)
+		. += for_each_selected_branch(callback, priority)

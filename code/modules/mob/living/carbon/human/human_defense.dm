@@ -59,13 +59,14 @@ meteor_act
 	return ..()
 
 /mob/living/carbon/human/get_armors_by_zone(obj/item/organ/external/def_zone, damage_type, damage_flags)
-	. = ..()
 	if(!def_zone)
 		def_zone = ran_zone()
 	if(!istype(def_zone))
 		def_zone = get_organ(check_zone(def_zone))
 	if(!def_zone)
-		return
+		return ..()
+
+	. = list()
 	var/list/protective_gear = list(head, wear_mask, wear_suit, w_uniform, gloves, shoes)
 	for(var/obj/item/clothing/gear in protective_gear)
 		if(gear.accessories.len)
@@ -78,6 +79,9 @@ meteor_act
 			var/armor = get_extension(gear, /datum/extension/armor)
 			if(armor)
 				. += armor
+
+	// Add inherent armor to the end of list so that protective equipment is checked first
+	. += ..()
 
 //this proc returns the Siemens coefficient of electrical resistivity for a particular external organ.
 /mob/living/carbon/human/proc/get_siemens_coefficient_organ(var/obj/item/organ/external/def_zone)
@@ -322,6 +326,10 @@ meteor_act
 			return
 
 		var/obj/item/organ/external/affecting = get_organ(zone)
+		if (!affecting)
+			visible_message("<span class='notice'>\The [O] misses [src] narrowly!</span>")
+			return
+
 		var/hit_area = affecting.name
 		var/datum/wound/created_wound
 

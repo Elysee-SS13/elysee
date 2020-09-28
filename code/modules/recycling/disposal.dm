@@ -35,6 +35,7 @@ GLOBAL_LIST_EMPTY(diversion_junctions)
 
 // create a new disposal
 // find the attached trunk (if present) and init gas resvr.
+// initializes the reagents datum for storing vomit reagents
 /obj/machinery/disposal/Initialize()
 	. = ..()
 	spawn(5)
@@ -47,6 +48,7 @@ GLOBAL_LIST_EMPTY(diversion_junctions)
 
 		air_contents = new/datum/gas_mixture(PRESSURE_TANK_VOLUME)
 		update_icon()
+	src.create_reagents(500)
 
 /obj/machinery/disposal/Destroy()
 	eject()
@@ -276,9 +278,9 @@ GLOBAL_LIST_EMPTY(diversion_junctions)
 	if(user.loc == src)
 		to_chat(user, "<span class='warning'>You cannot reach the controls from inside.</span>")
 		return STATUS_CLOSE
-	if(isAI(user) && (href_list["handle"] || href_list["eject"]))
+	if(isAI(user) && href_list && (href_list["handle"] || href_list["eject"]))
 		return min(STATUS_UPDATE, ..())
-	if(mode==-1 && !href_list["eject"]) // only allow ejecting if mode is -1
+	if(mode==-1 && href_list && !href_list["eject"]) // only allow ejecting if mode is -1
 		to_chat(user, "<span class='warning'>The disposal units power is disabled.</span>")
 		return min(STATUS_UPDATE, ..())
 	if(flushing)
@@ -315,6 +317,14 @@ GLOBAL_LIST_EMPTY(diversion_junctions)
 	for(var/atom/movable/AM in (contents - component_parts))
 		AM.forceMove(src.loc)
 		AM.pipe_eject(0)
+	if(reagents.total_volume)
+		visible_message(SPAN_DANGER("Vomit spews out of the disposal unit!"))
+		playsound(loc, 'sound/effects/splat.ogg', 50, 1)
+		if(istype(src.loc, /turf/simulated))
+			var/obj/effect/decal/cleanable/vomit/splat = new /obj/effect/decal/cleanable/vomit(src.loc)
+			reagents.trans_to_obj(splat, reagents.total_volume)
+			splat.update_icon()
+	reagents.clear_reagents()
 	update_icon()
 
 // update the icon & overlays to reflect mode & status
@@ -333,8 +343,8 @@ GLOBAL_LIST_EMPTY(diversion_junctions)
 	if(stat & NOPOWER || mode == -1)
 		return
 
-	// 	check for items in disposal - occupied light
-	if(contents.len > LAZYLEN(component_parts))
+	// 	check for items/vomit in disposal - occupied light
+	if(contents.len > LAZYLEN(component_parts) || reagents.total_volume)
 		overlays += image('icons/obj/pipes/disposal.dmi', "dispover-full")
 
 	// charging and ready light
@@ -352,7 +362,7 @@ GLOBAL_LIST_EMPTY(diversion_junctions)
 
 	flush_count++
 	if( flush_count >= flush_every_ticks )
-		if( contents.len > LAZYLEN(component_parts))
+		if( contents.len > LAZYLEN(component_parts) || reagents.total_volume)
 			if(mode == 2)
 				spawn(0)
 					SSstatistics.add_field("disposal_auto_flush",1)
@@ -397,6 +407,11 @@ GLOBAL_LIST_EMPTY(diversion_junctions)
 	var/wrapcheck = 0
 	var/obj/structure/disposalholder/H = new()	// virtual holder object which actually
 												// travels through the pipes.
+
+	// handle vomit transportation
+	// flush the vomit out and put vomit into the disposalholder
+	reagents.trans_to_holder(H.create_reagents(500), reagents.total_volume)
+
 	var/list/stuff = contents - component_parts
 	//Hacky test to get drones to mail themselves through disposals.
 	for(var/mob/living/silicon/robot/drone/D in stuff)
@@ -408,10 +423,6 @@ GLOBAL_LIST_EMPTY(diversion_junctions)
 	if(wrapcheck == 1)
 		H.tomail = 1
 
-	for(var/mob/living/L in stuff)
-		if (L.ckey)
-			log_and_message_admins("has been flushed down [src].", L)
-
 	sleep(10)
 	if(last_sound < world.time + 1)
 		playsound(src, 'sound/machines/disposalflush.ogg', 50, 0, 0)
@@ -422,6 +433,9 @@ GLOBAL_LIST_EMPTY(diversion_junctions)
 	H.init(src, air_contents)	// copy the contents of disposer to holder
 	air_contents = new(PRESSURE_TANK_VOLUME)	// new empty gas resv.
 
+	for (var/mob/M in H.check_mob(stuff))
+		if (M.ckey)
+			log_and_message_admins("has been flushed down [src].", M)
 	H.start(src) // start the holder processing movement
 	flushing = 0
 	// now reset disposal state
@@ -534,7 +548,7 @@ GLOBAL_LIST_EMPTY(diversion_junctions)
 			found = 1
 			break
 	if(!found)
-		to_chat(user, "\icon[src]<span class=notice>\The [src] is not linked to any junctions!</span>")
+		to_chat(user, "[icon2html(src, user)]<span class=notice>\The [src] is not linked to any junctions!</span>")
 		return
 	var/obj/machinery/disposal_switch/NC = new/obj/machinery/disposal_switch(A, id_tag)
 	transfer_fingerprints_to(NC)
@@ -567,6 +581,14 @@ GLOBAL_LIST_EMPTY(diversion_junctions)
 /obj/structure/disposaloutlet/proc/expel(var/obj/structure/disposalholder/H)
 	animate_expel()
 	if(H)
+		if(H.reagents?.total_volume)
+			visible_message(SPAN_DANGER("Vomit seeps out of the disposal outlet!"))
+			playsound(loc, 'sound/effects/splat.ogg', 50, 1)
+			if(istype(src.loc, /turf/simulated))
+				var/obj/effect/decal/cleanable/vomit/splat = new /obj/effect/decal/cleanable/vomit(src.loc)
+				H.reagents.trans_to_obj(splat, H.reagents.total_volume)
+				splat.update_icon()
+
 		for(var/atom/movable/AM in H)
 			AM.forceMove(src.loc)
 			AM.pipe_eject(dir)

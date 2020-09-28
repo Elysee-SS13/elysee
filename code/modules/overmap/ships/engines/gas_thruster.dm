@@ -99,6 +99,11 @@
 	update_nearby_tiles()
 	. = ..()
 
+/obj/machinery/atmospherics/unary/engine/on_update_icon()
+	overlays.Cut()
+	if(is_on())
+		overlays += image_repository.overlay_image(icon, "nozzle_idle", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+
 /obj/machinery/atmospherics/unary/engine/proc/get_status()
 	. = list()
 	.+= "Location: [get_area(src)]."
@@ -120,6 +125,10 @@
 	. = ..()
 	if(stat & NOPOWER)
 		update_use_power(POWER_USE_OFF)
+
+/obj/machinery/atmospherics/unary/engine/update_use_power()
+	. = ..()
+	update_icon()
 
 /obj/machinery/atmospherics/unary/engine/proc/is_on()
 	return use_power && operable() && (next_on < world.time)
@@ -167,7 +176,7 @@
 	var/turf/T = get_step(src,exhaust_dir)
 	if(T)
 		T.assume_air(removed)
-		new/obj/effect/engine_exhaust(T, exhaust_dir, air_contents.check_combustability() && air_contents.temperature >= PHORON_MINIMUM_BURN_TEMPERATURE)
+		new/obj/effect/engine_exhaust(T, dir)
 
 /obj/machinery/atmospherics/unary/engine/proc/calculate_thrust(datum/gas_mixture/propellant, used_part = 1)
 	return round(sqrt(propellant.get_mass() * used_part * sqrt(air_contents.return_pressure()/200)),0.1)
@@ -186,17 +195,15 @@
 //Exhaust effect
 /obj/effect/engine_exhaust
 	name = "engine exhaust"
-	icon = 'icons/effects/effects.dmi'
-	icon_state = "smoke"
-	light_color = "#ed9200"
+	icon = 'icons/obj/ship_engine.dmi'
+	icon_state = "nozzle_burn"
+	light_color = "#00a2ff"
 	anchored = 1
 
-/obj/effect/engine_exhaust/New(var/turf/nloc, var/ndir, var/flame)
+/obj/effect/engine_exhaust/New(turf/nloc, ndir)
 	..(nloc)
-	if(flame)
-		icon_state = "exhaust"
-		nloc.hotspot_expose(1000,125)
-		set_light(0.5, 1, 4)
+	nloc.hotspot_expose(1000,125)
+	set_light(0.5, 1, 4)
 	set_dir(ndir)
 	spawn(20)
 		qdel(src)

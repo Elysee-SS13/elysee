@@ -121,8 +121,6 @@ var/list/spells = typesof(/spell) //needed for the badmin verb for now
 			break
 		if(cast_check(1,user, targets)) //we check again, otherwise you can choose a target and then wait for when you are no longer able to cast (I.E. Incapacitated) to use it.
 			invocation(user, targets)
-			if(connected_god && !connected_god.take_charge(user, max(1, charge_max/10)))
-				break
 			take_charge(user, skipcharge)
 			before_cast(targets) //applies any overlays and effects
 			if(prob(critfailchance))
@@ -132,7 +130,7 @@ var/list/spells = typesof(/spell) //needed for the badmin verb for now
 			after_cast(targets) //generates the sparks, smoke, target messages etc.
 		else
 			break
-	while(time != number_of_channels && do_after(user, time_between_channels, incapacitation_flags = INCAPACITATION_KNOCKOUT|INCAPACITATION_FORCELYING|INCAPACITATION_STUNNED, same_direction=1))
+	while(time != number_of_channels && do_after(user, time_between_channels, do_flags = DO_DEFAULT & ~DO_USER_CAN_TURN, incapacitation_flags = INCAPACITATION_KNOCKOUT | INCAPACITATION_FORCELYING | INCAPACITATION_STUNNED))
 	after_spell(targets, user, time) //When we are done with the spell completely.
 
 
@@ -215,7 +213,7 @@ var/list/spells = typesof(/spell) //needed for the badmin verb for now
 /*Checkers, cost takers, message makers, etc*/
 
 /spell/proc/cast_check(skipcharge = 0,mob/user = usr, var/list/targets) //checks if the spell can be cast based on its settings; skipcharge is used when an additional cast_check is called inside the spell
-	
+
 	if(silenced > 0)
 		return 0
 
@@ -396,8 +394,4 @@ var/list/spells = typesof(/spell) //needed for the badmin verb for now
 	if(!(spell_flags & (GHOSTCAST)))
 		incap_flags |= INCAPACITATION_KNOCKOUT
 
-	return do_after(user,delay, incapacitation_flags = incap_flags)
-
-/spell/proc/set_connected_god(var/mob/living/deity/god)
-	connected_god = god
-	return
+	return do_after(user, delay, incapacitation_flags = incap_flags)

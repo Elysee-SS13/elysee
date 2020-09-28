@@ -25,9 +25,10 @@
 	atom_flags = ATOM_FLAG_OPEN_CONTAINER
 	core_skill = SKILL_CHEMISTRY
 	var/sloppy = 1 //Whether reagents will not be fully purified (sloppy = 1) or there will be reagent loss (sloppy = 0) on reagent add.
+	var/reagent_limit = 120
 
 /obj/machinery/chem_master/New()
-	create_reagents(120)
+	create_reagents(reagent_limit)
 	..()
 
 /obj/machinery/chem_master/ex_act(severity)
@@ -65,6 +66,24 @@
 		to_chat(user, "You add the pill bottle into the dispenser slot!")
 		src.updateUsrDialog()
 
+/obj/machinery/chem_master/proc/eject_beaker(mob/user)
+	if(!beaker)
+		return
+	var/obj/item/weapon/reagent_containers/B = beaker
+	user.put_in_hands(B)
+	beaker = null
+	reagents.clear_reagents()
+	icon_state = "mixer0"
+
+/obj/machinery/chem_master/proc/get_remaining_volume()
+	return Clamp(reagent_limit - reagents.total_volume, 0, reagent_limit)
+
+/obj/machinery/chem_master/AltClick(mob/user)
+	if(CanDefaultInteract(user))
+		eject_beaker(user)
+	else
+		..()
+
 /obj/machinery/chem_master/Topic(href, href_list, state)
 	if(..())
 		return 1
@@ -93,7 +112,7 @@
 				var/datum/reagent/their_reagent = locate(href_list["add"]) in R.reagent_list
 				if(their_reagent)
 					var/mult = 1
-					var/amount = Clamp((text2num(href_list["amount"])), 0, 200)
+					var/amount = Clamp((text2num(href_list["amount"])), 0, get_remaining_volume())
 					if(sloppy)
 						var/contaminants = fetch_contaminants(user, R, their_reagent)
 						for(var/datum/reagent/reagent in contaminants)
@@ -144,10 +163,7 @@
 			interact(user)
 			return
 		else if (href_list["eject"])
-			beaker.forceMove(loc)
-			beaker = null
-			reagents.clear_reagents()
-			icon_state = "mixer0"
+			eject_beaker(user)
 		else if (href_list["createpill"] || href_list["createpill_multiple"])
 			var/count = 1
 
@@ -236,9 +252,6 @@
 	P.icon_state = bottlesprite
 	reagents.trans_to_obj(P,60)
 	P.update_icon()
-
-/obj/machinery/chem_master/DefaultTopicState()
-	return GLOB.physical_state
 
 /obj/machinery/chem_master/interface_interact(mob/user)
 	interact(user)

@@ -67,6 +67,16 @@
 		to_chat(communicator, "<span class='danger'>Guests may not use the [name] channel.</span>")
 		return FALSE
 
+	if (config.forbidden_message_regex && !check_rights(R_INVESTIGATE, 0, communicator) && findtext(message, config.forbidden_message_regex))
+		if (!config.forbidden_message_no_notifications)
+			if (!config.forbidden_message_hide_details)
+				log_and_message_admins("attempted to send a forbidden message in [name]: [message]", user = C)
+			else
+				log_and_message_admins("attempted to send a forbidden message in [name]", user = C)
+		if (C && config.forbidden_message_warning)
+			to_chat(C, config.forbidden_message_warning)
+		return FALSE
+
 	return TRUE
 
 /decl/communication_channel/proc/do_communicate(var/communicator, var/message)
@@ -99,6 +109,41 @@
 /decl/communication_channel/proc/do_receive_communication(var/datum/communicator, var/datum/receiver, var/message)
 	to_chat(receiver, message)
 
+
+/*
+ * Procs for the handling of system broadcasts
+ */
+/decl/communication_channel/proc/broadcast(message, force = FALSE)
+	if (!can_broadcast(message, force))
+		return FALSE
+	call(log_proc)("[(flags & COMMUNICATION_LOG_CHANNEL_NAME) ? "([name]) " : ""]SYSTEM BROADCAST : [message]")
+	return do_broadcast(message, force)
+
+
+/decl/communication_channel/proc/can_broadcast(message, override_config = FALSE)
+	if (!message)
+		return FALSE
+
+	if (!override_config && config_setting && !config.vars[config_setting])
+		return FALSE
+
+	return TRUE
+
+
+/decl/communication_channel/proc/do_broadcast(message)
+	return
+
+
+/decl/communication_channel/proc/receive_broadcast(datum/receiver, message)
+	if (!can_receive_communication(receiver))
+		return
+	do_receive_broadcast(receiver, message)
+
+
+/decl/communication_channel/proc/do_receive_broadcast(datum/receiver, message)
+	to_chat(receiver, message)
+
+
 // Misc. helpers
 /datum/proc/communication_identifier()
 	return usr ? "[src] - usr: [plain_key_name(usr)]" : "[src]"
@@ -119,5 +164,11 @@
 	new_args += args.Copy(4)
 
 	return channel.communicate(arglist(new_args))
+
+/proc/communicate_broadcast(channel_type, message, forced = FALSE)
+	var/list/channels = decls_repository.get_decls_of_subtype(/decl/communication_channel)
+	var/decl/communication_channel/channel = channels[channel_type]
+
+	return channel.broadcast(message, forced)
 
 #undef plain_key_name

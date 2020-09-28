@@ -31,6 +31,7 @@
 	var/obj/effect/flood/flood_object
 	var/fluid_blocked_dirs = 0
 	var/flooded // Whether or not this turf is absolutely flooded ie. a water source.
+	var/height = 0 // Determines if fluids can overflow onto next turf
 	var/footstep_type
 
 	var/tmp/changing_turf
@@ -42,7 +43,7 @@
 	else
 		luminosity = 1
 
-	opaque_counter = opacity
+	RecalculateOpacity()
 
 	if (mapload && permit_ao)
 		queue_ao()
@@ -286,7 +287,7 @@ var/const/enterloopsanity = 100
 
 /turf/proc/remove_cleanables()
 	for(var/obj/effect/O in src)
-		if(istype(O,/obj/effect/rune) || istype(O,/obj/effect/decal/cleanable) || istype(O,/obj/effect/overlay))
+		if(istype(O,/obj/effect/rune) || istype(O,/obj/effect/decal/cleanable))
 			qdel(O)
 
 /turf/proc/update_blood_overlays()

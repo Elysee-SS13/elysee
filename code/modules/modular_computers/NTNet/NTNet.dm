@@ -38,7 +38,6 @@ var/global/datum/ntnet/ntnet_global = new()
 		relays.Add(R)
 		R.NTNet = src
 	build_software_lists()
-	build_news_list()
 	build_emails_list()
 	build_reports_list()
 	add_log("NTNet logging system activated.")
@@ -140,14 +139,6 @@ var/global/datum/ntnet/ntnet_global = new()
 		if(prog.available_on_syndinet)
 			ADD_SORTED(available_antag_software, prog, /proc/cmp_program)
 
-// Builds lists that contain downloadable software.
-/datum/ntnet/proc/build_news_list()
-	available_news = list()
-	for(var/F in typesof(/datum/computer_file/data/news_article/))
-		var/datum/computer_file/data/news_article/news = new F(1)
-		if(news.stored_data)
-			available_news.Add(news)
-
 // Generates service email list. Currently only used by broadcaster service
 /datum/ntnet/proc/build_emails_list()
 	for(var/F in subtypesof(/datum/computer_file/data/email_account/service))
@@ -248,7 +239,7 @@ var/global/datum/ntnet/ntnet_global = new()
 			my_client.stored_login = new_login
 
 //Used for initial email generation.
-/datum/ntnet/proc/create_email(mob/user, desired_name, domain, assignment)
+/datum/ntnet/proc/create_email(mob/user, desired_name, domain, assignment, desired_password)
 	desired_name = sanitize_for_email(desired_name)
 	var/login = "[desired_name]@[domain]"
 	// It is VERY unlikely that we'll have two players, in the same round, with the same name and branch, but still, this is here.
@@ -261,7 +252,7 @@ var/global/datum/ntnet/ntnet_global = new()
 		user.StoreMemory("You were not assigned an email address.", /decl/memory_options/system)
 	else
 		var/datum/computer_file/data/email_account/EA = new/datum/computer_file/data/email_account(login, user.real_name, assignment)
-		EA.password = GenerateKey()
+		EA.password = desired_password ? desired_password : GenerateKey()
 		if(user.mind)
 			user.mind.initial_email_login["login"] = EA.login
 			user.mind.initial_email_login["password"] = EA.password

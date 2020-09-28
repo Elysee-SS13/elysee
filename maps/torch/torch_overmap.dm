@@ -1,6 +1,6 @@
 /obj/effect/overmap/visitable/ship/torch
 	name = "SEV Torch"
-	desc = "A bluespace-capable corvette bearing markings of the SCG Expeditionary Corps."
+	desc = "A frankensteined HNS Mako-class corvette, broadcasting SCGEC codes and the designation \"SEV Torch, HSC-4-13-X\"."
 	fore_dir = WEST
 	vessel_mass = 100000
 	burn_delay = 2 SECONDS
@@ -9,7 +9,14 @@
 	initial_restricted_waypoints = list(
 		"Charon" = list("nav_hangar_calypso"), 	//can't have random shuttles popping inside the ship
 		"Guppy" = list("nav_hangar_guppy"),
-		"Aquila" = list("nav_hangar_aquila")
+		"Aquila" = list("nav_hangar_aquila"),
+		"Trichoptera" = list("nav_trichoptera_altdock"), //restricts Trichoptera specific docking waypoint on deck 4 portside
+		"Skrellian Scout" = list("nav_skrellscout_dock"), //restricts Skrell Scoutship specific docking waypoint on deck 4 portside
+		"Rescue" = list("nav_ert_dock"), //restricts ERT Shuttle specific docking waypoint on deck 4 portside
+		"ITV The Reclaimer" = list("nav_hangar_gantry_torch"), //gantry shuttles
+		"ITV Vulcan" = list("nav_hangar_gantry_torch_two"),
+		"ITV Spiritus" = list("nav_hangar_gantry_torch_three"),
+		"SRV Venerable Catfish" = list("nav_verne_5"), //docking location for verne shuttle
 	)
 
 	initial_generic_waypoints = list(
@@ -65,12 +72,15 @@
 		"nav_ert_hanger",
 
 		"nav_skrellscoutsh_altdock",
-		"nav_ert_dock"
+		"nav_trichoptera_altdock",
+		"nav_skrellscout_dock",
+		"nav_ert_dock",
+		"nav_verne_5",
 	)
 
 /obj/effect/overmap/visitable/ship/landable/exploration_shuttle
 	name = "Charon"
-	desc = "A medium-sized long-range shuttle. It bears markings of the SCG Expeditionary Corps."
+	desc = "An SSE-U11 long range shuttle, broadcasting SCGEC codes and the callsign \"Torch-2 Charon\"."
 	shuttle = "Charon"
 	max_speed = 1/(2 SECONDS)
 	burn_delay = 1 SECONDS
@@ -81,7 +91,7 @@
 
 /obj/effect/overmap/visitable/ship/landable/aquila
 	name = "Aquila"
-	desc = "A vessel escort gunship. It bears markings of the SCG Fleet."
+	desc = "A PM-24 modular transport, broadcasting SCGEC codes and the callsign \"Torch-1 Aquila\"."
 	shuttle = "Aquila"
 	vessel_mass = 20000
 	max_speed = 1/(1 SECONDS)
@@ -91,7 +101,7 @@
 
 /obj/effect/overmap/visitable/ship/landable/guppy
 	name = "Guppy"
-	desc = "A small general utility pod. It's capable of limited independant space travel. It's marked as TORCH GUP #1"
+	desc = "An SSE-U3 utility pod, broadcasting SCGEC codes and the callsign \"Torch-3 Guppy\"."
 	shuttle = "Guppy"
 	max_speed = 1/(3 SECONDS)
 	burn_delay = 2 SECONDS
