@@ -34,3 +34,15 @@
 
 /obj/item/mech_component/manipulators/update_components()
 	motivator = locate() in src
+
+/obj/item/mech_component/manipulators/get_damage_string()
+	if(!motivator || !motivator.is_functional())
+		return SPAN_DANGER("disabled")
+	return ..()
+
+/obj/item/mech_component/manipulators/return_diagnostics(mob/user)
+	..()
+	if(motivator)
+		to_chat(user, SPAN_NOTICE(" Actuator Integrity: <b>[round((((motivator.max_dam - motivator.total_dam) / motivator.max_dam)) * 100)]%</b>"))
+	else
+		to_chat(user, SPAN_WARNING(" Actuator Missing or Non-functional."))

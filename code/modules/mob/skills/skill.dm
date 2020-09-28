@@ -28,13 +28,13 @@ GLOBAL_LIST_EMPTY(skills)
 /decl/hierarchy/skill/proc/update_special_effects(mob/mob, level)
 
 /decl/hierarchy/skill/Initialize()
-	..()
+	. = ..()
 	if(is_hidden_category())
 		if(!GLOB.skills.len)
 			for(var/decl/hierarchy/skill/C in children)
 				GLOB.skills += C.get_descendents()
 		else
-			log_error("<span class='warning'>Warning: multiple instances of /decl/hierarchy/skill have been created!</span>")
+			CRASH("Warning: multiple instances of /decl/hierarchy/skill have been created!")
 
 /decl/hierarchy/skill/dd_SortValue()
 	return ID
@@ -207,8 +207,8 @@ GLOBAL_LIST_EMPTY(skills)
 	desc = "This skill describes your expertise with and knowledge of weapons. A low level in this skill implies knowledge of simple weapons, for example flashes. A high level in this skill implies knowledge of complex weapons, such as unconfigured grenades, riot shields, pulse rifles or bombs. A low-medium level in this skill is typical for security officers, a high level of this skill is typical for special agents and soldiers."
 	levels = list( "Unskilled"			= "You know how to recognize a weapon when you see one. You can point a gun and shoot it, though results vary wildly. You might forget the safety, you can't control burst recoil well, and you don't have trained reflexes for gun fighting.<br>- You might fire your weapon randomly.",
 						"Basic"				= "You know how to handle weapons safely, and you're comfortable using simple weapons. Your aim is decent and you can usually be trusted not to do anything stupid with a weapon you are familiar with, but your training isn't automatic yet and your performance will degrade in high-stress situations.<br>- You can use firearms. Their accuracy and spread depend on your skill level.",
-						"Trained"			= "You have had extensive weapons training, or have used weapons in combat. Your aim is better now. You are familiar with most types of weapons and can use them in a pinch. You have an understanding of tactics, and can be trusted to stay calm under fire. You may have military or police experience and you probably carry a weapon on the job.",
-						"Experienced"		= "You've used firearms and other ranged weapons in high-stress situations, and your skills have become automatic. Your aim is good.",
+						"Trained"			= "You have had extensive weapons training, or have used weapons in combat. Your aim is better now. You are familiar with most types of weapons and can use them in a pinch. You have an understanding of tactics, and can be trusted to stay calm under fire. You may have military or police experience and you probably carry a weapon on the job.<br>-You have a chance to automatically unsafety a gun when firing on harm intent.",
+						"Experienced"		= "You've used firearms and other ranged weapons in high-stress situations, and your skills have become automatic. Your aim is good.<br>-You will automatically unsafety a gun when firing it on harm intent.<br>-You can perform tactical and speed reloads. The time taken decreases with level.",
 						"Master"		= "You are an exceptional shot with a variety of weapons, from simple to exotic. You use a weapon as naturally as though it were a part of your own body. You may be a sniper or special forces operator of some kind.<br>- You get extra accuracy for sniper rifles.<br>- You automatically eject shells from bolt-action firearms.")
 
 /decl/hierarchy/skill/security/weapons/get_cost(var/level)
@@ -217,7 +217,9 @@ GLOBAL_LIST_EMPTY(skills)
 			return difficulty
 		if(SKILL_ADEPT)
 			return 2*difficulty
-		if(SKILL_EXPERT, SKILL_PROF)
+		if(SKILL_EXPERT)
+			return 3*difficulty
+		if(SKILL_PROF)
 			return 4*difficulty
 		else
 			return 0
@@ -303,8 +305,8 @@ GLOBAL_LIST_EMPTY(skills)
 	name = "Science"
 	desc = "Your experience and knowledge with scientific methods and processes."
 	levels = list( "Unskilled"			= "You know what science is and probably have a vague idea of the scientific method from your high school science classes.",
-						"Basic"				= "You keep up with scientific discoveries. You know a little about most fields of research. You've learned basic laboratory skills. You may read about science as a hobby; or you may be working in a field related to science and have learned about science that way. You could design a simple experiment.",
-						"Trained"			= "You are a scientist, perhaps a graduate student or post-graduate researcher. You can design an experiment, analyze your results, publish your data, and integrate what you've learned with the research of other scientists. Your laboratory skills are reliable, and you know how to find information you need when you research a new scientific topic. You can dissect exotic xenofauna without many issues.",
+						"Basic"				= "You keep up with scientific discoveries. You know a little about most fields of research. You've learned basic laboratory skills. You may read about science as a hobby; or you may be working in a field related to science and have learned about science that way. You could design a simple experiment.<br>- You can determine the presence of flora, fauna, and an atmosphere when scanning exoplanets.",
+						"Trained"			= "You are a scientist, perhaps a graduate student or post-graduate researcher. You can design an experiment, analyze your results, publish your data, and integrate what you've learned with the research of other scientists. Your laboratory skills are reliable, and you know how to find information you need when you research a new scientific topic. You can dissect exotic xenofauna without many issues.<br>- You can determine the composition of an atmosphere when scanning exoplanets.<br>- You can determine the number of artificial structures when scanning exoplanets.<br>- You can successfully perform surgery on slimes.",
 						"Experienced"		= "You are a junior researcher. You can formulate your own questions, use the tools at hand to test your hypotheses, and investigate entirely new phenomena. You likely have a track record of success in publishing your conclusions and attracting funding.",
 						"Master"		= "You are a professional researcher, and you have made multiple new discoveries in your field. Your experiments are well-designed. You are known as an authority in your specialty and your papers often appear in prestigious journals. You may be coordinating the research efforts of a team of scientists, and likely know how to make your findings appealing to investors.")
 

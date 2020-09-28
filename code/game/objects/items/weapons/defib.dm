@@ -35,7 +35,7 @@
 	QDEL_NULL(bcell)
 
 /obj/item/weapon/defibrillator/loaded //starts with regular power cell for R&D to replace later in the round.
-	bcell = /obj/item/weapon/cell/apc
+	bcell = /obj/item/weapon/cell/standard
 
 /obj/item/weapon/defibrillator/on_update_icon()
 	var/list/new_overlays = list()
@@ -622,7 +622,6 @@
 /obj/item/weapon/shockpaddles/standalone/traitor
 	name = "defibrillator paddles"
 	desc = "A pair of unusual looking paddles powered by an experimental miniaturized reactor. It possesses both the ability to penetrate armor and to deliver powerful shocks."
-	icon = 'icons/obj/weapons.dmi'
 	icon_state = "defibpaddles0"
 	item_state = "defibpaddles0"
 	combat = 1

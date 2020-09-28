@@ -8,6 +8,7 @@
 	blocks_air = 1
 	thermal_conductivity = WALL_HEAT_TRANSFER_COEFFICIENT
 	heat_capacity = 312500 //a little over 5 cm thick , 312500 for 1 m by 2.5 m by 0.25 m plasteel wall
+	atom_flags = ATOM_FLAG_CAN_BE_PAINTED
 
 	var/damage = 0
 	var/damage_overlay = 0
@@ -28,6 +29,7 @@
 	var/list/blend_turfs = list(/turf/simulated/wall/cult, /turf/simulated/wall/wood, /turf/simulated/wall/walnut, /turf/simulated/wall/maple, /turf/simulated/wall/mahogany, /turf/simulated/wall/ebony)
 	var/list/blend_objects = list(/obj/machinery/door, /obj/structure/wall_frame, /obj/structure/grille, /obj/structure/window/reinforced/full, /obj/structure/window/reinforced/polarized/full, /obj/structure/window/shuttle, ,/obj/structure/window/phoronbasic/full, /obj/structure/window/phoronreinforced/full) // Objects which to blend with
 	var/list/noblend_objects = list(/obj/machinery/door/window) //Objects to avoid blending with (such as children of listed blend objects.
+	var/dismantling = FALSE
 
 /turf/simulated/wall/New(var/newloc, var/materialtype, var/rmaterialtype)
 	..(newloc)
@@ -112,7 +114,13 @@
 
 /turf/simulated/wall/ChangeTurf(var/newtype)
 	clear_plants()
-	return ..(newtype)
+	. = ..(newtype)
+	var/turf/new_turf = .
+	for (var/turf/simulated/wall/W in RANGE_TURFS(new_turf, 1))
+		if (W == src)
+			continue
+		W.update_connections()
+		W.queue_icon_update()
 
 //Appearance
 /turf/simulated/wall/examine(mob/user)
@@ -279,6 +287,10 @@
 
 /turf/simulated/wall/get_color()
 	return paint_color
+
+/turf/simulated/wall/set_color(var/color)
+	paint_color = color
+	update_icon()
 
 /turf/simulated/wall/proc/CheckPenetration(var/base_chance, var/damage)
 	return round(damage/material.integrity*180)

@@ -61,6 +61,7 @@
 	#include "items/solbanner.dm"
 	#include "items/explo_shotgun.dm"
 	#include "items/mecha.dm"
+	#include "items/summarydocuments.dm"
 
 	#include "items/clothing/ec_skillbadges.dm"
 	#include "items/clothing/solgov-accessory.dm"
@@ -109,6 +110,7 @@
 	#include "language/human/misc/spacer.dm"
 
 	#include "machinery/apc_shuttle.dm"
+	#include "machinery/faxmachine.dm"
 	#include "machinery/keycard authentication.dm"
 	#include "machinery/suit_storage.dm"
 
@@ -165,10 +167,12 @@
 	#include "../away/icarus/icarus.dm"
 	#include "../away/errant_pisces/errant_pisces.dm"
 	#include "../away/lar_maria/lar_maria.dm"
-	#include "../away/unishi/unishi.dm"
 	#include "../away/voxship/voxship.dm"
 	#include "../away/skrellscoutship/skrellscoutship.dm"
 	#include "../away/meatstation/meatstation.dm"
+	#include "../away/miningstation/miningstation.dm"
+	#include "../away/scavver/scavver_gantry.dm"
+	#include "../away/verne/verne.dm"
 
 	#include "../../code/datums/music_tracks/chasing_time.dm"
 

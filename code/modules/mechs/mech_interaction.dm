@@ -17,6 +17,11 @@
 		body.MouseDrop_T(dropping, user)
 	else . = ..()
 
+/mob/living/exosuit/MouseDrop(mob/living/carbon/human/over_object) //going from assumption none of previous options are relevant to exosuit
+	if(body)
+		if(!body.MouseDrop(over_object))
+			return ..()
+	
 /mob/living/exosuit/RelayMouseDrag(src_object, over_object, src_location, over_location, src_control, over_control, params, var/mob/user)
 	if(user && (user in pilots) && user.loc == src)
 		return OnMouseDrag(src_object, over_object, src_location, over_location, src_control, over_control, params, user)
@@ -172,7 +177,7 @@
 				log_and_message_admins("used [temp_system] targetting [A]", user, src.loc)
 			//Mech equipment subtypes can add further click delays
 			var/extra_delay = 0
-			if(ME != null)
+			if(!isnull(selected_system))
 				ME = selected_system
 				extra_delay = ME.equipment_delay
 			setClickCooldown(arms ? arms.action_delay + extra_delay : 15 + extra_delay)
@@ -203,7 +208,7 @@
 		for(var/hardpoint in hardpoints)
 			if(hardpoint != selected_hardpoint)
 				continue
-			var/obj/screen/movable/exosuit/hardpoint/H = hardpoint_hud_elements[hardpoint]
+			var/obj/screen/exosuit/hardpoint/H = hardpoint_hud_elements[hardpoint]
 			if(istype(H))
 				H.icon_state = "hardpoint"
 				break
@@ -400,6 +405,12 @@
 					to_chat(user, SPAN_NOTICE("You install \the [body.cell] into \the [src]."))
 					playsound(user.loc, 'sound/items/Screwdriver.ogg', 50, 1)
 					visible_message(SPAN_NOTICE("\The [user] installs \the [body.cell] into \the [src]."))
+				return
+			else if(istype(thing, /obj/item/device/robotanalyzer))
+				to_chat(user, SPAN_NOTICE("Diagnostic Report for \the [src]:"))
+				for(var/obj/item/mech_component/MC in list(arms, legs, body, head))
+					if(MC)
+						MC.return_diagnostics(user)
 				return
 	return ..()
 

@@ -238,11 +238,10 @@
 			if (!transfer)
 				to_chat(user, "<span class='warning'>You must weld or remove \the [repairing] from \the [src] before you can add anything else.</span>")
 		else
-			repairing = stack.split(amount_needed, force=TRUE)
+			repairing = stack.split(amount_needed)
 			if (repairing)
-				repairing.dropInto(loc)
+				repairing.dropInto(src)
 				transfer = repairing.amount
-				repairing.uses_charge = FALSE //for clean robot door repair - stacks hint immortal if true
 
 		if (transfer)
 			to_chat(user, "<span class='notice'>You fit [transfer] [stack.singular_name]\s to damaged and broken parts on \the [src].</span>")
@@ -400,11 +399,14 @@
 		if("deny")
 			if(density && !(stat & (NOPOWER|BROKEN)))
 				flick("door_deny", src)
-				playsound(src.loc, 'sound/machines/buzz-two.ogg', 50, 0)
+				if (world.time > next_clicksound)
+					next_clicksound = world.time + CLICKSOUND_INTERVAL
+					playsound(src.loc, 'sound/machines/buzz-two.ogg', 50, 0)
 	return
 
 
 /obj/machinery/door/proc/open(var/forced = 0)
+	set waitfor = FALSE
 	if(!can_open(forced))
 		return
 	operating = 1
@@ -430,6 +432,7 @@
 	return world.time + (normalspeed ? 150 : 5)
 
 /obj/machinery/door/proc/close(var/forced = 0)
+	set waitfor = FALSE
 	if(!can_close(forced))
 		return
 	operating = 1

@@ -345,7 +345,9 @@
 		if((def_zone == BP_R_FOOT || def_zone == BP_R_LEG) && standing[BP_R_FOOT])
 			floor_organ = standing[BP_R_FOOT]
 		else
-			floor_organ = standing[pick(standing)]
+			floor_organ = DEFAULTPICK(standing, null)
+			if (floor_organ)
+				floor_organ = standing[floor_organ]
 
 	if(!floor_organ)
 		floor_organ = pick(organs)
@@ -566,7 +568,7 @@
 	var/total_protection = flash_protection
 	if(species.has_organ[species.vision_organ])
 		var/obj/item/organ/internal/eyes/I = internal_organs_by_name[species.vision_organ]
-		if(!I.is_usable())
+		if(!I?.is_usable())
 			return FLASH_PROTECTION_MAJOR
 		else
 			total_protection = I.get_total_protection(flash_protection)
@@ -696,9 +698,27 @@
 			if(species.gluttonous & GLUT_PROJECTILE_VOMIT)
 				M.throw_at(get_edge_target_turf(src,dir),7,7,src)
 
+	// vomit into a toilet
+	for(var/obj/structure/hygiene/toilet/T in range(1, src))
+		if(T.open)
+			visible_message(SPAN_DANGER("\The [src] throws up into the toilet!"),SPAN_DANGER("You throw up into the toilet!"))
+			playsound(loc, 'sound/effects/splat.ogg', 50, 1)
+			stomach.ingested.remove_any(15)
+			return
+
+	// check if you can vomit into a disposal unit
+	// see above comment for how vomit reagents are handled
+	for(var/obj/machinery/disposal/D in orange(1, src))
+		visible_message(SPAN_DANGER("\The [src] throws up into the disposal unit!"),SPAN_DANGER("You throw up into the disposal unit!"))
+		playsound(loc, 'sound/effects/splat.ogg', 50, 1)
+		if(stomach.ingested.total_volume)
+			stomach.ingested.trans_to_holder(D.reagents, 15)
+		return
+			
+	var/turf/location = loc
+	
 	visible_message(SPAN_DANGER("\The [src] throws up!"),SPAN_DANGER("You throw up!"))
 	playsound(loc, 'sound/effects/splat.ogg', 50, 1)
-	var/turf/location = loc
 	if(istype(location, /turf/simulated))
 		var/obj/effect/decal/cleanable/vomit/splat = new /obj/effect/decal/cleanable/vomit(location)
 		if(stomach.ingested.total_volume)

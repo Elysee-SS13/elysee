@@ -105,6 +105,7 @@ Class Procs:
 	var/interact_offline = 0 // Can the machine be interacted with while de-powered.
 	var/clicksound			// sound played on succesful interface use by a carbon lifeform
 	var/clickvol = 40		// sound played on succesful interface use
+	var/next_clicksound = 0 // value to compare with world.time for whether to play clicksound according to CLICKSOUND_INTERVAL
 	var/core_skill = SKILL_DEVICES //The skill used for skill checks for this machine (mostly so subtypes can use different skills).
 	var/operator_skill      // Machines often do all operations on Process(). This caches the user's skill while the operations are running.
 	var/base_type           // For mapped buildable types, set this to be the base type actually buildable.
@@ -113,6 +114,7 @@ Class Procs:
 
 	var/list/processing_parts // Component parts queued for processing by the machine. Expected type: /obj/item/weapon/stock_parts
 	var/processing_flags         // What is being processed
+	var/silicon_restriction = FALSE // FALSE or one of the STATUS_* flags. If set, will force the given status flag if a silicon tries to access the machine.
 
 /obj/machinery/Initialize(mapload, d=0, populate_parts = TRUE)
 	. = ..()
@@ -205,8 +207,8 @@ Class Procs:
 /obj/machinery/proc/is_broken(var/additional_flags = 0)
 	return (stat & (BROKEN|additional_flags))
 
-/obj/machinery/proc/is_unpowered(var/additional_flags = 0)
-	return (stat & (NOPOWER|additional_flags))
+/obj/machinery/proc/is_powered(var/additional_flags = 0)
+	return !(stat & (NOPOWER|additional_flags))
 
 /obj/machinery/proc/operable(var/additional_flags = 0)
 	return !inoperable(additional_flags)
@@ -222,6 +224,12 @@ Class Procs:
 		return STATUS_CLOSE
 
 	if(user.direct_machine_interface(src))
+		var/mob/living/silicon/silicon = user
+		if (silicon_restriction && ismachinerestricted(silicon))
+			if (silicon_restriction == STATUS_CLOSE)
+				to_chat(user, SPAN_WARNING("Remote AI systems detected. Firewall protections forbid remote AI access."))
+			return silicon_restriction
+
 		return ..()
 
 	if(stat & NOSCREEN)
@@ -280,7 +288,7 @@ Class Procs:
 /obj/machinery/attack_ghost(mob/user)
 	interface_interact(user)
 
-// If you don't call parent in this proc, you must make all appropriate checks yourself. 
+// If you don't call parent in this proc, you must make all appropriate checks yourself.
 // If you do, you must respect the return value.
 /obj/machinery/attack_hand(mob/user)
 	if((. = ..())) // Buckling, climbers; unlikely to return true.
@@ -330,7 +338,7 @@ Class Procs:
 
 /obj/machinery/proc/state(var/msg)
 	for(var/mob/O in hearers(src, null))
-		O.show_message("\icon[src] <span class = 'notice'>[msg]</span>", 2)
+		O.show_message("[icon2html(src, O)] <span class = 'notice'>[msg]</span>", 2)
 
 /obj/machinery/proc/ping(text=null)
 	if (!text)
@@ -393,7 +401,8 @@ Class Procs:
 
 /obj/machinery/CouldUseTopic(var/mob/user)
 	..()
-	if(clicksound && istype(user, /mob/living/carbon))
+	if(clicksound && world.time > next_clicksound && istype(user, /mob/living/carbon))
+		next_clicksound = world.time + CLICKSOUND_INTERVAL
 		playsound(src, clicksound, clickvol)
 
 /obj/machinery/proc/display_parts(mob/user)

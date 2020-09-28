@@ -269,7 +269,7 @@
 	update_icon()
 	to_chat(user, "<span class='notice'>Audio playback started.</span>")
 	playsound(src, 'sound/machines/click.ogg', 10, 1)
-	for(var/i=1 , i < mytape.max_capacity , i++)
+	for(var/i=1 , i < mytape?.max_capacity , i++)
 		if(!mytape || !playing)
 			break
 		if(mytape.storedinfo.len < i)
@@ -440,7 +440,7 @@
 			to_chat(user, "<span class='notice'>There is no tape left inside.</span>")
 			return
 		to_chat(user, "<span class='notice'>You start winding the tape back in...</span>")
-		if(do_after(user, 120, target = src))
+		if(do_after(user, 120, src))
 			to_chat(user, "<span class='notice'>You wound the tape back in.</span>")
 			fix()
 		return

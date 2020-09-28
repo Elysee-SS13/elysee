@@ -1,6 +1,7 @@
 /obj/item/weapon/nullrod
 	name = "null sceptre"
 	desc = "A sceptre of pure black obsidian capped at both ends with silver ferrules. Some religious groups claim it disrupts and dampens the powers of paranormal phenomenae."
+	icon = 'icons/obj/weapons/melee_physical.dmi'
 	icon_state = "nullrod"
 	item_state = "nullrod"
 	slot_flags = SLOT_BELT
@@ -30,7 +31,7 @@
 
 	if ((MUTATION_CLUMSY in user.mutations) && prob(50))
 		to_chat(user, "<span class='danger'>The rod slips out of your hand and hits your head.</span>")
-		user.take_organ_damage(10)
+		user.take_organ_damage(10, 0)
 		user.Paralyse(20)
 		return
 
@@ -40,28 +41,6 @@
 		return
 
 	..()
-
-/obj/item/weapon/nullrod/afterattack(var/atom/A, var/mob/user, var/proximity)
-	if(!proximity)
-		return
-
-	if(istype(A, /obj/structure/deity/altar))
-		var/obj/structure/deity/altar/altar = A
-		if(!altar.linked_god.silenced) //Don't want them to infinity spam it.
-			altar.linked_god.silence(10)
-			new /obj/effect/temporary(get_turf(altar),'icons/effects/effects.dmi',"purple_electricity_constant", 10)
-			altar.visible_message("<span class='notice'>\The [altar] groans in protest as reality settles around \the [src].</span>")
-
-	if(istype(A, /turf/simulated/wall/cult))
-		var/turf/simulated/wall/cult/W = A
-		user.visible_message("<span class='notice'>\The [user] touches \the [A] with \the [src], and the enchantment affecting it fizzles away.</span>", "<span class='notice'>You touch \the [A] with \the [src], and the enchantment affecting it fizzles away.</span>")
-		W.ChangeTurf(/turf/simulated/wall)
-
-	if(istype(A, /turf/simulated/floor/cult))
-		var/turf/simulated/floor/cult/F = A
-		user.visible_message("<span class='notice'>\The [user] touches \the [A] with \the [src], and the enchantment affecting it fizzles away.</span>", "<span class='notice'>You touch \the [A] with \the [src], and the enchantment affecting it fizzles away.</span>")
-		F.ChangeTurf(/turf/simulated/floor)
-
 
 /obj/item/weapon/energy_net
 	name = "energy net"

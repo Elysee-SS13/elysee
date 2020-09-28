@@ -5,6 +5,9 @@
 	networks = list(
 		NETWORK_ENGINEERING
 	)
+	languages = list(
+		LANGUAGE_HUMAN_EURO = FALSE
+	)
 	equipment = list(
 		/obj/item/weapon/weldingtool,
 		/obj/item/weapon/screwdriver,
@@ -12,13 +15,13 @@
 		/obj/item/weapon/crowbar,
 		/obj/item/weapon/wirecutters,
 		/obj/item/device/multitool,
+		/obj/item/device/t_scanner,
 		/obj/item/device/lightreplacer,
 		/obj/item/weapon/gripper,
 		/obj/item/weapon/soap,
 		/obj/item/weapon/gripper/no_use/loader,
 		/obj/item/weapon/extinguisher/mini,
-		/obj/item/device/pipe_painter,
-		/obj/item/device/floor_painter,
+		/obj/item/device/paint_sprayer,
 		/obj/item/inducer/borg,
 		/obj/item/device/plunger/robot,
 		/obj/item/weapon/inflatable_dispenser/robot,
@@ -96,7 +99,7 @@
 		))
 		var/obj/item/stack/stack = locate(thing) in equipment
 		LAZYDISTINCTADD(stack.synths, wood)
-	
+
 	var/obj/item/stack/cable_coil/cyborg/C = locate() in equipment
 	C.synths = list(wire)
 
@@ -111,10 +114,6 @@
 /obj/item/weapon/robot_module/drone/construction
 	name = "construction drone module"
 	hide_on_manifest = 1
-	channels = list(
-		"Engineering" = 1
-	)
-	languages = list()
 
 /obj/item/weapon/robot_module/drone/construction/Initialize()
 	equipment += /obj/item/weapon/rcd/borg

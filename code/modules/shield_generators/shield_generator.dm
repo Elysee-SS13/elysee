@@ -33,6 +33,7 @@
 	var/ai_control_disabled = 0         // Whether the AI control is disabled.
 	var/list/mode_list = null           // A list of shield_mode datums.
 	var/full_shield_strength = 0        // The amount of power shields need to be at full operating strength.
+	var/vessel_reverse_dir	= EAST		// Reverse dir of our vessel
 
 	var/idle_multiplier   = 1           // Trades off cost vs. spin-up time from idle to running
 	var/idle_valid_values = list(1, 2, 5, 10)
@@ -109,11 +110,22 @@
 	else
 		shielded_turfs = fieldtype_square()
 
+	// Rotate shield's animation relative to located ship
+	if(GLOB.using_map.use_overmap)
+		var/obj/effect/overmap/visitable/ship/sector = map_sectors["[src.z]"]
+		if(sector && istype(sector))
+			if(!sector.check_ownership(src))
+				for(var/obj/effect/overmap/visitable/ship/candidate in sector)
+					if(candidate.check_ownership(src))
+						sector = candidate
+			vessel_reverse_dir = GLOB.reverse_dir[sector.fore_dir]
+
 	for(var/turf/T in shielded_turfs)
 		var/obj/effect/shield/S = new(T)
 		S.gen = src
 		S.flags_updated()
 		field_segments |= S
+		S.set_dir(vessel_reverse_dir)
 	update_icon()
 
 
@@ -238,7 +250,7 @@
 	data["field_integrity"] = field_integrity()
 	data["max_energy"] = round(max_energy / 1000000, 0.1)
 	data["current_energy"] = round(current_energy / 1000000, 0.1)
-	data["percentage_energy"] = round(data["current_energy"] / data["max_energy"] * 100)
+	data["percentage_energy"] = max_energy ? round(data["current_energy"] / data["max_energy"] * 100) : 0
 	data["total_segments"] = field_segments ? field_segments.len : 0
 	data["functional_segments"] = damaged_segments ? data["total_segments"] - damaged_segments.len : data["total_segments"]
 	data["field_radius"] = field_radius

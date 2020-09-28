@@ -328,6 +328,8 @@
 	qdel(src)
 
 /obj/structure/closet/MouseDrop_T(atom/movable/O as mob|obj, mob/user as mob)
+	if (!O)
+		return
 	if(istype(O, /obj/screen))	//fix for HUD elements making their way into the world	-Pete
 		return
 	if(O.loc == user)
@@ -516,6 +518,7 @@
 
 /obj/structure/closet/CtrlAltClick(var/mob/user)
 	verb_toggleopen()
+	return 1
 
 /obj/structure/closet/emp_act(severity)
 	for(var/obj/O in src)

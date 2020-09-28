@@ -81,12 +81,12 @@
 	name = "crew survival kit"
 	desc = "A box decorated in warning colors that contains a limited supply of survival tools. The panel and white stripe indicate this one contains oxygen."
 	icon_state = "survival"
-	startswith = list(/obj/item/clothing/mask/breath = 1,
+	startswith = list(/obj/item/clothing/mask/breath/scba = 1,
 					/obj/item/weapon/tank/emergency/oxygen = 1,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector = 1,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline = 1,
 					/obj/item/stack/medical/bruise_pack = 1,
 					/obj/item/device/flashlight/flare/glowstick = 1,
-					/obj/item/weapon/reagent_containers/food/snacks/candy/proteinbar = 1,
+					/obj/item/weapon/reagent_containers/food/snacks/proteinbar = 1,
 					/obj/item/device/oxycandle = 1)
 
 /obj/item/weapon/storage/box/vox/
@@ -95,10 +95,10 @@
 	icon_state = "survivalvox"
 	startswith = list(/obj/item/clothing/mask/breath = 1,
 					/obj/item/weapon/tank/emergency/nitrogen = 1,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector = 1,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline = 1,
 					/obj/item/stack/medical/bruise_pack = 1,
 					/obj/item/device/flashlight/flare/glowstick = 1,
-					/obj/item/weapon/reagent_containers/food/snacks/candy/proteinbar = 1)
+					/obj/item/weapon/reagent_containers/food/snacks/proteinbar = 1)
 
 /obj/item/weapon/storage/box/engineer/
 	name = "engineer survival kit"
@@ -106,11 +106,11 @@
 	icon_state = "survivaleng"
 	startswith = list(/obj/item/clothing/mask/breath/scba = 1,
 					/obj/item/weapon/tank/emergency/oxygen/engi = 1,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector = 1,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline = 1,
 					/obj/item/weapon/reagent_containers/hypospray/autoinjector/antirad = 1,
 					/obj/item/stack/medical/bruise_pack = 1,
 					/obj/item/device/flashlight/flare/glowstick = 1,
-					/obj/item/weapon/reagent_containers/food/snacks/candy/proteinbar = 1,
+					/obj/item/weapon/reagent_containers/food/snacks/proteinbar = 1,
 					/obj/item/device/oxycandle = 1)
 
 /obj/item/weapon/storage/box/gloves
@@ -557,6 +557,11 @@
 	desc = "A box full of soda cans."
 	startswith = list(/obj/item/weapon/reagent_containers/food/drinks/cans/cola = 7)
 
+/obj/item/weapon/storage/box/cola/beastenergy
+	name = "box of beast energy"
+	desc = "A box full of beast energy cans."
+	startswith = list(/obj/item/weapon/reagent_containers/food/drinks/cans/beastenergy = 7)
+
 /obj/item/weapon/storage/box/water
 	name = "box of water bottles"
 	desc = "A box full of bottled water."
@@ -568,8 +573,8 @@
 /obj/item/weapon/storage/box/cola/drgibb
 	startswith = list(/obj/item/weapon/reagent_containers/food/drinks/cans/dr_gibb = 7)
 
-/obj/item/weapon/storage/box/cola/starkist
-	startswith = list(/obj/item/weapon/reagent_containers/food/drinks/cans/starkist = 7)
+/obj/item/weapon/storage/box/cola/ionbru
+	startswith = list(/obj/item/weapon/reagent_containers/food/drinks/cans/ionbru = 7)
 
 /obj/item/weapon/storage/box/cola/spaceup
 	startswith = list(/obj/item/weapon/reagent_containers/food/drinks/cans/space_up = 7)

@@ -35,7 +35,7 @@
 	name = "Gear - Electrical maintenance"
 	contains = list(/obj/item/weapon/storage/toolbox/electrical = 2,
 					/obj/item/clothing/gloves/insulated = 2,
-					/obj/item/weapon/cell = 2,
+					/obj/item/weapon/cell/standard = 2,
 					/obj/item/weapon/cell/high = 2)
 	cost = 15
 	containername = "electrical maintenance crate"
@@ -224,7 +224,9 @@
 			/obj/item/clothing/mask/gas,
 			/obj/item/weapon/tank/emergency/oxygen/double/red,
 			/obj/item/weapon/extinguisher,
-			/obj/item/clothing/head/hardhat/red)
+			/obj/item/clothing/head/hardhat/red,
+			/obj/item/weapon/scrubpack/standard,
+			/obj/item/weapon/tank/scrubber)
 	cost = 20
 	containertype = /obj/structure/closet/firecloset
 	containername = "fire-safety closet"

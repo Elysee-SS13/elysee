@@ -62,7 +62,6 @@ var/list/organ_cache = list()
 
 	if(istype(holder))
 		owner = holder
-		w_class = max(w_class + mob_size_difference(holder.mob_size, MOB_MEDIUM), 1) //smaller mobs have smaller organs.
 		if(!given_dna && holder.dna)
 			given_dna = holder.dna
 		else
@@ -72,6 +71,7 @@ var/list/organ_cache = list()
 		set_dna(given_dna)
 	if (!species)
 		species = all_species[SPECIES_HUMAN]
+	species.resize_organ(src)
 
 	create_reagents(5 * (w_class-1)**2)
 	reagents.add_reagent(/datum/reagent/nutriment/protein, reagents.maximum_volume)
@@ -105,12 +105,19 @@ var/list/organ_cache = list()
 	//dead already, no need for more processing
 	if(status & ORGAN_DEAD)
 		return
-	// Don't process if we're in a freezer, an MMI or a stasis bag.or a freezer or something I dunno
-	if(is_preserved())
+
+	//check if we've hit max_damage
+	if(damage >= max_damage)
+		die()
 		return
+
 	//Process infections
 	if (BP_IS_ROBOTIC(src) || (owner && owner.species && (owner.species.species_flags & SPECIES_FLAG_IS_PLANT)))
 		germ_level = 0
+		return
+
+	// Don't process if we're in a freezer, an MMI or a stasis bag.or a freezer or something I dunno
+	if(is_preserved())
 		return
 
 	if(!owner && reagents)
@@ -131,10 +138,6 @@ var/list/organ_cache = list()
 		handle_antibiotics()
 		handle_rejection()
 		handle_germ_effects()
-
-	//check if we've hit max_damage
-	if(damage >= max_damage)
-		die()
 
 /obj/item/organ/proc/is_preserved()
 	if(istype(loc,/obj/item/organ))

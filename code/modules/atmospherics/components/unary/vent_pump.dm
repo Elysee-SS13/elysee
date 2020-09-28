@@ -187,7 +187,6 @@
 
 	//Figure out the target pressure difference
 	var/pressure_delta = get_pressure_delta(environment)
-	//src.visible_message("DEBUG >>> [src]: pressure_delta = [pressure_delta]")
 
 	if((environment.temperature || air_contents.temperature) && pressure_delta > 0.5)
 		if(pump_direction) //internal -> external
@@ -423,7 +422,7 @@
 /decl/public_access/public_variable/pressure_bound/external/write_var(obj/machinery/atmospherics/unary/vent_pump/machine, new_value)
 	if(new_value == "default")
 		new_value = machine.external_pressure_bound_default
-	new_value = Clamp(new_value, 0, MAX_PUMP_PRESSURE)
+	new_value = Clamp(text2num(new_value), 0, MAX_PUMP_PRESSURE)
 	. = ..()
 	if(.)
 		machine.external_pressure_bound = new_value

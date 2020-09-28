@@ -13,9 +13,7 @@
 
 /obj/structure/catwalk/Initialize()
 	. = ..()
-	for(var/obj/structure/catwalk/C in get_turf(src))
-		if(C != src)
-			qdel(C)
+	DELETE_IF_DUPLICATE_OF(/obj/structure/catwalk)
 	update_connections(1)
 	update_icon()
 
@@ -89,6 +87,8 @@
 		deconstruct(user)
 		return
 	if(isCrowbar(C) && plated_tile)
+		if(user.a_intent != I_HELP)
+			return
 		hatch_open = !hatch_open
 		if(hatch_open)
 			playsound(src, 'sound/items/Crowbar.ogg', 100, 2)

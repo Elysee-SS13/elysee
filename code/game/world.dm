@@ -76,7 +76,7 @@
 	var/date_string = time2text(world.realtime, "YYYY/MM/DD")
 	href_logfile = file("data/logs/[date_string] hrefs.htm")
 	diary = file("data/logs/[date_string].log")
-	diary << "[log_end]\n[log_end]\nStarting up. (ID: [game_id]) [time2text(world.timeofday, "hh:mm.ss")][log_end]\n---------------------[log_end]"
+	to_file(diary, "[log_end]\n[log_end]\nStarting up. (ID: [game_id]) [time2text(world.timeofday, "hh:mm.ss")][log_end]\n---------------------[log_end]")
 	changelog_hash = md5('html/changelog.html')					//used for telling if the changelog has changed recently
 
 	if(config && config.server_name != null && config.server_suffix && world.port > 0)
@@ -85,7 +85,7 @@
 
 	if(config && config.log_runtime)
 		var/runtime_log = file("data/logs/runtime/[date_string]_[time2text(world.timeofday, "hh:mm")]_[game_id].log")
-		runtime_log << "Game [game_id] starting up at [time2text(world.timeofday, "hh:mm.ss")]"
+		to_file(runtime_log, "Game [game_id] starting up at [time2text(world.timeofday, "hh:mm.ss")]")
 		log = runtime_log // Note that, as you can see, this is misnamed: this simply moves world.log into the runtime log file.
 
 	if(byond_version < RECOMMENDED_VERSION)
@@ -110,7 +110,7 @@ var/world_topic_spam_protect_ip = "0.0.0.0"
 var/world_topic_spam_protect_time = world.timeofday
 
 /world/Topic(T, addr, master, key)
-	diary << "TOPIC: \"[T]\", from:[addr], master:[master], key:[key][log_end]"
+	to_file(diary, "TOPIC: \"[T]\", from:[addr], master:[master], key:[key][log_end]")
 
 	/* * * * * * * *
 	* Public Topic Calls
@@ -138,14 +138,14 @@ var/world_topic_spam_protect_time = world.timeofday
 		s["respawn"] = config.abandon_allowed
 		s["enter"] = config.enter_allowed
 		s["vote"] = config.allow_vote_mode
-		s["ai"] = config.allow_ai
+		s["ai"] = !!length(empty_playable_ai_cores)
 		s["host"] = host ? host : null
 
 		// This is dumb, but spacestation13.com's banners break if player count isn't the 8th field of the reply, so... this has to go here.
 		s["players"] = 0
 		s["stationtime"] = stationtime2text()
 		s["roundduration"] = roundduration2text()
-		s["map"] = GLOB.using_map.full_name
+		s["map"] = replacetext(GLOB.using_map.full_name, "\improper", "") //Done to remove the non-UTF-8 text macros 
 
 		var/active = 0
 		var/list/players = list()
@@ -484,9 +484,14 @@ var/world_topic_spam_protect_time = world.timeofday
 
 	Master.Shutdown()
 
+	var/datum/chatOutput/co
+	for(var/client/C in GLOB.clients)
+		co = C.chatOutput
+		if(co)
+			co.ehjax_send(data = "roundrestart")
 	if(config.server)	//if you set a server location in config.txt, it sends you there instead of trying to reconnect to the same world address. -- NeoFite
 		for(var/client/C in GLOB.clients)
-			to_chat(C, link("byond://[config.server]"))
+			send_link(C, "byond://[config.server]")
 
 	if(config.wait_for_sigusr1_reboot && reason != 3)
 		text2file("foo", "reboot_called")
@@ -516,7 +521,7 @@ var/world_topic_spam_protect_time = world.timeofday
 /world/proc/save_mode(var/the_mode)
 	var/F = file("data/mode.txt")
 	fdel(F)
-	F << the_mode
+	to_file(F, the_mode)
 
 /hook/startup/proc/loadMOTD()
 	world.load_motd()
@@ -589,9 +594,6 @@ var/world_topic_spam_protect_time = world.timeofday
 	if (config && config.allow_vote_mode)
 		features += "vote"
 
-	if (config && config.allow_ai)
-		features += "AI allowed"
-
 	var/n = 0
 	for (var/mob/M in GLOB.player_list)
 		if (M.client)
@@ -621,7 +623,7 @@ var/world_topic_spam_protect_time = world.timeofday
 		GLOB.log_directory += "[replacetext(time_stamp(), ":", ".")]"
 
 	GLOB.world_qdel_log = file("[GLOB.log_directory]/qdel.log")
-	WRITE_FILE(GLOB.world_qdel_log, "\n\nStarting up round ID [game_id]. [time_stamp()]\n---------------------")
+	to_file(GLOB.world_qdel_log, "\n\nStarting up round ID [game_id]. [time_stamp()]\n---------------------")
 
 #define FAILED_DB_CONNECTION_CUTOFF 5
 var/failed_db_connections = 0

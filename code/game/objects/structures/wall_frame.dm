@@ -7,7 +7,7 @@
 	icon = 'icons/obj/wall_frame.dmi'
 	icon_state = "frame"
 
-	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_CLIMBABLE
+	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_CLIMBABLE | ATOM_FLAG_CAN_BE_PAINTED
 	anchored = 1
 	density = 1
 	throwpass = 1
@@ -32,6 +32,14 @@
 
 	update_connections(1)
 	update_icon()
+
+/obj/structure/wall_frame/Destroy()
+	var/turf/location = loc
+	. = ..()
+	for(var/obj/structure/wall_frame/W in orange(1, location))
+		W.update_connections()
+		W.queue_icon_update()
+
 
 /obj/structure/wall_frame/examine(mob/user)
 	. = ..()
@@ -168,6 +176,13 @@
 	new /obj/item/stack/material/steel(get_turf(src), 3)
 	qdel(src)
 
+/obj/structure/wall_frame/get_color()
+	return paint_color
+
+/obj/structure/wall_frame/set_color(var/color)
+	paint_color = color
+	update_icon()
+
 //Subtypes
 /obj/structure/wall_frame/standard
 	paint_color = COLOR_WALL_GUNMETAL
@@ -177,3 +192,12 @@
 
 /obj/structure/wall_frame/hull
 	paint_color = COLOR_HULL
+
+/obj/structure/wall_frame/hull/vox
+	paint_color = COLOR_GREEN_GRAY
+
+/obj/structure/wall_frame/hull/ascent
+	paint_color = COLOR_PURPLE
+
+/obj/structure/wall_frame/hull/verne
+	paint_color = COLOR_GUNMETAL

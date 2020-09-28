@@ -391,7 +391,7 @@
 	M.adjustToxLoss(0.5 * removed)
 
 /datum/reagent/capsaicin/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
-	if(alien == IS_DIONA)
+	if(alien == IS_DIONA || alien == IS_UNATHI)
 		return
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M
@@ -735,6 +735,15 @@
 	glass_name = "pear juice"
 	glass_desc = "Delicious juice made from pears."
 
+/datum/reagent/drink/juice/cabbage
+	name = "Cabbage Juice"
+	description = "It's a health drink, apparently."
+	taste_description = "cabbage"
+	color = "#1fb848"
+
+	glass_name = "cabbage juice"
+	glass_desc = "It's a health drink, apparently."
+
 // Everything else
 
 /datum/reagent/drink/milk
@@ -1017,17 +1026,17 @@
 	glass_desc = "Long live the guy who everyone had mistaken for a girl. Baka!"
 	glass_special = list(DRINK_FIZZ)
 
-/datum/reagent/drink/brownstar
-	name = "Brown Star"
-	description = "It's not what it sounds like..."
-	taste_description = "orange and cola soda"
-	color = "#9f3400"
-	adj_temp = -2
+/datum/reagent/drink/triplecitrus
+	name = "Triple Citrus"
+	description = "Triple the citrus, triple the fun."
+	taste_description = "unbearable sweetness"
+	color = "#ff7f07"
+	adj_temp = -5
 
-	glass_name = "Brown Star"
-	glass_desc = "It's not what it sounds like..."
+	glass_name = "Triple Citrus"
+	glass_desc = "Triple the citrus, triple the fun."
 
-/datum/reagent/drink/orange_cola
+/datum/reagent/drink/orange_soda
 	name = "Fizzy Orange"
 	description = "Artificial sugars and orange essence with fizz."
 	taste_description = "orange"
@@ -1049,7 +1058,7 @@
 	glass_desc = "Yep that sure is some rooty beer."
 	glass_special = list(DRINK_FIZZ)
 
-/datum/reagent/drink/apple_cola
+/datum/reagent/drink/apple_soda
 	name = "Apple Soda"
 	description = "Apple soda. Using only genuine genetically engineered apples. Engineered from bananas."
 	taste_description = "fizzy apples!"
@@ -1331,6 +1340,26 @@
 	glass_name = "cognac"
 	glass_desc = "Damn, you feel like some kind of French aristocrat just by holding this."
 
+/datum/reagent/ethanol/creme_de_cacao
+	name = "Creme de Cacao"
+	description = "A chocolatey liqueur for those who like their drinks undeniably sweet."
+	taste_description = "rustic chocolate"
+	color = "#2e2312"
+	strength = 50
+
+	glass_name = "creme de cacao"
+	glass_desc = "Perfect for a night in the lodge."
+
+/datum/reagent/ethanol/creme_de_menthe
+	name = "Creme de Menthe"
+	description = "A sweet, mint-flavored alcoholic beverage"
+	taste_description = "melted breathmints"
+	color = "#98ecb4"
+	strength = 50
+
+	glass_name = "creme de menthe"
+	glass_desc = "It's hard not to imagine it as mouthwash."
+
 /datum/reagent/ethanol/deadrum
 	name = "Deadrum"
 	description = "Popular with the sailors. Not very popular with everyone else."
@@ -1451,6 +1480,16 @@
 	M.make_jittery(5)
 	M.add_chemical_effect(CE_PULSE, 2)
 
+/datum/reagent/ethanol/triple_sec
+	name = "Triple Sec"
+	description = "It smells like oranges."
+	taste_description = "sweet citrus"
+	color = "#fac840"
+	strength = 15
+
+	glass_name = "triple sec"
+	glass_desc = "For when you want to get drunk, but don't want to taste the alcohol."
+
 /datum/reagent/ethanol/vermouth
 	name = "Vermouth"
 	description = "You suddenly feel a craving for a martini..."
@@ -1549,6 +1588,16 @@
 	glass_name = "Aloe"
 	glass_desc = "Very, very, very good."
 
+/datum/reagent/ethanol/alexander
+	name = "Alexander"
+	description = "Better be careful - it's stronger than it looks..."
+	taste_description = "chocolate covered brandy"
+	color = "#745e3d"
+	strength = 15
+
+	glass_name = "Alexander"
+	glass_desc = "A drink for those who wish to conquer the world, while looking classy at the same time."
+
 /datum/reagent/ethanol/amasec
 	name = "Amasec"
 	description = "Official drink of the Gun Club!"
@@ -1605,6 +1654,16 @@
 	glass_name = "B-52"
 	glass_desc = "Kahlua, Irish cream, and congac. You will get bombed."
 
+/datum/reagent/ethanol/bad_touch
+	name = "Bad Touch"
+	description = "We're nothing but mammals, after all."
+	taste_description = "sour sadness"
+	color = "#0f8a42"
+	strength = 20
+
+	glass_name = "Bad Touch"
+	glass_desc = "We're nothing but mammals, after all."
+
 /datum/reagent/ethanol/bahama_mama
 	name = "Bahama mama"
 	description = "Tropical cocktail."
@@ -1651,6 +1710,26 @@
 /datum/reagent/ethanol/beepsky_smash/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
 	..()
 	M.Stun(2)
+
+/datum/reagent/ethanol/between_the_sheets
+	name = "Between the Sheets"
+	description = "The classic drink of Hypnos."
+	taste_description = "sleeping citruses"
+	color = "#e7d534"
+	strength = 12
+
+	glass_name = "Between the Sheets"
+	glass_desc = "Make sure to set it down after drinking."
+
+/datum/reagent/ethanol/between_the_sheets/affect_ingest(mob/living/carbon/M, alien, removed)
+	. = ..()
+	var/strength_mod = 1
+	if(alien == IS_DIONA)
+		return
+	if(alien == IS_SKRELL)
+		strength_mod *= 2
+	if(prob(1*strength_mod))
+		M.sleeping = max(M.sleeping, 1)
 
 /datum/reagent/ethanol/bilk
 	name = "Bilk"
@@ -1734,6 +1813,16 @@
 	glass_name = "Cuba Libre"
 	glass_desc = "A classic mix of rum and cola."
 
+/datum/reagent/ethanol/cobalt_velvet
+	name = "Cobalt Velvet"
+	description = "It's like champagne served in a cup that had a bit of cola left."
+	taste_description = "burning sweetness"
+	color = "#238b99"
+	strength = 40
+
+	glass_name = "Cobalt Velvet"
+	glass_desc = "It's like champagne served in a cup that had a bit of cola left."
+
 /datum/reagent/ethanol/demonsblood
 	name = "Demons Blood"
 	description = "AHHHH!!!!"
@@ -1766,6 +1855,16 @@
 	glass_name = "Driest Martini"
 	glass_desc = "Only for the experienced. You think you see sand floating in the glass."
 
+/datum/reagent/ethanol/forget_me_shot
+	name = "Forget Me Shot"
+	description = "If you haven't heard of it, that means it worked."
+	taste_description = "mind-numbing venom"
+	color = "#a8934b"
+	strength = 5
+
+	glass_name = "Forget Me Shot"
+	glass_desc = "Mixed with a pregnancy test until it turned positive."
+
 /datum/reagent/ethanol/ginfizz
 	name = "Gin Fizz"
 	description = "Refreshingly lemony, deliciously dry."
@@ -1775,6 +1874,16 @@
 
 	glass_name = "gin fizz"
 	glass_desc = "Refreshingly lemony, deliciously dry."
+
+/datum/reagent/ethanol/grasshopper
+	name = "Grasshopper"
+	description = "Like a chocolate mint, but alcoholic!"
+	taste_description = "minty chocolate"
+	color = "#59c08d"
+	strength = 30
+
+	glass_name = "Grasshopper"
+	glass_desc = "For a nice after-dinner drink."
 
 /datum/reagent/ethanol/grog
 	name = "Grog"
@@ -1808,6 +1917,17 @@
 
 	glass_name = "Pan-Galactic Gargle Blaster"
 	glass_desc = "Does... does this mean that Arthur and Ford are here? Oh joy."
+
+/datum/reagent/ethanol/fringe_weaver
+	name = "Fringe Weaver"
+	description = "It's like drinking ethylic alcohol with a spoonful of sugar."
+	taste_description = "burning with a hint of sweetness"
+	color = "#ffafe0"
+	strength = 30
+
+	glass_name = "Fringe Weaver"
+	glass_desc = "It's like drinking ethylic alcohol with a spoonful of sugar."
+
 
 /datum/reagent/ethanol/gintonic
 	name = "Gin and Tonic"
@@ -1896,6 +2016,15 @@
 	glass_name = "Irish cream"
 	glass_desc = "It's cream, mixed with whiskey. What else would you expect from the Irish?"
 
+/datum/reagent/ethanol/kamikaze
+	name = "Kamikaze"
+	description = "One must truly prepare themselves for this drink."
+	taste_description = "sour explosions"
+	color = "#e6e945"
+
+	glass_name = "Kamikaze"
+	glass_desc = "This must have started as a joke, right? No one is supposed to drink this..."
+
 /datum/reagent/ethanol/longislandicedtea
 	name = "Long Island Iced Tea"
 	description = "The liquor cabinet, brought together in a delicious mix. Intended for middle-aged alcoholic women only."
@@ -1966,6 +2095,16 @@
 
 	glass_name = "Magellan cocktail"
 	glass_desc = "A tasty sweetened blend of wine and fine whiskey. Named for Ferdinand Magellan, who led the first expedition to circumnavigate Earth in the 15th century."
+
+/datum/reagent/ethanol/stinger
+	name = "Stinger"
+	description = "A popular drink, known for its ability to mask the taste of inferior brandies with the strong flavor of creme de menthe."
+	taste_description = "the prohibition"
+	color = "#8f8465"
+	strength = 13
+
+	glass_name = "Stinger"
+	glass_desc = "Holding this glass will make you seem like high-soceity... if you were from the 1800s."
 
 /datum/reagent/ethanol/zhenghe
 	name = "Zheng He"
@@ -2136,6 +2275,16 @@
 
 	glass_name = "Snow White"
 	glass_desc = "A cold refreshment."
+
+/datum/reagent/ethanol/sugar_rush
+	name = "Sugar Rush"
+	description = "Sweet, light, and fruity - as girly as it gets."
+	taste_description = "unbearable sweetness"
+	color = "#f37ee9"
+	strength = 100
+
+	glass_name = "Sugar Rush"
+	glass_desc = "Sweet, light, and fruity - as girly as it gets."
 
 /datum/reagent/ethanol/suidream
 	name = "Sui Dream"
@@ -2718,7 +2867,7 @@
 	name = "Hrukhza Leaf Extract"
 	description = "A bitter liquid used in most recipes on Moghes."
 	taste_description = "bland, disgusting bitterness"
-	color = "#e78108"
+	color = "#345c52"
 	glass_name = "hrukhza leaf extract"
 	glass_desc = "A bitter extract from the hrukhza."
 
@@ -2734,7 +2883,7 @@
 	name = "Mumbak Sting"
 	description = "A drink made from the venom of the Yuum."
 	taste_description = "harsh and stinging sweetness"
-	color = "#7e4c2e"
+	color = "#550000"
 	glass_name = "Mumbak sting"
 	glass_desc = "A drink made from the venom of the Yuum."
 
@@ -2742,7 +2891,7 @@
 	name = "Wasgaelhi"
 	description = "Wine made from various fruits from the swamps of Moghes."
 	taste_description = "swampy fruit"
-	color = "#678e46"
+	color = "#6b596b"
 	strength = 10
 	glass_name = "wasgaelhi"
 	glass_desc = "Wine made from various fruits from the swamps of Moghes."
@@ -2752,7 +2901,7 @@
 	description = "A blend of teas from Moghes, commonly drank by Unathi."
 	taste_description = "bitter energising tea"
 	color = "#0e0900"
-	glass_name = "skiranhi tea"
+	glass_name = "skrianhi tea"
 	glass_desc = "A blend of teas from Moghes, commonly drank by Unathi."
 
 // Non-Alcoholic Drinks
@@ -2967,3 +3116,316 @@
 
 	glass_name = "iridast berry juice"
 	glass_desc = "An intoxicating juice made from the Iridast Berry, common across human worlds."
+
+/datum/reagent/drink/milkshake/float
+	name = "Cola Float"
+	description = "A delicious combination of ice cream and cola."
+	taste_description = "carbonated ice cream"
+	reagent_state = LIQUID
+	color = "#cfe5ae"
+	adj_drowsy = -3
+	adj_temp = -5
+
+	glass_name = "Cola Float"
+	glass_desc = "A delicious combination ofice cream and cola"
+	glass_special = list(DRINK_FIZZ)
+
+/datum/reagent/drink/vanilla_cola
+	name = "Vanilla Cola"
+	description = "A refreshing cola in vanilla flavour."
+	taste_description = "vanilla cola"
+	reagent_state = LIQUID
+	color = "#100800"
+	adj_drowsy = -3
+	adj_temp = -5
+
+	glass_name = "Space Cola"
+	glass_desc = "A glass of refreshing Space Cola"
+	glass_special = list(DRINK_FIZZ)
+
+/datum/reagent/drink/orange_cola
+	name = "Orange Cola"
+	description = "A refreshing cola in orange flavour."
+	taste_description = "orange cola"
+	reagent_state = LIQUID
+	color = "#100800"
+	adj_drowsy = -3
+	adj_temp = -5
+
+	glass_name = "Space Cola"
+	glass_desc = "A glass of refreshing Space Cola"
+	glass_special = list(DRINK_FIZZ)
+
+/datum/reagent/drink/cherry_cola
+	name = "Cherry Cola"
+	description = "A refreshing cola in cherry flavour."
+	taste_description = "cherry cola"
+	reagent_state = LIQUID
+	color = "#100800"
+	adj_drowsy = -3
+	adj_temp = -5
+
+	glass_name = "Space Cola"
+	glass_desc = "A glass of refreshing Space Cola"
+	glass_special = list(DRINK_FIZZ)
+
+/datum/reagent/drink/coffee/coffee_cola
+	name = "Coffee Cola"
+	description = "There are people in town, man, crazy people in town."
+	taste_description = "coffee and cola"
+	reagent_state = LIQUID
+	color = "#100800"
+	adj_drowsy = -3
+	adj_temp = -5
+
+	glass_name = "Coffee Cola"
+	glass_desc = "All you need is some bread and butter and honey"
+	glass_special = list(DRINK_FIZZ)
+
+/datum/reagent/drink/diet_cola
+	name = "Diet Cola"
+	description = "Refreshing diet cola. Contains anti-nutritional value."
+	taste_description = "diet cola"
+	reagent_state = LIQUID
+	color = "#100800"
+	adj_drowsy = -3
+	adj_temp = -5
+
+	glass_name = "Space Cola"
+	glass_desc = "A glass of refreshing Space Cola"
+	glass_special = list(DRINK_FIZZ)
+
+/datum/reagent/drink/ionbru
+	name = "Ion-Bru"
+	description = "The official drink of some faraway, mountainous land."
+	taste_description = "sweet orangy-creamy soda"
+	color = "#a77718"
+	adj_drowsy = -7
+	adj_sleepy = -1
+	adj_temp = -5
+
+	glass_name = "Ion-Bru"
+	glass_desc = "The official drink of some faraway, mountainous land."
+	glass_special = list(DRINK_FIZZ)
+
+/datum/reagent/drink/ironbru
+	name = "Iron-Bru"
+	description = "Tastes like industrial shipbuilding capability."
+	taste_description = "metal girders"
+	color = "#a77718"
+	adj_drowsy = -7
+	adj_sleepy = -1
+	adj_temp = -5
+
+	glass_name = "Iron-Bru"
+	glass_desc = "The official drink of shipbuilders."
+	glass_special = list(DRINK_FIZZ)
+
+/datum/reagent/drink/dandelionburdock
+	name = "Dandelion and Burdock"
+	description = "Does not contain any Taraxacum officinale, or Arctium lappa."
+	taste_description = "sassafras"
+	reagent_state = LIQUID
+	color = "#ff8cff"
+	nutrition = 1
+
+	glass_name = "Dandelion and Burdock"
+	glass_desc = "A tall glass of DnB"
+
+/datum/reagent/drink/doogh
+	name = "Doogh"
+	description = "A yogurt-based drink seasoned with salt and mint."
+	taste_description = "savoury sourness"
+	color = "#f7f5ca"
+
+	glass_name = "doogh"
+	glass_desc = "A yogurt-based drink seasoned with salt and mint."
+
+/datum/reagent/drink/eggnog
+	name = "Eggnog"
+	description = "A chilled dairy-rich beverage. Too cool to keep to the holidays."
+	taste_description = "eggy noggyness"
+	color = "#619494"
+
+	glass_name = "eggnog"
+	glass_desc = "A delicious glass of eggnog."
+
+/datum/reagent/drink/posca
+	name = "Posca"
+	description = "An ancient energy drink revived by Roman cosplayers on Luna."
+	taste_description = "spiced vinegar"
+	color = "#b3b599"
+
+	glass_name = "posca"
+	glass_desc = "An energy drink invented by the Romans and made space-famous by Luna cosplayers."
+
+/datum/reagent/drink/alcoholfreebeer
+	name = "Non-Alcoholic Beer"
+	description = "An alcoholic beverage made from malted grains, hops, yeast, and water. This seems to be non-alcoholic"
+	taste_description = "non-alcoholic piss water"
+	color = "#ffd300"
+
+	glass_name = "beer"
+	glass_desc = "A freezing container of beer"
+
+/datum/reagent/ethanol/baijiu
+	name = "Baijiu"
+	description = "An extremely popular clear, alcoholic drink made from sorghum or rice."
+	taste_description = "sweet fruit and nuts"
+	color = "#f7f6e0"
+	strength = 25
+	alpha = 120
+
+	glass_name = "baijiu"
+	glass_desc = "A clear glass of baijiu."
+
+/datum/reagent/ethanol/cachaca
+	name = "Cachaca"
+	description = "A sweet alcoholic drink made from fermented sugarcane."
+	taste_description = "sweet, tropical juice"
+	color = "#d7d3b4"
+	strength = 25
+
+	glass_name = "cachaca"
+	glass_desc = "A sweet alcoholic drink made from fermented sugarcane."
+
+/datum/reagent/ethanol/rakia
+	name = "Rakia"
+	description = "Fruit brandy, typically made from grapes or other fruits."
+	taste_description = "dry grape"
+	color = "#c2d6b7"
+	strength = 25
+
+	glass_name = "Rakia"
+	glass_desc = "Fruit brandy. Delicious."
+
+/datum/reagent/ethanol/soju
+	name = "Soju"
+	description = "An alcoholic drink made with rice."
+	taste_description = "subtle, mild sweetness"
+	color = "#dddddd"
+	strength = 25
+
+	glass_name = "soju"
+	glass_desc = "A glass of soju."
+
+/datum/reagent/ethanol/lager
+	name = "Lager"
+	description = "A dark, musty beer commonly consumed across space."
+	taste_description = "smooth, crisp lager"
+	color = "#e0b900"
+	strength = 50
+	nutriment_factor = 1
+
+	glass_name = "lager"
+	glass_desc = "A dark, musty beer commonly consumed across space."
+
+/datum/reagent/ethanol/honeywine
+	name = "Honey Wine"
+	description = "A mixture of hops and honey. Also known as Tej."
+	taste_description = "sweet and tanic alcohol"
+	color = "#898873"
+	strength = 50
+
+	glass_name = "honey wine"
+	glass_desc = "A mixture of hops and honey. Also known as Tej."
+
+/datum/reagent/ethanol/sidecar
+	name = "Sidecar"
+	description = "A mix of cognac, lemon juice, and curacao."
+	taste_description = "smooth, rich, sweetness"
+	color = "#2e6671"
+	strength = 30
+
+	glass_name = "Sidecar"
+	glass_desc = "A classic cocktail of cognac and lemon juice."
+
+/datum/reagent/ethanol/caipirinha
+	name = "Capirinha"
+	description = "Cachaca and lime. Felicidades!"
+	taste_description = "sweet tropical alcohol and lime"
+	color = "#fafedf"
+	strength = 30
+
+	glass_name = "capirinha"
+	glass_desc = "Cachaca and lime. Felicidades!."
+
+/datum/reagent/ethanol/caesar
+	name = "Bloody Caesar"
+	description = "Vodka, mixed with tomato juice and hot sauce. Dash with salt and pepper."
+	taste_description = "broth, protein, and spicy vodka, eh?"
+	color = "#712e2e"
+	strength = 30
+
+	glass_name = "Bloody Caesar"
+	glass_desc = "Vodka with a special tomato and hot sauce mix. Dash with salt and pepper and serve with lime."
+
+/datum/reagent/ethanol/daiquiri
+	name = "Daiquiri"
+	description = "Rum, mixed with lime juice and syrup."
+	taste_description = "a historically bad decision"
+	color = "#3e1b00"
+	strength = 30
+
+	glass_name = "Daiquiri"
+	glass_desc = "A classic cocktail made with rum."
+
+/datum/reagent/ethanol/dawa
+	name = "Dawa"
+	description = "Vodka, honey, and lime. Perfect."
+	taste_description = "a warm savannah"
+	color = "#d7baa4"
+	strength = 30
+
+	glass_name = "Deva"
+	glass_desc = "A classic cocktail made with vodka, honey, and lime."
+
+/datum/reagent/ethanol/honeywine
+	name = "Honey Wine"
+	description = "A mixture of hops and honey. Also known as Tej."
+	taste_description = "sweet and tanic alcohol"
+	color = "#898873"
+	strength = 50
+
+	glass_name = "honey wine"
+	glass_desc = "A mixture of hops and honey. Also known as Tej."
+
+/datum/reagent/ethanol/posset
+	name = "Posset"
+	description = "A type of hot milk mixed with lemon and ale. Known mostly as a Terran delicacy."
+	taste_description = "warm cream and lemon"
+	color = "#e3e5bf"
+	strength = 50
+
+	glass_name = "posset"
+	glass_desc = "A sweet hot milk mixed with lemon and ale. A Terran delicacy"
+
+/datum/reagent/ethanol/sidecar
+	name = "Sidecar"
+	description = "A mix of cognac, lemon juice, and curacao."
+	taste_description = "smooth, rich, sweetness"
+	color = "#2e6671"
+	strength = 30
+
+	glass_name = "Sidecar"
+	glass_desc = "A classic cocktail of cognac and lemon juice."
+
+/datum/reagent/ethanol/sangria
+	name = "Sangria"
+	description = "A mix of red wine and orange juice. Serve with slices."
+	taste_description = "fruity wine"
+	color = "#e06c3a"
+	strength = 30
+
+	glass_name = "sangria"
+	glass_desc = "A mix of red wine and orange juice. Serve with slices."
+
+/datum/reagent/ethanol/oldfashioned
+	name = "Old Fashioned"
+	description = "A classic mix of whiskey, sugar, and herbal liqour."
+	taste_description = "smooth silkiness"
+	color = "#976100"
+	strength = 25
+
+	glass_name = "old fashioned"
+	glass_desc = "This iconic cocktail demands respect."

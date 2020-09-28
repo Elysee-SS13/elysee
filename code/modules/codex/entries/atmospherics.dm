@@ -98,6 +98,13 @@
 	associated_paths = list(/obj/machinery/atmospherics/valve)
 	mechanics_text = "Click this to turn the valve.  If red, the pipes on each end are seperated.  Otherwise, they are connected."
 
+//Shutoff valves
+/datum/codex_entry/atmos_shutoff
+	associated_paths = list(/obj/machinery/atmospherics/valve/shutoff, /obj/machinery/atmospherics/valve/shutoff/supply, /obj/machinery/atmospherics/valve/shutoff/scrubbers, /obj/machinery/atmospherics/valve/shutoff/fuel)
+	mechanics_text = "<p>This valve automatically closes itself when a leak is detected in the connected pipe network.</p>\
+	<p>A blinking red light will hint at the direction a leak has been detected.</p>\
+	<p>You can click it to force it to stay opened, indicated by blinking yellow lights.</p>"
+
 //TEG ports
 /datum/codex_entry/atmos_circulator
 	associated_paths = list(/obj/machinery/atmospherics/binary/circulator)
@@ -169,14 +176,14 @@
 /datum/codex_entry/atmos_power_pump
 	associated_paths = list(/obj/machinery/portable_atmospherics/powered/pump)
 	mechanics_text = "Invaluable for filling air in a room rapidly after a breach repair.  The internal gas container can be filled by \
-	connecting it to a connector port.  The pump can pump the air in (sucking) or out (blowing), at a specific target pressure.  The powercell inside can be \
+	connecting it to a connector port.  The pump can pump the air in (sucking) or out (blowing), at a specific target pressure.  The power cell inside can be \
 	replaced by using a screwdriver, and then adding a new cell.  A tank of gas can also be attached to the air pump."
 
 //Portable scrubbers
 /datum/codex_entry/atmos_power_scrubber
 	associated_paths = list(/obj/machinery/portable_atmospherics/powered/scrubber)
 	mechanics_text = "Filters the air, placing harmful gases into the internal gas container.  The container can be emptied by \
-	connecting it to a connector port.  The pump can pump the air in (sucking) or out (blowing), at a specific target pressure.  The powercell inside can be \
+	connecting it to a connector port.  The pump can pump the air in (sucking) or out (blowing), at a specific target pressure.  The power cell inside can be \
 	replaced by using a screwdriver, and then adding a new cell.  A tank of gas can also be attached to the scrubber. "
 
 //Meters
@@ -201,7 +208,7 @@
 	They can be attached to various portable atmospheric devices to be filled or emptied. <br>\
 	<br>\
 	Each tank is fitted with an emergency relief valve. This relief valve will open if the tank is pressurised to over ~3000kPa or heated to over 173?C. \
-	The valve itself will close after expending most or all of the contents into the air.<br>\
+	Normally the valve itself will close after expending most or all of the contents into the air, but can be forced open or closed with a screwdriver.<br>\
 	<br>\
 	Filling a tank such that experiences ~4000kPa of pressure will cause the tank to rupture, spilling out its contents and destroying the tank. \
 	Tanks filled over ~5000kPa will rupture rather violently, exploding with significant force."

@@ -188,7 +188,7 @@
 				new map_type(null,1,1,zlevel,maxx,maxy,0,1,1,planetary_area)
 
 /obj/effect/overmap/visitable/sector/exoplanet/proc/generate_features()
-	spawned_features = seedRuins(map_z, features_budget, /area/exoplanet, possible_features, maxx, maxy)
+	spawned_features = seedRuins(map_z, features_budget, possible_features, /area/exoplanet, maxx, maxy)
 
 /obj/effect/overmap/visitable/sector/exoplanet/proc/get_biostuff(var/datum/random_map/noise/exoplanet/random_map)
 	if(!istype(random_map))
@@ -470,3 +470,4 @@
 	name = "\improper Planetary surface"
 	ambience = list('sound/effects/wind/wind_2_1.ogg','sound/effects/wind/wind_2_2.ogg','sound/effects/wind/wind_3_1.ogg','sound/effects/wind/wind_4_1.ogg','sound/effects/wind/wind_4_2.ogg','sound/effects/wind/wind_5_1.ogg')
 	always_unpowered = 1
+	area_flags = AREA_FLAG_EXTERNAL

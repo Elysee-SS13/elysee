@@ -43,8 +43,8 @@
 		//Minor breaches aren't enough to let through frying amounts of power
 		if(shield_gen.take_damage(30 * severity, SHIELD_DAMTYPE_EM) <= SHIELD_BREACHED_MINOR)
 			return
-	if(!valid_apcs.len)
-		CRASH("No valid APCs found for electrical storm event! This is likely a bug.")
+	if(!length(valid_apcs))
+		CRASH("No valid APCs found for electrical storm event! This is likely a bug. Location: [location_name()] - Z Level: [affecting_z]")
 	var/list/picked_apcs = list()
 	for(var/i=0, i< severity*2, i++) // up to 2/4/6 APCs per tick depending on severity
 		picked_apcs |= pick(valid_apcs)

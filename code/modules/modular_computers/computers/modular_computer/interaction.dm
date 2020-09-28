@@ -213,7 +213,7 @@
 		to_chat(user, "The time [stationtime2text()] is displayed in the corner of the screen.")
 
 	if(card_slot && card_slot.stored_card)
-		to_chat(user, "The [card_slot.stored_card] is inserted into it.")
+		to_chat(user, "[card_slot.stored_card] is inserted into it.")
 
 /obj/item/modular_computer/MouseDrop(var/atom/over_object)
 	var/mob/M = usr
@@ -227,10 +227,11 @@
 
 /obj/item/modular_computer/CtrlAltClick(mob/user)
 	if(!CanPhysicallyInteract(user))
-		return
+		return 0
 	var/datum/extension/interactive/ntos/os = get_extension(src, /datum/extension/interactive/ntos)
 	if(os)
 		os.open_terminal(user)
+		return 1
 
 /obj/item/modular_computer/CouldUseTopic(var/mob/user)
 	..()

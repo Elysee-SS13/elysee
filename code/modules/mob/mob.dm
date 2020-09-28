@@ -82,7 +82,8 @@
 // message is the message output to anyone who can see e.g. "[src] does something!"
 // self_message (optional) is what the src mob sees  e.g. "You do something!"
 // blind_message (optional) is what blind people will hear e.g. "You hear something!"
-/mob/visible_message(var/message, var/self_message, var/blind_message, var/range = world.view, var/checkghosts = null, var/narrate = FALSE)
+/mob/visible_message(message, self_message, blind_message, range = world.view, checkghosts = null, narrate = FALSE, list/exclude_objs = null, list/exclude_mobs = null)
+	set waitfor = FALSE
 	var/turf/T = get_turf(src)
 	var/list/mobs = list()
 	var/list/objs = list()
@@ -90,10 +91,17 @@
 
 	for(var/o in objs)
 		var/obj/O = o
+		if (exclude_objs?.len && (O in exclude_objs))
+			exclude_objs -= O
+			continue
 		O.show_message(message, VISIBLE_MESSAGE, blind_message, AUDIBLE_MESSAGE)
 
 	for(var/m in mobs)
 		var/mob/M = m
+		if (exclude_mobs?.len && (M in exclude_mobs))
+			exclude_mobs -= M
+			continue
+
 		var/mob_message = message
 
 		if(isghost(M))
@@ -105,7 +113,7 @@
 			M.show_message(self_message, VISIBLE_MESSAGE, blind_message, AUDIBLE_MESSAGE)
 			continue
 
-		if(!M.is_blind() || narrate)
+		if((!M.is_blind() && M.see_invisible >= src.invisibility) || narrate)
 			M.show_message(mob_message, VISIBLE_MESSAGE, blind_message, AUDIBLE_MESSAGE)
 			continue
 
@@ -114,7 +122,7 @@
 			continue
 	//Multiz, have shadow do same
 	if(bound_overlay)
-		bound_overlay.visible_message(message, self_message, blind_message)
+		bound_overlay.visible_message(message, blind_message, range)
 
 // Show a message to all mobs and objects in earshot of this one
 // This would be for audible actions by the src mob
@@ -122,7 +130,7 @@
 // self_message (optional) is what the src mob hears.
 // deaf_message (optional) is what deaf people will see.
 // hearing_distance (optional) is the range, how many tiles away the message can be heard.
-/mob/audible_message(var/message, var/self_message, var/deaf_message, var/hearing_distance = world.view, var/checkghosts = null, var/narrate = FALSE)
+/mob/audible_message(message, self_message, deaf_message, hearing_distance = world.view, checkghosts = null, narrate = FALSE, list/exclude_objs = null, list/exclude_mobs = null)
 	var/turf/T = get_turf(src)
 	var/list/mobs = list()
 	var/list/objs = list()
@@ -130,6 +138,9 @@
 
 	for(var/m in mobs)
 		var/mob/M = m
+		if (exclude_mobs?.len && (M in exclude_mobs))
+			exclude_mobs -= M
+			continue
 		var/mob_message = message
 
 		if(isghost(M))
@@ -146,6 +157,9 @@
 
 	for(var/o in objs)
 		var/obj/O = o
+		if (exclude_objs?.len && (O in exclude_objs))
+			exclude_objs -= O
+			continue
 		O.show_message(message, AUDIBLE_MESSAGE, deaf_message, VISIBLE_MESSAGE)
 
 /mob/proc/add_ghost_track(var/message, var/mob/observer/ghost/M)
@@ -270,6 +284,11 @@
 /mob/proc/restrained()
 	return
 
+/mob/proc/can_be_floored()
+	if (buckled || lying || can_overcome_gravity())
+		return FALSE
+	return TRUE
+
 /mob/proc/reset_view(atom/A)
 	if (client)
 		A = A ? A : eyeobj
@@ -294,7 +313,7 @@
 	set name = "Examine"
 	set category = "IC"
 
-	if((is_blind(src) || usr.stat) && !isobserver(src))
+	if((is_blind(src) || usr && usr.stat) && !isobserver(src))
 		to_chat(src, "<span class='notice'>Something is there but you can't see it.</span>")
 		return 1
 
@@ -404,6 +423,7 @@
 	set category = "OOC"
 	getFiles(
 		'html/88x31.png',
+		'html/auction-hammer-gavel.png',
 		'html/bug-minus.png',
 		'html/burn-exclamation.png',
 		'html/chevron.png',
@@ -451,7 +471,8 @@
 // If usr != src, or if usr == src but the Topic call was not resolved, this is called next.
 /mob/OnTopic(mob/user, href_list, datum/topic_state/state)
 	if(href_list["flavor_more"])
-		show_browser(user, "<HTML><HEAD><TITLE>[name]</TITLE></HEAD><BODY><TT>[replacetext(flavor_text, "\n", "<BR>")]</TT></BODY></HTML>", "window=[name];size=500x200")
+		var/text = "<HTML><HEAD><TITLE>[name]</TITLE></HEAD><BODY><TT>[replacetext(flavor_text, "\n", "<BR>")]</TT></BODY></HTML>"
+		show_browser(user, text, "window=[name];size=500x200")
 		onclose(user, "[name]")
 		return TOPIC_HANDLED
 
@@ -496,6 +517,11 @@
 	set category = "IC"
 
 	if(pulling)
+		if(ishuman(pulling))
+			var/mob/living/carbon/human/H = pulling
+			visible_message(SPAN_WARNING("\The [src] lets go of \the [H]."), SPAN_NOTICE("You let go of \the [H]."), exclude_mobs = list(H))
+			if(!H.stat)
+				to_chat(H, SPAN_WARNING("\The [src] lets go of you."))
 		pulling.pulledby = null
 		pulling = null
 		if(pullin)
@@ -555,6 +581,31 @@
 
 	if(ishuman(AM))
 		var/mob/living/carbon/human/H = AM
+		if(H.lying) // If they're on the ground we're probably dragging their arms to move them
+			var/grabtype
+			if(H.has_organ(BP_L_ARM) && H.has_organ(BP_R_ARM)) //If they have both arms
+				grabtype = "arms"
+			else if(H.has_organ(BP_L_ARM) || H.has_organ(BP_R_ARM)) //If they only have one arm
+				grabtype = "arm"
+			else //If they have no arms
+				grabtype = "torso"	
+
+			visible_message(SPAN_WARNING("\The [src] leans down and grips \the [H]'s [grabtype]."), SPAN_NOTICE("You lean down and grip \the [H]'s [grabtype]."), exclude_mobs = list(H))
+			if(!H.stat)
+				to_chat(H, SPAN_WARNING("\The [src] leans down and grips your [grabtype]."))	
+
+		else //Otherwise we're probably just holding their arm to lead them somewhere
+			var/grabtype
+			if(H.has_organ(BP_L_ARM) || H.has_organ(BP_R_ARM)) //If they have at least one arm
+				grabtype = "arm"
+			else //If they have no arms
+				grabtype = "shoulder"
+
+			visible_message(SPAN_WARNING("\The [src] grips \the [H]'s [grabtype]."), SPAN_NOTICE("You grip \the [H]'s [grabtype]."), exclude_mobs = list(H))
+			if(!H.stat)
+				to_chat(H, SPAN_WARNING("\The [src] grips your [grabtype]."))
+		playsound(src.loc, 'sound/weapons/thudswoosh.ogg', 15) //Quieter than hugging/grabbing but we still want some audio feedback
+
 		if(H.pull_damage())
 			to_chat(src, "<span class='danger'>Pulling \the [H] in their current condition would probably be a bad idea.</span>")
 

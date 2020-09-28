@@ -373,7 +373,7 @@
 
 /obj/machinery/microwave/proc/has_extra_item()
 	for (var/obj/O in ingredients) // do not use src or contents unless you want to cook your own components
-		if (!istype(O, /obj/item/weapon/reagent_containers/food) && !istype(O, /obj/item/weapon/grown))
+		if (!istype(O, /obj/item/weapon/reagent_containers/food))
 			return TRUE
 	return FALSE
 
@@ -395,16 +395,19 @@
 	update_icon()
 
 /obj/machinery/microwave/proc/dispose()
-	if (!LAZYLEN(ingredients) && !reagents.total_volume)
-		return
-	for (var/obj/O in ingredients)
-		O.dropInto(loc)
-	LAZYCLEARLIST(ingredients)
-	if (reagents.total_volume)
-		dirtiness++
-	reagents.clear_reagents()
-	to_chat(usr, "<span class='notice'>You dispose of the microwave contents.</span>")
-	updateUsrDialog()
+	var/disposed = FALSE
+	if (LAZYLEN(ingredients))
+		for (var/obj/O in ingredients)
+			O.dropInto(loc)
+		LAZYCLEARLIST(ingredients)
+		disposed = TRUE
+	if (reagents?.total_volume)
+		reagents.clear_reagents()
+		++dirtiness
+		disposed = TRUE
+	if (disposed)
+		to_chat(usr, "<span class='notice'>You dispose of the microwave contents.</span>")
+		updateUsrDialog()
 
 /obj/machinery/microwave/proc/muck_start()
 	playsound(loc, 'sound/effects/splat.ogg', 50, 1) // Play a splat sound

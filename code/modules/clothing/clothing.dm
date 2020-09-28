@@ -8,7 +8,6 @@
 		SPECIES_NABBER,
 		SPECIES_MANTID_ALATE,
 		SPECIES_MANTID_GYNE,
-		SPECIES_MONARCH_WORKER,
 		SPECIES_MONARCH_QUEEN
 	) //everyone except for these species can wear this kit.
 
@@ -149,14 +148,35 @@
 
 /obj/item/clothing/get_examine_line()
 	. = ..()
-	var/list/ties = list()
-	for(var/obj/item/clothing/accessory/accessory in accessories)
-		if(accessory.high_visibility)
-			ties += "\a [accessory.get_examine_line()]"
-	if(ties.len)
-		.+= " with [english_list(ties)] attached"
-	if(accessories.len > ties.len)
-		.+= ". <a href='?src=\ref[src];list_ungabunga=1'>\[See accessories\]</a>"
+	var/list/visible = get_visible_accessories()
+	if (length(visible))
+		var/list/display = list()
+		for (var/obj/item/clothing/accessory/A in visible)
+			if (A.high_visibility)
+				display += "\icon[A] \a [A]"
+		if (length(display))
+			. += " with [english_list(display)] attached"
+		if (length(visible) > length(display))
+			. += ". <a href='?src=\ref[src];list_ungabunga=1'>\[See accessories\]</a>"
+
+/obj/item/clothing/proc/get_visible_accessories()
+	var/list/result = list()
+	if (length(accessories))
+		var/covered = 0
+		if (ishuman(loc))
+			var/mob/living/carbon/human/H = loc
+			if (src == H.w_uniform)
+				if (H.wear_suit)
+					covered |= H.wear_suit.body_parts_covered
+		for (var/obj/item/clothing/accessory/A in accessories)
+			if (!(covered & A.body_location))
+				result += A
+	return result
+
+/obj/item/clothing/proc/get_bulky_coverage()
+	. = HAS_FLAGS(flags_inv, CLOTHING_BULKY) ? body_parts_covered : 0
+	for (var/obj/item/clothing/accessory/A in accessories)
+		. |= HAS_FLAGS(A.flags_inv, CLOTHING_BULKY) ? A.body_parts_covered : 0
 
 /obj/item/clothing/examine(mob/user)
 	. = ..()
@@ -170,16 +190,17 @@
 
 /obj/item/clothing/OnTopic(var/user, var/list/href_list, var/datum/topic_state/state)
 	if(href_list["list_ungabunga"])
-		if(accessories.len)
-			var/list/ties = list()
-			for(var/accessory in accessories)
-				ties += "\icon[accessory] \a [accessory]"
-			to_chat(user, "Attached to \the [src] are [english_list(ties)].")
+		var/list/visible = get_visible_accessories()
+		if (length(visible))
+			var/list/display = list()
+			for (var/obj/item/clothing/accessory/A in visible)
+				display += "[icon2html(A, user)] \a [A]"
+			to_chat(user, "Attached to \the [src] are [english_list(display)].")
 		return TOPIC_HANDLED
 	if(href_list["list_armor_damage"])
 		var/datum/extension/armor/ablative/armor_datum = get_extension(src, /datum/extension/armor/ablative)
 		var/list/damages = armor_datum.get_visible_damage()
-		to_chat(user, "\The [src] \icon[src] has some damage:")
+		to_chat(user, "\The [src] [icon2html(src, user)] has some damage:")
 		for(var/key in damages)
 			to_chat(user, "<li><b>[capitalize(damages[key])]</b> damage to the <b>[key]</b> armor.")
 		return TOPIC_HANDLED
@@ -261,11 +282,12 @@ BLIND     // can't see anything
 	body_parts_covered = HANDS
 	slot_flags = SLOT_GLOVES
 	attack_verb = list("challenged")
-	species_restricted = list("exclude",SPECIES_NABBER, SPECIES_UNATHI,SPECIES_VOX, SPECIES_VOX_ARMALIS)
+	species_restricted = list("exclude",SPECIES_NABBER, SPECIES_MONARCH_QUEEN, SPECIES_UNATHI, SPECIES_VOX, SPECIES_VOX_ARMALIS)
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_hands_vox.dmi',
 		SPECIES_VOX_ARMALIS = 'icons/mob/species/vox/onmob_hands_vox_armalis.dmi',
 		SPECIES_NABBER = 'icons/mob/species/nabber/onmob_hands_gas.dmi',
+		SPECIES_MONARCH_QUEEN = 'icons/mob/species/nabber/msq/onmob_hands_msq.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_hands_unathi.dmi',
 		)
 	blood_overlay_type = "bloodyhands"
@@ -792,6 +814,7 @@ BLIND     // can't see anything
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_under_vox.dmi',
 		SPECIES_VOX_ARMALIS = 'icons/mob/species/vox/onmob_under_vox_armalis.dmi',
 		SPECIES_NABBER = 'icons/mob/species/nabber/onmob_under_gas.dmi',
+		SPECIES_MONARCH_QUEEN = 'icons/mob/species/nabber/msq/onmob_under_msq.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_under_unathi.dmi',
 		SPECIES_MANTID_ALATE = 'icons/mob/species/mantid/onmob_under_alate.dmi',
 		SPECIES_MANTID_GYNE = 'icons/mob/species/mantid/onmob_under_gyne.dmi'
@@ -1050,7 +1073,7 @@ BLIND     // can't see anything
 	icon = 'icons/obj/clothing/obj_hands_ring.dmi'
 	slot_flags = SLOT_GLOVES
 	gender = NEUTER
-	species_restricted = list("exclude", SPECIES_NABBER, SPECIES_DIONA)
+	species_restricted = list("exclude", SPECIES_NABBER, SPECIES_DIONA, SPECIES_MONARCH_QUEEN)
 	var/undergloves = 1
 
 

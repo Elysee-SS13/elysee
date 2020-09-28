@@ -40,6 +40,21 @@
 		)
 	)
 
+	exertion_effect_chance = 10
+	exertion_hydration_scale = 1
+	exertion_charge_scale = 1
+	exertion_reagent_scale = 5
+	exertion_reagent_path = /datum/reagent/lactate
+	exertion_emotes_biological = list(
+		/decl/emote/exertion/biological,
+		/decl/emote/exertion/biological/breath,
+		/decl/emote/exertion/biological/pant
+	)
+	exertion_emotes_synthetic = list(
+		/decl/emote/exertion/synthetic,
+		/decl/emote/exertion/synthetic/creak
+	)
+
 /datum/species/human/get_bodytype(var/mob/living/carbon/human/H)
 	return SPECIES_HUMAN
 
@@ -205,6 +220,21 @@
 		BP_EYES =     /obj/item/organ/internal/eyes/skrell
 		)
 
+	exertion_effect_chance = 10
+	exertion_hydration_scale = 1
+	exertion_charge_scale = 1
+	exertion_reagent_scale = 5
+	exertion_reagent_path = /datum/reagent/lactate
+	exertion_emotes_biological = list(
+		/decl/emote/exertion/biological,
+		/decl/emote/exertion/biological/breath,
+		/decl/emote/exertion/biological/pant
+	)
+	exertion_emotes_synthetic = list(
+		/decl/emote/exertion/synthetic,
+		/decl/emote/exertion/synthetic/creak
+	)
+
 /datum/species/skrell/get_sex(var/mob/living/carbon/human/H)
 	return istype(H) && (H.descriptors["headtail length"] == 1 ? MALE : FEMALE)
 
@@ -277,14 +307,16 @@
 
 	warning_low_pressure = 50
 	hazard_low_pressure = -1
+	warning_high_pressure = 1500
+	hazard_high_pressure = 2000
 
-	cold_level_1 = 50
+	cold_level_1 = -1
 	cold_level_2 = -1
 	cold_level_3 = -1
 
-	heat_level_1 = 2000
-	heat_level_2 = 3000
-	heat_level_3 = 4000
+	heat_level_1 = 3000
+	heat_level_2 = 4000
+	heat_level_3 = 5000
 
 	body_temperature = T0C + 15		//make the plant people have a bit lower body temperature, why not
 

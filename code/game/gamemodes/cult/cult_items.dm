@@ -1,6 +1,7 @@
 /obj/item/weapon/melee/cultblade
 	name = "cult blade"
 	desc = "An arcane weapon wielded by the followers of Nar-Sie."
+	icon = 'icons/obj/weapons/melee_physical.dmi'
 	icon_state = "cultblade"
 	item_state = "cultblade"
 	edge = 1
@@ -12,7 +13,7 @@
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 
 /obj/item/weapon/melee/cultblade/attack(mob/living/M, mob/living/user, var/target_zone)
-	if(iscultist(user) || (user.mind in GLOB.godcult.current_antagonists))
+	if(iscultist(user))
 		return ..()
 
 	var/zone = (user.hand ? BP_L_ARM : BP_R_ARM)

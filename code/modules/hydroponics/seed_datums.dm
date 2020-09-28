@@ -679,7 +679,7 @@
 	name = "cabbage"
 	seed_name = "cabbage"
 	display_name = "cabbages"
-	chems = list(/datum/reagent/nutriment = list(1,10))
+	chems = list(/datum/reagent/nutriment = list(1,7), /datum/reagent/drink/juice/cabbage = list (3, 3))
 	kitchen_tag = "cabbage"
 
 /datum/seed/cabbage/New()
@@ -726,7 +726,7 @@
 	display_name = "ears of corn"
 	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/nutriment/cornoil = list(1,10))
 	kitchen_tag = "corn"
-	trash_type = /obj/item/weapon/corncob
+	trash_type = /obj/item/weapon/carvable/corncob
 
 /datum/seed/corn/New()
 	..()
@@ -801,7 +801,7 @@
 	name = "soybean"
 	seed_name = "soybean"
 	display_name = "soybeans"
-	chems = list(/datum/reagent/nutriment = list(1,20), /datum/reagent/drink/milk/soymilk = list(10,20))
+	chems = list(/datum/reagent/drink/milk/soymilk = list(10,20))
 	kitchen_tag = "soybeans"
 
 /datum/seed/soybean/New()
@@ -819,7 +819,7 @@
 	name = "wheat"
 	seed_name = "wheat"
 	display_name = "wheat stalks"
-	chems = list(/datum/reagent/nutriment = list(1,25), /datum/reagent/nutriment/flour = list(15,15))
+	chems = list(/datum/reagent/nutriment/flour = list(15,15))
 	kitchen_tag = "wheat"
 
 /datum/seed/wheat/New()
@@ -839,7 +839,7 @@
 	name = "rice"
 	seed_name = "rice"
 	display_name = "rice stalks"
-	chems = list(/datum/reagent/nutriment = list(1,25), /datum/reagent/nutriment/rice = list(10,15))
+	chems = list(/datum/reagent/nutriment/rice = list(10,15))
 	kitchen_tag = "rice"
 
 /datum/seed/rice/New()
@@ -1344,6 +1344,7 @@
 	seed_name = "pineapple"
 	display_name = "pineapple plant"
 	chems = list(/datum/reagent/drink/juice/pineapple = list(10,10), /datum/reagent/enzyme = list(1,5),/datum/reagent/nutriment = list(1,10))
+	trash_type = /obj/item/weapon/carvable/corncob/hollowpineapple
 
 /datum/seed/pineapple/New()
 	..()
@@ -1386,6 +1387,7 @@
 	seed_name = "coconut"
 	display_name = "coconut trees"
 	chems = list(/datum/reagent/nutriment = list(1,20), /datum/reagent/drink/coconut = list(10,20))
+	trash_type = /obj/item/weapon/carvable/corncob/hollowcoconut
 
 /datum/seed/coconut/New()
 	..()

@@ -105,7 +105,6 @@
 	can_hold = list(
 		/obj/item/weapon/reagent_containers/glass,
 		/obj/item/seeds,
-		/obj/item/weapon/grown,
 		/obj/item/slime_extract,
 		/obj/item/weapon/disk/botany
 	)
@@ -118,7 +117,6 @@
 		/obj/item/weapon/reagent_containers/glass,
 		/obj/item/weapon/reagent_containers/food,
 		/obj/item/seeds,
-		/obj/item/weapon/grown,
 		/obj/item/weapon/glass_extra
 	)
 
@@ -128,9 +126,23 @@
 	desc = "A simple grasping tool for holding and manipulating organic and mechanical organs, both internal and external."
 
 	can_hold = list(
-	/obj/item/organ,
-	/obj/item/robot_parts,
-	/obj/item/weapon/reagent_containers/ivbag
+		/obj/item/organ,
+		/obj/item/robot_parts,
+		/obj/item/weapon/reagent_containers/ivbag
+	)
+
+/obj/item/weapon/gripper/forensics// Used to handle forensics equipment.
+	name = "forensics gripper"
+	icon_state = "gripper"
+	desc = "A simple grasping tool for holding forensics evidence and paper."
+
+	can_hold = list(
+		/obj/item/weapon/sample,
+		/obj/item/weapon/evidencebag,
+		/obj/item/weapon/forensics,
+		/obj/item/weapon/photo,
+		/obj/item/weapon/paper,
+		/obj/item/weapon/paper_bundle
 	)
 
 /obj/item/weapon/gripper/no_use //Used when you want to hold and put items in other things, but not able to 'use' the item
@@ -234,7 +246,7 @@
 		var/obj/machinery/power/apc/A = target
 		if(A.components_are_accessible(/obj/item/weapon/stock_parts/power/battery))
 			var/obj/item/weapon/stock_parts/power/battery/bat = A.get_component_of_type(/obj/item/weapon/stock_parts/power/battery)
-			var/obj/item/weapon/cell/cell = bat.extract_cell(src)
+			var/obj/item/weapon/cell/cell = bat.extract_cell(user)
 			if(cell)
 				wrapped = cell
 				cell.forceMove(src)
@@ -255,7 +267,8 @@
 /obj/item/weapon/gripper/proc/finish_using(var/atom/target, var/mob/living/user, params, force_holder, resolved)
 
 	if(QDELETED(wrapped))
-		wrapped.forceMove(null)
+		if (wrapped)
+			wrapped.forceMove(null)
 		wrapped = null
 		return
 
@@ -384,6 +397,14 @@
 		else if(istype(W,/obj/item/weapon/material/shard/shrapnel))
 			if(metal)
 				metal.add_charge(1000)
+		else if(istype(W,/obj/item/stack/material/rods))
+			var/obj/item/stack/material/rods/R = W
+			var/amt = R.get_amount()
+			if(amt > 3)
+				to_chat(user, SPAN_NOTICE("The amount of rods is too high to fit into your decompiler."))
+				continue
+			if(metal)
+				metal.add_charge(500*amt)				
 		else if(istype(W,/obj/item/weapon/material/shard))
 			if(glass)
 				glass.add_charge(1000)

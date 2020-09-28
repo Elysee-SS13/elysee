@@ -147,7 +147,7 @@
 /datum/reagent/dexalinp/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	if(alien == IS_VOX)
 		M.adjustToxLoss(removed * 9)
-	else if(alien != IS_DIONA)
+	else if(alien != IS_DIONA && alien != IS_MANTID)
 		M.add_chemical_effect(CE_OXYGENATED, 2)
 	holder.remove_reagent(/datum/reagent/lexorin, 3 * removed)
 
@@ -554,7 +554,7 @@
 	M.radiation = max(M.radiation - 70 * removed, 0)
 	M.adjustToxLoss(-10 * removed)
 	if(prob(60))
-		M.take_organ_damage(4 * removed, 0)
+		M.take_organ_damage(4 * removed, 0, ORGAN_DAMAGE_FLESH_ONLY)
 
 /datum/reagent/spaceacillin
 	name = "Spaceacillin"

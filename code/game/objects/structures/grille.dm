@@ -36,6 +36,13 @@
 	update_connections(1)
 	update_icon()
 
+/obj/structure/grille/Destroy()
+	var/turf/location = loc
+	. = ..()
+	for(var/obj/structure/grille/G in orange(1, location))
+		G.update_connections()
+		G.queue_icon_update()
+
 /obj/structure/grille/ex_act(severity)
 	qdel(src)
 
@@ -203,7 +210,7 @@
 /obj/structure/grille/proc/shock(mob/user as mob, prb)
 	if(!anchored || destroyed)		// anchored/destroyed grilles are never connected
 		return 0
-	if(!(material.conductive))
+	if(material && !material.conductive)
 		return 0
 	if(!prob(prb))
 		return 0

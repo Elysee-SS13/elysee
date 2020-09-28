@@ -78,7 +78,7 @@
 
 /obj/random/powercell/spawn_choices()
 	return list(/obj/item/weapon/cell/crap = 1,
-				/obj/item/weapon/cell = 8,
+				/obj/item/weapon/cell/standard = 8,
 				/obj/item/weapon/cell/high = 5,
 				/obj/item/weapon/cell/super = 2,
 				/obj/item/weapon/cell/hyper = 1,
@@ -680,7 +680,7 @@ obj/random/obstruction/spawn_choices()
 				/obj/item/weapon/reagent_containers/food/snacks/spacetwinkie,
 				/obj/item/weapon/reagent_containers/food/snacks/cheesiehonkers,
 				/obj/item/weapon/reagent_containers/food/snacks/tastybread,
-				/obj/item/weapon/reagent_containers/food/snacks/candy/proteinbar,
+				/obj/item/weapon/reagent_containers/food/snacks/proteinbar,
 				/obj/item/weapon/reagent_containers/food/snacks/syndicake,
 				/obj/item/weapon/reagent_containers/food/snacks/donut,
 				/obj/item/weapon/reagent_containers/food/snacks/donut/cherryjelly,
@@ -1136,6 +1136,16 @@ var/list/multi_point_spawns
 	id = "Captain's spare id"
 	item_path = /obj/item/weapon/card/id/captains_spare
 
+/obj/random_multi/single_item/skelestand
+	name = "Multi Point - Medical Skeleton"
+	id = "Medical Skeleton"
+	item_path = /obj/structure/skele_stand
+
+/obj/random_multi/single_item/skelestand/maint
+	name = "Multi Point - Maintenance Skeleton"
+	id = "Maint Skeleton"
+	item_path = /obj/structure/skele_stand/maint
+
 var/list/random_junk_
 var/list/random_useful_
 /proc/get_random_useful_type()
@@ -1242,7 +1252,7 @@ var/list/random_useful_
 
 /obj/random/mre/dessert/spawn_choices()
 	return list(/obj/item/weapon/reagent_containers/food/snacks/candy,
-				/obj/item/weapon/reagent_containers/food/snacks/candy/proteinbar,
+				/obj/item/weapon/reagent_containers/food/snacks/proteinbar,
 				/obj/item/weapon/reagent_containers/food/snacks/donut/normal,
 				/obj/item/weapon/reagent_containers/food/snacks/donut/cherryjelly,
 				/obj/item/weapon/reagent_containers/food/snacks/chocolatebar,

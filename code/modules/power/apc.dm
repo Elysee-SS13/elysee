@@ -94,7 +94,7 @@
 	var/needs_powerdown_sound
 	var/area/area
 	var/areastring = null
-	var/cell_type = /obj/item/weapon/cell/apc
+	var/cell_type = /obj/item/weapon/cell/standard
 	var/opened = 0 //0=closed, 1=opened, 2=cover removed
 	var/shorted = 0
 	var/lighting = POWERCHAN_ON_AUTO
@@ -433,7 +433,7 @@
 	if(istype(W, /obj/item/inducer))
 		return FALSE // inducer.dm afterattack handles this
 
-	if(isCrowbar(W))
+	if(isCrowbar(W) && user.a_intent != I_HURT)//bypass when on harm intend to actually make use of the cover hammer off check further down.
 		if(opened) // Closes or removes board.
 			if (has_electronics == 1)
 				if (terminal())
@@ -626,7 +626,7 @@
 			&& !opened \
 			&& W.force >= 5 \
 			&& W.w_class >= 3.0 \
-			&& prob(20) )
+			&& prob(W.force) )
 		opened = 2
 		user.visible_message("<span class='danger'>The APC cover was knocked down with the [W.name] by [user.name]!</span>", \
 			"<span class='danger'>You knock down the APC cover with your [W.name]!</span>", \
