@@ -29,3 +29,11 @@
 	for(var/I in cartridges)
 		for(var/i=0;i<number_cartridges;i++)
 			stock_item(new I())
+
+
+/obj/machinery/smartfridge/secure/extract/New()
+
+	var/number_extracts = 3
+
+	for(var/i=0;i<number_extracts;i++)
+		stock_item(new /obj/item/slime_extract/grey())
