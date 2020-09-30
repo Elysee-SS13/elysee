@@ -17,26 +17,28 @@
 "aq" = (/obj/effect/floor_decal/spline/fancy/wood,/obj/effect/floor_decal/spline/fancy/wood{dir = 1},/turf/simulated/floor/exoplanet/water/shallow,/area/mine/explored)
 "ar" = (/obj/effect/shuttle_landmark/orb/nav7{docking_controller = "mining_shuttle_controller"},/turf/simulated/floor/asteroid,/area/mine/explored)
 "as" = (/obj/effect/floor_decal/spline/fancy/wood{tag = "icon-spline_fancy (NORTHEAST)"; dir = 5},/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 8},/turf/simulated/floor/exoplanet/water/shallow,/area/mine/explored)
-"at" = (/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/machinery/alarm{pixel_y = 22},/turf/simulated/floor/tiled,/area/cargo)
+"at" = (/turf/simulated/wall,/area/cargo/mining)
 "au" = (/obj/effect/shuttle_landmark/orb/nav4,/turf/space,/area/space)
-"av" = (/obj/machinery/door/airlock/external{frequency = 1380; id_tag = "mining_shuttle_hatch"},/turf/simulated/floor/tiled,/area/cargo)
-"aw" = (/obj/structure/bed/chair{dir = 8},/obj/machinery/light/spot{dir = 4},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled,/area/cargo)
+"av" = (/obj/machinery/door/airlock/external{frequency = 1380; id_tag = "mining_shuttle_hatch"},/turf/simulated/floor/tiled,/area/cargo/mining)
+"aw" = (/obj/machinery/embedded_controller/radio/simple_docking_controller{dir = 8; frequency = 1380; id_tag = "mining_shuttle_controller"; name = "mining shuttle controller"; pixel_x = 22; tag_door = "mining_shuttle_hatch"},/turf/simulated/floor/tiled,/area/cargo/mining)
 "ax" = (/obj/effect/floor_decal/spline/fancy/wood,/turf/simulated/floor/exoplanet/water/shallow,/area/mine/explored)
-"ay" = (/obj/structure/closet/crate,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled,/area/cargo)
-"az" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled,/area/cargo)
-"aA" = (/obj/structure/closet/emcloset,/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled,/area/cargo)
+"ay" = (/obj/machinery/light/spot{dir = 8},/turf/simulated/floor/tiled,/area/cargo/mining)
+"az" = (/obj/machinery/atmospherics/portables_connector{dir = 4},/obj/machinery/portable_atmospherics/canister/air/airlock,/turf/simulated/floor/tiled,/area/cargo/mining)
+"aA" = (/obj/effect/wallframe_spawn/reinforced,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/tiled,/area/cargo/mining)
 "aB" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 4},/turf/simulated/floor/exoplanet/water/shallow,/area/mine/explored)
-"aC" = (/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/obj/machinery/power/smes/buildable/max_cap_in_out,/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/tiled,/area/cargo)
+"aC" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock{dir = 8},/turf/simulated/floor/tiled,/area/cargo/mining)
 "aD" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 8},/turf/simulated/floor/exoplanet/water/shallow,/area/mine/explored)
-"aE" = (/obj/structure/cable/yellow{d2 = 2; dir = 8; icon_state = "0-8"},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/power/terminal{icon_state = "term"; dir = 1},/turf/simulated/floor/tiled,/area/cargo)
+"aE" = (/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/machinery/alarm{pixel_y = 22},/turf/simulated/floor/tiled,/area/cargo/mining)
 "aF" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 1},/turf/simulated/floor/exoplanet/water/shallow,/area/mine/explored)
-"aG" = (/obj/item/device/radio/intercom{dir = 4; pixel_x = -22},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled,/area/cargo)
-"aH" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled,/area/cargo)
+"aG" = (/obj/structure/closet/crate,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled,/area/cargo/mining)
+"aH" = (/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/obj/machinery/power/smes/buildable/max_cap_in_out,/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/tiled,/area/cargo/mining)
 "aI" = (/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 1},/turf/simulated/floor/airless/stone,/area/mine/explored)
-"aJ" = (/obj/machinery/power/apc{dir = 8; name = "APC"; pixel_x = -26},/obj/structure/cable/yellow{dir = 8},/obj/structure/cable/yellow,/turf/simulated/floor/tiled,/area/cargo)
-"aK" = (/obj/machinery/embedded_controller/radio/simple_docking_controller{dir = 8; frequency = 1380; id_tag = "mining_shuttle_controller"; name = "mining shuttle controller"; pixel_x = 22; tag_door = "mining_shuttle_hatch"},/turf/simulated/floor/tiled,/area/cargo)
+"aJ" = (/obj/item/device/radio/intercom{dir = 4; pixel_x = -22},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled,/area/cargo/mining)
+"aK" = (/turf/simulated/floor/tiled,/area/cargo/mining)
+"aL" = (/obj/structure/cable/yellow{d2 = 2; dir = 8; icon_state = "0-8"},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/power/terminal{icon_state = "term"; dir = 1},/turf/simulated/floor/tiled,/area/cargo/mining)
 "aM" = (/obj/item/weapon/stool/stone,/turf/simulated/floor/fixed/alium/airless,/area/mine/explored)
 "aN" = (/obj/machinery/door/unpowered/simple/sandstone{desc = "It opens and closes. It's absolutely dominated by a huge engraving of some kind of bird."; name = "engraved door"},/turf/simulated/floor/airless/stone,/area/mine/explored)
+"aO" = (/obj/machinery/atmospherics/portables_connector,/obj/machinery/portable_atmospherics/canister/air/airlock,/turf/simulated/floor/tiled,/area/cargo/mining)
 "aP" = (/turf/simulated/floor/exoplanet/water/shallow,/area/mine/explored)
 "aQ" = (/obj/machinery/door/unpowered/simple/sandstone,/turf/simulated/floor/airless/stone,/area/mine/explored)
 "aR" = (/obj/effect/shuttle_landmark/orb/nav3,/turf/space,/area/space)
@@ -55,19 +57,28 @@
 "be" = (/turf/unsimulated/mask,/area/mine/explored)
 "bf" = (/obj/effect/shuttle_landmark/orb/nav2,/turf/space,/area/space)
 "bg" = (/obj/effect/shuttle_landmark/orb/nav1,/turf/space,/area/space)
+"bh" = (/obj/effect/wallframe_spawn/reinforced,/turf/simulated/floor/tiled,/area/cargo/mining)
+"bi" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled,/area/cargo/mining)
+"bj" = (/obj/structure/table/standard,/turf/simulated/floor/tiled,/area/cargo/mining)
+"bk" = (/obj/structure/bed/chair{dir = 8},/obj/machinery/light/spot{dir = 4},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled,/area/cargo/mining)
+"bl" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/wall,/area/cargo/mining)
+"bm" = (/obj/machinery/power/apc{dir = 8; name = "APC"; pixel_x = -26},/obj/structure/cable/yellow{dir = 8},/obj/structure/cable/yellow,/turf/simulated/floor/tiled,/area/cargo/mining)
+"bn" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled,/area/cargo/mining)
+"bo" = (/obj/structure/closet/emcloset,/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled,/area/cargo/mining)
+"bp" = (/obj/machinery/door/airlock/mining,/turf/simulated/floor/tiled,/area/cargo/mining)
+"bq" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock{dir = 1; id_tag = "mining_outpost_pump"},/obj/machinery/airlock_sensor{id_tag = "mining_outpost_sensor"; pixel_y = -24},/turf/simulated/floor/tiled,/area/cargo/mining)
+"br" = (/obj/machinery/light/spot,/turf/simulated/floor/tiled,/area/cargo/mining)
+"bs" = (/obj/machinery/atmospherics/unary/vent_scrubber/on,/turf/simulated/floor/tiled,/area/cargo/mining)
+"bt" = (/obj/structure/closet/emcloset,/turf/simulated/floor/tiled,/area/cargo/mining)
+"bu" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/wall,/area/cargo/mining)
+"bv" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/turf/simulated/wall,/area/cargo/mining)
 "cf" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 4},/turf/simulated/floor/exoplanet/water/shallow,/area/mine/unexplored)
-"cJ" = (/turf/simulated/wall,/area/cargo)
 "eM" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 6},/turf/simulated/floor/exoplanet/water/shallow,/area/mine/unexplored)
 "fA" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 9},/obj/effect/floor_decal/spline/fancy/wood/corner,/turf/simulated/floor/exoplanet/water/shallow,/area/mine/explored)
 "ma" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 8},/turf/simulated/floor/exoplanet/water/shallow,/area/mine/unexplored)
-"mJ" = (/obj/machinery/light/spot{dir = 8},/turf/simulated/floor/tiled,/area/cargo)
-"ot" = (/obj/machinery/atmospherics/portables_connector{dir = 4},/obj/machinery/portable_atmospherics/canister/air/airlock,/turf/simulated/floor/tiled,/area/cargo)
 "pz" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 10},/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 1},/turf/simulated/floor/exoplanet/water/shallow,/area/mine/explored)
-"rJ" = (/obj/effect/wallframe_spawn/reinforced,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/tiled,/area/cargo)
-"st" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock{dir = 8},/turf/simulated/floor/tiled,/area/cargo)
 "ti" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume{dir = 4},/turf/simulated/floor/asteroid,/area/mine/explored)
 "vc" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 10},/turf/simulated/floor/exoplanet/water/shallow,/area/mine/unexplored)
-"wg" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/turf/simulated/wall,/area/cargo)
 "wM" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 6},/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 4},/turf/simulated/floor/exoplanet/water/shallow,/area/mine/explored)
 "yQ" = (/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 4},/turf/simulated/floor/exoplanet/water/shallow,/area/mine/explored)
 "yR" = (/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 4},/turf/simulated/floor/asteroid,/area/mine/explored)
@@ -76,25 +87,13 @@
 "EM" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 10},/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 1},/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 8},/turf/simulated/floor/exoplanet/water/shallow,/area/mine/explored)
 "Gl" = (/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 4},/obj/effect/floor_decal/spline/fancy/wood{dir = 6},/turf/simulated/floor/exoplanet/water/shallow,/area/mine/explored)
 "Le" = (/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 4},/turf/simulated/floor/exoplanet/water/shallow,/area/mine/unexplored)
-"LR" = (/turf/simulated/floor/tiled,/area/cargo)
 "LT" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 1},/obj/effect/floor_decal/spline/fancy/wood,/turf/simulated/floor/exoplanet/water/shallow,/area/mine/explored)
 "MX" = (/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 8},/turf/simulated/floor/exoplanet/water/shallow,/area/mine/unexplored)
-"Nu" = (/obj/machinery/atmospherics/portables_connector,/obj/machinery/portable_atmospherics/canister/air/airlock,/turf/simulated/floor/tiled,/area/cargo)
 "NQ" = (/turf/simulated/floor/exoplanet/water/shallow,/area/mine/unexplored)
 "Ol" = (/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 8},/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 4},/turf/simulated/wall/sandstone,/area/mine/explored)
-"PA" = (/obj/effect/wallframe_spawn/reinforced,/turf/simulated/floor/tiled,/area/cargo)
-"PW" = (/obj/structure/table/standard,/turf/simulated/floor/tiled,/area/cargo)
 "Rr" = (/obj/effect/floor_decal/spline/fancy/wood,/turf/simulated/floor/exoplanet/water/shallow,/area/mine/unexplored)
-"RE" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/wall,/area/cargo)
-"Ss" = (/obj/structure/closet/emcloset,/turf/simulated/floor/tiled,/area/cargo)
 "SY" = (/obj/structure/fountain,/mob/living/simple_animal/hostile/retaliate/parrot/space,/turf/simulated/floor/airless/stone,/area/mine/explored)
 "TP" = (/obj/structure/totem,/turf/simulated/floor/fixed/alium/airless,/area/mine/explored)
-"WE" = (/obj/machinery/door/airlock/external{id_tag = "mining_outpost_in"},/turf/simulated/floor/tiled,/area/cargo)
-"WS" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock{dir = 1; id_tag = "mining_outpost_pump"},/obj/machinery/embedded_controller/radio/airlock/docking_port{id_tag = "mining_outpost_airlock"; pixel_y = 25; tag_airpump = "mining_outpost_pump"; tag_chamber_sensor = "mining_outpost_sensor"; tag_exterior_door = "mining_outpost_out"; tag_interior_door = "mining_outpost_in"},/obj/machinery/airlock_sensor{id_tag = "mining_outpost_sensor"; pixel_y = -24},/turf/simulated/floor/tiled,/area/cargo)
-"XC" = (/obj/machinery/door/airlock/external{id_tag = "mining_outpost_out"},/turf/simulated/floor/tiled,/area/cargo)
-"YP" = (/obj/machinery/light/spot,/turf/simulated/floor/tiled,/area/cargo)
-"Zp" = (/obj/machinery/atmospherics/unary/vent_scrubber/on,/turf/simulated/floor/tiled,/area/cargo)
-"Zt" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/wall,/area/cargo)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -170,15 +169,15 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeahahahahadadadadaeadadadadadadadadadadadadadadaeaeaeananananananananahananahahahananaeaeadadadadadadadadadadadadadadadadadadadadadaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeahahahahahahahadadaeaeadadadadadadadadadadadadaeaeananananahanananananahananahanananananaeaeadadadadadadadadadadadadadadadadadadadaeaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeahahahahahahahadadadaeaeadadadadadadadadadadaeaeananananananahahananahanananahanamananananaeaeaeadadadadadadadadadadadadadadadadaeaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeaecJavcJaeaeaeaeaeaeaeaeaeaeahahahahahahahadadadadaeaeaeadadadadadadaeaeaeanananahananananananahanananahanamamamanananananaeaeaeaeaeadadadadadadaeaeaeaeaeaeaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeaeaecJaKcJaeaeaeaeaeaeaeaeaeaeahahahahahahahadadadadadadaeaeaeaeaeaeaeaeanananahanananahahananananananananamamNQamamananahanananananaeaeaeaeaeaeaeaeanananananaeaeaeaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeaecJcJcJmJcJcJcJcJaeaeaeaeaeaeaeahahahahahahahadaeadadadadadadadadadadaeanananananananananananananananananamamAjRrNQamamanananananananananananananananahanananahanananaeaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaecJotrJstatayaCcJaeaeaeaeaeaeaeahahahahahahahadaeaeadadadadadadadaeaeaeananananananananananananananananamamAjeMapvcMXamamananananahananananananananananananananananananaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaecJcJcJcJaGLRaEcJaeaeaeaeaeaeaeahahahahahahahadadaeaeaeadadadadaeaeanananananananananananahanananananamamAjeMaMaMaMvcMXamamanananananahananananananananananananananananaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaecJNuPAaHPWawcJaeaeaeaeaeaeaeananahanahahadadadadadaeaeaeadaeaeanananananananananananananananananamamAjeMapajajajapvcMXamamananananananananananananahahanananahanahahaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaecJREcJaJazaAcJaeaeaeaeaeaeanananahahahahaeadadadadadadaeaeaeanananahanananananananananananananamamAjeMaMajajajajajaMvcMXamamanananananananananananahananananananananaeaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeWEWSXCYPZpSscJaeaeaeaeanananananahahahadaeaeaeaeaeaeaeaeaeaeananananananahanananananananananamamNQcfapaMajajSYajajaMapmaNQamamanananananananananananananahananananananaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaetiZtZtZtZtwgcJcJaeaeaeanananananahahahadadadadadadadaeaeaeaeananananananananananananananananamamamamDJaVaMajajajajajaMaULeamamamamanananananananananananahanananananananaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeaeatavataeaeaeaeaeaeaeaeaeaeahahahahahahahadadadadaeaeaeadadadadadadaeaeaeanananahananananananahanananahanamamamanananananaeaeaeaeaeadadadadadadaeaeaeaeaeaeaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeaeaeatawataeaeaeaeaeaeaeaeaeaeahahahahahahahadadadadadadaeaeaeaeaeaeaeaeanananahanananahahananananananananamamNQamamananahanananananaeaeaeaeaeaeaeaeanananananaeaeaeaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeaeatatatayatatatataeaeaeaeaeaeaeahahahahahahahadaeadadadadadadadadadadaeanananananananananananananananananamamAjRrNQamamanananananananananananananananahanananahanananaeaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeatazaAaCaEaGaHataeaeaeaeaeaeaeahahahahahahahadaeaeadadadadadadadaeaeaeananananananananananananananananamamAjeMapvcMXamamananananahananananananananananananananananananaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeatatatataJaKaLataeaeaeaeaeaeaeahahahahahahahadadaeaeaeadadadadaeaeanananananananananananahanananananamamAjeMaMaMaMvcMXamamanananananahananananananananananananananananaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeataObhbibjbkataeaeaeaeaeaeaeananahanahahadadadadadaeaeaeadaeaeanananananananananananananananananamamAjeMapajajajapvcMXamamananananananananananananahahanananahanahahaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeatblatbmbnboataeaeaeaeaeaeanananahahahahaeadadadadadadaeaeaeanananahanananananananananananananamamAjeMaMajajajajajaMvcMXamamanananananananananananahananananananananaeaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaebpbqbpbrbsbtataeaeaeaeanananananahahahadaeaeaeaeaeaeaeaeaeaeananananananahanananananananananamamNQcfapaMajajSYajajaMapmaNQamamanananananananananananananahananananananaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaetibububububvatataeaeaeanananananahahahadadadadadadadaeaeaeaeananananananananananananananananamamamamDJaVaMajajajajajaMaULeamamamamanananananananananananahanananananananaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeananananananahahadadadadadadadadadaeaeaeaeananahananananananananananananamaoaoaoaoaoDJaVapajajajapaUyQaoaoaoaoaoamananananananananananananananananahanaeaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeaeaeaeaeaeanananananahahahadadadadadadadadadadaeaeaeananananahananananananananananamaoaoaeaeaeaoaoDJaVajajajaUyQaoaoaeaeaeaoaoamanananananananananahananananahanananaeaeaeadadaeaeaeaeadadadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeaeaeaeananananananahahahahaeaeaeaeadadadadadadadaeaeaeananananahananahananananananamaoaoajajajaeaeaoaoDJaVajaUyQaoaoaeaeajajajaoaoamanananananananananananananananananananaeaeaeaeadadaeaeaeadadadadadadadadadadadadadadadadadadadadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

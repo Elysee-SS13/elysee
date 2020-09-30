@@ -98,6 +98,11 @@
 	icon_state="quartstorage"
 	req_access = list(access_cargo)
 
+/area/cargo/mining
+	name="\improper Mining Outpost"
+	icon_state="quartstorage"
+	req_access = list(access_mining)
+
 
 /area/cargo/dock
 	name = "Cargo Shuttle"
