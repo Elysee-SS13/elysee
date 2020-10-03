@@ -13,7 +13,7 @@ GLOBAL_LIST_EMPTY(skills)
 							"Experienced"		= "Experienced Description",
 							"Master"		= "Professional Description")
 	var/difficulty = SKILL_AVERAGE         //Used to compute how expensive the skill is
-	var/default_max = SKILL_ADEPT          //Makes the skill capped at this value in selection unless overriden at job level.
+	var/default_max = SKILL_MAX          //Makes the skill capped at this value in selection unless overriden at job level.
 	var/prerequisites                      // A list of skill prerequisites, if needed.
 
 /decl/hierarchy/skill/proc/get_cost(var/level)
@@ -43,19 +43,16 @@ GLOBAL_LIST_EMPTY(skills)
 	name = "Organizational"
 	ID	 = "1"
 	difficulty = SKILL_EASY
-	default_max = SKILL_MAX
 
 /decl/hierarchy/skill/general
 	name = "General"
 	ID	 = "2"
 	difficulty = SKILL_EASY
-	default_max = SKILL_MAX
 
 /decl/hierarchy/skill/service
 	name = "Service"
 	ID	 = "service"
 	difficulty = SKILL_EASY
-	default_max = SKILL_MAX
 
 /decl/hierarchy/skill/security
 	name = "Security"
