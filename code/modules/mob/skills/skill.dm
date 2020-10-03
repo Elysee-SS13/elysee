@@ -131,7 +131,6 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "You are an experienced pilot, and can safely take the helm of many types of craft. You could probably live in a spacecraft, and you're very well versed in essentially everything related to space-faring vessels. Not only can you fly a ship, but you can perform difficult maneuvers, and make most calculations related to piloting a spacecraft. You can maintain a ship. Skills of this level are typical for very experienced pilots. You have received formal piloting training.<br>- You can completely avoid meteors on normal speed while using tiny shuttlecrafts.",
 						"Master"		= "Not only are you an exceptional pilot, but you have mastered peripheral functions such as stellar navigation and bluespace jump plotting. You have experience performing complex maneuvers, managing squadrons of small craft, and operating in hostile environments.<br>- You can completely avoid meteors on normal speed using any shuttlecrafts.<br>- Less meteors will hit the ship while passing through meteor fields.")
 	difficulty = SKILL_AVERAGE
-	default_max = SKILL_ADEPT
 
 /decl/hierarchy/skill/general/hauling
 	ID = "hauling"
