@@ -24,6 +24,7 @@
 			            access_ce, access_RC_announce, access_keycard_auth, access_tcomsat, access_ai_upload)
 	minimal_player_age = 14
 	outfit_type = /decl/hierarchy/outfit/job/engineering/chief_engineer
+	max_skill = list(/decl/hierarchy/skill/engineering/construction = 5,/decl/hierarchy/skill/engineering/electrical = 5,/decl/hierarchy/skill/engineering/atmos = 5,/decl/hierarchy/skill/engineering/engines= 5)
 
 /datum/job/engineer
 	title = "Engineer"
@@ -41,3 +42,4 @@
 	alt_titles = list("Maintenance Technician","Engine Technician","Electrician",
 		"Atmospheric Technician" = /decl/hierarchy/outfit/job/engineering/atmos)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/engineer
+	max_skill = list(/decl/hierarchy/skill/engineering/construction = 5,/decl/hierarchy/skill/engineering/electrical = 5,/decl/hierarchy/skill/engineering/atmos = 5,/decl/hierarchy/skill/engineering/engines= 5)

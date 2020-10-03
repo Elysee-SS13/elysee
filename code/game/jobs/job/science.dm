@@ -21,6 +21,7 @@
 	minimal_player_age = 14
 	ideal_character_age = 50
 	outfit_type = /decl/hierarchy/outfit/job/science/rd
+	max_skill = list(/decl/hierarchy/skill/research/devices = 5,/decl/hierarchy/skill/research/science = 5)
 
 /datum/job/scientist
 	title = "Scientist"
@@ -37,6 +38,7 @@
 	alt_titles = list("Xenoarcheologist", "Anomalist", "Phoron Researcher")
 	minimal_player_age = 7
 	outfit_type = /decl/hierarchy/outfit/job/science/scientist
+	max_skill = list(/decl/hierarchy/skill/research/devices = 5,/decl/hierarchy/skill/research/science = 5)
 
 /datum/job/xenobiologist
 	title = "Xenobiologist"
@@ -53,6 +55,7 @@
 	alt_titles = list("Xenobotanist")
 	minimal_player_age = 7
 	outfit_type = /decl/hierarchy/outfit/job/science/xenobiologist
+	max_skill = list(/decl/hierarchy/skill/research/devices = 5,/decl/hierarchy/skill/research/science = 5)
 
 /datum/job/roboticist
 	title = "Roboticist"
@@ -69,3 +72,4 @@
 	alt_titles = list("Biomechanical Engineer","Mechatronic Engineer")
 	minimal_player_age = 3
 	outfit_type = /decl/hierarchy/outfit/job/science/roboticist
+	max_skill = list(/decl/hierarchy/skill/research/devices = 5,/decl/hierarchy/skill/research/science = 5)

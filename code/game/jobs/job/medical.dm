@@ -20,6 +20,7 @@
 	minimal_player_age = 14
 	ideal_character_age = 50
 	outfit_type = /decl/hierarchy/outfit/job/medical/cmo
+	max_skill = list(/decl/hierarchy/skill/medical/medical = 5,/decl/hierarchy/skill/medical/anatomy = 5,/decl/hierarchy/skill/medical/chemistry = 5)
 
 /datum/job/doctor
 	title = "Medical Doctor"
@@ -40,6 +41,7 @@
 		"Nurse" = /decl/hierarchy/outfit/job/medical/doctor/nurse,
 		"Virologist" = /decl/hierarchy/outfit/job/medical/doctor/virologist)
 	outfit_type = /decl/hierarchy/outfit/job/medical/doctor
+	max_skill = list(/decl/hierarchy/skill/medical/medical = 5,/decl/hierarchy/skill/medical/anatomy = 5,/decl/hierarchy/skill/medical/chemistry = 5)
 
 //Chemist is a medical job damnit	//YEAH FUCK YOU SCIENCE	-Pete	//Guys, behave -Erro
 /datum/job/chemist
@@ -56,6 +58,7 @@
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology)
 	minimal_access = list(access_medical, access_medical_equip, access_chemistry)
 	outfit_type = /decl/hierarchy/outfit/job/medical/chemist
+	max_skill = list(/decl/hierarchy/skill/medical/medical = 5,/decl/hierarchy/skill/medical/anatomy = 5,/decl/hierarchy/skill/medical/chemistry = 5)
 
 /datum/job/geneticist
 	title = "Geneticist"
@@ -71,6 +74,7 @@
 	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_research)
 	minimal_access = list(access_medical, access_morgue, access_research)
 	outfit_type = /decl/hierarchy/outfit/job/medical/geneticist
+	max_skill = list(/decl/hierarchy/skill/medical/medical = 5,/decl/hierarchy/skill/medical/anatomy = 5,/decl/hierarchy/skill/medical/chemistry = 5)
 
 /datum/job/psychiatrist
 	title = "Psychiatrist"
@@ -86,6 +90,7 @@
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_psychiatrist)
 	minimal_access = list(access_medical, access_medical_equip, access_psychiatrist)
 	outfit_type = /decl/hierarchy/outfit/job/medical/psychiatrist
+	max_skill = list(/decl/hierarchy/skill/medical/medical = 5,/decl/hierarchy/skill/medical/anatomy = 5,/decl/hierarchy/skill/medical/chemistry = 5)
 
 /datum/job/Paramedic
 	title = "Paramedic"
@@ -102,3 +107,4 @@
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks)
 	alt_titles = list("Emergency Medical Technician" = /decl/hierarchy/outfit/job/medical/paramedic/emt)
 	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
+	max_skill = list(/decl/hierarchy/skill/medical/medical = 5,/decl/hierarchy/skill/medical/anatomy = 5,/decl/hierarchy/skill/medical/chemistry = 5)
