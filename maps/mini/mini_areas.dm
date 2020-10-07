@@ -6,6 +6,7 @@
 /area/engineering/engineering_bay
 	name = "\improper Engineering"
 	icon_state = "engineering"
+	req_access = list(access_engine)
 
 /area/engineering/engine_monitor
 	name = "\improper Engine Monitoring Room"
@@ -70,12 +71,12 @@
 /area/cafeteria/bar
 	name="\improper Bar"
 	icon_state = "bar"
-	req_access = list(access_bar)
+	req_access = list(list(access_bar,access_kitchen))
 
 /area/cafeteria/kitchen
 	name="\improper Kitchen"
 	icon_state="kitchen"
-	req_access = list(access_kitchen)
+	req_access = list(list(access_kitchen,access_bar))
 
 /area/hydroponics
 	name="\improper Hydroponics"
@@ -101,7 +102,7 @@
 /area/cargo/mining
 	name="\improper Mining Outpost"
 	icon_state="quartstorage"
-	req_access = list(access_mining)
+	req_access = list(list(access_mining,access_cargo))
 
 
 /area/cargo/dock

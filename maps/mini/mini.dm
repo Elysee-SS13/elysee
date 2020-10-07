@@ -4,6 +4,7 @@
 	#include "mini_unit_testing.dm"
 	#include "mini_presets.dm"
 	#include "mini_security_state.dm"
+	#include "mini_jobs.dm"
 
 	#include "mini.dmm"
 	#include "z1_admin.dmm"
