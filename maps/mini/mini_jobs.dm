@@ -98,7 +98,7 @@
 /decl/hierarchy/outfit/job/opslead
 	name = OUTFIT_JOB_NAME("Operational Leader")
 	uniform = /obj/item/clothing/under/rank/head_of_personnel_whimsy
-	l_ear = /obj/item/device/radio/headset/heads/hop
+	l_ear = /obj/item/device/radio/headset/heads/opslead
 	shoes = /obj/item/clothing/shoes/brown
 	id_types = list(/obj/item/weapon/card/id/opslead)
 	pda_type = /obj/item/modular_computer/pda/heads/hop
@@ -109,6 +109,18 @@
 	desc = "A card which represents management."
 	job_access_type = /datum/job/opslead
 	extra_details = list("goldstripe")
+
+/obj/item/device/encryptionkey/heads/opslead
+	name = "captain's encryption key"
+	icon_state = "cap_cypherkey"
+	channels = list("Command" = 1, "Engineering" = 1, "Science" = 1, "Medical" = 1)
+
+/obj/item/device/radio/headset/heads/opslead
+	name = "opslead's headset"
+	desc = "The headset of the guy who command the operational departments."
+	icon_state = "com_headset"
+	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/heads/opslead
 
 
 
@@ -199,5 +211,52 @@
 	total_positions = 1
 	spawn_positions = 1
 
+/datum/job/janitor
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the head of personnel"
+	access = list(access_janitor, access_maint_tunnels, access_sec_doors)
+	minimal_access = list(access_janitor, access_maint_tunnels, access_sec_doors)
+	alt_titles = list("Custodian","Sanitation Technician")
+	outfit_type = /decl/hierarchy/outfit/job/service/janitor
+
+
+/datum/job/chef
+	title = "Chef"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the head of personnel"
+	access = list(access_hydroponics, access_bar, access_kitchen)
+	minimal_access = list(access_kitchen,access_bar, access_kitchen)
+	alt_titles = list("Cook","Restaurer")
+	outfit_type = /decl/hierarchy/outfit/job/service/chef
+
 /* SILICON */
 // AI defaults to 1
+
+
+
+/obj/item/weapon/robot_module/security/mini
+	name = "security robot module"
+	display_name = "Security"
+	sprites = list(
+		"Basic" = "secborg",
+		"Red Knight" = "Security",
+		"Black Knight" = "securityrobot",
+		"Bloodhound" = "bloodhound",
+		"Bloodhound - Treaded" = "secborg+tread",
+		"Tridroid" = "orb-security"
+	)
+	equipment = list(
+		/obj/item/device/flash,
+		/obj/item/borg/sight/hud/sec,
+		/obj/item/weapon/handcuffs/cyborg,
+		/obj/item/weapon/melee/baton/robot,
+		/obj/item/weapon/gun/energy/gun/secure/mounted,
+		/obj/item/taperoll/police,
+		/obj/item/device/megaphone,
+		/obj/item/device/holowarrant,
+		/obj/item/weapon/crowbar,
+		/obj/item/device/hailer
+	)
+	emag = /obj/item/weapon/gun/energy/laser/mounted
