@@ -1,0 +1,20652 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/turf/space,
+/area/space)
+"ab" = (
+/turf/simulated/wall/r_wall/hull,
+/area/ship/curie/maintenance/atmos)
+"ac" = (
+/obj/structure/closet/crate,
+/obj/machinery/light_switch{
+	pixel_x = -24
+	},
+/obj/random/maintenance,
+/obj/random/maintenance,
+/obj/random/tech_supply,
+/obj/item/clothing/shoes/magboots,
+/turf/simulated/floor,
+/area/ship/curie/tools)
+"ad" = (
+/obj/structure/grille,
+/turf/simulated/floor,
+/area/ship/curie/broken1)
+"ae" = (
+/obj/structure/grille,
+/obj/structure/lattice,
+/turf/space,
+/area/space)
+"af" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8;
+	layer = 2.4;
+	level = 2
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/command/bridge)
+"ag" = (
+/obj/structure/grille,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"ah" = (
+/obj/structure/lattice,
+/turf/space,
+/area/space)
+"ai" = (
+/turf/simulated/wall/r_wall/hull,
+/area/ship/curie/command/bridge)
+"aj" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 9;
+	icon_state = "borderfloor_white"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"ak" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor,
+/area/ship/curie/crew/common)
+"al" = (
+/turf/simulated/wall,
+/area/ship/curie/command/bridge)
+"am" = (
+/obj/machinery/atmospherics/pipe/simple/visible/supply{
+	icon_state = "intact-supply";
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/atmos)
+"an" = (
+/obj/structure/grille,
+/turf/simulated/floor,
+/area/ship/curie/broken2)
+"ao" = (
+/obj/structure/grille,
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"ap" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/light/small,
+/obj/structure/catwalk,
+/turf/simulated/floor,
+/area/ship/curie/crew/common)
+"aq" = (
+/turf/simulated/wall/r_wall/hull,
+/area/ship/curie/tools)
+"ar" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor,
+/area/ship/curie/crew/common)
+"as" = (
+/turf/simulated/wall,
+/area/ship/curie/tools)
+"at" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 1;
+	icon_state = "borderfloor_white"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"au" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 1;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 1
+	},
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_x = 0;
+	pixel_y = 24
+	},
+/obj/structure/cable{
+	icon_state = "0-2";
+	pixel_y = 1;
+	d2 = 2
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/machinery/light/spot{
+	icon_state = "tube1";
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"av" = (
+/turf/simulated/wall/r_wall/hull,
+/area/ship/curie/crew/common)
+"aw" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 1;
+	icon_state = "borderfloor_white"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"ax" = (
+/obj/machinery/atmospherics/pipe/simple/visible/supply{
+	icon_state = "intact-supply";
+	dir = 4
+	},
+/obj/machinery/meter,
+/turf/simulated/floor,
+/area/ship/curie/maintenance/atmos)
+"ay" = (
+/obj/machinery/atmospherics/pipe/simple/visible/supply{
+	icon_state = "intact-supply";
+	dir = 4
+	},
+/obj/machinery/alarm{
+	pixel_y = 24
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/atmos)
+"az" = (
+/obj/machinery/atmospherics/pipe/simple/visible/supply{
+	icon_state = "intact-supply";
+	dir = 10
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/maintenance/atmos)
+"aA" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/atmospherics/pipe/zpipe/up/scrubbers,
+/obj/structure/cable{
+	d1 = 16;
+	d2 = 0;
+	icon_state = "16-0"
+	},
+/obj/structure/cable{
+	icon_state = "0-2";
+	pixel_y = 1;
+	d2 = 2
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"aB" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/effect/floor_decal/corner/blue/diagonal{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/blue/diagonal,
+/obj/machinery/atmospherics/pipe/simple/visible/cyan{
+	icon_state = "intact";
+	dir = 6
+	},
+/obj/machinery/meter,
+/turf/simulated/floor/reinforced/oxygen,
+/area/ship/curie/maintenance/atmos)
+"aC" = (
+/obj/structure/window/reinforced,
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 8;
+	external_pressure_bound = 0;
+	external_pressure_bound_default = 0;
+	frequency = 1443;
+	icon_state = "map_vent_in";
+	id_tag = "air_out";
+	internal_pressure_bound = 2000;
+	internal_pressure_bound_default = 2000;
+	pressure_checks = 2;
+	pressure_checks_default = 2;
+	pump_direction = 0;
+	use_power = 1
+	},
+/turf/simulated/floor/reinforced/oxygen,
+/area/ship/curie/maintenance/atmos)
+"aD" = (
+/obj/item/device/radio/intercom{
+	pixel_y = 24
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/command/bridge)
+"aE" = (
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_x = 0;
+	pixel_y = 24
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/command/bridge)
+"aF" = (
+/obj/structure/window/reinforced,
+/obj/machinery/meter/turf,
+/obj/effect/floor_decal/corner/blue/diagonal{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/blue/diagonal,
+/obj/machinery/light/spot{
+	icon_state = "tube1";
+	dir = 1
+	},
+/turf/simulated/floor/reinforced/oxygen,
+/area/ship/curie/maintenance/atmos)
+"aG" = (
+/obj/structure/window/reinforced,
+/obj/machinery/atmospherics/unary/outlet_injector{
+	dir = 4;
+	frequency = 1441;
+	icon_state = "map_injector";
+	id = "n2_in";
+	use_power = 1
+	},
+/turf/simulated/floor/reinforced/oxygen,
+/area/ship/curie/maintenance/atmos)
+"aH" = (
+/obj/machinery/button/remote/blast_door{
+	id = "merchants";
+	name = "Broking Shutters";
+	pixel_x = -24;
+	pixel_y = -6
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/turf/simulated/floor/tiled,
+/area/ship/curie/cargo)
+"aI" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor,
+/area/ship/curie/crew/common)
+"aJ" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/ship/curie/crew/common)
+"aK" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced,
+/obj/effect/floor_decal/corner/blue/diagonal,
+/obj/effect/floor_decal/corner/blue/diagonal{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	icon_state = "intact";
+	dir = 10
+	},
+/obj/machinery/meter,
+/turf/simulated/floor/reinforced/oxygen,
+/area/ship/curie/maintenance/atmos)
+"aM" = (
+/obj/machinery/atmospherics/pipe/simple/visible/red{
+	icon_state = "intact";
+	dir = 6
+	},
+/obj/machinery/portable_atmospherics/canister/empty/carbon_dioxide,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"aN" = (
+/obj/machinery/atmospherics/binary/pump/on{
+	dir = 8;
+	target_pressure = 101.325
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"aO" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/space,
+/area/ship/curie/command/bridge)
+"aP" = (
+/obj/structure/grille,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"aR" = (
+/obj/machinery/atmospherics/pipe/simple/visible/universal{
+	dir = 4
+	},
+/obj/machinery/alarm{
+	pixel_y = 24
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/atmos)
+"aS" = (
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
+	icon_state = "intact-scrubbers";
+	dir = 4
+	},
+/obj/machinery/meter,
+/turf/simulated/floor,
+/area/ship/curie/maintenance/atmos)
+"aT" = (
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
+	icon_state = "intact-scrubbers";
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/atmos)
+"aU" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 5;
+	icon_state = "borderfloor_white"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"aV" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 1;
+	icon_state = "borderfloor_white"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"aW" = (
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"aX" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/obj/machinery/light_switch{
+	pixel_x = -24
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"aY" = (
+/turf/simulated/wall/r_wall/hull,
+/area/ship/curie/crew/medbay)
+"aZ" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 1;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 1
+	},
+/obj/effect/floor_decal/borderfloor/corner2{
+	dir = 1;
+	icon_state = "borderfloorcorner2_white"
+	},
+/obj/structure/table/standard,
+/obj/item/weapon/paper_bin,
+/obj/item/weapon/pen,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"ba" = (
+/obj/effect/floor_decal/borderfloor/corner,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"bc" = (
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"bd" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 8
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"be" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 1;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 1
+	},
+/obj/effect/floor_decal/borderfloor/corner2{
+	dir = 4;
+	icon_state = "borderfloorcorner2_white"
+	},
+/obj/machinery/light_switch{
+	pixel_y = 24
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"bf" = (
+/obj/structure/catwalk,
+/turf/simulated/open,
+/area/ship/curie/command/bridge)
+"bg" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 1;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 1
+	},
+/obj/item/modular_computer/telescreen/preset/generic{
+	pixel_y = 28
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"bh" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -24
+	},
+/obj/machinery/light_switch{
+	pixel_x = 24
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"bi" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"bj" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock/autoname,
+/turf/simulated/floor,
+/area/ship/curie/crew/medbay)
+"bk" = (
+/turf/simulated/wall,
+/area/ship/curie/crew/medbay)
+"bl" = (
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/turf/simulated/floor,
+/area/ship/curie/crew/medbay)
+"bm" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"bn" = (
+/obj/structure/grille,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"bo" = (
+/obj/structure/table/standard,
+/obj/random/snack,
+/obj/random/snack,
+/obj/item/clothing/head/soft/grey,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"bp" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/space,
+/area/ship/curie/command/bridge)
+"bq" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced,
+/turf/space,
+/area/ship/curie/command/bridge)
+"br" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 4;
+	frequency = 1383;
+	id_tag = "dock_port_pump"
+	},
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 9
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"bs" = (
+/obj/item/modular_computer/console/preset/engineering{
+	icon_state = "console";
+	dir = 4
+	},
+/turf/simulated/floor/bluegrid,
+/area/ship/curie/command/bridge)
+"bt" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 8;
+	frequency = 1379;
+	id_tag = "dock_star_pump"
+	},
+/obj/effect/floor_decal/industrial/warning{
+	dir = 5
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"bv" = (
+/turf/simulated/wall/r_wall,
+/area/ship/curie/broken1)
+"bw" = (
+/obj/effect/floor_decal/spline/plain/black{
+	icon_state = "spline_plain";
+	dir = 4
+	},
+/obj/structure/bed/chair/shuttle/black{
+	icon_state = "shuttle_chair_preview";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/command/bridge)
+"bx" = (
+/turf/simulated/wall,
+/area/ship/curie/maintenance/atmos)
+"by" = (
+/obj/machinery/atmospherics/pipe/simple/visible/universal,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"bz" = (
+/obj/item/modular_computer/console/preset/civilian{
+	icon_state = "console";
+	dir = 8
+	},
+/turf/simulated/floor/bluegrid,
+/area/ship/curie/command/bridge)
+"bB" = (
+/obj/machinery/atmospherics/pipe/simple/visible/cyan,
+/obj/effect/floor_decal/corner/white{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/obj/machinery/portable_atmospherics/canister/empty,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"bC" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/reinforced/airmix,
+/area/ship/curie/maintenance/atmos)
+"bE" = (
+/obj/machinery/vending/coffee,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"bF" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"bG" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"bH" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"bI" = (
+/obj/effect/floor_decal/corner/white{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/white{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/turf/simulated/floor/reinforced/airmix,
+/area/ship/curie/maintenance/atmos)
+"bJ" = (
+/turf/simulated/wall,
+/area/ship/curie/research/office)
+"bK" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/reinforced/airmix,
+/area/ship/curie/maintenance/atmos)
+"bL" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"bM" = (
+/turf/simulated/wall,
+/area/ship/curie/crew/common)
+"bN" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/ship/curie/crew/common)
+"bO" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/effect/floor_decal/borderfloor/corner2{
+	dir = 8;
+	icon_state = "borderfloorcorner2_white"
+	},
+/obj/structure/filingcabinet/chestdrawer,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"bP" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/effect/floor_decal/borderfloor/corner2{
+	dir = 6;
+	icon_state = "borderfloorcorner2_white"
+	},
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/obj/structure/table/standard,
+/obj/item/weapon/storage/box/cups,
+/obj/item/weapon/material/kitchen/utensil/fork/plastic,
+/obj/item/weapon/material/kitchen/utensil/fork/plastic,
+/obj/item/weapon/material/kitchen/utensil/fork/plastic,
+/obj/item/weapon/material/kitchen/utensil/fork/plastic,
+/obj/item/weapon/material/kitchen/utensil/knife/plastic,
+/obj/item/weapon/material/kitchen/utensil/knife/plastic,
+/obj/item/weapon/material/kitchen/utensil/knife/plastic,
+/obj/item/weapon/material/kitchen/utensil/knife/plastic,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"bQ" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green,
+/obj/effect/floor_decal/corner/white{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"bR" = (
+/obj/machinery/atmospherics/pipe/manifold/visible/red{
+	icon_state = "map";
+	dir = 8
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/maintenance/atmos)
+"bS" = (
+/obj/machinery/atmospherics/portables_connector{
+	icon_state = "map_connector";
+	dir = 8
+	},
+/obj/machinery/portable_atmospherics/powered/scrubber,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/maintenance/atmos)
+"bT" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"bU" = (
+/obj/effect/floor_decal/spline/plain/black{
+	icon_state = "spline_plain";
+	dir = 8
+	},
+/obj/structure/bed/chair/shuttle/black{
+	icon_state = "shuttle_chair_preview";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/command/bridge)
+"bV" = (
+/obj/item/modular_computer/console/preset/command{
+	icon_state = "console";
+	dir = 8
+	},
+/turf/simulated/floor/bluegrid,
+/area/ship/curie/command/bridge)
+"bW" = (
+/obj/structure/sign/warning/vacuum{
+	icon_state = "space";
+	dir = 4
+	},
+/turf/simulated/wall/r_wall/hull,
+/area/ship/curie/command/bridge)
+"bX" = (
+/obj/machinery/atmospherics/portables_connector{
+	dir = 1
+	},
+/obj/machinery/portable_atmospherics/canister/air/airlock,
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"bY" = (
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/corner/green/border,
+/obj/effect/floor_decal/borderfloor/corner2{
+	dir = 9;
+	icon_state = "borderfloorcorner2_white"
+	},
+/obj/item/device/radio/intercom{
+	dir = 1;
+	pixel_y = -22
+	},
+/obj/structure/closet,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/weapon/storage/fancy/candle_box,
+/obj/item/device/camera,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"bZ" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"ca" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 1;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 1
+	},
+/obj/item/modular_computer/console/preset/civilian,
+/obj/item/weapon/reagent_containers/food/drinks/coffee,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"cb" = (
+/obj/structure/table/standard,
+/obj/effect/floor_decal/borderfloor{
+	dir = 10;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 10
+	},
+/obj/item/weapon/folder,
+/obj/item/weapon/clipboard,
+/obj/item/weapon/folder,
+/obj/item/weapon/tape_roll,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"cc" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock/autoname,
+/turf/simulated/floor,
+/area/ship/curie/tools)
+"cd" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 6;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 6
+	},
+/obj/structure/reagent_dispensers/water_cooler,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"ce" = (
+/obj/machinery/atmospherics/omni/mixer{
+	active_power_usage = 7500;
+	tag_east = 2;
+	tag_east_con = 0;
+	tag_north = 1;
+	tag_north_con = 0.21;
+	tag_south = 0;
+	tag_south_con = null;
+	tag_west = 1;
+	tag_west_con = 0.79;
+	use_power = 1
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"cf" = (
+/obj/machinery/atmospherics/pipe/simple/visible{
+	icon_state = "intact";
+	dir = 8
+	},
+/obj/machinery/atmospherics/binary/passive_gate/on{
+	dir = 1;
+	name = "Air to Supply"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"cg" = (
+/obj/machinery/atmospherics/pipe/simple/visible{
+	icon_state = "intact";
+	dir = 8
+	},
+/obj/machinery/meter,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/maintenance/atmos)
+"ch" = (
+/obj/machinery/atmospherics/omni/mixer{
+	active_power_usage = 7500;
+	tag_east = 2;
+	tag_east_con = 0;
+	tag_north = 1;
+	tag_north_con = 0.21;
+	tag_south = 1;
+	tag_south_con = 0.79;
+	tag_west = 0;
+	use_power = 1
+	},
+/obj/effect/floor_decal/corner/white{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"ci" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/atmospherics/unary/outlet_injector{
+	dir = 8;
+	frequency = 1441;
+	icon_state = "map_injector";
+	id = "n2_in";
+	use_power = 1
+	},
+/turf/simulated/floor/reinforced/airmix,
+/area/ship/curie/maintenance/atmos)
+"cj" = (
+/obj/machinery/meter/turf,
+/obj/effect/floor_decal/corner/white{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/white{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/turf/simulated/floor/reinforced/airmix,
+/area/ship/curie/maintenance/atmos)
+"ck" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	icon_state = "intact";
+	dir = 5
+	},
+/obj/effect/floor_decal/corner/white{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"cl" = (
+/obj/machinery/atmospherics/omni/filter{
+	tag_east = 3;
+	tag_north = 1;
+	tag_south = 2;
+	tag_west = 4;
+	use_power = 1
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/maintenance/atmos)
+"cm" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	icon_state = "intact";
+	dir = 10
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"cn" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"co" = (
+/turf/simulated/wall/r_wall/hull,
+/area/ship/curie/maintenance/engineering)
+"cp" = (
+/turf/simulated/wall,
+/area/ship/curie/maintenance/engineering)
+"cq" = (
+/obj/structure/railing/mapped{
+	icon_state = "railing0";
+	dir = 4
+	},
+/turf/space,
+/area/space)
+"cr" = (
+/obj/machinery/atmospherics/pipe/manifold/visible/blue{
+	icon_state = "map";
+	dir = 8
+	},
+/obj/machinery/meter,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"cs" = (
+/obj/machinery/atmospherics/pipe/simple/visible/blue{
+	icon_state = "intact";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/maintenance/atmos)
+"ct" = (
+/turf/simulated/wall/r_wall/hull,
+/area/ship/curie/research/office)
+"cu" = (
+/obj/structure/catwalk,
+/turf/space,
+/area/space)
+"cv" = (
+/obj/machinery/atmospherics/pipe/simple/visible/cyan,
+/obj/machinery/atmospherics/binary/pump/on{
+	dir = 8;
+	name = "Air to Ports"
+	},
+/obj/effect/floor_decal/corner/white{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"cw" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 8;
+	external_pressure_bound = 0;
+	external_pressure_bound_default = 0;
+	frequency = 1443;
+	icon_state = "map_vent_in";
+	id_tag = "air_out";
+	internal_pressure_bound = 2000;
+	internal_pressure_bound_default = 2000;
+	pressure_checks = 2;
+	pressure_checks_default = 2;
+	pump_direction = 0;
+	use_power = 1
+	},
+/turf/simulated/floor/reinforced/airmix,
+/area/ship/curie/maintenance/atmos)
+"cx" = (
+/obj/structure/railing/mapped{
+	icon_state = "railing0";
+	dir = 8
+	},
+/turf/space,
+/area/space)
+"cy" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/white{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"cz" = (
+/obj/machinery/atmospherics/pipe/simple/visible/red,
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4;
+	icon_state = "intact"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/maintenance/atmos)
+"cA" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	icon_state = "intact";
+	dir = 9
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"cB" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/visible{
+	icon_state = "map";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"cC" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/atmos)
+"cD" = (
+/obj/structure/stairs/north,
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"cE" = (
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/turf/simulated/floor,
+/area/ship/curie/crew/kitchen)
+"cF" = (
+/obj/machinery/atmospherics/portables_connector{
+	dir = 1
+	},
+/obj/machinery/portable_atmospherics/powered/pump/filled,
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"cG" = (
+/obj/item/weapon/wrench,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/maintenance/atmos)
+"cH" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/red/diagonal,
+/obj/effect/floor_decal/corner/red/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/cyan{
+	icon_state = "intact";
+	dir = 5
+	},
+/obj/machinery/meter,
+/turf/simulated/floor/reinforced/nitrogen,
+/area/ship/curie/maintenance/atmos)
+"cI" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 8;
+	external_pressure_bound = 0;
+	external_pressure_bound_default = 0;
+	frequency = 1443;
+	icon_state = "map_vent_in";
+	id_tag = "air_out";
+	internal_pressure_bound = 2000;
+	internal_pressure_bound_default = 2000;
+	pressure_checks = 2;
+	pressure_checks_default = 2;
+	pump_direction = 0;
+	use_power = 1
+	},
+/turf/simulated/floor/reinforced/nitrogen,
+/area/ship/curie/maintenance/atmos)
+"cJ" = (
+/obj/structure/table/standard,
+/obj/item/weapon/storage/box/masks,
+/obj/item/weapon/pen,
+/obj/random/medical,
+/obj/item/weapon/storage/pill_bottle,
+/obj/item/weapon/storage/pill_bottle,
+/obj/effect/floor_decal/borderfloorwhite,
+/obj/effect/floor_decal/corner/paleblue/border,
+/obj/machinery/light/spot,
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"cK" = (
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/warning,
+/turf/simulated/floor/tiled,
+/area/ship/curie/cargo)
+"cL" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/atmospherics/unary/outlet_injector{
+	dir = 4;
+	frequency = 1441;
+	icon_state = "map_injector";
+	id = "n2_in";
+	use_power = 1
+	},
+/turf/simulated/floor/reinforced/nitrogen,
+/area/ship/curie/maintenance/atmos)
+"cM" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/red/diagonal,
+/obj/effect/floor_decal/corner/red/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	icon_state = "intact";
+	dir = 9
+	},
+/obj/machinery/meter,
+/turf/simulated/floor/reinforced/nitrogen,
+/area/ship/curie/maintenance/atmos)
+"cN" = (
+/obj/machinery/atmospherics/pipe/simple/visible/red,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/maintenance/atmos)
+"cO" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/light/spot,
+/obj/item/modular_computer/console/preset/merchant{
+	icon_state = "console";
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"cP" = (
+/obj/item/weapon/stool/padded,
+/obj/effect/landmark/start{
+	name = "Cook"
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor,
+/area/ship/curie/crew/kitchen)
+"cQ" = (
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"cR" = (
+/obj/machinery/atmospherics/pipe/simple/visible/red,
+/obj/machinery/door/airlock/autoname/engineering,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/maintenance/atmos)
+"cS" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/door/airlock/autoname{
+	icon_state = "closed";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"cT" = (
+/obj/structure/fireaxecabinet{
+	pixel_y = 32
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"cU" = (
+/turf/simulated/floor,
+/area/ship/curie/tools)
+"cV" = (
+/obj/machinery/atmospherics/pipe/zpipe/up/fuel,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"cW" = (
+/obj/structure/table/standard,
+/obj/item/device/multitool{
+	pixel_x = 5
+	},
+/obj/machinery/light/small{
+	icon_state = "bulb1";
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"cX" = (
+/obj/structure/table/standard,
+/obj/item/device/pipe_painter,
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"cY" = (
+/obj/structure/ladder/up,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"cZ" = (
+/obj/machinery/space_heater,
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"da" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -24
+	},
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/obj/structure/cable{
+	icon_state = "0-2";
+	pixel_y = 1;
+	d2 = 2
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/medbay)
+"db" = (
+/obj/machinery/pipedispenser,
+/obj/machinery/light/small{
+	icon_state = "bulb1";
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"dc" = (
+/obj/machinery/atmospherics/pipe/simple/visible/red,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"dd" = (
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_x = 0;
+	pixel_y = 24
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"de" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/red{
+	icon_state = "intact";
+	dir = 6
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"df" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 8;
+	external_pressure_bound = 140;
+	external_pressure_bound_default = 140;
+	icon_state = "map_vent_out";
+	pressure_checks = 1;
+	pressure_checks_default = 1;
+	use_power = 1
+	},
+/turf/simulated/floor/airless,
+/area/ship/curie/maintenance/engineering)
+"dg" = (
+/obj/machinery/atmospherics/valve/open,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/plating,
+/area/ship/curie/maintenance/engineering)
+"dh" = (
+/obj/structure/closet/firecloset,
+/turf/simulated/floor,
+/area/ship/curie/broken1)
+"di" = (
+/obj/structure/table/standard,
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/red/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/item/weapon/material/kitchen/utensil/knife,
+/obj/item/weapon/material/kitchen/rollingpin,
+/obj/item/weapon/reagent_containers/food/condiment/small/saltshaker{
+	pixel_x = -3;
+	pixel_y = 0
+	},
+/obj/item/weapon/reagent_containers/food/condiment/small/peppermill{
+	pixel_x = 3
+	},
+/obj/structure/sink{
+	dir = 8;
+	icon_state = "sink";
+	pixel_x = -13;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"dj" = (
+/obj/structure/table/standard,
+/obj/item/weapon/book/manual/chef_recipes,
+/obj/item/weapon/storage/box/donkpockets,
+/obj/item/weapon/reagent_containers/food/condiment/enzyme{
+	layer = 5
+	},
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/red/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/item/weapon/reagent_containers/food/condiment/enzyme{
+	layer = 5
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"dk" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
+	},
+/obj/structure/cable{
+	icon_state = "0-2";
+	pixel_y = 1;
+	d2 = 2
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"dl" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/medbay)
+"dm" = (
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/tiled,
+/area/ship/curie/tools)
+"dn" = (
+/obj/effect/floor_decal/spline/plain/black{
+	icon_state = "spline_plain";
+	dir = 4
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/recharger,
+/obj/item/device/radio,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/command/bridge)
+"do" = (
+/obj/effect/floor_decal/spline/plain/black{
+	icon_state = "spline_plain";
+	dir = 8
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/recharger,
+/obj/item/device/radio,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/command/bridge)
+"dp" = (
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/space,
+/area/ship/curie/command/bridge)
+"dq" = (
+/turf/simulated/open,
+/area/ship/curie/cargo)
+"dr" = (
+/turf/simulated/floor,
+/area/ship/curie/crew/common)
+"ds" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/medbay)
+"dt" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/window/southright,
+/obj/item/weapon/storage/pill_bottle/assorted{
+	pixel_x = -6
+	},
+/obj/item/weapon/storage/pill_bottle/assorted{
+	pixel_x = 6;
+	pixel_y = 0
+	},
+/obj/item/weapon/storage/pill_bottle/assorted,
+/obj/item/weapon/storage/pill_bottle/citalopram{
+	pixel_x = 0;
+	pixel_y = 10
+	},
+/obj/item/weapon/storage/pill_bottle/antidexafen{
+	pixel_x = 6;
+	pixel_y = 10
+	},
+/obj/item/weapon/storage/pill_bottle/tramadol{
+	pixel_x = -6;
+	pixel_y = 10
+	},
+/obj/structure/table/standard,
+/turf/simulated/floor/tiled/dark,
+/area/ship/curie/crew/medbay)
+"du" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"dv" = (
+/obj/machinery/door/window,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/item/weapon/storage/pill_bottle/kelotane{
+	pixel_x = -6
+	},
+/obj/item/weapon/storage/pill_bottle/antitox,
+/obj/item/weapon/storage/pill_bottle/spaceacillin{
+	pixel_x = 6
+	},
+/obj/structure/table/standard,
+/turf/simulated/floor/tiled/dark,
+/area/ship/curie/crew/medbay)
+"dw" = (
+/obj/machinery/vending/dinnerware,
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/red/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"dx" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/window/southright,
+/obj/structure/table/rack,
+/obj/item/weapon/storage/firstaid/toxin{
+	pixel_y = 10
+	},
+/obj/item/weapon/storage/firstaid/o2{
+	pixel_y = 4
+	},
+/obj/item/weapon/storage/firstaid/regular{
+	pixel_y = -2
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/curie/crew/medbay)
+"dy" = (
+/obj/machinery/door/window,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/table/rack,
+/obj/item/weapon/storage/firstaid/fire{
+	pixel_y = 10;
+	step_y = 0
+	},
+/obj/item/weapon/storage/firstaid/trauma{
+	pixel_y = 4
+	},
+/obj/item/weapon/storage/firstaid/regular{
+	pixel_y = -2
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/curie/crew/medbay)
+"dz" = (
+/obj/machinery/chem_master/condimaster,
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/red/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 24;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"dA" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -24
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"dB" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/red/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"dC" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/medbay)
+"dD" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"dF" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/zpipe/down/supply,
+/obj/structure/bed/chair/office/light,
+/turf/simulated/open,
+/area/ship/curie/crew/common)
+"dG" = (
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"dH" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/red/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"dI" = (
+/obj/structure/stairs/north,
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"dJ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/door/airlock/autoname{
+	icon_state = "closed";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research)
+"dK" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/medbay)
+"dL" = (
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"dM" = (
+/turf/simulated/wall/r_wall,
+/area/ship/curie/broken2)
+"dN" = (
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -24
+	},
+/obj/effect/floor_decal/floordetail/edgedrain,
+/obj/effect/floor_decal/floordetail/edgedrain{
+	icon_state = "edge";
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/ship/curie/crew/kitchen)
+"dO" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/turf/simulated/floor/tiled,
+/area/ship/curie/tools)
+"dP" = (
+/obj/machinery/light_switch{
+	pixel_x = 24
+	},
+/obj/effect/floor_decal/floordetail/edgedrain,
+/obj/effect/floor_decal/floordetail/edgedrain{
+	icon_state = "edge";
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/ship/curie/crew/kitchen)
+"dQ" = (
+/obj/structure/grille,
+/turf/space,
+/area/space)
+"dR" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/effect/landmark/start{
+	name = "Science Officer"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research/office)
+"dS" = (
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/tiled,
+/area/ship/curie/research/office)
+"dT" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/red/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"dU" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research/office)
+"dV" = (
+/obj/structure/closet/crate,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/glass/fifty,
+/turf/simulated/floor,
+/area/ship/curie/research/office)
+"dW" = (
+/obj/effect/wallframe_spawn/reinforced,
+/turf/simulated/floor,
+/area/ship/curie/merchant)
+"dX" = (
+/obj/effect/wallframe_spawn/reinforced,
+/turf/simulated/floor,
+/area/ship/curie/research)
+"dY" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/medbay)
+"dZ" = (
+/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/structure/sink{
+	dir = 8;
+	icon_state = "sink";
+	pixel_x = -13;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/curie/crew/kitchen)
+"ea" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/door/airlock/autoname{
+	icon_state = "closed";
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/ship/curie/tools)
+"eb" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/item/clothing/shoes/magboots/soft,
+/turf/simulated/floor,
+/area/ship/curie/tools)
+"ec" = (
+/obj/item/weapon/stool/padded,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/tools)
+"ed" = (
+/obj/structure/bed/chair/comfy/red,
+/turf/simulated/floor/tiled/monotile,
+/area/ship/curie/crew/common)
+"ee" = (
+/obj/machinery/light/spot{
+	icon_state = "tube1";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/curie/crew/kitchen)
+"ef" = (
+/obj/effect/floor_decal/borderfloor/corner{
+	dir = 8;
+	icon_state = "borderfloorcorner_white"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"eg" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research/office)
+"eh" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 1
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research/office)
+"ej" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/door/airlock/autoname{
+	icon_state = "closed";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research/office)
+"ek" = (
+/obj/machinery/door/airlock/external/bolted/cycling{
+	dir = 4;
+	frequency = 1383;
+	id_tag = "dock_port_out"
+	},
+/obj/machinery/access_button/airlock_exterior{
+	frequency = 1383;
+	master_tag = "dalbarade_dock_port";
+	pixel_x = -18;
+	pixel_y = 20
+	},
+/obj/machinery/shield_diffuser,
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"el" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research/office)
+"em" = (
+/obj/structure/ladder,
+/turf/simulated/floor,
+/area/ship/curie/research/office)
+"en" = (
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"eo" = (
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/fuel,
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"ep" = (
+/obj/structure/closet/emcloset,
+/turf/simulated/floor,
+/area/ship/curie/tools)
+"eq" = (
+/obj/structure/closet,
+/obj/machinery/button/remote/blast_door{
+	id = "rds";
+	name = "Development Shutters";
+	pixel_x = 24;
+	pixel_y = -6
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/obj/machinery/light/spot{
+	icon_state = "tube1";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/cargo)
+"er" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor,
+/area/ship/curie/tools)
+"es" = (
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/corner/brown/border,
+/obj/machinery/portable_atmospherics/powered/pump/filled,
+/obj/machinery/alarm{
+	dir = 1;
+	icon_state = "alarm0";
+	pixel_y = -24
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/tools)
+"et" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/zpipe/down/scrubbers,
+/obj/structure/bed/chair/comfy/red,
+/turf/simulated/open,
+/area/ship/curie/crew/common)
+"eu" = (
+/obj/structure/grille,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"ev" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"ew" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/medbay)
+"ex" = (
+/turf/simulated/open,
+/area/ship/curie/crew/common)
+"ey" = (
+/obj/machinery/embedded_controller/radio/airlock/docking_port{
+	frequency = 1383;
+	id_tag = "dalbarade_dock_port";
+	pixel_y = 25;
+	tag_airpump = "dock_port_pump";
+	tag_chamber_sensor = "dock_port_sensor";
+	tag_exterior_door = "dock_port_out";
+	tag_interior_door = "dock_port_in"
+	},
+/obj/machinery/airlock_sensor{
+	frequency = 1383;
+	id_tag = "dock_port_sensor";
+	pixel_y = 36
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 10;
+	icon_state = "intact"
+	},
+/obj/effect/floor_decal/industrial/warning{
+	dir = 5
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"ez" = (
+/obj/machinery/door/airlock/autoname{
+	dir = 4
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"eB" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"eC" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"eD" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8;
+	layer = 2.4;
+	level = 2
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"eE" = (
+/obj/structure/closet/crate/trashcart,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/item/weapon/storage/bag/trash,
+/obj/item/weapon/storage/bag/trash,
+/obj/item/weapon/storage/bag/trash,
+/obj/item/weapon/storage/bag/trash,
+/turf/simulated/floor,
+/area/ship/curie/broken1)
+"eF" = (
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/ship/curie/crew/common)
+"eG" = (
+/obj/structure/closet,
+/obj/item/clothing/glasses/regular,
+/obj/item/weapon/cane,
+/obj/random/medical,
+/obj/random/medical,
+/obj/random/medical,
+/obj/random/medical,
+/obj/random/medical,
+/obj/effect/floor_decal/borderfloorwhite{
+	icon_state = "borderfloor_white";
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/machinery/light/spot{
+	icon_state = "tube1";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"eH" = (
+/obj/machinery/portable_atmospherics/hydroponics,
+/turf/simulated/floor/tiled/dark,
+/area/ship/curie/crew/kitchen)
+"eI" = (
+/obj/effect/shuttle_landmark/lift/top,
+/turf/simulated/open,
+/area/ship/curie/cargo)
+"eJ" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 8
+	},
+/obj/structure/closet/crate/freezer,
+/obj/item/weapon/reagent_containers/ivbag/blood/OMinus,
+/obj/item/weapon/reagent_containers/ivbag/blood/OMinus,
+/obj/item/weapon/reagent_containers/ivbag/blood/OMinus,
+/turf/simulated/floor,
+/area/ship/curie/crew/medbay)
+"eK" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/machinery/door/airlock/autoname,
+/turf/simulated/floor,
+/area/ship/curie/merchant)
+"eL" = (
+/obj/structure/sign/bluecross_1,
+/turf/simulated/wall,
+/area/ship/curie/crew/medbay)
+"eM" = (
+/obj/effect/floor_decal/borderfloorwhite{
+	icon_state = "borderfloor_white";
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/effect/floor_decal/borderfloorwhite/corner2{
+	icon_state = "borderfloorcorner2_white";
+	dir = 10
+	},
+/obj/machinery/vending/wallmed1{
+	pixel_x = -24;
+	pixel_y = 6
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"eN" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"eO" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 4
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"eP" = (
+/obj/machinery/optable,
+/obj/item/weapon/reagent_containers/spray/sterilizine,
+/turf/simulated/floor/tiled/dark,
+/area/ship/curie/crew/medbay)
+"eR" = (
+/obj/structure/grille,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"eS" = (
+/obj/machinery/embedded_controller/radio/airlock/docking_port{
+	id_tag = "dalbarade_starboard_dock";
+	pixel_y = 25;
+	tag_airpump = "dock_star_pump";
+	tag_chamber_sensor = "dock_star_sensor";
+	tag_exterior_door = "dock_star_out";
+	tag_interior_door = "dock_star_in"
+	},
+/obj/machinery/airlock_sensor{
+	id_tag = "dock_star_sensor";
+	pixel_y = 37
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 6
+	},
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 9
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"eT" = (
+/obj/machinery/door/airlock/external/bolted/cycling{
+	dir = 4;
+	frequency = 1383;
+	id_tag = "dock_port_in"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 4
+	},
+/obj/machinery/access_button/airlock_interior{
+	frequency = 1383;
+	master_tag = "dalbarade_dock_port";
+	pixel_x = 12;
+	pixel_y = -20
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"eU" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"eV" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/machinery/door/airlock/autoname{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"eW" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/light_switch{
+	pixel_x = -22;
+	pixel_y = 22
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"eX" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 10;
+	icon_state = "borderfloor_white"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"eY" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/cryopod/robot{
+	dir = 4
+	},
+/obj/machinery/computer/cryopod/robot{
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/simulated/floor,
+/area/ship/curie/research/office)
+"eZ" = (
+/obj/effect/decal/cleanable/cobweb,
+/obj/structure/closet/crate,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/item/weapon/deck/cards,
+/obj/item/weapon/deck/cards,
+/obj/item/weapon/deck/cards,
+/obj/item/weapon/storage/pill_bottle/dice,
+/obj/item/weapon/storage/pill_bottle/dice,
+/obj/item/weapon/paper,
+/obj/item/weapon/paper,
+/obj/item/weapon/paper,
+/obj/item/weapon/pen,
+/obj/item/weapon/pen,
+/obj/item/weapon/pen,
+/obj/item/weapon/storage/fancy/candle_box,
+/turf/simulated/floor,
+/area/ship/curie/broken1)
+"fa" = (
+/obj/structure/bed,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/ship/curie/broken1)
+"fb" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/machinery/pipedispenser/disposal,
+/turf/simulated/floor,
+/area/ship/curie/broken1)
+"fc" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/recharge_station,
+/turf/simulated/floor,
+/area/ship/curie/research/office)
+"fd" = (
+/obj/structure/disposaloutlet{
+	icon_state = "outlet";
+	dir = 8
+	},
+/obj/structure/disposalpipe/trunk{
+	icon_state = "pipe-t";
+	dir = 4
+	},
+/turf/simulated/floor/airless,
+/area/ship/curie/broken1)
+"fe" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/structure/table/standard,
+/obj/item/weapon/autopsy_scanner,
+/obj/item/weapon/scalpel,
+/turf/simulated/floor,
+/area/ship/curie/broken2)
+"ff" = (
+/obj/machinery/optable,
+/turf/simulated/floor/tiled/dark,
+/area/ship/curie/broken2)
+"fg" = (
+/turf/simulated/floor,
+/area/ship/curie/broken1)
+"fh" = (
+/obj/item/weapon/storage/bag/trash,
+/turf/simulated/floor,
+/area/ship/curie/broken1)
+"fi" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor,
+/area/ship/curie/broken1)
+"fj" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/structure/morgue,
+/turf/simulated/floor,
+/area/ship/curie/broken2)
+"fk" = (
+/turf/simulated/floor,
+/area/ship/curie/broken2)
+"fl" = (
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	icon_state = "pipe-t";
+	dir = 8
+	},
+/turf/simulated/floor,
+/area/ship/curie/broken1)
+"fm" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/structure/closet/walllocker/emerglocker/west,
+/obj/effect/floor_decal/corner/blue/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/structure/bed/chair/shuttle/black{
+	icon_state = "shuttle_chair_preview";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"fn" = (
+/obj/structure/reagent_dispensers/acid{
+	density = 0;
+	pixel_x = -32
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/curie/research)
+"fo" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock/autoname,
+/turf/simulated/floor,
+/area/ship/curie/research)
+"fp" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/structure/closet/walllocker/emerglocker/east,
+/obj/effect/floor_decal/corner/blue/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/structure/bed/chair/shuttle/black{
+	icon_state = "shuttle_chair_preview";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"fq" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 6;
+	icon_state = "borderfloor_white"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"fr" = (
+/obj/structure/closet/emcloset,
+/turf/simulated/floor,
+/area/ship/curie/research/office)
+"ft" = (
+/turf/simulated/wall/r_wall/hull,
+/area/ship/curie/merchant)
+"fu" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/door/airlock/autoname,
+/turf/simulated/floor,
+/area/ship/curie/research/office)
+"fv" = (
+/obj/machinery/light/spot,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/command/bridge)
+"fw" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
+/obj/structure/table/standard,
+/obj/item/weapon/reagent_containers/glass/rag,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"fx" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/machinery/door/airlock/autoname{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"fy" = (
+/turf/simulated/wall,
+/area/ship/curie/merchant)
+"fz" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/simulated/floor,
+/area/ship/curie/tools)
+"fA" = (
+/obj/effect/floor_decal/borderfloor/corner{
+	dir = 1;
+	icon_state = "borderfloorcorner_white"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"fB" = (
+/turf/simulated/wall,
+/area/ship/curie/research)
+"fC" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/door/blast/shutters{
+	dir = 4;
+	icon_state = "shutter1";
+	id = "rds"
+	},
+/turf/simulated/floor,
+/area/ship/curie/research)
+"fD" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock/autoname,
+/turf/simulated/floor,
+/area/ship/curie/merchant)
+"fE" = (
+/turf/simulated/wall/r_wall/hull,
+/area/ship/curie/research)
+"fF" = (
+/obj/effect/floor_decal/borderfloor/corner{
+	dir = 4;
+	icon_state = "borderfloorcorner_white"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"fG" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = -24;
+	pixel_y = 0
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"fH" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/structure/table/standard,
+/obj/item/weapon/reagent_containers/spray/cleaner,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"fI" = (
+/obj/structure/closet/emcloset,
+/turf/simulated/floor,
+/area/ship/curie/broken1)
+"fK" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/blue/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"fL" = (
+/obj/machinery/computer/centrifuge,
+/obj/item/weapon/reagent_containers/glass/beaker/vial,
+/obj/item/weapon/reagent_containers/glass/beaker/vial,
+/obj/item/weapon/reagent_containers/glass/beaker/vial,
+/obj/item/weapon/reagent_containers/chem_disp_cartridge/radium,
+/turf/simulated/floor,
+/area/ship/curie/broken2)
+"fM" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"fN" = (
+/obj/machinery/atmospherics/pipe/simple/visible/red{
+	icon_state = "intact";
+	dir = 5
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"fO" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/atmospherics/pipe/simple/visible/red{
+	icon_state = "intact";
+	dir = 4
+	},
+/obj/machinery/atmospherics/valve/open,
+/turf/simulated/floor/plating,
+/area/ship/curie/maintenance/engineering)
+"fP" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/ship/curie/crew/common)
+"fQ" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"fR" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/structure/closet/crate,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/obj/random/tech_supply,
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"fS" = (
+/obj/effect/floor_decal/industrial/loading{
+	icon_state = "loadingarea";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/button/remote/blast_door{
+	id = "merchants";
+	name = "Broking Shutters";
+	pixel_x = 6;
+	pixel_y = 24
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"fT" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/door/blast/shutters{
+	dir = 8;
+	icon_state = "shutter1";
+	id = "merchants"
+	},
+/turf/simulated/floor,
+/area/ship/curie/merchant)
+"fU" = (
+/obj/structure/table/rack{
+	dir = 8;
+	layer = 2.9
+	},
+/obj/item/weapon/stock_parts/console_screen,
+/obj/item/weapon/stock_parts/console_screen,
+/obj/item/weapon/stock_parts/micro_laser,
+/obj/item/weapon/stock_parts/micro_laser,
+/obj/item/weapon/stock_parts/micro_laser,
+/obj/item/weapon/stock_parts/micro_laser/ultra,
+/obj/item/weapon/stock_parts/scanning_module,
+/obj/item/weapon/stock_parts/scanning_module/adv,
+/obj/item/weapon/stock_parts/manipulator,
+/obj/machinery/light_switch{
+	pixel_x = 24
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research)
+"fV" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/structure/closet/walllocker/emerglocker/west,
+/obj/effect/floor_decal/corner/blue/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/structure/bed/chair/shuttle/black{
+	icon_state = "shuttle_chair_preview";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"fW" = (
+/obj/effect/floor_decal/industrial/warning/corner{
+	icon_state = "warningcorner";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9;
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research)
+"fY" = (
+/obj/effect/floor_decal/borderfloor/corner{
+	dir = 1;
+	icon_state = "borderfloorcorner_white"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"fZ" = (
+/obj/machinery/mecha_part_fabricator,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research)
+"ga" = (
+/obj/effect/floor_decal/borderfloor/corner{
+	dir = 4;
+	icon_state = "borderfloorcorner_white"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"gb" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/blue/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"gc" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/blue/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"gd" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/blue/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"ge" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/hydroponics/prespawned,
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"gf" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"gh" = (
+/obj/machinery/sleeper{
+	icon_state = "sleeper_0";
+	dir = 4
+	},
+/obj/effect/floor_decal/borderfloorwhite{
+	icon_state = "borderfloor_white";
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/effect/floor_decal/borderfloorwhite/corner2{
+	icon_state = "borderfloorcorner2_white";
+	dir = 8
+	},
+/obj/machinery/light_switch{
+	pixel_x = -24
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"gi" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"gj" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/blue/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"gk" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/blue/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"gl" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/blue/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/item/device/radio/intercom{
+	dir = 8;
+	icon_state = "intercom";
+	pixel_x = 22
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"gm" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/machinery/door/airlock/autoname{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/ship/curie/crew/kitchen)
+"gn" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/blue/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/item/device/radio/intercom{
+	dir = 4;
+	pixel_x = -22
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"go" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/blue/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 24;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"gp" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/blue/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = -24;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"gq" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/machinery/door/airlock/autoname{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"gr" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8;
+	layer = 2.4;
+	level = 2
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"gs" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 9;
+	icon_state = "borderfloor_white"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"gu" = (
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/corner/green/border,
+/obj/machinery/light/spot,
+/obj/machinery/photocopier,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"gv" = (
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/corner/green/border,
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
+/obj/structure/table/standard,
+/obj/machinery/recharger,
+/obj/item/device/taperecorder,
+/obj/item/device/tape,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"gw" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 5;
+	icon_state = "borderfloor_white"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"gx" = (
+/obj/effect/floor_decal/industrial/loading{
+	icon_state = "loadingarea";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"gy" = (
+/obj/machinery/atmospherics/pipe/simple/visible/red{
+	icon_state = "intact";
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"gz" = (
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/corner/green/border,
+/obj/effect/floor_decal/borderfloor/corner2,
+/obj/machinery/light_switch{
+	pixel_y = -24
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"gA" = (
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/corner/green/border,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"gB" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 4
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8;
+	layer = 2.4;
+	level = 2
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"gC" = (
+/obj/machinery/optable,
+/obj/item/weapon/reagent_containers/food/drinks/coffeecup/britcup,
+/obj/item/clothing/accessory/stethoscope,
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 24;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/curie/crew/medbay)
+"gD" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/door/airlock/autoname{
+	icon_state = "closed";
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"gE" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"gF" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/visible/red,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"gG" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/door/airlock/autoname{
+	icon_state = "closed";
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"gH" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 9;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/blue/border{
+	icon_state = "bordercolor";
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"gI" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 5;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/blue/border{
+	icon_state = "bordercolor";
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"gJ" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -24
+	},
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/obj/structure/cable{
+	icon_state = "0-2";
+	pixel_y = 1;
+	d2 = 2
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/tools)
+"gK" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"gL" = (
+/obj/machinery/vending/assist,
+/obj/effect/floor_decal/borderfloor{
+	dir = 9;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/brown/border{
+	icon_state = "bordercolor";
+	dir = 9
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/tools)
+"gM" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"gN" = (
+/turf/simulated/wall,
+/area/ship/curie/crew/kitchen)
+"gO" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/door/airlock/autoname,
+/turf/simulated/floor,
+/area/ship/curie/crew/kitchen)
+"gP" = (
+/turf/simulated/wall/r_wall/hull,
+/area/ship/curie/crew/kitchen)
+"gQ" = (
+/obj/structure/table/standard,
+/obj/machinery/reagentgrinder,
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/red/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"gR" = (
+/obj/structure/table/standard,
+/obj/effect/floor_decal/corner/purple/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/effect/floor_decal/borderfloor/corner2{
+	dir = 5;
+	icon_state = "borderfloorcorner2_white"
+	},
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 24;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research/office)
+"gS" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"gT" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"gV" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/command/bridge)
+"gW" = (
+/obj/machinery/autolathe,
+/obj/effect/floor_decal/borderfloor{
+	dir = 1;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/brown/border{
+	icon_state = "bordercolor";
+	dir = 1
+	},
+/obj/machinery/light/spot{
+	icon_state = "tube1";
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/tools)
+"gX" = (
+/obj/effect/decal/cleanable/cobweb2,
+/obj/structure/closet,
+/obj/item/bodybag,
+/obj/item/bodybag,
+/turf/simulated/floor,
+/area/ship/curie/broken2)
+"gY" = (
+/obj/structure/table/standard,
+/obj/item/clothing/gloves/duty,
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/brown/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/item/weapon/storage/box/lights/bulbs,
+/turf/simulated/floor/tiled,
+/area/ship/curie/tools)
+"gZ" = (
+/obj/structure/closet/crate/freezer,
+/obj/item/weapon/reagent_containers/food/snacks/meat/beef,
+/obj/item/weapon/reagent_containers/food/snacks/meat/beef,
+/obj/item/weapon/reagent_containers/food/drinks/milk,
+/obj/item/weapon/reagent_containers/food/drinks/milk,
+/obj/item/weapon/reagent_containers/food/snacks/spagetti,
+/obj/item/weapon/reagent_containers/food/snacks/cheesewedge,
+/obj/item/weapon/reagent_containers/food/condiment/flour,
+/obj/item/weapon/reagent_containers/food/condiment/enzyme{
+	layer = 5
+	},
+/obj/item/weapon/reagent_containers/food/snacks/meat/beef,
+/obj/item/weapon/reagent_containers/food/snacks/meat/beef,
+/obj/item/weapon/storage/fancy/egg_box,
+/turf/simulated/floor,
+/area/ship/curie/broken1)
+"ha" = (
+/obj/effect/decal/cleanable/cobweb{
+	icon_state = "cobweb1";
+	dir = 4
+	},
+/obj/item/weapon/storage/box/monkeycubes,
+/obj/structure/table/standard,
+/obj/item/weapon/storage/box/syringes,
+/obj/item/clothing/gloves/latex,
+/turf/simulated/floor,
+/area/ship/curie/broken2)
+"hb" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor,
+/area/ship/curie/broken1)
+"hc" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/light_switch{
+	pixel_y = -24
+	},
+/turf/simulated/floor,
+/area/ship/curie/broken1)
+"he" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/blast/shutters{
+	dir = 4;
+	icon_state = "shutter1";
+	id = "rds"
+	},
+/turf/simulated/floor,
+/area/ship/curie/research)
+"hf" = (
+/obj/structure/skele_stand{
+	anchored = 0;
+	name = "Jerome"
+	},
+/turf/simulated/floor,
+/area/ship/curie/broken2)
+"hg" = (
+/obj/machinery/power/apc{
+	dir = 2;
+	name = "south bump";
+	pixel_y = -24
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor,
+/area/ship/curie/broken1)
+"hh" = (
+/obj/machinery/power/apc{
+	dir = 2;
+	name = "south bump";
+	pixel_y = -24
+	},
+/obj/structure/cable{
+	icon_state = "0-4";
+	d2 = 4
+	},
+/turf/simulated/floor,
+/area/ship/curie/broken2)
+"hi" = (
+/turf/simulated/wall/r_wall/hull,
+/area/ship/curie/broken1)
+"hj" = (
+/turf/simulated/wall/r_wall/hull,
+/area/ship/curie/broken2)
+"hk" = (
+/obj/structure/catwalk,
+/turf/simulated/floor,
+/area/ship/curie/crew/kitchen)
+"hl" = (
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/maintenance/atmos)
+"hm" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/structure/closet/firecloset,
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"hn" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/command/bridge)
+"ho" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/command/bridge)
+"hp" = (
+/obj/structure/table/standard,
+/obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/weapon/storage/belt/utility,
+/obj/item/weapon/wrench,
+/obj/effect/floor_decal/borderfloor{
+	dir = 1;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/brown/border{
+	icon_state = "bordercolor";
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/tools)
+"hq" = (
+/obj/effect/floor_decal/industrial/warning,
+/turf/simulated/floor/tiled,
+/area/ship/curie/research)
+"hr" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4;
+	layer = 2.4;
+	level = 2
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research)
+"hs" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research)
+"ht" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/command/bridge)
+"hv" = (
+/obj/structure/table/standard,
+/obj/item/stack/cable_coil,
+/obj/item/stack/cable_coil,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/effect/floor_decal/borderfloor{
+	dir = 5;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/brown/border{
+	icon_state = "bordercolor";
+	dir = 5
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/tools)
+"hw" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 4
+	},
+/obj/machinery/door/airlock/external/bolted/cycling{
+	dir = 4;
+	id_tag = "dock_star_in"
+	},
+/obj/machinery/access_button/airlock_interior{
+	frequency = 1383;
+	master_tag = "dalbarade_starboard_dock";
+	pixel_x = -12;
+	pixel_y = -20
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"hx" = (
+/obj/machinery/door/airlock/external/bolted/cycling{
+	dir = 4;
+	id_tag = "dock_star_out"
+	},
+/obj/machinery/shield_diffuser,
+/obj/machinery/access_button/airlock_exterior{
+	master_tag = "dalbarade_starboard_dock";
+	pixel_x = 18;
+	pixel_y = 20
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"hy" = (
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"hz" = (
+/obj/item/modular_computer/console/preset/research,
+/obj/effect/floor_decal/borderfloor{
+	dir = 9;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/purple/border{
+	icon_state = "bordercolor";
+	dir = 9
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research/office)
+"hA" = (
+/obj/structure/table/standard,
+/obj/item/weapon/paper_bin,
+/obj/item/weapon/folder,
+/obj/item/weapon/folder,
+/obj/item/weapon/pen,
+/obj/effect/floor_decal/borderfloor{
+	dir = 1;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/purple/border{
+	icon_state = "bordercolor";
+	dir = 1
+	},
+/obj/item/device/radio,
+/turf/simulated/floor/tiled,
+/area/ship/curie/research/office)
+"hB" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/ship/curie/crew/kitchen)
+"hD" = (
+/obj/structure/table/standard,
+/obj/item/weapon/storage/firstaid/surgery,
+/obj/item/device/healthanalyzer,
+/obj/effect/floor_decal/borderfloorwhite{
+	icon_state = "borderfloor_white";
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/item/device/radio/intercom{
+	dir = 8;
+	icon_state = "intercom";
+	pixel_x = 22
+	},
+/obj/structure/sink{
+	dir = 4;
+	icon_state = "sink";
+	pixel_x = 13;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"hG" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/turf/simulated/floor,
+/area/ship/curie/crew/common)
+"hH" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/ship/curie/crew/kitchen)
+"hI" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/ship/curie/command/bridge)
+"hJ" = (
+/obj/machinery/integrated_circuit_printer,
+/obj/effect/floor_decal/borderfloor{
+	dir = 1;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/purple/border{
+	icon_state = "bordercolor";
+	dir = 1
+	},
+/obj/machinery/light/spot{
+	icon_state = "tube1";
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research/office)
+"hK" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"hL" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"hM" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/ship/curie/crew/kitchen)
+"hN" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/stack/cable_coil,
+/obj/item/device/multitool{
+	pixel_x = 3
+	},
+/obj/machinery/mech_recharger,
+/turf/simulated/floor/tiled,
+/area/ship/curie/research)
+"hP" = (
+/obj/structure/table/standard,
+/obj/item/device/integrated_electronics/analyzer,
+/obj/item/device/integrated_electronics/debugger,
+/obj/item/device/integrated_electronics/wirer,
+/obj/effect/floor_decal/borderfloor{
+	dir = 5;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/purple/border{
+	icon_state = "bordercolor";
+	dir = 5
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research/office)
+"hQ" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
+	},
+/obj/structure/cable{
+	icon_state = "0-2";
+	pixel_y = 1;
+	d2 = 2
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research/office)
+"hS" = (
+/obj/machinery/seed_storage/garden,
+/turf/simulated/floor,
+/area/ship/curie/crew/kitchen)
+"hT" = (
+/obj/machinery/biogenerator,
+/turf/simulated/floor,
+/area/ship/curie/crew/kitchen)
+"hU" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/brown/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/tools)
+"hV" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 8
+	},
+/turf/simulated/floor,
+/area/ship/curie/merchant)
+"hW" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"hX" = (
+/obj/structure/closet/crate,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/obj/random/tech_supply,
+/obj/random/storage,
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"hY" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/brown/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = -24;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/tools)
+"hZ" = (
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"ib" = (
+/obj/structure/closet/shipping_wall/filled{
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"ic" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/brown/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/tools)
+"id" = (
+/obj/machinery/r_n_d/destructive_analyzer,
+/turf/simulated/floor/tiled/dark,
+/area/ship/curie/research)
+"ie" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/curie/crew/kitchen)
+"if" = (
+/obj/machinery/computer/rdconsole/core,
+/turf/simulated/floor/tiled/dark,
+/area/ship/curie/research)
+"ig" = (
+/obj/structure/closet/secure_closet/scientist,
+/obj/item/clothing/glasses/science,
+/obj/item/device/paicard,
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/purple/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research/office)
+"ih" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/purple/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research/office)
+"ii" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/machinery/meter,
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	icon_state = "intact";
+	dir = 5
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"ij" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/brown/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/tools)
+"ik" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	icon_state = "intact";
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"il" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/machinery/meter,
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	icon_state = "intact";
+	dir = 9
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"im" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/obj/machinery/portable_atmospherics/canister/air,
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"in" = (
+/obj/machinery/chemical_dispenser/full,
+/obj/item/weapon/storage/box/beakers,
+/obj/effect/floor_decal/borderfloorwhite{
+	icon_state = "borderfloor_white";
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	icon_state = "bordercolor";
+	dir = 6
+	},
+/obj/effect/floor_decal/borderfloorwhite/corner2{
+	icon_state = "borderfloorcorner2_white";
+	dir = 6
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"io" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/cargo)
+"iq" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 1;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/blue/border{
+	icon_state = "bordercolor";
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/item/device/radio/intercom{
+	pixel_y = 24
+	},
+/obj/effect/floor_decal/borderfloor/corner2{
+	dir = 4;
+	icon_state = "borderfloorcorner2_white"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/cargo)
+"ir" = (
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor,
+/area/ship/curie/crew/kitchen)
+"is" = (
+/obj/item/modular_computer/console/preset/medical{
+	icon_state = "console";
+	dir = 4
+	},
+/obj/effect/floor_decal/borderfloorwhite{
+	icon_state = "borderfloor_white";
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"it" = (
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"iu" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/light_switch{
+	pixel_x = 22;
+	pixel_y = 22
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"iv" = (
+/obj/structure/table/standard,
+/obj/machinery/reagentgrinder,
+/obj/item/weapon/storage/box/syringes,
+/obj/item/clothing/gloves/latex,
+/obj/effect/floor_decal/borderfloorwhite{
+	icon_state = "borderfloor_white";
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	icon_state = "bordercolor";
+	dir = 10
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"ix" = (
+/obj/machinery/chem_master,
+/obj/effect/floor_decal/borderfloorwhite,
+/obj/effect/floor_decal/corner/paleblue/border,
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"iy" = (
+/obj/structure/ladder,
+/turf/simulated/floor,
+/area/ship/curie/tools)
+"iz" = (
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor,
+/area/ship/curie/crew/medbay)
+"iA" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 1;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/blue/border{
+	icon_state = "bordercolor";
+	dir = 1
+	},
+/obj/structure/closet/crate,
+/obj/item/weapon/storage/backpack/dufflebag,
+/obj/random/storage,
+/obj/random/tech_supply,
+/turf/simulated/floor/tiled,
+/area/ship/curie/cargo)
+"iB" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/door/airlock/autoname,
+/turf/simulated/floor,
+/area/ship/curie/research)
+"iC" = (
+/turf/simulated/open,
+/area/ship/curie/command/bridge)
+"iD" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/machinery/door/airlock/autoname,
+/turf/simulated/floor,
+/area/ship/curie/maintenance/atmos)
+"iE" = (
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -24
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/command/bridge)
+"iG" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"iH" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/purple/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -24
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research/office)
+"iI" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/purple/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research/office)
+"iJ" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/device/robotanalyzer,
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 24;
+	pixel_y = 0
+	},
+/obj/effect/landmark/start{
+	name = "Cyborg"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research)
+"iK" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research)
+"iL" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/ship/curie/research)
+"iO" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/brown/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled,
+/area/ship/curie/tools)
+"iP" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"iR" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9;
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"iS" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/bed/chair/office/light,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"iT" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"iU" = (
+/obj/structure/disposalpipe/segment{
+	icon_state = "pipe-s";
+	dir = 8
+	},
+/turf/simulated/wall/r_wall/hull,
+/area/ship/curie/broken1)
+"iV" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/curie/research)
+"iW" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research)
+"iY" = (
+/obj/structure/table/standard,
+/obj/item/weapon/storage/box/lights/mixed,
+/obj/item/weapon/storage/box/lights/mixed,
+/obj/effect/floor_decal/borderfloor{
+	dir = 6;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/brown/border{
+	icon_state = "bordercolor";
+	dir = 6
+	},
+/obj/item/device/flashlight/flare,
+/obj/item/device/flashlight/flare,
+/turf/simulated/floor/tiled,
+/area/ship/curie/tools)
+"jc" = (
+/obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/zpipe/down/supply{
+	icon_state = "down-supply";
+	dir = 4
+	},
+/turf/simulated/open,
+/area/ship/curie/merchant)
+"jd" = (
+/obj/machinery/organ_printer/robot/mapped,
+/obj/effect/floor_decal/borderfloor{
+	dir = 6;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/purple/border{
+	icon_state = "bordercolor";
+	dir = 6
+	},
+/obj/effect/floor_decal/borderfloor/corner2,
+/obj/effect/floor_decal/borderfloor/corner2{
+	dir = 6;
+	icon_state = "borderfloorcorner2_white"
+	},
+/obj/machinery/light_switch{
+	pixel_x = 24
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research/office)
+"je" = (
+/obj/structure/table/standard,
+/obj/item/stack/material/cardboard/ten,
+/obj/item/stack/material/cardboard/ten,
+/obj/item/stack/package_wrap,
+/obj/machinery/light_switch{
+	pixel_x = -24
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"jf" = (
+/obj/structure/table/standard,
+/obj/item/weapon/paper,
+/obj/item/clothing/gloves/duty,
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"jg" = (
+/obj/structure/bed/chair/comfy/red,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"jh" = (
+/obj/machinery/merchant_pad,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"ji" = (
+/obj/machinery/r_n_d/circuit_imprinter,
+/obj/item/weapon/reagent_containers/glass/beaker/sulphuric,
+/turf/simulated/floor/tiled/dark,
+/area/ship/curie/research)
+"jj" = (
+/obj/machinery/r_n_d/protolathe,
+/obj/machinery/light/spot,
+/turf/simulated/floor/tiled/dark,
+/area/ship/curie/research)
+"jk" = (
+/obj/structure/table/standard,
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 8
+	},
+/obj/item/weapon/reagent_containers/dropper,
+/obj/item/stack/nanopaste,
+/obj/machinery/cell_charger,
+/obj/item/weapon/stock_parts/capacitor/adv,
+/obj/item/weapon/stock_parts/capacitor,
+/obj/random/powercell,
+/obj/random/powercell,
+/obj/random/powercell,
+/turf/simulated/floor/tiled,
+/area/ship/curie/research)
+"jl" = (
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/warning,
+/obj/machinery/computer/shuttle_control/lift,
+/turf/simulated/floor/tiled,
+/area/ship/curie/cargo)
+"jm" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/atmos)
+"jn" = (
+/obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/zpipe/down/scrubbers{
+	icon_state = "down-scrubbers";
+	dir = 8
+	},
+/turf/simulated/open,
+/area/ship/curie/research)
+"jp" = (
+/obj/machinery/atmospherics/unary/engine{
+	icon_state = "nozzle";
+	dir = 1
+	},
+/turf/simulated/floor/airless,
+/area/ship/curie/maintenance/engineering)
+"jq" = (
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/turf/simulated/floor/airless,
+/area/ship/curie/maintenance/engineering)
+"jr" = (
+/obj/structure/lattice,
+/turf/space,
+/area/ship/curie/maintenance/engineering)
+"jt" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/command/bridge)
+"ju" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/atmospherics/pipe/zpipe/up/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"jv" = (
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/ship/curie/command/bridge)
+"jw" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/command/bridge)
+"jy" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/purple/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = -24;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research/office)
+"jz" = (
+/obj/item/weapon/crowbar,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/light_switch{
+	pixel_y = -24
+	},
+/turf/simulated/floor,
+/area/ship/curie/broken2)
+"jA" = (
+/obj/effect/decal/cleanable/blood/oil,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor,
+/area/ship/curie/broken2)
+"jB" = (
+/obj/structure/ladder/up,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/airless,
+/area/space)
+"jC" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = -24;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"jD" = (
+/obj/machinery/door/airlock/autoname,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/broken1)
+"jE" = (
+/obj/machinery/door/airlock/autoname,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/broken2)
+"jF" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 1;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/purple/border{
+	icon_state = "bordercolor";
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/button/remote/blast_door{
+	id = "rds";
+	name = "Development Shutters";
+	pixel_x = -6;
+	pixel_y = 24
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research)
+"jH" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/cargo)
+"jI" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/cargo)
+"jJ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/ship/curie/cargo)
+"jK" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"jL" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/meter/turf,
+/obj/effect/floor_decal/corner/red{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 9
+	},
+/obj/machinery/light/spot,
+/turf/simulated/floor/reinforced/nitrogen,
+/area/ship/curie/maintenance/atmos)
+"jM" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"jN" = (
+/obj/machinery/atmospherics/pipe/simple/visible/red{
+	icon_state = "intact";
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 4
+	},
+/obj/machinery/light/small,
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"jO" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 1;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/purple/border{
+	icon_state = "bordercolor";
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/alarm{
+	pixel_y = 24
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research)
+"jP" = (
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"jQ" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 1;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/purple/border{
+	icon_state = "bordercolor";
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research)
+"jR" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 24;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research)
+"jS" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/ship/curie/broken1)
+"jT" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/ship/curie/broken2)
+"jU" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/ship/curie/broken2)
+"jV" = (
+/obj/structure/table/reinforced,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/bluegrid,
+/area/ship/curie/command/bridge)
+"jW" = (
+/obj/structure/table/reinforced,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/bluegrid,
+/area/ship/curie/command/bridge)
+"jZ" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/ship/curie/crew/common)
+"ka" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9;
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/ship/curie/crew/common)
+"kc" = (
+/obj/structure/catwalk,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/open,
+/area/ship/curie/command/bridge)
+"kd" = (
+/obj/structure/catwalk,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/open,
+/area/ship/curie/command/bridge)
+"kf" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -24
+	},
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/obj/structure/cable{
+	icon_state = "0-2";
+	pixel_y = 1;
+	d2 = 2
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"kg" = (
+/obj/structure/catwalk,
+/obj/structure/cable{
+	d1 = 32;
+	d2 = 1;
+	icon_state = "32-1"
+	},
+/turf/simulated/open,
+/area/ship/curie/command/bridge)
+"kh" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
+	},
+/obj/structure/cable{
+	icon_state = "0-2";
+	pixel_y = 1;
+	d2 = 2
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research)
+"ki" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/blast/shutters{
+	dir = 8;
+	icon_state = "shutter1";
+	id = "merchants"
+	},
+/turf/simulated/floor,
+/area/ship/curie/merchant)
+"kj" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/turf/simulated/floor/tiled,
+/area/ship/curie/cargo)
+"kk" = (
+/turf/simulated/floor/airless,
+/area/ship/curie/maintenance/engineering)
+"kl" = (
+/turf/simulated/floor/tiled/monotile,
+/area/ship/curie/crew/common)
+"km" = (
+/obj/machinery/atm{
+	pixel_x = -32;
+	step_x = 0
+	},
+/obj/machinery/door/airlock/autoname,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor,
+/area/ship/curie/crew/common)
+"kn" = (
+/obj/structure/bed/chair/comfy/red{
+	icon_state = "comfychair_preview";
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"ko" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"kp" = (
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	icon_state = "intact";
+	dir = 6
+	},
+/turf/simulated/floor/airless,
+/area/ship/curie/maintenance/engineering)
+"kq" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/machinery/atmospherics/pipe/manifold/visible/fuel{
+	icon_state = "map";
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"kt" = (
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	icon_state = "intact";
+	dir = 10
+	},
+/turf/simulated/floor/airless,
+/area/ship/curie/maintenance/engineering)
+"ku" = (
+/turf/simulated/wall/r_wall/hull,
+/area/space)
+"kv" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/visible/fuel,
+/turf/simulated/floor/airless,
+/area/ship/curie/maintenance/engineering)
+"kw" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/visible/fuel,
+/turf/simulated/floor/airless,
+/area/ship/curie/maintenance/engineering)
+"kx" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/visible/fuel{
+	icon_state = "map";
+	dir = 1
+	},
+/turf/simulated/floor/airless,
+/area/ship/curie/maintenance/engineering)
+"ky" = (
+/obj/machinery/atmospherics/pipe/manifold/visible/fuel{
+	icon_state = "map";
+	dir = 1
+	},
+/turf/simulated/floor/airless,
+/area/ship/curie/maintenance/engineering)
+"kz" = (
+/turf/space,
+/area/ship/curie/maintenance/engineering)
+"kA" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/brown/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"kB" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/space,
+/area/ship/curie/command/bridge)
+"kC" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/purple/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research)
+"kD" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/brown/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"kE" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/purple/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research)
+"kF" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/brown/border{
+	icon_state = "bordercolor";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/merchant)
+"kG" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/purple/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/research)
+"kH" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/maintenance/atmos)
+"kI" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/maintenance/atmos)
+"kJ" = (
+/obj/machinery/portable_atmospherics/canister/nitrogen,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"kL" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/machinery/power/apc{
+	dir = 2;
+	name = "south bump";
+	pixel_y = -24
+	},
+/obj/structure/cable,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/maintenance/atmos)
+"kM" = (
+/obj/machinery/atmospherics/portables_connector{
+	icon_state = "map_connector";
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"kO" = (
+/obj/machinery/atmospherics/unary/freezer{
+	icon_state = "freezer_0";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"kP" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/space,
+/area/ship/curie/command/bridge)
+"kQ" = (
+/obj/effect/landmark{
+	name = "Observer-Start"
+	},
+/turf/simulated/wall,
+/area/ship/curie/command/bridge)
+"kR" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 10;
+	icon_state = "intact"
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"kS" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/structure/morgue,
+/turf/simulated/floor,
+/area/ship/curie/broken2)
+"kT" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 4;
+	frequency = 1383;
+	id_tag = "dock_port_pump"
+	},
+/obj/effect/floor_decal/industrial/warning{
+	dir = 10
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"kU" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden,
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 6
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"kV" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 10
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"kW" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 8;
+	frequency = 1379;
+	id_tag = "dock_star_pump"
+	},
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 6
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"kX" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 6
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"kZ" = (
+/obj/structure/bed/roller,
+/obj/item/bodybag,
+/turf/simulated/floor,
+/area/ship/curie/broken2)
+"la" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/light/small,
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor,
+/area/ship/curie/crew/common)
+"lb" = (
+/turf/simulated/wall/r_wall,
+/area/ship/curie/crew/common)
+"lp" = (
+/obj/machinery/atmospherics/portables_connector{
+	dir = 1
+	},
+/obj/machinery/portable_atmospherics/canister/air/airlock,
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/turf/simulated/floor,
+/area/ship/curie/command/bridge)
+"nl" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"no" = (
+/obj/machinery/light/small{
+	icon_state = "bulb1";
+	dir = 1
+	},
+/obj/structure/closet/crate,
+/obj/item/weapon/board,
+/obj/item/weapon/storage/box/matches,
+/obj/item/weapon/dice,
+/obj/item/weapon/storage/box/checkers/chess,
+/obj/item/weapon/storage/box/checkers/chess/red,
+/turf/simulated/floor,
+/area/ship/curie/crew/common)
+"ow" = (
+/obj/effect/floor_decal/floordetail/pryhole,
+/turf/simulated/floor/tiled/monotile,
+/area/ship/curie/crew/common)
+"ox" = (
+/obj/structure/table/standard,
+/obj/random/snack,
+/obj/random/snack,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"pH" = (
+/obj/structure/sign/warning/moving_parts{
+	icon_state = "movingparts";
+	dir = 1
+	},
+/turf/simulated/wall,
+/area/ship/curie/maintenance/atmos)
+"pK" = (
+/obj/machinery/door/firedoor,
+/obj/structure/table/standard,
+/obj/machinery/microwave,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"pO" = (
+/obj/structure/closet,
+/turf/simulated/floor/tiled,
+/area/ship/curie/cargo)
+"pZ" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/maintenance/atmos)
+"tg" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/ship/curie/crew/common)
+"tl" = (
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/command/bridge)
+"tr" = (
+/obj/structure/grille,
+/obj/effect/wallframe_spawn/reinforced,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"ua" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 8
+	},
+/turf/simulated/floor,
+/area/ship/curie/crew/common)
+"uO" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor,
+/area/ship/curie/crew/common)
+"vu" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"vz" = (
+/obj/structure/sign/warning/vacuum{
+	icon_state = "space";
+	dir = 8
+	},
+/turf/simulated/wall/r_wall/hull,
+/area/ship/curie/command/bridge)
+"wa" = (
+/turf/simulated/floor/tiled,
+/area/ship/curie/cargo)
+"wI" = (
+/obj/machinery/door/firedoor,
+/obj/structure/catwalk,
+/turf/simulated/floor,
+/area/ship/curie/crew/kitchen)
+"wQ" = (
+/obj/structure/catwalk,
+/turf/simulated/floor,
+/area/ship/curie/crew/common)
+"xV" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 8
+	},
+/obj/structure/table/rack,
+/obj/item/roller,
+/obj/item/roller{
+	pixel_y = 8
+	},
+/turf/simulated/floor,
+/area/ship/curie/crew/medbay)
+"xZ" = (
+/obj/machinery/light/small{
+	icon_state = "bulb1";
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/ship/curie/crew/common)
+"yh" = (
+/obj/machinery/atmospherics/pipe/zpipe/up/fuel,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_x = 0
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"BK" = (
+/obj/machinery/atmospherics/unary/heater{
+	icon_state = "heater_0";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"DI" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock/autoname,
+/turf/simulated/floor,
+/area/ship/curie/maintenance/atmos)
+"DU" = (
+/obj/machinery/door/airlock/autoname{
+	dir = 4
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/ship/curie/crew/medbay)
+"EJ" = (
+/obj/effect/floor_decal/industrial/warning,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"Fm" = (
+/obj/structure/table/standard,
+/obj/effect/floor_decal/borderfloor{
+	dir = 5;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 5
+	},
+/obj/effect/floor_decal/borderfloor/corner2{
+	dir = 5;
+	icon_state = "borderfloorcorner2_white"
+	},
+/obj/item/weapon/storage/pill_bottle/dice,
+/obj/item/weapon/deck/cards,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"Gn" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 8
+	},
+/obj/structure/iv_drip,
+/turf/simulated/floor,
+/area/ship/curie/crew/medbay)
+"Ha" = (
+/obj/structure/bed/chair/office/light,
+/obj/effect/landmark/start{
+	name = "Surgeon"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/curie/crew/medbay)
+"Ho" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/ship/curie/crew/common)
+"HS" = (
+/obj/structure/sign/warning/caution{
+	icon_state = "securearea";
+	dir = 1
+	},
+/turf/simulated/wall,
+/area/ship/curie/maintenance/atmos)
+"II" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 1;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 1
+	},
+/obj/machinery/light/small{
+	icon_state = "bulb1";
+	dir = 1
+	},
+/obj/machinery/newscaster{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"Jd" = (
+/obj/item/weapon/storage/box/bodybags,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/ship/curie/broken2)
+"JH" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor,
+/area/ship/curie/crew/common)
+"JS" = (
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/corner/green/border,
+/obj/machinery/light/spot,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"KY" = (
+/obj/machinery/atmospherics/portables_connector,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"LV" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/structure/bed/chair/comfy/red{
+	icon_state = "comfychair_preview";
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"MI" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 9;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 9
+	},
+/obj/effect/floor_decal/borderfloor/corner2{
+	dir = 10;
+	icon_state = "borderfloorcorner2_white"
+	},
+/obj/structure/table/standard,
+/obj/structure/flora/pottedplant/smallcactus{
+	pixel_y = 10
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"MZ" = (
+/obj/machinery/door/airlock/autoname/engineering,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/maintenance/atmos)
+"Pb" = (
+/obj/machinery/atmospherics/pipe/simple/visible{
+	icon_state = "intact";
+	dir = 6
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"Pm" = (
+/obj/structure/closet/secure_closet/freezer/meat,
+/obj/item/weapon/storage/fancy/egg_box,
+/obj/item/weapon/reagent_containers/food/snacks/meat/beef,
+/obj/item/weapon/reagent_containers/food/snacks/meat/beef,
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/red/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/item/weapon/reagent_containers/food/drinks/milk,
+/obj/item/weapon/reagent_containers/food/drinks/milk,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"PG" = (
+/obj/machinery/door/airlock/autoname,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor,
+/area/ship/curie/crew/common)
+"Qp" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"Td" = (
+/obj/effect/floor_decal/steeldecal/steel_decals3,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+"Xg" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 4
+	},
+/obj/structure/closet/emcloset,
+/turf/simulated/floor,
+/area/ship/curie/crew/common)
+"ZY" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 1;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 1
+	},
+/obj/machinery/light/small{
+	icon_state = "bulb1";
+	dir = 1
+	},
+/obj/item/modular_computer/console/preset/civilian,
+/obj/item/clothing/ears/earmuffs/headphones,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/common)
+
+(1,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(2,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(3,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(4,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(5,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(6,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(7,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(8,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(9,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(10,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(11,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(12,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(13,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(14,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(15,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(16,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(17,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(18,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(19,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(20,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(21,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(22,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(23,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(24,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(25,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(26,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(27,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(28,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(29,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(30,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(31,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(32,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(33,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(34,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(35,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(36,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(37,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(38,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(39,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(40,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(41,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(42,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(43,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(44,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(45,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(46,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(47,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(48,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ae
+ah
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+cq
+cq
+cq
+cq
+cq
+cq
+cq
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(49,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ae
+ah
+aa
+aa
+aa
+dQ
+ku
+ku
+aa
+cq
+cq
+cq
+cq
+cq
+cq
+cq
+cq
+aa
+aO
+bq
+ek
+kB
+aa
+aa
+aa
+aa
+aa
+aa
+cu
+cu
+cu
+cu
+cu
+cu
+cu
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(50,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ae
+ah
+dQ
+av
+av
+av
+av
+av
+av
+cu
+cu
+cu
+cu
+cu
+cu
+cu
+cu
+aa
+aP
+br
+kT
+eR
+aa
+aa
+aa
+aa
+aq
+aq
+aq
+aq
+ft
+jB
+ft
+ft
+ft
+ft
+ab
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(51,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ae
+ah
+aa
+ae
+ku
+av
+av
+av
+av
+av
+av
+av
+av
+jB
+aY
+aY
+aY
+aY
+aY
+dQ
+dQ
+ai
+ey
+kU
+eu
+dQ
+ai
+ai
+aq
+aq
+ep
+cU
+iy
+ft
+ft
+ft
+hV
+hV
+jc
+ab
+ab
+ab
+ab
+aa
+aa
+aa
+aa
+aa
+co
+jq
+jq
+jq
+jq
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(52,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ae
+ah
+fd
+ku
+av
+av
+ua
+av
+dr
+ex
+ex
+av
+aY
+bl
+aY
+eJ
+Gn
+xV
+aY
+aY
+aY
+bW
+ag
+eT
+ai
+ai
+ai
+gH
+cc
+gJ
+hU
+ij
+iO
+fD
+jC
+kf
+kA
+kD
+kF
+DI
+kH
+kJ
+ab
+aa
+dQ
+dQ
+aa
+co
+co
+kk
+kp
+jp
+jr
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(53,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ku
+hi
+iU
+hi
+no
+aj
+Qp
+aX
+bm
+bG
+bL
+bZ
+bj
+ds
+da
+dl
+dC
+dK
+dY
+ew
+iz
+eX
+bd
+kR
+dL
+bX
+gs
+fY
+as
+as
+as
+ea
+as
+fy
+fy
+fy
+fy
+cS
+fy
+bx
+am
+aW
+ab
+co
+co
+co
+co
+co
+co
+kk
+ky
+jp
+jr
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(54,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+hi
+hi
+hi
+hi
+iU
+hi
+hi
+aV
+bM
+bM
+bM
+ez
+bM
+bM
+bk
+bk
+bk
+bk
+eV
+eL
+bk
+bk
+bk
+ef
+fK
+gc
+gl
+go
+fA
+gK
+as
+gL
+hY
+er
+ac
+dW
+fG
+ge
+hX
+jK
+je
+bx
+ax
+jP
+kM
+cp
+cD
+cQ
+cQ
+gE
+co
+co
+ky
+jp
+kz
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(55,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+hi
+hi
+hi
+hi
+hi
+hi
+fl
+dh
+bv
+wQ
+bM
+MI
+bo
+eB
+bO
+cb
+bk
+dt
+dA
+eM
+eW
+gh
+is
+iv
+bk
+al
+al
+al
+al
+al
+al
+gD
+as
+gW
+dm
+eb
+fz
+eK
+fQ
+hW
+iP
+iR
+jf
+bx
+ay
+KY
+ce
+cp
+cp
+cp
+cT
+cQ
+hm
+co
+ky
+jp
+jr
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(56,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+hi
+hi
+hi
+eZ
+fi
+fg
+hb
+jD
+ak
+bM
+ZY
+dG
+eB
+ow
+gA
+bk
+dv
+dD
+eN
+gf
+gi
+Ha
+cJ
+bk
+ao
+al
+bs
+jV
+bs
+al
+gM
+as
+hp
+dO
+ec
+es
+fy
+fR
+gr
+hZ
+iS
+cO
+bx
+az
+by
+cf
+cr
+cF
+bx
+cV
+dg
+ii
+en
+kx
+jp
+jr
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(57,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+hi
+hi
+bv
+fa
+fh
+fg
+hc
+bv
+ap
+bM
+ca
+dF
+eC
+dG
+gu
+bk
+dx
+it
+eO
+it
+gB
+ko
+ix
+bk
+al
+al
+bw
+dn
+bw
+al
+gD
+as
+hv
+ic
+gY
+iY
+fy
+fS
+gx
+ib
+iT
+jh
+bx
+hl
+hl
+cg
+cs
+cG
+MZ
+cQ
+cQ
+kq
+eo
+kv
+jq
+jq
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(58,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+hi
+hi
+hi
+ad
+bv
+eE
+fg
+fg
+hg
+bv
+ar
+bM
+aZ
+dG
+eD
+dG
+gv
+bk
+dy
+eG
+eP
+hD
+gC
+iu
+in
+bk
+fm
+fV
+gd
+gd
+gd
+ju
+gV
+as
+as
+as
+as
+as
+fy
+fT
+ki
+fy
+fy
+fy
+bx
+aB
+bB
+ch
+cv
+cH
+bx
+cW
+cQ
+ik
+en
+kx
+jp
+jr
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(59,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+hi
+hi
+ad
+bv
+fb
+jS
+fI
+gZ
+bv
+at
+km
+tg
+kl
+dG
+Td
+bY
+bk
+bk
+bk
+bk
+bk
+bk
+DU
+eL
+bk
+aD
+kg
+tl
+kc
+kc
+kc
+af
+hn
+iE
+iG
+io
+wa
+aH
+jJ
+jl
+dq
+dq
+dq
+HS
+aC
+bC
+ci
+cw
+cI
+bx
+cX
+cQ
+ik
+en
+ky
+jp
+jr
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(60,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+hi
+hi
+ad
+bv
+bv
+bv
+bv
+bv
+bv
+aV
+lb
+au
+bN
+du
+du
+bN
+eF
+aJ
+jZ
+JH
+hG
+uO
+ka
+aJ
+jv
+jw
+bf
+fv
+kQ
+dI
+bc
+ho
+iC
+iC
+al
+iq
+jH
+jH
+jI
+cK
+dq
+eI
+dq
+pH
+aF
+bI
+cj
+bI
+jL
+bx
+cY
+cQ
+ik
+en
+ky
+jp
+kz
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(61,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+hj
+hj
+an
+dM
+fj
+kS
+fL
+ha
+dM
+aw
+PG
+Ho
+ed
+ox
+kn
+gz
+gN
+gN
+gN
+gN
+gm
+gN
+gN
+gN
+gN
+aE
+bf
+tl
+kd
+kd
+kd
+ht
+bd
+bd
+al
+iA
+pO
+eq
+kj
+cK
+dq
+dq
+dq
+HS
+aG
+bK
+bK
+bK
+cL
+bx
+cZ
+cQ
+ik
+en
+ky
+jp
+jr
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(62,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+hj
+hj
+hj
+an
+dM
+jT
+kZ
+fk
+hh
+dM
+ar
+bM
+be
+jg
+fw
+kn
+JS
+tr
+gQ
+di
+dw
+hH
+dN
+dZ
+eH
+gN
+fp
+fp
+gj
+gj
+gj
+aA
+jt
+bJ
+bJ
+bJ
+bJ
+bJ
+fB
+fC
+he
+fB
+fB
+fB
+bx
+aK
+bQ
+ck
+cy
+cM
+bx
+db
+cQ
+ik
+en
+kx
+jp
+jr
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(63,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+hj
+hj
+dM
+ff
+Jd
+fk
+jz
+dM
+la
+bM
+bg
+et
+fH
+LV
+wQ
+wI
+hk
+hk
+vu
+hK
+hS
+ie
+eH
+gN
+al
+al
+bU
+do
+bU
+al
+gG
+bJ
+hz
+ig
+iH
+eY
+fB
+jF
+hq
+id
+fn
+ji
+bx
+aM
+bR
+cl
+cz
+cN
+cR
+dc
+fN
+kq
+eo
+kw
+jq
+jq
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(64,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+hj
+hj
+hj
+fe
+jU
+fk
+jA
+jE
+aI
+bM
+II
+dG
+fM
+EJ
+wQ
+wI
+cP
+hk
+hy
+hL
+hT
+ie
+eH
+gN
+ao
+al
+bz
+jW
+bV
+al
+gT
+bJ
+hA
+dR
+eg
+fc
+fB
+jO
+hr
+if
+iV
+jj
+bx
+aN
+bS
+cm
+cA
+jP
+bx
+yh
+fO
+il
+en
+kx
+jp
+jr
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(65,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+hj
+hj
+hj
+hj
+hj
+hj
+gX
+hf
+dM
+wQ
+bM
+Fm
+bE
+fP
+bP
+cd
+pK
+Pm
+dj
+dz
+hM
+dP
+ee
+eH
+gN
+al
+al
+al
+al
+al
+al
+gG
+bJ
+hJ
+dS
+eh
+el
+fo
+jQ
+fW
+hs
+iW
+jk
+bx
+aR
+pZ
+jP
+Pb
+BK
+bx
+dd
+gy
+im
+co
+ky
+jp
+jr
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(66,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+hj
+hj
+hj
+hj
+hj
+hj
+hj
+aV
+bM
+bM
+bM
+fx
+bM
+bM
+gN
+gN
+gN
+gN
+gq
+gN
+gN
+gN
+gN
+ba
+gb
+gk
+gn
+gp
+fF
+hI
+bJ
+hP
+gR
+dU
+jd
+dX
+fZ
+hN
+iJ
+iK
+fU
+bx
+aS
+pZ
+KY
+cB
+kO
+cp
+jM
+jN
+co
+co
+ky
+jp
+kz
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(67,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ku
+hj
+hj
+hj
+xZ
+aU
+nl
+bh
+bF
+bH
+bT
+cn
+gO
+gS
+dk
+dB
+dH
+dT
+ev
+eU
+ir
+fq
+bi
+kX
+dL
+lp
+gw
+ga
+bJ
+bJ
+bJ
+ej
+bJ
+fB
+fB
+fB
+fB
+dJ
+fB
+bx
+aT
+jm
+ab
+cC
+ab
+co
+de
+gF
+co
+kk
+ky
+jp
+jr
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(68,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ae
+ah
+aa
+ku
+av
+av
+Xg
+av
+dr
+ex
+ex
+av
+gP
+cE
+gP
+hB
+hB
+hB
+gP
+gP
+gP
+vz
+ag
+hw
+ai
+ai
+ai
+gI
+fu
+hQ
+ih
+iI
+jy
+iB
+jR
+kh
+kC
+kE
+kG
+iD
+kI
+kL
+ab
+aa
+dQ
+dQ
+df
+df
+co
+kk
+kt
+jp
+jr
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(69,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ae
+ah
+aa
+ae
+ku
+av
+av
+av
+av
+av
+av
+av
+av
+jB
+gP
+gP
+gP
+gP
+gP
+dQ
+dQ
+ai
+eS
+kV
+eR
+dQ
+ai
+ai
+ct
+ct
+dV
+fr
+em
+fE
+fE
+fE
+iL
+iL
+jn
+ab
+ab
+ab
+ab
+aa
+aa
+aa
+aa
+aa
+co
+jq
+jq
+jq
+jq
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(70,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ae
+ah
+dQ
+av
+av
+av
+av
+av
+av
+cu
+cu
+cu
+cu
+cu
+cu
+cu
+cu
+aa
+bn
+bt
+kW
+eu
+aa
+aa
+aa
+aa
+ct
+ct
+ct
+ct
+fE
+jB
+fE
+fE
+fE
+fE
+ab
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(71,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ae
+ah
+aa
+aa
+aa
+dQ
+ku
+ku
+aa
+cx
+cx
+cx
+cx
+cx
+cx
+cx
+cx
+aa
+bp
+dp
+hx
+kP
+aa
+aa
+aa
+aa
+aa
+aa
+cu
+cu
+cu
+cu
+cu
+cu
+cu
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(72,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ae
+ah
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+cx
+cx
+cx
+cx
+cx
+cx
+cx
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(73,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(74,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(75,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(76,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(77,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(78,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(79,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(80,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(81,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(82,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(83,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(84,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(85,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(86,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(87,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(88,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(89,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(90,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(91,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(92,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(93,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(94,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(95,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(96,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(97,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(98,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(99,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(100,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(101,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(102,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(103,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(104,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(105,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(106,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(107,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(108,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(109,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(110,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(111,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(112,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(113,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(114,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(115,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(116,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(117,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(118,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(119,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(120,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
