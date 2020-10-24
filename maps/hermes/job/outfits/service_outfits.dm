@@ -10,14 +10,14 @@
 	name = OUTFIT_JOB_NAME("Sanitation Technician - Hermes")
 	uniform = /obj/item/clothing/under/rank/janitor
 	shoes = /obj/item/clothing/shoes/black
-	id_type = /obj/item/weapon/card/id/hermes/crew/service/janitor
+	id_types = list(/obj/item/weapon/card/id/hermes/crew/service/janitor)
 	pda_type = /obj/item/modular_computer/pda
 
 /decl/hierarchy/outfit/job/hermes/crew/service/janitor/ec
 	name = OUTFIT_JOB_NAME("Sanitation Technician - Expeditionary Corps")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/service
 	shoes = /obj/item/clothing/shoes/dutyboots
-	id_type = /obj/item/weapon/card/id/hermes/crew/service/janitor
+	id_types = list(/obj/item/weapon/card/id/hermes/crew/service/janitor)
 	pda_type = /obj/item/modular_computer/pda
 
 /decl/hierarchy/outfit/job/hermes/crew/service/janitor/fleet
@@ -29,14 +29,14 @@
 	name = OUTFIT_JOB_NAME("Cook - Torch")
 	uniform = /obj/item/clothing/under/rank/chef
 	shoes = /obj/item/clothing/shoes/black
-	id_type = /obj/item/weapon/card/id/hermes/crew/service/chef
+	id_types = list(/obj/item/weapon/card/id/hermes/crew/service/chef)
 	pda_type = /obj/item/modular_computer/pda
 
 /decl/hierarchy/outfit/job/hermes/crew/service/cook/ec
 	name = OUTFIT_JOB_NAME("Cook - Expeditionary Corps")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/service
 	shoes = /obj/item/clothing/shoes/dutyboots
-	id_type = /obj/item/weapon/card/id/hermes/crew/service/chef
+	id_types = list(/obj/item/weapon/card/id/hermes/crew/service/chef)
 	pda_type = /obj/item/modular_computer/pda
 
 /decl/hierarchy/outfit/job/hermes/crew/service/cook/fleet
@@ -48,7 +48,7 @@
 	name = OUTFIT_JOB_NAME("Crewman")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary
 	shoes = /obj/item/clothing/shoes/dutyboots
-	id_type = /obj/item/weapon/card/id/hermes/crew
+	id_types = list(/obj/item/weapon/card/id/hermes/crew)
 	pda_type = /obj/item/modular_computer/pda
 
 /decl/hierarchy/outfit/job/hermes/crew/service/crewman/fleet

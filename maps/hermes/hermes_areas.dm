@@ -134,6 +134,24 @@
 	name = "\improper Operating Theatre"
 	icon_state = "surgery"
 
+/area/medical/virology
+	name = "\improper Virology"
+	icon_state = "virology"
+
+/area/medical/virologyaccess
+	name = "\improper Virology Access"
+	icon_state = "virology"
+
+/area/medical/infirmary
+	name = "\improper Infirmary"
+	icon_state = "medbay"
+
+/area/medical/equipstorage
+	name = "\improper Medical Equipment Storage"
+	icon_state = "medbay4"
+	ambience = list('sound/ambience/signal.ogg')
+	req_access = list(access_medical_equip)
+
 /area/medical/morgue
 	name = "\improper Morgue"
 	icon_state = "morgue"

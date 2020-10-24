@@ -10,7 +10,7 @@
 	l_ear = /obj/item/device/radio/headset/heads/torchexec
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/soft/solgov/expedition/co
-	id_type = /obj/item/weapon/card/id/hermes/gold
+	id_types  = list(/obj/item/weapon/card/id/hermes/gold)
 	pda_type = /obj/item/modular_computer/pda/captain
 
 /decl/hierarchy/outfit/job/hermes/crew/command/CO/New()
@@ -25,7 +25,7 @@
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
 	l_ear = /obj/item/device/radio/headset/heads/torchexec
 	shoes = /obj/item/clothing/shoes/dutyboots
-	id_type = /obj/item/weapon/card/id/hermes/silver
+	id_types = list(/obj/item/weapon/card/id/hermes/silver)
 	pda_type = /obj/item/modular_computer/pda/heads/hop
 
 /decl/hierarchy/outfit/job/hermes/crew/command/XO/fleet
@@ -37,7 +37,7 @@
 	name = OUTFIT_JOB_NAME("Bridge Officer")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
 	shoes = /obj/item/clothing/shoes/dutyboots
-	id_type = /obj/item/weapon/card/id/hermes/crew/bridgeofficer
+	id_types = list(/obj/item/weapon/card/id/hermes/crew/bridgeofficer)
 	pda_type = /obj/item/modular_computer/pda/heads
 	l_ear = /obj/item/device/radio/headset/bridgeofficer
 
