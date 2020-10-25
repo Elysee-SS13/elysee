@@ -1,10 +1,10 @@
 /datum/job/captain
 	title = "Commanding Officer"
 	supervisors = "the Sol Central Government and the Sol Code of Military Justice"
-	minimal_player_age = 14
+	minimal_player_age = 0
 	economic_power = 15
-	minimum_character_age = list(SPECIES_HUMAN = 40)
-	ideal_character_age = 50
+//	minimum_character_age = list(SPECIES_HUMAN = 40)
+	ideal_character_age = 0
 	outfit_type = /decl/hierarchy/outfit/job/hermes/crew/command/CO
 /*	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps
@@ -39,10 +39,10 @@
 	supervisors = "the Commanding Officer"
 	department = "Command"
 	department_flag = COM
-	minimal_player_age = 14
+	minimal_player_age = 0
 	economic_power = 10
-	minimum_character_age = list(SPECIES_HUMAN = 35)
-	ideal_character_age = 45
+//	minimum_character_age = list(SPECIES_HUMAN = 35)
+	ideal_character_age = 0
 	outfit_type = /decl/hierarchy/outfit/job/hermes/crew/command/XO
 /*	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -105,7 +105,7 @@
 	minimal_player_age = 0
 	economic_power = 7
 	minimum_character_age = list(SPECIES_HUMAN = 22)
-	ideal_character_age = 24
+	ideal_character_age = 0
 	outfit_type = /decl/hierarchy/outfit/job/hermes/crew/command/bridgeofficer
 /*	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -139,3 +139,62 @@
 
 /datum/job/bridgeofficer/get_description_blurb()
 	return "You are a Bridge Officer. You are a very junior officer. You do not give orders of your own. You are subordinate to all of command. You handle matters on the bridge and report directly to the CO and XO. You take the Torch's helm and pilot the Aquila if needed. You monitor bridge computer programs and communications and report relevant information to command."
+
+/datum/job/opslead
+
+	title = "Operational Officer"
+	head_position = 1
+	department_flag = COM|CIV|SCI|ENG|MED
+	skill_points = 30
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the captain"
+	selection_color = "#2f2f7f"
+	req_admin_notify = 1
+	minimal_player_age = 0
+	economic_power = 10
+	ideal_character_age = 0
+
+	access = list(access_heads,
+			            access_medical,access_engine,access_engine_equip, access_change_ids, access_ai_upload, access_eva, access_bridge,
+			            access_all_personal_lockers, access_maint_tunnels, access_construction, access_morgue,
+			            access_crematorium, access_mailsorting,
+			            access_library, access_research, access_heads_vault,
+			            access_RC_announce, access_keycard_auth, access_gateway)
+
+	minimal_access = list( access_heads,
+			            access_medical, access_engine,access_engine_equip, access_change_ids, access_ai_upload, access_eva, access_bridge,
+			            access_all_personal_lockers, access_maint_tunnels, access_construction, access_morgue,
+			            access_crematorium, access_mailsorting,
+			            access_library, access_research, access_heads_vault,
+			            access_RC_announce, access_keycard_auth, access_gateway)
+
+	outfit_type = /decl/hierarchy/outfit/job/opslead
+
+
+/decl/hierarchy/outfit/job/opslead
+	name = OUTFIT_JOB_NAME("Operational Leader")
+	uniform = /obj/item/clothing/under/rank/head_of_personnel_whimsy
+	l_ear = /obj/item/device/radio/headset/heads/opslead
+	shoes = /obj/item/clothing/shoes/brown
+	id_types = list(/obj/item/weapon/card/id/opslead)
+	pda_type = /obj/item/modular_computer/pda/heads/hop
+//	backpack_contents = list(/obj/item/weapon/storage/box/ids = 1)
+
+/obj/item/weapon/card/id/opslead
+	name = "identification card"
+	desc = "A card which represents management."
+	job_access_type = /datum/job/opslead
+	extra_details = list("goldstripe")
+
+/obj/item/device/encryptionkey/heads/opslead
+	name = "captain's encryption key"
+	icon_state = "cap_cypherkey"
+	channels = list("Command" = 1, "Engineering" = 1, "Science" = 1, "Medical" = 1)
+
+/obj/item/device/radio/headset/heads/opslead
+	name = "opslead's headset"
+	desc = "The headset of the guy who command the operational departments."
+	icon_state = "com_headset"
+	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/heads/opslead

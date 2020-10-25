@@ -1,4 +1,5 @@
 #if !defined(using_map_DATUM)
+	#include "../torch/torch_areas.dm"
 	#include "hermes_areas.dm"
 	#include "hermes_shuttles.dm"
 	#include "hermes_unit_testing.dm"
@@ -54,11 +55,11 @@
 	#include "job/command_jobs.dm"
 	#include "job/engineering_jobs.dm"
 	#include "job/exploration_jobs.dm"
+	#include "job/medical_jobs.dm"
 	#include "job/research_jobs.dm"
 	#include "job/security_jobs.dm"
 	#include "job/service_jobs.dm"
 	#include "job/supply_jobs.dm"
-
 	#include "job/hermes_access.dm"
 
 	#include "job/outfits/command_outfits.dm"
@@ -68,6 +69,7 @@
 	#include "job/outfits/security_outfits.dm"
 	#include "job/outfits/service_outfits.dm"
 	#include "job/outfits/supply_outfits.dm"
+	#include "job/outfits/medical_outfits.dm"
 
 	#include "../away/empty.dmm"
 	#include "../away/ascent/ascent.dm"

@@ -1,11 +1,11 @@
-/decl/hierarchy/outfit/job/torch/crew/medical/doctor
+/decl/hierarchy/outfit/job/hermes/crew/medical/doctor
 	name = OUTFIT_JOB_NAME("Medical Technician")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/medical
 	shoes = /obj/item/clothing/shoes/dutyboots
-	id_type = /obj/item/weapon/card/id/torch/crew/medical
+	id_types = list(/obj/item/weapon/card/id/hermes/crew/medical)
 	l_ear = /obj/item/device/radio/headset/headset_corpsman
 
-/decl/hierarchy/outfit/job/torch/crew/medical/doctor/fleet
+/decl/hierarchy/outfit/job/hermes/crew/medical/doctor/fleet
 	name = OUTFIT_JOB_NAME("Medical Technician - Fleet")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/medical
 	shoes = /obj/item/clothing/shoes/dutyboots
@@ -15,17 +15,7 @@
 	name = OUTFIT_JOB_NAME("Counselor")
 	uniform = /obj/item/clothing/under/rank/psych/turtleneck
 	shoes = /obj/item/clothing/shoes/white
-	id_type = /obj/item/weapon/card/id/hermes/contractor/medical/counselor
-
-/decl/hierarchy/outfit/job/hermes/crew/medical/counselor/equip_id(var/mob/living/carbon/human/H, var/rank, var/assignment, var/equip_adjustments)
-	. = ..()
-	var/obj/item/weapon/card/id/foundation_civilian/regis_card = new
-	if(rank)
-		regis_card.rank = rank
-	if(assignment)
-		regis_card.assignment = assignment
-	H.set_id_info(regis_card)
-	H.equip_to_slot_or_store_or_drop(regis_card)
+	id_types = list(/obj/item/weapon/card/id/hermes/contractor/medical/counselor)
 
 /decl/hierarchy/outfit/job/hermes/crew/medical/counselor/ec
 	name = OUTFIT_JOB_NAME("Counselor - Expeditionary Corps")

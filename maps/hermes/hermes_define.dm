@@ -18,7 +18,6 @@
 	company_name = "Sol Central Government"
 	company_short = "SolGov"
 
-	lobby_screens = list('maps/example/lobby.png')
 	lobby_tracks = list(/music_track/expanse)
 
 	station_levels = list(1, 2)
@@ -40,7 +39,8 @@
 
 	default_law_type = /datum/ai_laws/solgov
 	use_overmap = 1
-	num_exoplanets = 5
+	num_exoplanets = 3
+	away_site_budget = 3
 
 
 /datum/map/hermes/get_map_info()
