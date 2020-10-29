@@ -1,6 +1,20 @@
 #if !defined(using_map_DATUM)
+
 	#include "../torch/torch_areas.dm"
+	#include "../torch/structures/signs.dm"
+	#include "../torch/structures/closets/exploration.dm"
+	#include "../torch/structures/closets/security.dm"
+	#include "../torch/structures/closets/supply.dm"
+	#include "../torch/structures/closets/closet_appearances.dm"
+	#include "../torch/datums/uniforms.dm"
+	#include "../torch/datums/uniforms_expedition.dm"
+	#include "../torch/datums/uniforms_fleet.dm"
+
+
+
 	#include "hermes_areas.dm"
+	#include "hermes_submaps.dm"
+	#include "hermes_ranks.dm"
 	#include "hermes_shuttles.dm"
 	#include "hermes_unit_testing.dm"
 	#include "hermes_lobby.dm"
