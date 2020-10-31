@@ -2,7 +2,7 @@
 	title = "Medical Technician"
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "Physicians and the Chief Medical Officer"
+	supervisors = "the Operational Officer"
 	economic_power = 7
 	minimum_character_age = list(SPECIES_HUMAN = 19)
 	ideal_character_age = 40
@@ -11,10 +11,10 @@
 		"Paramedic",
 		"Corpsman")
 	outfit_type = /decl/hierarchy/outfit/job/hermes/crew/medical/doctor
-/*	allowed_branches = list(
+	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/medical/doctor/fleet,
-		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/medical/contractor
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/hermes/crew/medical/doctor/fleet,
+		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/hermes/crew/medical/contractor
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/ec/e3,
@@ -24,7 +24,7 @@
 		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/civ/contractor
-	)*/
+	)
 	min_skill = list(   SKILL_EVA     = SKILL_BASIC,
 	                    SKILL_MEDICAL = SKILL_BASIC,
 	                    SKILL_ANATOMY = SKILL_BASIC)
@@ -33,7 +33,7 @@
 	                    SKILL_CHEMISTRY   = SKILL_MAX)
 
 	access = list(access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-			            access_eva, access_surgery, access_medical_equip, access_solgov_crew, access_hangar)
+			            access_eva, access_surgery, access_medical_equip, access_solgov_crew, access_hangar, access_virology,access_chemistry)
 	minimal_access = list()
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
@@ -48,7 +48,7 @@
 	economic_power = 5
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	minimal_player_age = 0
-	supervisors = "the Chief Medical Officer"
+	supervisors = "the Operational Officer"
 	outfit_type = /decl/hierarchy/outfit/job/hermes/crew/medical/counselor
 	alt_titles = list(
 		"Psychiatrist",
@@ -57,14 +57,14 @@
 
 	)
 
-/*	allowed_branches = list(
+	allowed_branches = list(
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/expeditionary_corps = /decl/hierarchy/outfit/job/torch/crew/medical/counselor/ec,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/medical/counselor/fleet)
+		/datum/mil_branch/expeditionary_corps = /decl/hierarchy/outfit/job/hermes/crew/medical/counselor/ec,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/hermes/crew/medical/counselor/fleet)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
 		/datum/mil_rank/fleet/o1,
-		/datum/mil_rank/ec/o1)*/
+		/datum/mil_rank/ec/o1)
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_BASIC,
 		SKILL_MEDICAL     = SKILL_BASIC

@@ -1,6 +1,7 @@
 var/const/NETWORK_BRIDGE      = "Bridge"
 var/const/NETWORK_CALYPSO     = "Charon"
 var/const/NETWORK_EXPEDITION  = "Expedition"
+var/const/NETWORK_FIRST_DECK  = "First Deck"
 var/const/NETWORK_POD         = "General Utility Pod"
 var/const/NETWORK_SUPPLY      = "Supply"
 var/const/NETWORK_HANGAR      = "Hangar"
@@ -29,6 +30,7 @@ var/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
 	// Networks that will show up as options in the camera monitor program
 	station_networks = list(
 		NETWORK_ROBOTS,
+		NETWORK_FIRST_DECK,
 		NETWORK_BRIDGE,
 		NETWORK_COMMAND,
 		NETWORK_ENGINEERING,
@@ -56,6 +58,9 @@ var/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
 // Networks
 /obj/machinery/camera/network/bridge
 	network = list(NETWORK_BRIDGE)
+
+/obj/machinery/camera/network/first_deck
+	network = list(NETWORK_FIRST_DECK)
 
 /obj/machinery/camera/network/exploration_shuttle
 	network = list(NETWORK_CALYPSO)

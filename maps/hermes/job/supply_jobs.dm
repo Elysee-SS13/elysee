@@ -10,16 +10,16 @@
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 	ideal_character_age = 35
 	outfit_type = /decl/hierarchy/outfit/job/hermes/crew/supply/deckofficer
-/*	allowed_branches = list(
+	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer/fleet
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/hermes/crew/supply/deckofficer/fleet
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/ec/e7,
 		/datum/mil_rank/fleet/e7,
 		/datum/mil_rank/fleet/e8
-	)*/
+	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_FINANCE     = SKILL_BASIC,
 	                    SKILL_HAULING     = SKILL_BASIC,
@@ -48,10 +48,10 @@
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 24
 	outfit_type = /decl/hierarchy/outfit/job/hermes/crew/supply/tech
-/*	allowed_branches = list(
+	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/hermes/crew/supply/tech/fleet,
-		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/supply/contractor
+		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/hermes/crew/supply/contractor
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e2,
@@ -59,7 +59,7 @@
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/civ/contractor
-	)*/
+	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_FINANCE     = SKILL_BASIC,
 	                    SKILL_HAULING     = SKILL_BASIC)

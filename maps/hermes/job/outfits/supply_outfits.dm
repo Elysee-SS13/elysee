@@ -37,3 +37,16 @@
 	shoes = /obj/item/clothing/shoes/brown
 	id_types = list(/obj/item/weapon/card/id/hermes/contractor/supply)
 	pda_type = /obj/item/modular_computer/pda/cargo
+
+/decl/hierarchy/outfit/job/hermes/passenger/research/prospector
+	name = OUTFIT_JOB_NAME("Prospector")
+	uniform = /obj/item/clothing/under/rank/ntwork
+	shoes = /obj/item/clothing/shoes/workboots
+	id_types = list(/obj/item/weapon/card/id/hermes/passenger/research/mining)
+	pda_type = /obj/item/modular_computer/pda/mining
+	flags = OUTFIT_FLAGS_JOB_DEFAULT | OUTFIT_EXTENDED_SURVIVAL
+	l_ear = /obj/item/device/radio/headset/headset_mining
+
+/decl/hierarchy/outfit/job/hermes/passenger/research/prospector/New()
+	..()
+	BACKPACK_OVERRIDE_ENGINEERING

@@ -2,6 +2,7 @@
 	name = "Hermes"
 	full_name = "Hermes"
 	path = "hermes"
+	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
 
 	accessible_z_levels = list("1"=1,"2"=1)
 	overmap_size = 35
@@ -40,7 +41,7 @@
 	default_law_type = /datum/ai_laws/solgov
 	use_overmap = 1
 	num_exoplanets = 3
-	away_site_budget = 3
+	away_site_budget = 5
 
 
 /datum/map/hermes/get_map_info()

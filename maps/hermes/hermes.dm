@@ -6,10 +6,11 @@
 	#include "../torch/structures/closets/security.dm"
 	#include "../torch/structures/closets/supply.dm"
 	#include "../torch/structures/closets/closet_appearances.dm"
+/* Copie dans le repertoire de la map hermes pour garder la controle de la configuration des uniformes
 	#include "../torch/datums/uniforms.dm"
 	#include "../torch/datums/uniforms_expedition.dm"
 	#include "../torch/datums/uniforms_fleet.dm"
-
+*/
 
 
 	#include "hermes_areas.dm"
@@ -29,6 +30,10 @@
 
 	#include "structures/closets/services.dm"
 
+	#include "datums/shackle_law_sets.dm"
+	#include "datums/uniforms.dm"
+	#include "datums/uniforms_expedition.dm"
+	#include "datums/uniforms_fleet.dm"
 	#include "datums/reports/command.dm"
 	#include "datums/reports/medical.dm"
 	#include "datums/reports/robotics.dm"
@@ -42,7 +47,7 @@
 	#include "items/machinery.dm"
 	#include "items/manuals.dm"
 	#include "items/stamps.dm"
-//	#include "items/uniform_vendor.dm"
+	#include "items/uniform_vendor.dm"
 	#include "items/rigs.dm"
 	#include "items/solbanner.dm"
 	#include "items/explo_shotgun.dm"
@@ -74,6 +79,7 @@
 	#include "job/security_jobs.dm"
 	#include "job/service_jobs.dm"
 	#include "job/supply_jobs.dm"
+	#include "job/misc_jobs.dm"
 	#include "job/hermes_access.dm"
 
 	#include "job/outfits/command_outfits.dm"
@@ -84,6 +90,17 @@
 	#include "job/outfits/service_outfits.dm"
 	#include "job/outfits/supply_outfits.dm"
 	#include "job/outfits/medical_outfits.dm"
+	#include "job/outfits/misc_outfits.dm"
+	#include "job/outfits/hermes_outfits.dm"
+	#include "job/outfits/unused_outfits.dm"
+
+	#include "loadout/_defines.dm"
+	#include "loadout/loadout_uniform.dm"
+	#include "loadout/loadout_ec_skillbadges.dm"
+	#include "loadout/loadout_head.dm"
+	#include "loadout/loadout_shoes.dm"
+	#include "loadout/loadout_suit.dm"
+	#include "loadout/loadout_gloves.dm"
 
 	#include "../away/empty.dmm"
 	#include "../away/ascent/ascent.dm"

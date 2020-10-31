@@ -1,22 +1,22 @@
 /datum/job/detective
-	title = "Forensic Technician"
+	title = "Sentry"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Chief of Security"
+	supervisors = "the XO"
 	economic_power = 5
 	minimal_player_age = 7
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 35
 	skill_points = 14
 	alt_titles = list(
-		"Criminal Investigator"
+		"Criminal Investigator","Detective"
 	)
 	outfit_type = /decl/hierarchy/outfit/job/hermes/crew/security/forensic_tech
-/*	allowed_branches = list(
+	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/contractor,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/fleet,
-		/datum/mil_branch/solgov = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/agent
+		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/hermes/crew/security/forensic_tech/contractor,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/hermes/crew/security/forensic_tech/fleet,
+		/datum/mil_branch/solgov = /decl/hierarchy/outfit/job/hermes/crew/security/forensic_tech/agent
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e3,
@@ -26,7 +26,7 @@
 		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/civ/contractor,
 		/datum/mil_rank/sol/agent
-	)*/
+	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_COMPUTER    = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_BASIC,
@@ -51,23 +51,23 @@
 	title = "Master at Arms"
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "the Chief of Security"
+	supervisors = "the Executive Officer"
 	economic_power = 4
 	minimal_player_age = 7
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 25
 	alt_titles = list() // This is a hack. Overriding a list var with null does not actually override it due to the particulars of dm list init. Do not "clean up" without testing.
 	outfit_type = /decl/hierarchy/outfit/job/hermes/crew/security/maa
-/*	allowed_branches = list(
+	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/security/maa/fleet,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/hermes/crew/security/maa/fleet,
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/ec/e3,
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
-	)*/
+	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,

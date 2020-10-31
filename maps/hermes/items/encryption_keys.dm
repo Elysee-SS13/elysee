@@ -1,24 +1,24 @@
-/obj/item/device/encryptionkey/heads/torchexec
+/obj/item/device/encryptionkey/heads/hermesexec
 	name = "executive encryption key"
 	icon_state = "cap_cypherkey"
 	channels = list("Command" = 1, "Security" = 1, "Engineering" = 1, "Science" = 1, "Medical" = 1, "Supply" = 1, "Service" = 1, "Exploration" = 1)
 
-/obj/item/device/encryptionkey/headset_torchnt
+/obj/item/device/encryptionkey/headset_hermesnt
 	name = "corporate radio encryption key"
 	icon_state = "nt_cypherkey"
 	channels = list("Science" = 1)
 
-/obj/item/device/encryptionkey/headset_torchrd
+/obj/item/device/encryptionkey/headset_hermesrd
 	name = "chief science officer radio encryption key"
 	icon_state = "nt_cypherkey"
 	channels = list("Science" = 1, "Command" = 1, "Exploration" = 1)
 
-/obj/item/device/encryptionkey/headset_torchcorp
+/obj/item/device/encryptionkey/headset_hermescorp
 	name = "corporate radio encryption key"
 	icon_state = "nt_cypherkey"
 	channels = list("Service" = 1)
 
-/obj/item/device/encryptionkey/headset_torchcl
+/obj/item/device/encryptionkey/headset_hermescl
 	name = "corporate liaison radio encryption key"
 	icon_state = "nt_cypherkey"
 	channels = list("Service" = 1, "Command" = 1)
@@ -80,3 +80,8 @@
 	name = "senior enlisted advisor's encryption key"
 	icon_state = "com_cypherkey"
 	channels = list("Command" = 1, "Security" = 1, "Engineering" = 1, "Medical" = 1, "Supply" = 1, "Service" = 1, "Exploration" = 1)
+
+/obj/item/device/encryptionkey/heads/opslead
+	name = "captain's encryption key"
+	icon_state = "cap_cypherkey"
+	channels = list("Command" = 1, "Engineering" = 1, "Science" = 1, "Medical" = 1)

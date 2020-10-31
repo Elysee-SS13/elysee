@@ -2,7 +2,7 @@
 	title = "Engineer"
 	total_positions = 6
 	spawn_positions = 6
-	supervisors = "the Chief Engineer"
+	supervisors = "the Operational Officer"
 	economic_power = 5
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 19)
@@ -14,10 +14,10 @@
 		"Atmospheric Technician",
 		)
 	outfit_type = /decl/hierarchy/outfit/job/hermes/crew/engineering/engineer
-/*	allowed_branches = list(
+	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/engineering/engineer/fleet,
-		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/engineering/contractor
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/hermes/crew/engineering/engineer/fleet,
+		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/hermes/crew/engineering/contractor
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e2,
@@ -27,7 +27,7 @@
 		/datum/mil_rank/ec/e3,
 		/datum/mil_rank/ec/e5,
 		/datum/mil_rank/civ/contractor
-	)*/
+	)
 	min_skill = list(   SKILL_COMPUTER     = SKILL_BASIC,
 	                    SKILL_EVA          = SKILL_BASIC,
 	                    SKILL_CONSTRUCTION = SKILL_ADEPT,
@@ -43,7 +43,7 @@
 
 	access = list(access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_teleporter, access_eva, access_tech_storage, access_atmospherics, access_janitor, access_construction,
-			            access_solgov_crew, access_hangar)
+			            access_solgov_crew, access_hangar,access_tcomsat)
 	minimal_access = list()
 
 	software_on_spawn = list(/datum/computer_file/program/power_monitor,

@@ -11,10 +11,10 @@
 		"Culinary Specialist"
 		)
 	outfit_type = /decl/hierarchy/outfit/job/hermes/crew/service/cook
-/*	allowed_branches = list(
+	allowed_branches = list(
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/expeditionary_corps = /decl/hierarchy/outfit/job/torch/crew/service/cook/ec,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/service/cook/fleet
+		/datum/mil_branch/expeditionary_corps = /decl/hierarchy/outfit/job/hermes/crew/service/cook/ec,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/hermes/crew/service/cook/fleet
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
@@ -22,7 +22,7 @@
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4
-	)*/
+	)
 	min_skill = list(   SKILL_COOKING   = SKILL_ADEPT,
 	                    SKILL_BOTANY    = SKILL_BASIC,
 	                    SKILL_CHEMISTRY = SKILL_BASIC)
@@ -39,16 +39,16 @@
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 20
 	outfit_type = /decl/hierarchy/outfit/job/hermes/crew/service/crewman
-/*	allowed_branches = list(
+	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/service/crewman/fleet
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/hermes/crew/service/crewman/fleet
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/ec/e3,
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4
-	)*/
+	)
 
 	access = list(access_maint_tunnels, access_emergency_storage)
 
@@ -64,10 +64,10 @@
 	alt_titles = list(
 		"Janitor")
 	outfit_type = /decl/hierarchy/outfit/job/hermes/crew/service/janitor
-/*	allowed_branches = list(
+	allowed_branches = list(
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/expeditionary_corps = /decl/hierarchy/outfit/job/torch/crew/service/janitor/ec,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/service/janitor/fleet
+		/datum/mil_branch/expeditionary_corps = /decl/hierarchy/outfit/job/hermes/crew/service/janitor/ec,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/hermes/crew/service/janitor/fleet
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
@@ -75,7 +75,7 @@
 		/datum/mil_rank/ec/e3,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4
-	)*/
+	)
 	min_skill = list(   SKILL_HAULING = SKILL_BASIC)
 
 	access = list(access_maint_tunnels, access_emergency_storage, access_janitor)
