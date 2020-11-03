@@ -6,7 +6,7 @@
 	spawn_positions = 1
 	supervisors = "Corporate Regulations, the Union Charter, and the Expeditionary Corps Organisation"
 	selection_color = "#2f2f7f"
-	economic_power = 15
+	economic_power = 18
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	alt_titles = list(
@@ -53,11 +53,11 @@
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,
-	                    SKILL_WEAPONS     = SKILL_ADEPT,
+	                    SKILL_WEAPONS     = SKILL_BASIC,
 	                    SKILL_FORENSICS   = SKILL_BASIC)
-	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
-	                    SKILL_WEAPONS     = SKILL_MAX,
-	                    SKILL_FORENSICS   = SKILL_MAX)
+	max_skill = list(   SKILL_COMBAT      = SKILL_EXPERT,
+	                    SKILL_WEAPONS     = SKILL_EXPERT,
+	                    SKILL_FORENSICS   = SKILL_EXPERT)
 	alt_titles = list(
 		"Union Enforcer",
 		"Loss Prevention Associate",

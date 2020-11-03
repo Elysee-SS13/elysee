@@ -3531,7 +3531,6 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/structure/closet/crate/freezer/rations,
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/escape_pod11/station)
 "gJ" = (
@@ -3646,9 +3645,11 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
 "gX" = (
-/obj/machinery/ai_status_display,
-/turf/simulated/wall/r_wall/prepainted,
-/area/engineering/bluespace)
+/obj/effect/shuttle_landmark/merc/deck3{
+	name = "2nd Deck, Aft"
+	},
+/turf/space,
+/area/space)
 "gY" = (
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/structure/extinguisher_cabinet{
@@ -4337,12 +4338,12 @@
 	pixel_x = 0;
 	pixel_y = 24
 	},
-/obj/structure/cable/green{
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/random/maintenance/solgov,
+/obj/structure/cable/cyan{
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/obj/machinery/atmospherics/unary/vent_pump/on,
-/obj/random/maintenance/solgov,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/synth/borg_upload)
 "iT" = (
@@ -4517,16 +4518,16 @@
 /turf/simulated/floor/plating,
 /area/assembly/robotics)
 "ju" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/synth/borg_upload)
@@ -5433,16 +5434,16 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
 "lu" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/bluegrid,
 /area/synth/borg_upload)
@@ -6459,7 +6460,7 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/portable_atmospherics/powered/pump/filled,
 /turf/simulated/floor/tiled/techfloor,
-/area/space)
+/area/engineering/atmos)
 "nT" = (
 /obj/structure/sign/directions/infirmary{
 	dir = 1;
@@ -7367,8 +7368,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/assembly/robotics)
 "qu" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/teleporter/seconddeck)
+/obj/effect/shuttle_landmark/torch/deck3/aquila{
+	name = "2nd Deck, Aft Port"
+	},
+/turf/space,
+/area/space)
 "qv" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/engineering/drone_fabrication)
@@ -8006,6 +8010,11 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
 "rB" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
 "rC" = (
@@ -8016,18 +8025,13 @@
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftstarboard)
 "rD" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
 	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+	d2 = 8;
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
@@ -8041,9 +8045,9 @@
 	pixel_x = 0;
 	pixel_y = 24
 	},
-/obj/structure/cable/green{
-	d2 = 8;
-	icon_state = "0-8"
+/obj/structure/cable/cyan{
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
@@ -8329,11 +8333,6 @@
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /turf/simulated/floor/plating,
 /area/engineering/drone_fabrication)
 "sF" = (
@@ -8570,11 +8569,6 @@
 /area/engineering/drone_fabrication)
 "tl" = (
 /obj/structure/disposalpipe/segment,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
 	},
@@ -8582,6 +8576,11 @@
 	dir = 4
 	},
 /obj/structure/catwalk,
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/plating,
 /area/engineering/drone_fabrication)
 "tm" = (
@@ -8788,7 +8787,7 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/suit_storage_unit/atmos,
+/obj/machinery/suit_storage_unit/atmos/alt/sol,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -10233,7 +10232,6 @@
 	dir = 8
 	},
 /obj/machinery/light/small,
-/obj/structure/closet/crate/freezer/rations,
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/escape_pod10/station)
 "xZ" = (
@@ -11061,16 +11059,16 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/maintenance/seconddeck/aftport)
 "Au" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/bluegrid,
 /area/synth/borg_upload)
@@ -11371,16 +11369,21 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
@@ -13258,20 +13261,16 @@
 	},
 /turf/simulated/floor/tiled,
 /area/engineering/engineering_bay)
-"FP" = (
-/obj/effect/shuttle_landmark/merc/deck2,
-/turf/space,
-/area/space)
 "FS" = (
-/obj/effect/shuttle_landmark/skipjack/deck2,
+/obj/effect/shuttle_landmark/skipjack/deck3{
+	name = "2nd Deck, Fore Port"
+	},
 /turf/space,
 /area/space)
 "FT" = (
-/obj/effect/shuttle_landmark/torch/deck3/exploration_shuttle,
-/turf/space,
-/area/space)
-"FU" = (
-/obj/effect/shuttle_landmark/torch/deck3/aquila,
+/obj/effect/shuttle_landmark/torch/deck3/exploration_shuttle{
+	name = "2nd Deck, Port"
+	},
 /turf/space,
 /area/space)
 "FV" = (
@@ -13288,7 +13287,9 @@
 /turf/simulated/wall/r_wall/hull,
 /area/space)
 "Gb" = (
-/obj/effect/shuttle_landmark/torch/deck3/guppy,
+/obj/effect/shuttle_landmark/torch/deck3/guppy{
+	name = "2nd Deck, Fore"
+	},
 /turf/space,
 /area/space)
 "Gd" = (
@@ -13731,6 +13732,28 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
+"Hp" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/engineering/drone_fabrication)
+"Hq" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/engineering/drone_fabrication)
 "Hs" = (
 /obj/effect/wallframe_spawn/reinforced_phoron,
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
@@ -14029,14 +14052,6 @@
 /area/maintenance/seconddeck/aftport)
 "Io" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/highsecurity{
-	name = "Cyborg Upload"
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -14047,6 +14062,11 @@
 	dir = 8;
 	id_tag = "borg";
 	name = "Cyborg Upload"
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/synth/borg_upload)
@@ -14189,9 +14209,15 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/assembly/robotics/surgery)
 "IM" = (
-/obj/structure/table/standard,
-/obj/random/maintenance/solgov,
-/obj/random/maintenance/solgov,
+/obj/machinery/power/smes/buildable{
+	charge = 5e+006;
+	input_attempt = 1;
+	output_attempt = 1
+	},
+/obj/structure/cable/cyan{
+	d2 = 2;
+	icon_state = "0-2"
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
 "IN" = (
@@ -14561,7 +14587,9 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/bluespace)
 "Kb" = (
-/obj/effect/shuttle_landmark/ert/deck2,
+/obj/effect/shuttle_landmark/ert/deck3{
+	name = "2nd Deck, Fore Starboard"
+	},
 /turf/space,
 /area/space)
 "Kc" = (
@@ -14796,7 +14824,9 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck/fore)
 "Lb" = (
-/obj/effect/shuttle_landmark/ninja/deck2,
+/obj/effect/shuttle_landmark/ninja/deck3{
+	name = "2nd Deck, Aft Starboard"
+	},
 /turf/space,
 /area/space)
 "Lc" = (
@@ -15113,21 +15143,21 @@
 /area/vacant/prototype/engine)
 "Mi" = (
 /obj/machinery/button/blast_door{
-	desc = "A remote control-switch for the prototype exhaust";
+	desc = "A remote control-switch for the prototype exhaust.";
 	id_tag = "prototype_exhaust";
 	name = "Chamber Exhaust";
 	pixel_x = -11;
 	pixel_y = 29
 	},
 /obj/machinery/button/blast_door{
-	desc = "A remote control-switch for the engine containment doors";
+	desc = "A remote control-switch for the engine containment doors.";
 	id_tag = "prototype_chamber_blast";
 	name = "Chamber Containment";
 	pixel_x = 0;
 	pixel_y = 29
 	},
 /obj/machinery/button/blast_door{
-	desc = "A remote control-switch for the observation shutters";
+	desc = "A remote control-switch for the observation shutters.";
 	id_tag = "fusion_observation";
 	name = "Chamber Observation";
 	pixel_x = 11;
@@ -15488,16 +15518,16 @@
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 1
 	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
@@ -18019,8 +18049,8 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/central)
 "Wa" = (
-/obj/structure/closet/crate/freezer/rations,
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/closet/crate/freezer/rations,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/central)
 "Wb" = (
@@ -18399,11 +18429,6 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 9
 	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -18416,6 +18441,11 @@
 	pixel_x = -6;
 	pixel_y = -26;
 	req_access = list(access_ai_upload)
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
@@ -18692,16 +18722,16 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
@@ -18870,7 +18900,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/tech)
 "Yy" = (
-/obj/machinery/ai_status_display,
 /turf/simulated/wall/r_wall/prepainted,
 /area/teleporter/seconddeck)
 "Yz" = (
@@ -19077,6 +19106,13 @@
 	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
+	},
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
@@ -34099,8 +34135,8 @@ IA
 Fm
 qv
 rE
-sF
-sF
+Hp
+Hq
 LO
 sF
 vC
@@ -35714,7 +35750,7 @@ XP
 XP
 pL
 gr
-gX
+jV
 jV
 OL
 OF
@@ -36522,7 +36558,7 @@ fK
 XP
 gh
 gU
-gX
+jV
 jV
 vy
 Ka
@@ -38952,10 +38988,10 @@ Ab
 QI
 jy
 fp
-qu
+Yy
 kj
-qu
-qu
+Yy
+Yy
 Is
 Fn
 AN
@@ -39359,8 +39395,8 @@ fp
 jZ
 km
 nB
-qu
-qu
+Yy
+Yy
 Fn
 AN
 TV
@@ -39562,7 +39598,7 @@ vS
 WA
 xC
 kG
-qu
+Yy
 Fn
 AN
 Cf
@@ -39764,7 +39800,7 @@ Qv
 kx
 xC
 kM
-qu
+Yy
 Fn
 AN
 AN
@@ -39966,7 +40002,7 @@ kf
 zZ
 xC
 FV
-qu
+Yy
 wL
 NF
 Cg
@@ -40166,9 +40202,9 @@ jy
 fp
 vS
 FI
-qu
-qu
-qu
+Yy
+Yy
+Yy
 KE
 Bw
 Cg
@@ -43437,7 +43473,7 @@ aa
 aa
 aa
 aa
-FU
+aa
 aa
 aa
 aa
@@ -48275,7 +48311,7 @@ aa
 aa
 aa
 aa
-aa
+qu
 aa
 aa
 aa
@@ -50688,7 +50724,7 @@ aa
 aa
 aa
 aa
-FP
+aa
 aa
 aa
 aa
@@ -52292,7 +52328,7 @@ aa
 aa
 aa
 aa
-aa
+gX
 aa
 aa
 aa

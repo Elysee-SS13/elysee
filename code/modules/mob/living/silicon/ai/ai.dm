@@ -650,7 +650,7 @@ var/list/ai_verbs_default = list(
 /mob/living/silicon/ai/proc/sensor_mode()
 	set name = "Set Sensor Augmentation"
 	set category = "Silicon Commands"
-	set desc = "Augment visual feed with internal sensor overlays"
+	set desc = "Augment visual feed with internal sensor overlays."
 	toggle_sensor_mode()
 
 /mob/living/silicon/ai/proc/toggle_hologram_movement()
@@ -719,7 +719,7 @@ var/list/ai_verbs_default = list(
 	set name = "Rest"
 	set category = "IC"
 
-	resting = 0
+	resting = FALSE
 	var/obj/item/weapon/rig/rig = src.get_rig()
 	if(rig)
 		rig.force_rest(src)

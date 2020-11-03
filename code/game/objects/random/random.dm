@@ -430,7 +430,7 @@ obj/random/closet //A couple of random closets to spice up maint
 	desc = "This is a random closet."
 	icon = 'icons/obj/closets/bases/closet.dmi'
 	icon_state = "base"
-	var/vermin_chance = 0.1
+	var/vermin_chance = 5
 	var/list/locker_vermin = list(
 		/mob/living/simple_animal/mouse,
 		/mob/living/simple_animal/opossum,
@@ -1295,7 +1295,7 @@ var/list/random_useful_
 
 /obj/random/mre/spread/vegan
 	name = "random vegan MRE spread"
-	desc = "This is a random vegan spread packet for MREs"
+	desc = "This is a random vegan spread packet for MREs."
 
 /obj/random/mre/spread/vegan/spawn_choices()
 	return list(/obj/item/weapon/reagent_containers/food/condiment/small/packet/jelly)

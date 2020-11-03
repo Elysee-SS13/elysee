@@ -4,6 +4,7 @@
 	name = "arctic planetoid"
 	desc = "Sensor array detects an arctic planet with a small vessle on the planet's surface. Scans further indicate strange energy levels below the planet's surface."
 	in_space = 0
+	known = 1
 	icon_state = "globe"
 	initial_generic_waypoints = list(
 		"nav_blueriv_1",
@@ -124,7 +125,7 @@
 
 /turf/simulated/floor/away/blueriver/alienfloor
 	name = "glowing floor"
-	desc = "The floor glows without any apparent reason"
+	desc = "The floor glows without any apparent reason."
 	icon = 'riverturfs.dmi'
 	icon_state = "floor"
 	temperature = 233
