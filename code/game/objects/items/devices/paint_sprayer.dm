@@ -74,13 +74,15 @@
 	var/random_preset = pick(preset_colors)
 	change_color(preset_colors[random_preset])
 
+/obj/item/device/paint_sprayer/Destroy()
+	if (ismob(loc))
+		remove_click_handler(loc)
+	. = ..()
+
 /obj/item/device/paint_sprayer/on_update_icon()
 	overlays.Cut()
 	overlays += overlay_image(icon, "paint_sprayer_color", paint_color)
-	if (ismob(loc))
-		var/mob/M = loc
-		M.update_inv_l_hand(FALSE)
-		M.update_inv_r_hand(TRUE)
+	update_held_icon()
 
 /obj/item/device/paint_sprayer/get_mob_overlay(mob/user_mob, slot, bodypart)
 	var/image/ret = ..()
@@ -93,15 +95,21 @@
 	if (user.PushClickHandler(/datum/click_handler/default/paint_sprayer))
 		var/datum/click_handler/default/paint_sprayer/CH = user.click_handlers[1]
 		CH.paint_sprayer = src
-		GLOB.hands_swapped_event.register(user, src, /obj/item/device/paint_sprayer/proc/check_remove_click_handler)
-		GLOB.mob_equipped_event.register(user, src, /obj/item/device/paint_sprayer/proc/check_remove_click_handler)
-		GLOB.mob_unequipped_event.register(user, src, /obj/item/device/paint_sprayer/proc/check_remove_click_handler)
+		if (isrobot(user))
+			GLOB.module_deselected_event.register(user, src, /obj/item/device/paint_sprayer/proc/remove_click_handler)
+			GLOB.module_deactivated_event.register(user, src, /obj/item/device/paint_sprayer/proc/remove_click_handler)
+		else
+			GLOB.hands_swapped_event.register(user, src, /obj/item/device/paint_sprayer/proc/remove_click_handler)
+			GLOB.mob_equipped_event.register(user, src, /obj/item/device/paint_sprayer/proc/remove_click_handler)
+			GLOB.mob_unequipped_event.register(user, src, /obj/item/device/paint_sprayer/proc/remove_click_handler)
 
-/obj/item/device/paint_sprayer/proc/check_remove_click_handler(mob/user)
-	user.RemoveClickHandler(/datum/click_handler/default/paint_sprayer)
-	GLOB.hands_swapped_event.unregister(user, src, /obj/item/device/paint_sprayer/proc/check_remove_click_handler)
-	GLOB.mob_equipped_event.unregister(user, src, /obj/item/device/paint_sprayer/proc/check_remove_click_handler)
-	GLOB.mob_unequipped_event.unregister(user, src, /obj/item/device/paint_sprayer/proc/check_remove_click_handler)
+/obj/item/device/paint_sprayer/proc/remove_click_handler(mob/user)
+	if (user.RemoveClickHandler(/datum/click_handler/default/paint_sprayer))
+		GLOB.hands_swapped_event.unregister(user, src, /obj/item/device/paint_sprayer/proc/remove_click_handler)
+		GLOB.mob_equipped_event.unregister(user, src, /obj/item/device/paint_sprayer/proc/remove_click_handler)
+		GLOB.mob_unequipped_event.unregister(user, src, /obj/item/device/paint_sprayer/proc/remove_click_handler)
+		GLOB.module_deselected_event.unregister(user, src, /obj/item/device/paint_sprayer/proc/remove_click_handler)
+		GLOB.module_deactivated_event.unregister(user, src, /obj/item/device/paint_sprayer/proc/remove_click_handler)
 
 /obj/item/device/paint_sprayer/afterattack(atom/A, mob/user, proximity, params)
 	if (!proximity)
@@ -116,7 +124,7 @@
 		new_color = pick_color_from_floor(A, user)
 	else if (istype(A, /obj/machinery/door/airlock))
 		new_color = pick_color_from_airlock(A, user)
-	else
+	else if (A.atom_flags & ATOM_FLAG_CAN_BE_PAINTED)
 		new_color = A.get_color()
 	if (!change_color(new_color, user))
 		to_chat(user, SPAN_WARNING("\The [A] does not have a color that you could pick from."))
@@ -200,7 +208,7 @@
 		to_chat(user, SPAN_WARNING("\The [src] flashes an error light. You might need to reconfigure it."))
 		return FALSE
 
-	if(F.decals && F.decals.len > 5)
+	if((F.decals && F.decals.len > 5) && !ispath(painting_decal, /obj/effect/floor_decal/reset))
 		to_chat(user, SPAN_WARNING("\The [F] has been painted too much; you need to clear it off."))
 		return FALSE
 
@@ -346,6 +354,8 @@
 /datum/click_handler/default/paint_sprayer/OnClick(atom/A, params)
 	var/list/modifiers = params2list(params)
 	if (A != paint_sprayer)
+		if(!istype(user.buckled) || user.buckled.buckle_movable)
+			user.face_atom(A)
 		if(modifiers["ctrl"] && paint_sprayer.pick_color(A, user))
 			return
 		if(modifiers["shift"] && paint_sprayer.remove_paint(A, user))

@@ -1,4 +1,4 @@
-//Torch ID Cards (they have to be here to make the outfits work, no way around it)
+//Hermes ID Cards (they have to be here to make the outfits work, no way around it)
 
 /obj/item/weapon/card/id/hermes
 	name = "identification card"
@@ -40,10 +40,21 @@
 /obj/item/weapon/card/id/hermes/crew/medical
 	job_access_type = /datum/job/doctor
 	detail_color = COLOR_PALE_BLUE_GRAY
-
-
+/*
+/obj/item/weapon/card/id/hermes/crew/medical/senior
+	job_access_type = /datum/job/senior_doctor
+*/
 /obj/item/weapon/card/id/hermes/contractor/medical
 	job_access_type = /datum/job/doctor
+	detail_color = COLOR_PALE_BLUE_GRAY
+
+/*
+/obj/item/weapon/card/id/hermes/contractor/medical/senior
+	job_access_type = /datum/job/senior_doctor
+*/
+
+/obj/item/weapon/card/id/hermes/contractor/chemist
+	job_access_type = /datum/job/chemist
 	detail_color = COLOR_PALE_BLUE_GRAY
 
 /obj/item/weapon/card/id/hermes/contractor/medical/counselor
@@ -57,9 +68,13 @@
 	job_access_type = /datum/job/officer
 	detail_color = "#e00000"
 
+/obj/item/weapon/card/id/hermes/crew/security/brigchief
+	job_access_type = /datum/job/warden
+	extra_details = list("onegoldstripe")
 
 /obj/item/weapon/card/id/hermes/crew/security/forensic
 	job_access_type = /datum/job/detective
+
 
 /obj/item/weapon/card/id/hermes/silver/engineering
 	job_access_type = /datum/job/chief_engineer
@@ -69,9 +84,19 @@
 	job_access_type = /datum/job/engineer
 	detail_color = COLOR_SUN
 
+/*
+/obj/item/weapon/card/id/hermes/crew/engineering/senior
+	job_access_type = /datum/job/senior_engineer
+	extra_details = list("onegoldstripe")
+*/
+
 /obj/item/weapon/card/id/hermes/contractor/engineering
 	job_access_type = /datum/job/engineer
 	detail_color = COLOR_SUN
+
+/obj/item/weapon/card/id/hermes/contractor/engineering/roboticist
+	job_access_type = /datum/job/roboticist
+
 
 /obj/item/weapon/card/id/hermes/crew/supply/deckofficer
 	job_access_type = /datum/job/qm
@@ -96,10 +121,28 @@
 /obj/item/weapon/card/id/hermes/crew/service/chef
 	job_access_type = /datum/job/chef
 
+/obj/item/weapon/card/id/hermes/crew/service/chaplain
+	job_access_type = /datum/job/chaplain
 
 /obj/item/weapon/card/id/hermes/contractor/service //unused
 	job_access_type = DEFAULT_JOB_TYPE
 	detail_color = COLOR_CIVIE_GREEN
+
+/obj/item/weapon/card/id/hermes/contractor/service/bartender
+	job_access_type = /datum/job/bartender
+
+/*
+/obj/item/weapon/card/id/hermes/crew/representative
+	job_access_type = /datum/job/representative
+	detail_color = COLOR_COMMAND_BLUE
+*/
+
+/*
+/obj/item/weapon/card/id/hermes/crew/sea
+	job_access_type = /datum/job/sea
+	detail_color = COLOR_COMMAND_BLUE
+	extra_details = list("onegoldstripe")
+*/
 
 /obj/item/weapon/card/id/hermes/crew/bridgeofficer
 	job_access_type = /datum/job/bridgeofficer
@@ -124,18 +167,69 @@
 	detail_color = COLOR_RESEARCH
 	color = COLOR_WHITE
 
+/*
+/obj/item/weapon/card/id/hermes/crew/research
+	desc = "A card issued to science personnel aboard the SEV Hermes."
+	job_access_type = /datum/job/scientist_assistant
+	detail_color = COLOR_RESEARCH
+*/
+
+/*
+/obj/item/weapon/card/id/hermes/crew/research/senior_scientist
+	job_access_type = /datum/job/senior_scientist
+	extra_details = list("onegoldstripe")
+*/
 /obj/item/weapon/card/id/hermes/crew/research/scientist
 	job_access_type = /datum/job/scientist
 
 //NanoTrasen and Passengers
 
+/*
 /obj/item/weapon/card/id/hermes/passenger
 	desc = "A card issued to passengers aboard the SEV Hermes."
 	job_access_type = DEFAULT_JOB_TYPE
 	detail_color = COLOR_PAKISTAN_GREEN
+*/
 
+/*
+/obj/item/weapon/card/id/hermes/passenger/research
+	desc = "A card issued to corporate personnel aboard the SEV Hermes."
+	job_access_type = /datum/job/scientist_assistant
+	detail_color = COLOR_BOTTLE_GREEN
+*/
+
+/*
+/obj/item/weapon/card/id/hermes/passenger/research/senior_scientist
+	job_access_type = /datum/job/senior_scientist
+	extra_details = list("onegoldstripe")
+*/
 /obj/item/weapon/card/id/hermes/passenger/research/nt_pilot
 	job_access_type = /datum/job/nt_pilot
 
 /obj/item/weapon/card/id/hermes/passenger/research/scientist
 	job_access_type = /datum/job/scientist
+
+/obj/item/weapon/card/id/hermes/passenger/research/mining
+	job_access_type = /datum/job/mining
+
+/*
+/obj/item/weapon/card/id/hermes/passenger/corporate
+	color = COLOR_BOTTLE_GREEN
+	detail_color = COLOR_OFF_WHITE
+	job_access_type = /datum/job/bodyguard
+*/
+
+/*
+/obj/item/weapon/card/id/hermes/passenger/corporate/liaison
+	job_access_type = /datum/job/liaison
+	extra_details = list("onegoldstripe")
+*/
+
+//Merchant
+/*
+/obj/item/weapon/card/id/hermes/merchant
+	desc = "An identification card issued to Merchants, indicating their right to sell and buy goods."
+	job_access_type = /datum/job/merchant
+	color = COLOR_OFF_WHITE
+	detail_color = COLOR_BEIGE
+*/

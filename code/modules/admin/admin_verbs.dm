@@ -1,6 +1,6 @@
 //admin verb groups - They can overlap if you so wish. Only one of each verb will exist in the verbs list regardless
 var/list/admin_verbs_default = list(
-	/datum/admins/proc/show_player_panel,	//shows an interface for individual players, with various links (links require additional flags,
+	/datum/admins/proc/show_player_panel, //shows an interface for individual players, with various links (links require additional flags), right-click player panel,
 	/client/proc/player_panel,
 	/client/proc/secrets,
 	/client/proc/deadmin_self,			//destroys our own admin datum so we can play as a regular player,
@@ -44,6 +44,7 @@ var/list/admin_verbs_admin = list(
 	/client/proc/jumptoturf,			//allows us to jump to a specific turf,
 	/client/proc/admin_call_shuttle,	//allows us to call the emergency shuttle,
 	/client/proc/admin_cancel_shuttle,	//allows us to cancel the emergency shuttle, sending it back to centcomm,
+	/client/proc/cmd_admin_narrate,
 	/client/proc/cmd_admin_direct_narrate,	//send text directly to a player with no padding. Useful for narratives and fluff-text,
 	/client/proc/cmd_admin_visible_narrate,
 	/client/proc/cmd_admin_audible_narrate,
@@ -75,7 +76,7 @@ var/list/admin_verbs_admin = list(
 	/client/proc/cmd_admin_rejuvenate,
 	/client/proc/toggleghostwriters,
 	/client/proc/toggledrones,
-	/datum/admins/proc/show_skills,
+	/datum/admins/proc/show_skills, //Right click skill menu,
 	/client/proc/man_up,
 	/client/proc/global_man_up,
 	/client/proc/response_team, // Response Teams admin verb,
@@ -235,6 +236,7 @@ var/list/admin_verbs_hideable = list(
 	/datum/admins/proc/access_news_network,
 	/client/proc/admin_call_shuttle,
 	/client/proc/admin_cancel_shuttle,
+	/client/proc/cmd_admin_narrate,
 	/client/proc/cmd_admin_direct_narrate,
 	/client/proc/cmd_admin_visible_narrate,
 	/client/proc/cmd_admin_audible_narrate,
@@ -291,15 +293,15 @@ var/list/admin_verbs_mod = list(
 	/client/proc/cmd_mod_say,
 	/datum/admins/proc/show_player_info,
 	/client/proc/dsay,
-	/datum/admins/proc/show_skills,
-	/datum/admins/proc/show_player_panel,
+	/datum/admins/proc/show_skills,	// Right-click skill menu,
+	/datum/admins/proc/show_player_panel,// right-click player panel,
 	/client/proc/check_antagonists,
+	/client/proc/cmd_admin_narrate,
 	/client/proc/cmd_admin_direct_narrate,
 	/client/proc/aooc,
 	/datum/admins/proc/sendFax,
 	/client/proc/check_fax_history,
-	/datum/admins/proc/paralyze_mob,
-	/datum/admins/proc/view_persistent_data
+	/datum/admins/proc/paralyze_mob // right-click paralyze ,
 )
 
 /client/proc/add_admin_verbs()
@@ -507,13 +509,14 @@ var/list/admin_verbs_mod = list(
 		return
 
 	if(++D.warns >= MAX_WARNS)					//uh ohhhh...you'reee iiiiin trouuuubble O:)
-		ban_unban_log_save("[ckey] warned [warned_ckey], resulting in a [AUTOBANTIME] minute autoban.")
+		var/mins_readable = minutes_to_readable(AUTOBANTIME)
+		ban_unban_log_save("[ckey] warned [warned_ckey], resulting in a [mins_readable] autoban.")
 		if(C)
-			message_admins("[key_name_admin(src)] has warned [key_name_admin(C)] resulting in a [AUTOBANTIME] minute ban.")
-			to_chat(C, "<font color='red'><BIG><B>You have been autobanned due to a warning by [ckey].</B></BIG><br>This is a temporary ban, it will be removed in [AUTOBANTIME] minutes.</font>")
+			message_admins("[key_name_admin(src)] has warned [key_name_admin(C)] resulting in a [mins_readable] ban.")
+			to_chat(C, "<font color='red'><BIG><B>You have been autobanned due to a warning by [ckey].</B></BIG><br>This is a temporary ban, it will be removed in [mins_readable].</font>")
 			qdel(C)
 		else
-			message_admins("[key_name_admin(src)] has warned [warned_ckey] resulting in a [AUTOBANTIME] minute ban.")
+			message_admins("[key_name_admin(src)] has warned [warned_ckey] resulting in a [mins_readable] ban.")
 		AddBan(warned_ckey, D.last_id, "Autobanning due to too many formal warnings", ckey, 1, AUTOBANTIME)
 		SSstatistics.add_field("ban_warn",1)
 	else
@@ -535,10 +538,10 @@ var/list/admin_verbs_mod = list(
 
 	var/turf/epicenter = mob.loc
 	var/list/choices = list("Small Bomb", "Medium Bomb", "Big Bomb", "Custom Bomb")
-	var/choice = input("What size explosion would you like to produce?") in choices
+	var/choice = input("What size explosion would you like to produce?") as null | anything in choices
 	switch(choice)
-		if(null)
-			return 0
+		if (null)
+			return
 		if("Small Bomb")
 			explosion(epicenter, 1, 2, 3, 3)
 		if("Medium Bomb")
@@ -546,10 +549,18 @@ var/list/admin_verbs_mod = list(
 		if("Big Bomb")
 			explosion(epicenter, 3, 5, 7, 5)
 		if("Custom Bomb")
-			var/devastation_range = input("Devastation range (in tiles):") as num
-			var/heavy_impact_range = input("Heavy impact range (in tiles):") as num
-			var/light_impact_range = input("Light impact range (in tiles):") as num
-			var/flash_range = input("Flash range (in tiles):") as num
+			var/devastation_range = input("Devastation range (in tiles):") as num|null
+			if (isnull(devastation_range))
+				return
+			var/heavy_impact_range = input("Heavy impact range (in tiles):") as num|null
+			if (isnull(heavy_impact_range))
+				return
+			var/light_impact_range = input("Light impact range (in tiles):") as num|null
+			if (isnull(light_impact_range))
+				return
+			var/flash_range = input("Flash range (in tiles):") as num|null
+			if (isnull(flash_range))
+				return
 			explosion(epicenter, devastation_range, heavy_impact_range, light_impact_range, flash_range)
 	log_and_message_admins("created an admin explosion at [epicenter.loc].")
 	SSstatistics.add_field_details("admin_verb","DB") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
@@ -857,6 +868,7 @@ var/list/admin_verbs_mod = list(
 			message_admins("Admin [key_name_admin(usr)] has enabled maint drones.", 1)
 
 /client/proc/man_up(mob/T as mob in SSmobs.mob_list)
+	set popup_menu = FALSE
 	set category = "Fun"
 	set name = "Man Up"
 	set desc = "Tells mob to man up and deal with it."

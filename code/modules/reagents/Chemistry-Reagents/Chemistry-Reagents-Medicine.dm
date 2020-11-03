@@ -26,7 +26,7 @@
 
 /datum/reagent/bicaridine
 	name = "Bicaridine"
-	description = "Bicaridine is an analgesic medication and can be used to treat blunt trauma."
+	description = "Bicaridine is a fast-acting medication to treat physical trauma."
 	taste_description = "bitterness"
 	taste_mult = 3
 	reagent_state = LIQUID
@@ -61,7 +61,7 @@
 	flags = IGNORE_MOB_SIZE
 	value = 2.9
 
-/datum/reagent/kelotane/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+/datum/reagent/kelotane/affect_blood(mob/living/carbon/M, alien, removed)
 	if(alien != IS_DIONA)
 		M.heal_organ_damage(0, 6 * removed)
 
@@ -77,7 +77,7 @@
 	flags = IGNORE_MOB_SIZE
 	value = 3.9
 
-/datum/reagent/dermaline/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+/datum/reagent/dermaline/affect_blood(mob/living/carbon/M, alien, removed)
 	if(alien != IS_DIONA)
 		M.heal_organ_damage(0, 12 * removed)
 
@@ -381,6 +381,7 @@
 	M.add_chemical_effect(CE_MIND, 2)
 	M.adjustToxLoss(5 * removed) // It used to be incredibly deadly due to an oversight. Not anymore!
 	M.add_chemical_effect(CE_PAINKILLER, 20)
+	M.add_chemical_effect(CE_STIMULANT, 10)
 
 /datum/reagent/dylovene/venaxilin
 	name = "Venaxilin"
@@ -501,6 +502,7 @@
 		M.emote(pick("twitch", "blink_r", "shiver"))
 	M.add_chemical_effect(CE_SPEEDBOOST, 1)
 	M.add_chemical_effect(CE_PULSE, 3)
+	M.add_chemical_effect(CE_STIMULANT, 4)
 
 /datum/reagent/ethylredoxrazine
 	name = "Ethylredoxrazine"
@@ -911,6 +913,7 @@
 	else if(M.chem_doses[type] < 1)
 		M.add_chemical_effect(CE_PAINKILLER, min(10*volume, 20))
 	M.add_chemical_effect(CE_PULSE, 2)
+	M.add_chemical_effect(CE_STIMULANT, 2)
 	if(M.chem_doses[type] > 10)
 		M.make_jittery(5)
 	if(volume >= 5 && M.is_asystole())

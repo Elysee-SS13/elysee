@@ -1,6 +1,7 @@
 var/const/NETWORK_BRIDGE      = "Bridge"
 var/const/NETWORK_CALYPSO     = "Charon"
 var/const/NETWORK_EXPEDITION  = "Expedition"
+var/const/NETWORK_FIRST_DECK  = "First Deck"
 var/const/NETWORK_POD         = "General Utility Pod"
 var/const/NETWORK_SUPPLY      = "Supply"
 var/const/NETWORK_HANGAR      = "Hangar"
@@ -29,6 +30,7 @@ var/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
 	// Networks that will show up as options in the camera monitor program
 	station_networks = list(
 		NETWORK_ROBOTS,
+		NETWORK_FIRST_DECK,
 		NETWORK_BRIDGE,
 		NETWORK_COMMAND,
 		NETWORK_ENGINEERING,
@@ -56,6 +58,9 @@ var/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
 // Networks
 /obj/machinery/camera/network/bridge
 	network = list(NETWORK_BRIDGE)
+
+/obj/machinery/camera/network/first_deck
+	network = list(NETWORK_FIRST_DECK)
 
 /obj/machinery/camera/network/exploration_shuttle
 	network = list(NETWORK_CALYPSO)
@@ -98,3 +103,21 @@ var/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
 			return access_heads
 		if(NETWORK_ENGINE, NETWORK_ENGINEERING_OUTPOST)
 			return access_engine
+
+/datum/map/torch/default_internal_channels()
+	return list(
+		num2text(PUB_FREQ)   = list(),
+		num2text(AI_FREQ)    = list(access_synth),
+		num2text(ENT_FREQ)   = list(),
+		num2text(ERT_FREQ)   = list(access_cent_specops),
+		num2text(COMM_FREQ)  = list(access_heads),
+		num2text(ENG_FREQ)   = list(access_engine_equip, access_atmospherics),
+		num2text(MED_FREQ)   = list(access_medical_equip),
+		num2text(MED_I_FREQ) = list(access_medical_equip),
+		num2text(SEC_FREQ)   = list(access_security),
+		num2text(SEC_I_FREQ) = list(access_security),
+		num2text(SCI_FREQ)   = list(access_tox, access_robotics, access_xenobiology, access_pathfinder),
+		num2text(SUP_FREQ)   = list(access_cargo),
+		num2text(SRV_FREQ)   = list(access_janitor, access_hydroponics),
+		num2text(EXP_FREQ)   = list(access_explorer, access_rd)
+		)

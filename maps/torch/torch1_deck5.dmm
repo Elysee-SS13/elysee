@@ -732,7 +732,9 @@
 /turf/simulated/floor/plating,
 /area/exploration_shuttle/cockpit)
 "bw" = (
-/obj/machinery/computer/ship/helm,
+/obj/machinery/computer/ship/helm{
+	req_access = list(list("ACCESS_EXPLO_HELM"))
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/exploration_shuttle/cockpit)
 "bx" = (
@@ -1142,12 +1144,12 @@
 /area/guppy_hangar/start)
 "cl" = (
 /obj/item/device/radio,
-/obj/item/device/radio/intercom{
-	dir = 1;
-	pixel_y = -28
-	},
 /obj/machinery/computer/ship/engines{
 	dir = 4
+	},
+/obj/item/device/radio/intercom/hailing{
+	dir = 1;
+	pixel_y = -28
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/exploration_shuttle/cockpit)
@@ -1882,15 +1884,15 @@
 	dir = 1;
 	id_tag = "calypso_shuttle_pump"
 	},
-/obj/item/device/radio/intercom{
-	dir = 1;
-	pixel_y = -28
-	},
 /obj/structure/handrai{
 	dir = 1;
 	icon_state = "handrail"
 	},
 /obj/effect/floor_decal/techfloor,
+/obj/item/device/radio/intercom/hailing{
+	dir = 1;
+	pixel_y = -28
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/airlock)
 "dz" = (
@@ -2022,7 +2024,8 @@
 /area/exploration_shuttle/airlock)
 "dM" = (
 /obj/machinery/computer/ship/helm{
-	dir = 1
+	dir = 1;
+	req_access = list(list("ACCESS_TORCH_GUP_HELM"))
 	},
 /obj/machinery/light{
 	dir = 8
@@ -2039,6 +2042,10 @@
 "dO" = (
 /obj/machinery/computer/ship/engines{
 	dir = 1
+	},
+/obj/item/device/radio/intercom/hailing{
+	dir = 8;
+	pixel_x = 24
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
@@ -2210,7 +2217,9 @@
 /area/guppy_hangar/start)
 "eg" = (
 /obj/effect/floor_decal/industrial/outline/orange,
-/obj/machinery/portable_atmospherics/canister/carbon_dioxide/engine_setup,
+/obj/machinery/portable_atmospherics/canister/carbon_dioxide/engine_setup{
+	start_pressure = 7498.00
+	},
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
 	},
@@ -2903,7 +2912,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/cargo)
 "fR" = (
-/obj/structure/closet/crate/freezer/rations,
 /obj/structure/handrai{
 	dir = 8;
 	icon_state = "handrail"
@@ -2913,6 +2921,11 @@
 	icon_state = "techfloor_edges"
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/crate,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/random/single/cola,
+/obj/random/single/cola,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/cargo)
 "fS" = (
@@ -4136,8 +4149,8 @@
 /area/maintenance/fifthdeck/fore)
 "jp" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/crate/freezer/rations,
 /obj/machinery/light/small,
+/obj/structure/closet/crate/freezer/rations,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/storage)
 "jq" = (
@@ -5212,7 +5225,9 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/expedition/storage)
 "lz" = (
-/obj/machinery/portable_atmospherics/canister/carbon_dioxide,
+/obj/machinery/portable_atmospherics/canister/carbon_dioxide/engine_setup{
+	start_pressure = 4769
+	},
 /obj/machinery/light/small{
 	dir = 4;
 	icon_state = "bulb1"
@@ -8792,6 +8807,7 @@
 /area/vacant/infirmary)
 "sR" = (
 /obj/machinery/reagentgrinder,
+/obj/item/weapon/reagent_containers/glass/beaker/large,
 /turf/simulated/floor/plating,
 /area/vacant/infirmary)
 "sS" = (
@@ -10304,6 +10320,7 @@
 /area/maintenance/fifthdeck/aftstarboard)
 "wY" = (
 /obj/machinery/reagentgrinder,
+/obj/item/weapon/reagent_containers/glass/beaker/large,
 /obj/item/device/radio/intercom{
 	dir = 4;
 	pixel_x = -21
@@ -11682,6 +11699,7 @@
 	dir = 1
 	},
 /obj/machinery/reagentgrinder,
+/obj/item/weapon/reagent_containers/glass/beaker/large,
 /obj/item/stack/material/phoron,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/petrov/analysis)
@@ -12530,7 +12548,9 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "EN" = (
-/obj/effect/shuttle_landmark/merc/hanger,
+/obj/effect/shuttle_landmark/merc/hanger{
+	name = "5th Deck, Aft Starboard"
+	},
 /turf/space,
 /area/space)
 "ER" = (
@@ -12667,7 +12687,9 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftstarboard)
 "FS" = (
-/obj/effect/shuttle_landmark/skipjack/hanger,
+/obj/effect/shuttle_landmark/skipjack/hanger{
+	name = "5th Deck, Starboard"
+	},
 /turf/space,
 /area/space)
 "FU" = (
@@ -13063,7 +13085,9 @@
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/analysis)
 "Hm" = (
-/obj/machinery/portable_atmospherics/canister/carbon_dioxide,
+/obj/machinery/portable_atmospherics/canister/carbon_dioxide/engine_setup{
+	start_pressure = 4769
+	},
 /obj/effect/floor_decal/industrial/outline/orange,
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 8;
@@ -13571,7 +13595,9 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/cargo)
 "IW" = (
-/obj/effect/shuttle_landmark/ert/hanger,
+/obj/effect/shuttle_landmark/ert/hanger{
+	name = "5th Deck, Aft Port"
+	},
 /turf/space,
 /area/space)
 "IY" = (
@@ -14015,15 +14041,15 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/power)
 "Kz" = (
-/obj/item/device/radio/intercom{
-	dir = 1;
-	pixel_y = -28
-	},
 /obj/machinery/light,
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/effect/floor_decal/techfloor,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 4
+	},
+/obj/item/device/radio/intercom/hailing{
+	dir = 1;
+	pixel_y = -28
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/cargo)
@@ -15814,7 +15840,9 @@
 	dir = 4;
 	icon_state = "map_connector"
 	},
-/obj/machinery/portable_atmospherics/canister/carbon_dioxide/engine_setup,
+/obj/machinery/portable_atmospherics/canister/carbon_dioxide/engine_setup{
+	start_pressure = 7498.00
+	},
 /turf/simulated/floor/plating,
 /area/guppy_hangar/start)
 "Re" = (
@@ -17119,7 +17147,9 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "Wb" = (
-/obj/effect/shuttle_landmark/ninja/hanger,
+/obj/effect/shuttle_landmark/ninja/hanger{
+	name = "5th Deck, Fore"
+	},
 /turf/space,
 /area/space)
 "Wg" = (

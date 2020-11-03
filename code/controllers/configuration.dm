@@ -56,6 +56,7 @@ var/list/gamemode_cache = list()
 	var/usewhitelist = 0
 	var/kick_inactive = 0				//force disconnect for inactive players after this many minutes, if non-0
 	var/jobs_have_minimal_access = 0	//determines whether jobs use minimal access or expanded access.
+	var/minimum_player_age = 0
 
 	var/cult_ghostwriter = 1               //Allows ghosts to write in blood in cult rounds...
 	var/cult_ghostwriter_req_cultists = 10 //...so long as this many cultists are active.
@@ -83,6 +84,8 @@ var/list/gamemode_cache = list()
 	var/forumurl
 	var/githuburl
 	var/issuereporturl
+
+	var/list/chat_markup
 
 	var/forbidden_message_regex
 	var/forbidden_message_warning = "<B>Your message matched a filter and has not been sent.</B>"
@@ -676,16 +679,21 @@ var/list/gamemode_cache = list()
 				if ("act_interval")
 					config.act_interval = text2num(value) SECONDS
 
+				if ("chat_markup")
+					var/list/line = splittext(value, ";")
+					if (length(line) != 2)
+						log_error("Invalid chat_markup entry length: [value]")
+					else
+						var/matcher = text2regex(line[1])
+						if (!matcher)
+							log_error("Invalid chat_markup regex: [value]")
+						else
+							LAZYADD(config.chat_markup, list(list(matcher, line[2])))
+
 				if ("forbidden_message_regex")
-					var/end = findlasttext(value, "/")
-					if (length(value) < 3 || value[1] != "/" || end < 3)
-						log_error("Invalid regex '[value]' supplied to '[name]'")
-					var/matcher = copytext(value, 2, end)
-					var/flags = end == length(value) ? FALSE : copytext(value, end + 1)
-					try
-						config.forbidden_message_regex = flags ? regex(matcher, flags) : regex(matcher)
-					catch(var/exception/ex)
-						log_error("Invalid regex '[value]' supplied to '[name]': [ex]")
+					config.forbidden_message_regex = text2regex(value)
+					if (!config.forbidden_message_regex)
+						log_error("Invalid forbidden_message_regex - failed to parse.")
 
 				if ("forbidden_message_warning")
 					config.forbidden_message_warning = length(value) ? value : FALSE
@@ -698,6 +706,9 @@ var/list/gamemode_cache = list()
 
 				if ("disallow_votable_mode")
 					config.votable_modes -= value
+
+				if ("minimum_player_age")
+					config.minimum_player_age = text2num(value)
 
 				else
 					log_misc("Unknown setting in configuration: '[name]'")

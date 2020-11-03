@@ -853,35 +853,6 @@
 	to_chat(M, "<span class='warning'>You feel a chill and your skin feels lighter..</span>")
 	remove_self(volume)
 
-/datum/reagent/toxin/zombie
-	name = "Liquid Corruption"
-	description = "A filthy, oily substance which slowly churns of its own accord."
-	taste_description = "decaying blood"
-	color = "#800000"
-	taste_mult = 5
-	strength = 10
-	metabolism = REM * 5
-	overdose = 30
-	hidden_from_codex = TRUE
-	heating_products = null
-	heating_point = null
-	var/amount_to_zombify = 5
-
-/datum/reagent/toxin/zombie/affect_touch(var/mob/living/carbon/M, var/alien, var/removed)
-	affect_blood(M, alien, removed * 0.5)
-
-/datum/reagent/toxin/zombie/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
-	..()
-	if (istype(M, /mob/living/carbon/human))
-		var/mob/living/carbon/human/H = M
-		var/true_dose = H.chem_doses[type] + volume
-		if (true_dose >= amount_to_zombify)
-			H.zombify()
-		else if (true_dose > 1 && prob(20))
-			H.zombify()
-		else if (prob(10))
-			to_chat(H, "<span class='warning'>You feel terribly ill!</span>")
-
 /datum/reagent/toxin/bromide
 	name = "Bromide"
 	description = "A dark, nearly opaque, red-orange, toxic element."

@@ -1,6 +1,7 @@
 #include "verne_areas.dm"
 #include "verne_jobs.dm"
 #include "verne_shuttles.dm"
+#include "verne_radio.dm"
 
 /obj/effect/submap_landmark/joinable_submap/verne
 	name = "SRV Verne"
@@ -37,6 +38,7 @@
 	description = "Active CTI research ship"
 	suffixes = list("verne/verne-1.dmm", "verne/verne-2.dmm", "verne/verne-3.dmm")
 	cost = 2
+	spawn_weight = 0.33
 	area_usage_test_exempted_root_areas = list(/area/verne)
 	shuttles_to_initialise = list(
 		/datum/shuttle/autodock/overmap/verne,
@@ -164,7 +166,7 @@
 /obj/machinery/suit_storage_unit/engineering/verne
 	req_access = list(access_verne)
 
-/obj/machinery/suit_storage_unit/science/verne
+/obj/machinery/suit_storage_unit/ceti/verne
 	req_access = list(access_verne)
 
 /obj/machinery/turretid/verne

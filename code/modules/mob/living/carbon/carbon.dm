@@ -187,7 +187,7 @@
 			else
 				M.visible_message("<span class='warning'>[M] tries to pat out [src]'s flames!</span>",
 				"<span class='warning'>You try to pat out [src]'s flames! Hot!</span>")
-				if(do_mob(M, src, 15))
+				if(do_after(M, 1.5 SECONDS, src))
 					src.fire_stacks -= 0.5
 					if (prob(10) && (M.fire_stacks <= 0))
 						M.fire_stacks += 1
@@ -221,8 +221,6 @@
 			else if(lying || src.sleeping || player_triggered_sleeping)
 				src.player_triggered_sleeping = 0
 				src.sleeping = max(0,src.sleeping - 5)
-				if(src.sleeping == 0)
-					src.resting = 0
 				M.visible_message("<span class='notice'>[M] shakes [src] trying to wake [t_him] up!</span>", \
 									"<span class='notice'>You shake [src] trying to wake [t_him] up!</span>")
 			else

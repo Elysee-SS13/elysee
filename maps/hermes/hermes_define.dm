@@ -2,6 +2,7 @@
 	name = "Hermes"
 	full_name = "Hermes"
 	path = "hermes"
+	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
 
 	accessible_z_levels = list("1"=1,"2"=1)
 	overmap_size = 35
@@ -18,8 +19,7 @@
 	company_name = "Sol Central Government"
 	company_short = "SolGov"
 
-	lobby_screens = list('maps/example/lobby.png')
-	lobby_tracks = list(/music_track/expanse)
+//	welcome_sound = 'sound/music/the-expanse-soundtrack-metal-cover.ogg'
 
 	station_levels = list(1, 2)
 	contact_levels = list(1, 2)
@@ -40,11 +40,12 @@
 
 	default_law_type = /datum/ai_laws/solgov
 	use_overmap = 1
-	num_exoplanets = 5
+	num_exoplanets = 3
+	away_site_budget = 5
 
 
 /datum/map/hermes/get_map_info()
-	return "Bienvenue a bord du Hermes. Vaisseau d'exploration scientifique de la flotte expéditionnaire du systeme solaire."
+	return "Bienvenue a bord du Hermes. Vaisseau d'exploration scientifique de la flotte expeditionnaire du systeme solaire."
 
 
 /datum/map/mini/setup_map()

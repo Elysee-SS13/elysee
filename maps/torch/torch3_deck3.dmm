@@ -313,12 +313,11 @@
 "be" = (
 /obj/effect/wallframe_spawn/reinforced/hull,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/blast/shutters{
+/obj/machinery/door/blast/regular{
 	density = 0;
-	dir = 2;
-	icon_state = "shutter0";
+	icon_state = "pdoor0";
 	id_tag = "hydroponics_shutters";
-	name = "Window Shutters";
+	name = "Blast Shields";
 	opacity = 0
 	},
 /turf/simulated/floor/plating,
@@ -522,9 +521,6 @@
 /area/hydroponics)
 "bB" = (
 /obj/item/weapon/stool/padded,
-/obj/machinery/light/spot{
-	dir = 1
-	},
 /turf/simulated/floor/lino,
 /area/crew_quarters/bar)
 "bC" = (
@@ -2363,13 +2359,8 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/obj/machinery/power/smes/buildable{
-	RCon_tag = "Substation - Telecommunications";
-	charge = 5e+006;
-	input_attempt = 1;
-	input_level = 250000;
-	output_attempt = 1;
-	output_level = 250000
+/obj/machinery/power/smes/buildable/preset/on_full{
+	RCon_tag = "Substation - Telecommunications"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tcommsat/computer)
@@ -2579,16 +2570,6 @@
 /obj/structure/closet/secure_closet/bar_torch,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/bar)
-"fu" = (
-/obj/effect/floor_decal/corner/blue/diagonal{
-	dir = 4
-	},
-/obj/machinery/vending/mredispenser{
-	dir = 1;
-	icon_state = "mrevend"
-	},
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess)
 "fv" = (
 /obj/structure/table/marble,
 /obj/machinery/microwave{
@@ -2603,9 +2584,7 @@
 "fw" = (
 /obj/structure/table/marble,
 /obj/machinery/reagentgrinder/juicer,
-/obj/item/weapon/reagent_containers/glass/beaker{
-	pixel_x = 5
-	},
+/obj/item/weapon/reagent_containers/glass/beaker/large,
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
 	},
@@ -3201,10 +3180,6 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/obj/structure/noticeboard{
-	pixel_x = -32;
-	pixel_y = 32
-	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/mess)
 "gw" = (
@@ -3267,7 +3242,6 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/crew_quarters/mess)
 "gB" = (
-/obj/structure/closet/crate/freezer/rations,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/forestarboard)
@@ -3293,8 +3267,11 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "gE" = (
-/turf/simulated/wall/prepainted,
-/area/holocontrol)
+/obj/effect/shuttle_landmark/ninja/deck4{
+	name = "3rd Deck, Aft"
+	},
+/turf/space,
+/area/space)
 "gF" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -3504,8 +3481,8 @@
 /turf/simulated/floor/bluegrid,
 /area/tcommsat/chamber)
 "hc" = (
-/obj/machinery/telecomms/server/presets/unused,
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/telecomms/server/presets/exploration,
 /turf/simulated/floor/bluegrid,
 /area/tcommsat/chamber)
 "hd" = (
@@ -3825,6 +3802,7 @@
 /obj/effect/floor_decal/corner/red/diagonal,
 /obj/structure/table/marble,
 /obj/machinery/reagentgrinder/juicer,
+/obj/item/weapon/reagent_containers/glass/beaker/large,
 /turf/simulated/floor/tiled/dark,
 /area/vacant/mess)
 "hE" = (
@@ -4100,6 +4078,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "ij" = (
@@ -4185,33 +4164,6 @@
 /obj/item/weapon/stool/padded,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/head)
-"io" = (
-/obj/machinery/button/blast_door{
-	id_tag = "kitchen";
-	name = "Kitchen Shutters";
-	pixel_x = 0;
-	pixel_y = -21
-	},
-/obj/effect/floor_decal/corner/grey/diagonal{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/light,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/galley)
 "ip" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -5523,13 +5475,8 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/head/sauna)
 "kN" = (
-/obj/machinery/requests_console{
-	announcementConsole = 0;
-	department = "Bar";
-	departmentType = 2;
-	name = "Bar RC";
-	pixel_x = 0;
-	pixel_y = 32
+/obj/machinery/light/spot{
+	dir = 1
 	},
 /turf/simulated/floor/lino,
 /area/crew_quarters/bar)
@@ -6338,11 +6285,6 @@
 /obj/structure/railing/mapped,
 /turf/simulated/open,
 /area/maintenance/thirddeck/aftstarboard)
-"mJ" = (
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/crate/freezer/rations,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/thirddeck/aftstarboard)
 "mK" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor,
@@ -6642,6 +6584,12 @@
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/machinery/light/small{
 	dir = 8
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "d3fore_shutters";
+	name = "Garden Shutter Control";
+	pixel_x = -23;
+	pixel_y = -9
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/observation)
@@ -7771,7 +7719,6 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/holocontrol)
 "qd" = (
-/obj/machinery/ai_status_display,
 /turf/simulated/wall/prepainted,
 /area/holocontrol)
 "qe" = (
@@ -7897,6 +7844,14 @@
 "qx" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id_tag = "d3fore_shutters";
+	name = "Blast Shields";
+	opacity = 0
+	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/observation)
 "qC" = (
@@ -9556,10 +9511,12 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/security/habcheck)
 "uO" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/crew_quarters/sleep/cryo)
+/obj/effect/shuttle_landmark/torch/deck4/exploration_shuttle{
+	name = "3rd Deck, Fore Port"
+	},
+/turf/space,
+/area/space)
 "uP" = (
-/obj/machinery/ai_status_display,
 /turf/simulated/wall/r_wall/prepainted,
 /area/crew_quarters/sleep/cryo)
 "uQ" = (
@@ -10301,12 +10258,12 @@
 "xi" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/blast/shutters{
+/obj/machinery/door/blast/regular{
 	density = 0;
-	dir = 2;
-	icon_state = "shutter0";
+	dir = 4;
+	icon_state = "pdoor0";
 	id_tag = "d3aft_shutters";
-	name = "Window Shutters";
+	name = "Blast Shields";
 	opacity = 0
 	},
 /obj/structure/cable/green{
@@ -12319,6 +12276,19 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
+"Di" = (
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 2;
+	icon_state = "pdoor0";
+	id_tag = "d3fore_shutters";
+	name = "Blast Shields";
+	opacity = 0
+	},
+/turf/simulated/floor/plating,
+/area/crew_quarters/observation)
 "Dj" = (
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
@@ -13205,6 +13175,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
+"Fx" = (
+/obj/effect/wallframe_spawn/no_grille,
+/turf/simulated/floor/plating,
+/area/crew_quarters/galley)
 "Fy" = (
 /obj/structure/table/rack,
 /obj/random/tech_supply,
@@ -13264,6 +13238,31 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/disperser)
+"FG" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "kitchen";
+	name = "Kitchen Shutters";
+	pixel_y = -21
+	},
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/galley)
 "FH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -14465,6 +14464,17 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
+"IX" = (
+/obj/item/weapon/stool/padded,
+/obj/effect/floor_decal/corner/green/half,
+/obj/machinery/button/blast_door{
+	id_tag = "d3fore_shutters";
+	name = "Garden Shutter Control";
+	pixel_x = -7;
+	pixel_y = -23
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/crew_quarters/observation)
 "IY" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -15525,11 +15535,6 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/reinforced/airless,
 /area/thruster/d3port)
-"Lg" = (
-/obj/random/drinkbottle,
-/obj/structure/closet/crate/freezer/rations,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/crew_quarters/safe_room/thirddeck)
 "Lh" = (
 /obj/structure/closet/emcloset,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -15803,7 +15808,9 @@
 /turf/simulated/floor/wood/maple,
 /area/chapel/main)
 "LN" = (
-/obj/effect/shuttle_landmark/skipjack/deck3,
+/obj/effect/shuttle_landmark/skipjack/deck4{
+	name = "3rd Deck, Aft Port"
+	},
 /turf/space,
 /area/space)
 "LO" = (
@@ -15921,7 +15928,9 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
 "Mb" = (
-/obj/effect/shuttle_landmark/ert/deck3,
+/obj/effect/shuttle_landmark/ert/deck4{
+	name = "3rd Deck, Starboard"
+	},
 /turf/space,
 /area/space)
 "Mf" = (
@@ -16032,6 +16041,12 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/forestarboard)
+"Mv" = (
+/obj/structure/noticeboard{
+	pixel_y = 32
+	},
+/turf/simulated/wall/prepainted,
+/area/crew_quarters/galleybackroom)
 "Mx" = (
 /turf/simulated/floor/tiled,
 /area/hydroponics)
@@ -16215,7 +16230,9 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
 "Nb" = (
-/obj/effect/shuttle_landmark/merc/deck3,
+/obj/effect/shuttle_landmark/merc/deck4{
+	name = "3rd Deck, Port"
+	},
 /turf/space,
 /area/space)
 "Nc" = (
@@ -16505,7 +16522,9 @@
 /turf/simulated/floor/reinforced/airless,
 /area/thruster/d3port)
 "Ob" = (
-/obj/effect/shuttle_landmark/torch/deck2/aquila,
+/obj/effect/shuttle_landmark/torch/deck4/aquila{
+	name = "3rd Deck, Fore"
+	},
 /turf/space,
 /area/space)
 "Oc" = (
@@ -16855,10 +16874,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/gym)
-"Pb" = (
-/obj/effect/shuttle_landmark/torch/deck2/exploration_shuttle,
-/turf/space,
-/area/space)
 "Pc" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 9
@@ -17160,10 +17175,6 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/thruster/d3starboard)
-"Qb" = (
-/obj/effect/shuttle_landmark/ninja/deck3,
-/turf/space,
-/area/space)
 "Qd" = (
 /obj/structure/reagent_dispensers/water_cooler{
 	dir = 4;
@@ -17490,10 +17501,6 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftport)
-"Rb" = (
-/obj/effect/shuttle_landmark/torch/deck2/guppy,
-/turf/space,
-/area/space)
 "Re" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -17909,12 +17916,12 @@
 "Su" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/blast/shutters{
+/obj/machinery/door/blast/regular{
 	density = 0;
 	dir = 2;
-	icon_state = "shutter0";
+	icon_state = "pdoor0";
 	id_tag = "d3aft_shutters";
-	name = "Window Shutters";
+	name = "Blast Shields";
 	opacity = 0
 	},
 /turf/simulated/floor/plating,
@@ -18268,12 +18275,12 @@
 "Tu" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/blast/shutters{
+/obj/machinery/door/blast/regular{
 	density = 0;
-	dir = 2;
-	icon_state = "shutter0";
+	dir = 4;
+	icon_state = "pdoor0";
 	id_tag = "d3aft_shutters";
-	name = "Window Shutters";
+	name = "Blast Shields";
 	opacity = 0
 	},
 /obj/structure/cable/green{
@@ -18810,6 +18817,12 @@
 /obj/effect/floor_decal/corner/green/half{
 	dir = 1;
 	icon_state = "bordercolorhalf"
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "d3fore_shutters";
+	name = "Garden Shutter Control";
+	pixel_x = -7;
+	pixel_y = 23
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/observation)
@@ -20102,6 +20115,7 @@
 /obj/machinery/reagentgrinder/juicer{
 	pixel_y = 8
 	},
+/obj/item/weapon/reagent_containers/glass/beaker/large,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/bar)
 "YA" = (
@@ -25402,7 +25416,7 @@ aa
 aa
 aa
 aa
-Pb
+aa
 aa
 aa
 aa
@@ -26039,7 +26053,7 @@ aa
 aa
 aa
 aa
-aa
+uO
 aa
 aa
 aa
@@ -28824,8 +28838,8 @@ ZN
 ZN
 aa
 aa
-qx
-qx
+Di
+Di
 BQ
 Fn
 YB
@@ -28837,8 +28851,8 @@ Vt
 BQ
 Fn
 YB
-qx
-qx
+Di
+Di
 aa
 aa
 BV
@@ -29026,7 +29040,7 @@ ZN
 ZN
 aa
 aa
-qx
+Di
 lV
 Yr
 ZU
@@ -29040,7 +29054,7 @@ Yr
 Yr
 Yr
 np
-qx
+Di
 aa
 aa
 BV
@@ -29241,7 +29255,7 @@ mL
 Yr
 mN
 Yr
-KZ
+IX
 vt
 BV
 BV
@@ -33686,7 +33700,7 @@ ob
 qL
 xT
 Bm
-Lg
+NY
 xV
 NY
 tG
@@ -34731,7 +34745,7 @@ aa
 aa
 aa
 aa
-Nb
+aa
 aa
 aa
 aa
@@ -35888,7 +35902,7 @@ ca
 ca
 dy
 dy
-dy
+Mv
 dy
 IR
 dy
@@ -36317,9 +36331,9 @@ uM
 Cq
 uM
 uM
-uO
-uO
-uO
+uP
+uP
+uP
 FB
 FB
 FB
@@ -36509,7 +36523,7 @@ pV
 Xn
 pr
 dP
-uO
+uP
 vR
 wY
 xZ
@@ -36522,7 +36536,7 @@ CZ
 DN
 Et
 EV
-uO
+uP
 Sj
 sM
 Gy
@@ -36711,7 +36725,7 @@ pV
 qQ
 sk
 tD
-uO
+uP
 Gt
 vS
 ya
@@ -36900,8 +36914,8 @@ ew
 fp
 fp
 fy
-io
-ev
+Tg
+Fx
 bB
 kO
 mo
@@ -36913,7 +36927,7 @@ pW
 qP
 IY
 tE
-uO
+uP
 vT
 vT
 yb
@@ -36926,7 +36940,7 @@ Db
 DP
 vT
 vT
-uO
+uP
 FV
 GA
 GZ
@@ -37102,7 +37116,7 @@ Rq
 fv
 fp
 hr
-Tg
+FG
 ev
 Ug
 Vg
@@ -37128,7 +37142,7 @@ Db
 DP
 vU
 EW
-uO
+uP
 FS
 GB
 FS
@@ -37330,7 +37344,7 @@ Dc
 DQ
 vV
 EX
-uO
+uP
 DL
 GD
 Ge
@@ -37732,10 +37746,10 @@ vS
 vS
 De
 za
-uO
+uP
 LX
-uO
-uO
+uP
+uP
 Lk
 EL
 Hf
@@ -37766,7 +37780,7 @@ aa
 aa
 aa
 aa
-aa
+Nb
 aa
 aa
 aa
@@ -37937,7 +37951,7 @@ za
 NF
 Hc
 Hc
-uO
+uP
 Lk
 EL
 Hf
@@ -38125,7 +38139,7 @@ fB
 le
 VM
 tH
-uO
+uP
 vU
 vU
 yf
@@ -38136,10 +38150,10 @@ vU
 vU
 Df
 Ub
-uO
-uO
-uO
-uO
+uP
+uP
+uP
+uP
 Lk
 EL
 Hf
@@ -38327,7 +38341,7 @@ Nw
 qQ
 sk
 tI
-uO
+uP
 vV
 vV
 yg
@@ -38524,12 +38538,12 @@ jd
 jd
 nj
 Lx
-fu
+jc
 Nw
 Xn
 sj
 tJ
-uO
+uP
 Cj
 yk
 fm
@@ -38731,18 +38745,18 @@ fB
 qV
 sj
 tC
-uO
-uO
-uO
-uO
+uP
+uP
+uP
+uP
 fS
-uO
-uO
-uO
-uO
-uO
+uP
+uP
+uP
+uP
+uP
 DS
-uO
+uP
 Fd
 Ez
 Ez
@@ -43766,18 +43780,18 @@ nC
 nC
 nC
 nC
-gE
-gE
-gE
+qd
+qd
+qd
 rv
 kd
 kW
-gE
-gE
+qd
+qd
 nn
 om
 Fr
-gE
+qd
 rr
 sG
 je
@@ -43968,7 +43982,7 @@ OA
 dn
 Zg
 SY
-gE
+qd
 hA
 hA
 hA
@@ -43979,7 +43993,7 @@ hA
 hA
 hA
 hA
-gE
+qd
 Bg
 AR
 ua
@@ -44170,7 +44184,7 @@ co
 dZ
 dn
 YV
-gE
+qd
 hA
 hA
 hA
@@ -44383,7 +44397,7 @@ hA
 hA
 hA
 hA
-gE
+qd
 wB
 sJ
 sW
@@ -44585,7 +44599,7 @@ hA
 hA
 hA
 hA
-gE
+qd
 Wx
 sF
 Mi
@@ -44787,7 +44801,7 @@ hA
 hA
 hA
 hA
-gE
+qd
 rt
 kR
 ue
@@ -44989,7 +45003,7 @@ hA
 hA
 hA
 hA
-gE
+qd
 lc
 Xv
 UV
@@ -45191,7 +45205,7 @@ hA
 hA
 hA
 hA
-gE
+qd
 ru
 Xv
 sW
@@ -45382,7 +45396,7 @@ Jq
 OA
 eN
 cq
-gE
+qd
 hA
 hA
 hA
@@ -45393,7 +45407,7 @@ hA
 hA
 hA
 hA
-gE
+qd
 WE
 Xv
 sW
@@ -45584,7 +45598,7 @@ Jr
 Js
 Ju
 cq
-gE
+qd
 hA
 hA
 hA
@@ -45786,7 +45800,7 @@ vc
 Xu
 Jt
 fX
-gE
+qd
 hA
 hA
 hA
@@ -45797,7 +45811,7 @@ hA
 hA
 hA
 hA
-gE
+qd
 rw
 Xv
 je
@@ -45835,7 +45849,7 @@ aa
 aa
 aa
 aa
-Rb
+aa
 aa
 aa
 aa
@@ -45988,18 +46002,18 @@ QU
 Dj
 Jz
 nz
-gE
-gE
-gE
-gE
-gE
-gE
-gE
-gE
-gE
-gE
-gE
-gE
+qd
+qd
+qd
+qd
+qd
+qd
+qd
+qd
+qd
+qd
+qd
+qd
 rx
 sR
 uk
@@ -46197,7 +46211,7 @@ UG
 Rs
 ve
 lT
-mJ
+mK
 nG
 oA
 wl
@@ -53678,7 +53692,7 @@ aa
 aa
 aa
 aa
-aa
+gE
 aa
 aa
 aa
@@ -55697,7 +55711,7 @@ aa
 aa
 aa
 aa
-Qb
+aa
 aa
 aa
 aa

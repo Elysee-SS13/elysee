@@ -11,10 +11,10 @@
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 35
 	outfit_type = /decl/hierarchy/outfit/job/hermes/crew/exploration/pathfinder
-/*	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
+	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
 	allowed_ranks = list(
 		/datum/mil_rank/ec/o1
-	)*/
+	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_ADEPT,
 	                    SKILL_SCIENCE     = SKILL_ADEPT,
@@ -31,7 +31,7 @@
 		access_solgov_crew, access_expedition_shuttle,
 		access_hangar,
 		access_tox, access_tox_storage, access_research,
-		access_xenobiology, access_xenoarch
+		access_xenobiology, access_xenoarch,access_petrov_analysis
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management,
@@ -53,17 +53,17 @@
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	ideal_character_age = 25
 	outfit_type = /decl/hierarchy/outfit/job/hermes/passenger/pilot
-/*	allowed_branches = list(
+	allowed_branches = list(
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/expeditionary_corps = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot/fleet
+		/datum/mil_branch/expeditionary_corps = /decl/hierarchy/outfit/job/hermes/crew/exploration/pilot,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/hermes/crew/exploration/pilot/fleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/nt_pilot,
+//		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/hermes/passenger/research/nt_pilot,
 		/datum/mil_rank/ec/e7,
 		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/fleet/e7
-	)*/
+	)
 
 	access = list(
 		access_mining_office, access_mining_station,
@@ -87,12 +87,12 @@
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 20
 	outfit_type = /decl/hierarchy/outfit/job/hermes/crew/exploration/explorer
-/*	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
+	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
 
 	allowed_ranks = list(
 		/datum/mil_rank/ec/e3,
 		/datum/mil_rank/ec/e5
-	)*/
+	)
 	min_skill = list(   SKILL_EVA = SKILL_BASIC)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX,

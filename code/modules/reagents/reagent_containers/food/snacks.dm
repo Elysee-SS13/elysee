@@ -87,7 +87,7 @@
 				return 0
 
 			user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-			if(!do_mob(user, M)) return
+			if(!do_after(user, 3 SECONDS, M)) return
 
 			var/contained = reagentlist()
 			admin_attack_log(user, M, "Fed the victim with [name] (Reagents: [contained])", "Was fed [src] (Reagents: [contained])", "used [src] (Reagents: [contained]) to feed")
@@ -3795,7 +3795,7 @@ obj/item/weapon/reagent_containers/food/snacks/dango
 
 /obj/item/weapon/reagent_containers/food/snacks/old
 	name = "master old-food"
-	desc = "they're all inedible and potentially dangerous items"
+	desc = "They're all inedible and potentially dangerous items."
 	center_of_mass = "x=15;y=12"
 	nutriment_desc = list("rot" = 5, "mold" = 5)
 	nutriment_amt = 10
