@@ -66,3 +66,6 @@
 	req_access = list(access_hop)
 
 
+/area/holodeck/source_combat_training_pirate
+	name = "\improper Holodeck - Combat Training Pirate"
+	sound_env = ARENA

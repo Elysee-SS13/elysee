@@ -22,6 +22,7 @@
 	#include "hermes_presets.dm"
 	#include "hermes_overmap.dm"
 	#include "hermes_map_templates.dm"
+	#include "hermes_holodecks.dm"
 
 	#include "hermes-1.dmm"
 	#include "hermes-2.dmm"
@@ -38,6 +39,8 @@
 	#include "datums/reports/medical.dm"
 	#include "datums/reports/robotics.dm"
 	#include "datums/reports/security.dm"
+	#include "datums/reports/exploration.dm"
+	#include "datums/reports/science.dm"
 
 
 	#include "items/cards_ids.dm"
