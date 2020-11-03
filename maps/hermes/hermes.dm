@@ -23,6 +23,7 @@
 	#include "hermes_overmap.dm"
 	#include "hermes_map_templates.dm"
 	#include "hermes_holodecks.dm"
+	#include "hermes_turfs.dm"
 
 	#include "hermes-1.dmm"
 	#include "hermes-2.dmm"

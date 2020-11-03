@@ -19,7 +19,7 @@
 	company_name = "Sol Central Government"
 	company_short = "SolGov"
 
-	lobby_tracks = list(/music_track/expanse)
+//	welcome_sound = 'sound/music/the-expanse-soundtrack-metal-cover.ogg'
 
 	station_levels = list(1, 2)
 	contact_levels = list(1, 2)
@@ -45,7 +45,7 @@
 
 
 /datum/map/hermes/get_map_info()
-	return "Bienvenue a bord du Hermes. Vaisseau d'exploration scientifique de la flotte expéditionnaire du systeme solaire."
+	return "Bienvenue a bord du Hermes. Vaisseau d'exploration scientifique de la flotte expeditionnaire du systeme solaire."
 
 
 /datum/map/mini/setup_map()
