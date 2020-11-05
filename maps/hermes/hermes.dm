@@ -24,6 +24,7 @@
 	#include "hermes_map_templates.dm"
 	#include "hermes_holodecks.dm"
 	#include "hermes_turfs.dm"
+	#include "hermes_elevator.dm"
 
 	#include "hermes-1.dmm"
 	#include "hermes-2.dmm"
@@ -31,6 +32,7 @@
 	#include "z2_transit.dmm"
 
 	#include "structures/closets/services.dm"
+	#include "structures/closets/command.dm"
 
 	#include "datums/shackle_law_sets.dm"
 	#include "datums/uniforms.dm"

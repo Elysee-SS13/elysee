@@ -21,6 +21,12 @@
 	ambience = list('sound/ambience/signal.ogg')
 	req_access = list(access_medical)
 
+/area/medical/healthcare
+	name = "\improper Health Care"
+	icon_state = "medbay2"
+	ambience = list('sound/ambience/signal.ogg')
+	req_access = list(access_medical)
+
 /area/medical/virology
 	name = "\improper Virology"
 	icon_state = "virology"
@@ -69,3 +75,21 @@
 /area/holodeck/source_combat_training_pirate
 	name = "\improper Holodeck - Combat Training Pirate"
 	sound_env = ARENA
+
+/area/quartermaster/tubolift
+	name ="\improper Supply Sorting"
+	icon_state = "quartstorage"
+
+
+/area/turbolift/hermes_bridge
+	name = "lift (bridge)"
+	lift_floor_label = "Bridge"
+	lift_floor_name = "Main Deck"
+	lift_announce_str = "Arriving at Main Deck: Engineering. Research. Mess. Hydroponic. Infirmary."
+
+/area/turbolift/hermes_ground
+	name = "lift (first deck)"
+	lift_floor_label = "Deck 1"
+	lift_floor_name = "Hangar Deck"
+	lift_announce_str = "Arriving at Hangar Deck: Main Hangar. Supply Warehouse. Expedition Preparation. Mineral Processing. Security. Crew Quarter. Holodeck"
+	base_turf = /turf/simulated/floor
