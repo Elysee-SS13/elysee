@@ -85,3 +85,44 @@
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
+
+
+/datum/job/hos
+	title = "Sentry"
+	supervisors = "the Commanding Officer and the Executive Officer"
+	economic_power = 10
+	//minimal_player_age = 14
+	minimum_character_age = list(SPECIES_HUMAN = 25)
+	ideal_character_age = 35
+	outfit_type = /decl/hierarchy/outfit/job/hermes/crew/command/cos
+	allowed_branches = list(
+		/datum/mil_branch/expeditionary_corps,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/hermes/crew/command/cos/fleet
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/ec/o3,
+		/datum/mil_rank/fleet/o2,
+		/datum/mil_rank/fleet/o3
+	)
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
+	                    SKILL_EVA         = SKILL_BASIC,
+	                    SKILL_COMBAT      = SKILL_BASIC,
+	                    SKILL_WEAPONS     = SKILL_ADEPT,
+	                    SKILL_FORENSICS   = SKILL_BASIC)
+
+	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
+	                    SKILL_WEAPONS     = SKILL_MAX,
+	                    SKILL_FORENSICS   = SKILL_MAX)
+	skill_points = 28
+
+	access = list(access_security, access_brig, access_armory, access_forensics_lockers,
+			            access_maint_tunnels, access_external_airlocks, access_emergency_storage,
+			            access_teleporter, access_eva, access_bridge, access_heads, access_aquila,
+			            access_hos, access_RC_announce, access_keycard_auth, access_sec_doors,
+			            access_solgov_crew, access_gun, access_emergency_armory, access_hangar, access_torch_fax)
+	minimal_access = list()
+
+	software_on_spawn = list(/datum/computer_file/program/comm,
+							 /datum/computer_file/program/digitalwarrant,
+							 /datum/computer_file/program/camera_monitor,
+							 /datum/computer_file/program/reports)

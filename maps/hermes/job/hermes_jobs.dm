@@ -3,7 +3,7 @@
 	allowed_jobs = list(/datum/job/captain, /datum/job/hop,/datum/job/opslead,
 						/datum/job/pathfinder,
 						/datum/job/engineer,
-						/datum/job/detective,
+						/datum/job/hos,
 						/datum/job/doctor,
 						/datum/job/psychiatrist,
 						/datum/job/qm, /datum/job/cargo_tech,
