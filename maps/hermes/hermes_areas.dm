@@ -76,6 +76,10 @@
 	name = "\improper Holodeck - Combat Training Pirate"
 	sound_env = ARENA
 
+/area/holodeck/source_meetinghall2
+	name = "\improper Holodeck - Meeting Hall v2"
+	sound_env = AUDITORIUM
+
 /area/quartermaster/tubolift
 	name ="\improper Supply Sorting"
 	icon_state = "quartstorage"
@@ -93,3 +97,7 @@
 	lift_floor_name = "Hangar Deck"
 	lift_announce_str = "Arriving at Hangar Deck: Main Hangar. Supply Warehouse. Expedition Preparation. Mineral Processing. Security. Crew Quarter. Holodeck"
 	base_turf = /turf/simulated/floor
+
+/area/rnd/analysis
+	name = "\improper Analysis Lab"
+	icon_state = "devlab"

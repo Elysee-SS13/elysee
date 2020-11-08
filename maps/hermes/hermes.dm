@@ -33,6 +33,8 @@
 
 	#include "structures/closets/services.dm"
 	#include "structures/closets/command.dm"
+	#include "structures/closets/engineering.dm"
+	#include "structures/closets/research.dm"
 
 	#include "datums/shackle_law_sets.dm"
 	#include "datums/uniforms.dm"

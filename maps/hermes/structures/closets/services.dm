@@ -46,7 +46,7 @@
 		new /datum/atom_creator/simple(/obj/item/weapon/storage/backpack/messenger/hyd, 50)
 	)
 
-/*
+
 /obj/structure/closet/chefcloset_hermes
 	name = "chef's closet"
 	desc = "It's a storage unit for foodservice equipment."
@@ -59,5 +59,4 @@
 		/obj/item/weapon/storage/box/mousetraps = 2,
 		/obj/item/clothing/under/rank/chef,
 		/obj/item/clothing/head/chefhat,
-		/obj/item/clothing/suit/chef/classic
-*/
+		/obj/item/clothing/suit/chef/classic)

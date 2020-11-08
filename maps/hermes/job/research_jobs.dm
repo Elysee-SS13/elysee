@@ -18,12 +18,16 @@
 		"Xenobiologist",
 		"Xenobotanist"
 	)
-	outfit_type = /decl/hierarchy/outfit/job/hermes/crew/research/senior_scientist
+	outfit_type = /decl/hierarchy/outfit/job/hermes/crew/research/scientist
 	allowed_branches = list(
+		/datum/mil_branch/civilian,
+		/datum/mil_branch/solgov,
 		/datum/mil_branch/expeditionary_corps
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o1
+		/datum/mil_rank/ec/o1,
+		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/hermes/passenger/research/scientist,
+		/datum/mil_rank/sol/scientist = /decl/hierarchy/outfit/job/hermes/passenger/research/scientist/solgov
 	)
 
 	access = list(access_tox, access_tox_storage, access_maint_tunnels, access_research, access_mining_office,
@@ -31,6 +35,8 @@
 						access_expedition_shuttle, access_guppy, access_hangar, access_petrov, access_petrov_helm, access_guppy_helm,
 						access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_petrov_security,
 						access_petrov_maint, access_torch_fax, access_robotics)
+
+	minimal_access = list()
 
 
 
