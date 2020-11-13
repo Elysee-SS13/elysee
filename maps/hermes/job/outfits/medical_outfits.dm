@@ -12,7 +12,7 @@
 	name = OUTFIT_JOB_NAME("Physician")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/medical
 	shoes = /obj/item/clothing/shoes/dutyboots
-//	id_types = list(/obj/item/weapon/card/id/hermes/crew/medical/senior)
+	id_types = list(/obj/item/weapon/card/id/hermes/crew/medical)
 
 /decl/hierarchy/outfit/job/hermes/crew/medical/senior/fleet
 	name = OUTFIT_JOB_NAME("Physician - Fleet")
@@ -21,7 +21,7 @@
 
 /decl/hierarchy/outfit/job/hermes/crew/medical/contractor/senior
 	name = OUTFIT_JOB_NAME("Physician - Contractor")
-//	id_types = list(/obj/item/weapon/card/id/hermes/contractor/medical/senior)
+	id_types = list(/obj/item/weapon/card/id/hermes/contractor/medical)
 
 /decl/hierarchy/outfit/job/hermes/crew/medical/junior
 	name = OUTFIT_JOB_NAME("Medical Resident")

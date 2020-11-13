@@ -30,3 +30,15 @@
 /decl/hierarchy/outfit/job/hermes/passenger/research/scientist/solgov
 	name = OUTFIT_JOB_NAME("Scientist - SCG")
 	head = /obj/item/clothing/head/beret/solgov/research
+	id_types = list(/obj/item/weapon/card/id/hermes/crew/research/scientist)
+
+/decl/hierarchy/outfit/job/hermes/passenger/research/scientist
+	name = OUTFIT_JOB_NAME("Scientist - Hermes")
+	uniform = /obj/item/clothing/under/rank/scientist
+	shoes = /obj/item/clothing/shoes/white
+	pda_type = /obj/item/modular_computer/pda/science
+	id_types = list(/obj/item/weapon/card/id/hermes/passenger/research/scientist)
+
+/decl/hierarchy/outfit/job/hermes/passenger/research/scientist/New()
+	..()
+	BACKPACK_OVERRIDE_RESEARCH

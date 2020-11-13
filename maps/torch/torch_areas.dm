@@ -1525,6 +1525,10 @@ area/assembly/robotics/office
 	name = "\improper Miscellaneous Research"
 	icon_state = "misclab"
 
+/area/rnd/chemistry_lab
+	name = "\improper Chemistry Research"
+	icon_state = "misclab"
+
 /area/rnd/research
 	name = "\improper Research Hallway"
 	icon_state = "research"

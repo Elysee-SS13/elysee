@@ -23,3 +23,15 @@
 		/datum/mil_rank/civ/civ,
 		/datum/mil_rank/civ/contractor
 	)
+
+/********
+Synthetic
+********/
+
+/datum/job/cyborg
+	total_positions = 3
+	spawn_positions = 3
+	supervisors = "your laws"
+	allowed_ranks = list(
+		/datum/mil_rank/civ/synthetic
+	)

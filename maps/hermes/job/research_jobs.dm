@@ -36,7 +36,11 @@
 						access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_petrov_security,
 						access_petrov_maint, access_torch_fax, access_robotics)
 
-	minimal_access = list()
+	minimal_access = list(access_tox, access_tox_storage, access_maint_tunnels, access_research, access_mining_office,
+						access_mining_station, access_xenobiology, access_xenoarch, access_nanotrasen, access_solgov_crew,
+						access_expedition_shuttle, access_guppy, access_hangar, access_petrov, access_petrov_helm, access_guppy_helm,
+						access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_petrov_security,
+						access_petrov_maint, access_torch_fax, access_robotics)
 
 
 
@@ -50,5 +54,6 @@
 
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
 	                    SKILL_DEVICES     = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX)
+	                    SKILL_SCIENCE     = SKILL_MAX,
+	                    SKILL_CHEMISTRY   = SKILL_MAX)
 	skill_points = 20
