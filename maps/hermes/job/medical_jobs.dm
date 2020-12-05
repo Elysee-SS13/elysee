@@ -37,11 +37,11 @@
 
 	access = list(access_medical, access_morgue, access_virology, access_maint_tunnels, access_emergency_storage,
 			            access_crematorium, access_chemistry, access_surgery,
-			            access_medical_equip, access_solgov_crew, access_senmed, access_robotics)
+			            access_medical_equip, access_solgov_crew, access_senmed, access_robotics,access_RC_announce)
 
 	minimal_access = list(access_medical, access_morgue, access_virology, access_maint_tunnels, access_emergency_storage,
 			            access_crematorium, access_chemistry, access_surgery,
-			            access_medical_equip, access_solgov_crew, access_senmed, access_robotics)
+			            access_medical_equip, access_solgov_crew, access_senmed, access_robotics,access_RC_announce)
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
