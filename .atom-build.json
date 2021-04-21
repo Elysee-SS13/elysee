@@ -1,0 +1,9 @@
+{
+"cmd": "C:/Program Files (x86)/BYOND/bin/dm.exe",
+ "args": [ "C:/Users/ELE5f578c8085210/Desktop/elysee/elysee.dme" ],
+ "sh": false,
+ "errorMatch":
+ [
+     "\n(?<file>[\\\\\/0-9a-zA-Z\\._]+):(?<line>\\d+).*"
+ ]
+}

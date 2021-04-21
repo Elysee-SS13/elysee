@@ -1,5 +1,5 @@
 /obj/effect/overmap/visitable/ship/bearcat
-	name = "FTV Bearcat"
+	name = "SEV Chaource"
 	color = "#00ffff"
 	start_x = 4
 	start_y = 4

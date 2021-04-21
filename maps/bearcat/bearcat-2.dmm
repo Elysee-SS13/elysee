@@ -794,6 +794,9 @@
 	icon_state = "alarm0";
 	pixel_x = -24
 	},
+/obj/machinery/light/spot{
+	dir = 1
+	},
 /turf/simulated/floor/tiled,
 /area/ship/scrap/crew/saloon)
 "cQ" = (
@@ -818,6 +821,9 @@
 /obj/effect/floor_decal/corner/beige{
 	dir = 6;
 	icon_state = "corner_white"
+	},
+/obj/machinery/light/spot{
+	dir = 1
 	},
 /turf/simulated/floor/tiled,
 /area/ship/scrap/crew/saloon)
@@ -967,12 +973,13 @@
 	icon_state = "corner_white"
 	},
 /obj/structure/reagent_dispensers/water_cooler,
-/obj/machinery/light/small{
-	dir = 8
-	},
 /obj/structure/handrai{
 	dir = 4;
 	icon_state = "handrail"
+	},
+/obj/machinery/light/spot{
+	dir = 8;
+	icon_state = "tube_map"
 	},
 /turf/simulated/floor/tiled,
 /area/ship/scrap/crew/saloon)
@@ -1423,6 +1430,8 @@
 	name = "Dorms APC"
 	},
 /obj/machinery/light_switch{
+	icon_state = "light1";
+	on = 1;
 	pixel_x = -25
 	},
 /obj/structure/closet/wardrobe/mixed,
@@ -1764,10 +1773,6 @@
 /area/ship/scrap/maintenance/engine/starboard)
 "eP" = (
 /obj/structure/table/standard,
-/obj/machinery/light/small{
-	dir = 8;
-	icon_state = "bulb1"
-	},
 /obj/item/weapon/storage/box/donkpockets,
 /obj/effect/floor_decal/corner/red/diagonal,
 /obj/item/weapon/material/kitchen/rollingpin,
@@ -2009,16 +2014,16 @@
 "fk" = (
 /obj/structure/table/standard,
 /obj/machinery/microwave,
-/obj/machinery/light/small{
-	dir = 8;
-	icon_state = "bulb1"
-	},
 /obj/machinery/alarm{
 	dir = 4;
 	icon_state = "alarm0";
 	pixel_x = -24
 	},
 /obj/effect/floor_decal/corner/red/diagonal,
+/obj/machinery/light/spot{
+	dir = 8;
+	icon_state = "tube_map"
+	},
 /turf/simulated/floor/tiled,
 /area/ship/scrap/crew/kitchen)
 "fm" = (
@@ -2323,6 +2328,9 @@
 /obj/structure/railing/mapped{
 	dir = 8;
 	icon_state = "railing0"
+	},
+/obj/structure/sign/warning/fall{
+	pixel_x = 32
 	},
 /turf/simulated/open,
 /area/ship/scrap/cargo)
@@ -5365,6 +5373,13 @@
 /obj/machinery/shipsensors,
 /turf/simulated/floor/airless,
 /area/ship/scrap/comms)
+"zH" = (
+/obj/structure/catwalk,
+/obj/structure/sign/warning/fall{
+	pixel_x = 32
+	},
+/turf/simulated/open,
+/area/ship/scrap/cargo)
 "zO" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor,
@@ -5542,12 +5557,12 @@
 /area/ship/scrap/maintenance/atmos)
 "Dc" = (
 /obj/structure/closet/walllocker/emerglocker/north,
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1"
-	},
 /obj/effect/floor_decal/corner/red/diagonal,
 /obj/machinery/cooker/oven,
+/obj/machinery/light/spot{
+	dir = 4;
+	icon_state = "tube_map"
+	},
 /turf/simulated/floor/tiled,
 /area/ship/scrap/crew/kitchen)
 "Dd" = (
@@ -5883,10 +5898,6 @@
 	dir = 6;
 	icon_state = "corner_white"
 	},
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1"
-	},
 /obj/structure/closet/emcloset,
 /obj/structure/sign/deck/first{
 	pixel_x = 32
@@ -5900,6 +5911,10 @@
 /obj/structure/handrai{
 	dir = 8;
 	icon_state = "handrail"
+	},
+/obj/machinery/light/spot{
+	dir = 4;
+	icon_state = "tube_map"
 	},
 /turf/simulated/floor/tiled,
 /area/ship/scrap/crew/saloon)
@@ -10245,7 +10260,7 @@ ga
 gs
 gE
 gM
-eV
+zH
 eb
 hx
 hG
