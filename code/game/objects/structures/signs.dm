@@ -454,3 +454,11 @@
 		to_chat(user,"This one belongs to Dr.[claimant], MD.")
 	else
 		to_chat(user,"The name is left blank for some reason.")
+
+/obj/structure/flag_corporate
+	icon = 'icons/obj/flags_corporate.dmi'
+	icon_state = "space_express"
+
+/obj/structure/flag_corporate/space_express
+	name = "Corporate flag of SpEx"
+	desc = "An usual corporate flag displaying the colors and overall smugness of Space Express Logistics"
