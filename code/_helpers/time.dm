@@ -20,6 +20,14 @@
 
 
 /proc/minutes_to_readable(minutes)
+	if (!isnum(minutes))
+		minutes = text2num(minutes)
+
+	if (minutes < 0)
+		return "INFINITE"
+	else if (isnull(minutes))
+		return "BAD INPUT"
+
 	var/hours = 0
 	var/days = 0
 	var/weeks = 0
@@ -95,7 +103,7 @@ var/next_station_date_change = 1 DAY
 	if(!station_date || update_time)
 		var/extra_days = round(station_time_in_ticks / (1 DAY)) DAYS
 		var/timeofday = world.timeofday + extra_days
-		station_date = num2text(game_year) + "-" + time2text(timeofday, "MM-DD")
+		station_date = "[GLOB.using_map.game_year]-[time2text(timeofday, "MM-DD")]"
 	return station_date
 
 /proc/time_stamp()
@@ -140,7 +148,7 @@ var/round_start_time = 0
 	return last_round_duration
 
 /hook/startup/proc/set_roundstart_hour()
-	roundstart_hour = pick(2,7,12,17)
+	roundstart_hour = rand(0, 23)
 	return 1
 
 GLOBAL_VAR_INIT(midnight_rollovers, 0)
@@ -172,6 +180,10 @@ GLOBAL_VAR_INIT(rollovercheck_last_timeofday, 0)
 	. = list(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)
 	if(isLeap(text2num(time2text(world.realtime, "YYYY"))))
 		.[2] = 29
+
+/proc/get_weekday_index()
+	var/list/weekdays = list("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
+	return list_find(weekdays, time2text(world.timeofday, "DDD"))
 
 /proc/current_month_and_day()
 	var/time_string = time2text(world.realtime, "MM-DD")

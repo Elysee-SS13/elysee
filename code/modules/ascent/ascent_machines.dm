@@ -34,9 +34,9 @@ MANTIDIFY(/obj/machinery/door/airlock/external/bolted, "mantid airlock", "door")
 	sampled = 0
 	. = ..()
 
-/obj/machinery/atmospherics/unary/vent_scrubber/on/ascent/Initialize()
+/obj/machinery/atmospherics/unary/vent_scrubber/on/ascent/reset_scrubbing()
 	. = ..()
-	scrubbing_gas -= GAS_METHYL_BROMIDE
+	remove_from_scrubbing(GAS_METHYL_BROMIDE)
 
 /obj/machinery/atmospherics/unary/vent_scrubber/on/ascent/shuttle
 	stock_part_presets = list(
@@ -143,7 +143,7 @@ MANTIDIFY(/obj/machinery/door/airlock/external/bolted, "mantid airlock", "door")
 
 /obj/machinery/light/ascent
 	name = "mantid light"
-	light_type = /obj/item/weapon/light/tube/ascent
+	light_type = /obj/item/light/tube/ascent
 	desc = "Some kind of strange alien lighting technology."
 
 /obj/machinery/computer/ship/helm/ascent
@@ -177,6 +177,7 @@ MANTIDIFY(/obj/machinery/door/airlock/external/bolted, "mantid airlock", "door")
 	req_access = list(access_ascent)
 	construct_state = /decl/machine_construction/default/panel_closed/computer/no_deconstruct
 	base_type = /obj/machinery/computer/ship/sensors
+	print_language = LANGUAGE_MANTID_VOCAL
 
 // This is an absolutely stupid machine. Basically the same as the debug one with some alterations.
 // It is a placeholder for a proper reactor setup (probably a RUST descendant)
@@ -237,12 +238,19 @@ MANTIDIFY(/obj/machinery/door/airlock/external/bolted, "mantid airlock", "door")
 	if(on)
 		add_avail(output_power)
 
-/obj/machinery/power/smes/buildable/power_shuttle/ascent
+/obj/machinery/power/smes/buildable/preset/ascent
 	name = "mantid battery"
 	desc = "Some kind of strange alien SMES technology."
-	icon = 'icons/obj/machines/power/mantid_smes.dmi'	
+	icon = 'icons/obj/machines/power/mantid_smes.dmi'
 	overlay_icon = 'icons/obj/machines/power/mantid_smes.dmi'
-	construct_state = /decl/machine_construction/default/no_deconstruct
+	uncreated_component_parts = list(
+		/obj/item/stock_parts/smes_coil/advanced = 2
+	)
+	_input_maxed = TRUE
+	_output_maxed = TRUE
+	_input_on = TRUE
+	_output_on = TRUE
+	_fully_charged = TRUE
 
 /obj/machinery/cryopod/ascent_spawn
 	name = "mantid cryotank"
@@ -271,7 +279,6 @@ MANTIDIFY(/obj/machinery/door/airlock/external/bolted, "mantid airlock", "door")
 	desc = "An interface between the gyne's brood and the cryotank oversight system."
 	color = COLOR_VIOLET
 	construct_state = null
-	
 	storage_type = "lifeforms"
 	storage_name = "Cryotank Oversight Control"
 
@@ -288,4 +295,3 @@ MANTIDIFY(/obj/machinery/door/airlock/external/bolted, "mantid airlock", "door")
 /obj/machinery/computer/cryopod/ascent_spawn/Destroy()
 	qdel(announcer)
 	. = ..()
-	

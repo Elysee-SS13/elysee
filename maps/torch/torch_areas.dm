@@ -555,7 +555,7 @@
 	name = "lift (bridge)"
 	lift_floor_label = "Bridge"
 	lift_floor_name = "Bridge"
-	lift_announce_str = "Arriving at Command Deck: Bridge. Meeting Room. Command Offices. Landing Area. Auxiliary EVA."
+	lift_announce_str = "Arriving at Command Deck: Bridge. Meeting Room. Command Offices. Auxiliary Hangar. Auxiliary EVA."
 
 /area/turbolift/torch_fourth
 	name = "lift (first deck)"
@@ -567,19 +567,19 @@
 	name = "lift (second deck)"
 	lift_floor_label = "Deck 2"
 	lift_floor_name = "Maintenance Deck"
-	lift_announce_str = "Arriving at Maintenance Deck: Engineering. Atmospherics. Sanitation. Storage."
+	lift_announce_str = "Arriving at Maintenance Deck: Engineering. Atmospherics. Storage."
 
 /area/turbolift/torch_second
 	name = "lift (third deck)"
 	lift_floor_label = "Deck 3"
 	lift_floor_name = "Habitation Deck"
-	lift_announce_str = "Arriving at Habitation Deck: EVA. Telecommunications. Mess Hall. Officer's Mess. Lounge. Diplomatic Quarters. Hydroponics. Cryogenic Storage. Holodeck. Gym."
+	lift_announce_str = "Arriving at Habitation Deck: Telecommunications. Mess Hall. Officer's Mess. Lounge. Observation. Hydroponics. Cryogenic Storage. Holodeck. Gym."
 
 /area/turbolift/torch_first
 	name = "lift (fourth deck)"
 	lift_floor_label = "Deck 4"
 	lift_floor_name = "Supply Deck"
-	lift_announce_str = "Arriving at Supply Deck: Shuttle Docks. Pathfinder's Office. Cargo Storage. Supply Office. Laundry."
+	lift_announce_str = "Arriving at Supply Deck: EVA. Docking Ports. Pathfinder's Office. Cargo Storage. Supply Office. Laundry. Sanitation."
 
 /area/turbolift/torch_ground
 	name = "lift (fifth deck)"
@@ -1095,10 +1095,10 @@
 	icon_state = "locker"
 	req_access = list(access_medical_equip)
 
-/area/medical/physicianoffice
-	name = "\improper Physician's Paperwork Office"
+/area/medical/medpaperworkoffice
+	name = "\improper Medical Paperwork Office"
 	icon_state = "locker"
-	req_access = list(access_senmed)
+	req_access = list(access_medical)
 
 /area/medical/washroom
 	name = "\improper Medical Washroom"
@@ -1362,6 +1362,7 @@
 	icon_state = "Holodeck"
 	dynamic_lighting = 0
 	sound_env = LARGE_ENCLOSED
+	area_flags = AREA_FLAG_NO_MODIFY
 
 /area/holodeck/alphadeck
 	name = "\improper Holodeck Alpha"
@@ -1618,6 +1619,11 @@ area/assembly/robotics/office
 /area/chapel/office
 	name = "\improper Chaplain's Office"
 	req_access = list(access_chapel_office)
+	color = COLOR_GRAY80
+	sound_env = SMALL_SOFTFLOOR
+
+/area/chapel/memorial
+	name = "\improper Memorial Room"
 	color = COLOR_GRAY80
 	sound_env = SMALL_SOFTFLOOR
 

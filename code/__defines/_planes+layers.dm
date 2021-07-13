@@ -98,21 +98,22 @@ What is the naming convention for planes or layers?
 	#define EXPOSED_WIRE_LAYER          2.07
 	#define EXPOSED_WIRE_TERMINAL_LAYER 2.08
 	#define CATWALK_LAYER               2.09
-	#define BLOOD_LAYER                 2.10
-	#define MOUSETRAP_LAYER             2.11
-	#define PLANT_LAYER                 2.12
-	#define AO_LAYER                    2.13
+	#define ABOVE_CATWALK_LAYER         2.10
+	#define BLOOD_LAYER                 2.11
+	#define MOUSETRAP_LAYER             2.12
+	#define PLANT_LAYER                 2.13
+	#define AO_LAYER                    2.14
 	//HIDING MOB
-	#define HIDING_MOB_LAYER            2.14
-	#define SHALLOW_FLUID_LAYER         2.15
-	#define MOB_SHADOW_LAYER            2.16
+	#define HIDING_MOB_LAYER            2.15
+	#define SHALLOW_FLUID_LAYER         2.16
+	#define MOB_SHADOW_LAYER            2.17
 	//OBJ
-	#define BELOW_DOOR_LAYER            2.17
-	#define OPEN_DOOR_LAYER             2.18
-	#define BELOW_TABLE_LAYER           2.19
-	#define TABLE_LAYER                 2.20
-	#define BELOW_OBJ_LAYER             2.21
-	#define STRUCTURE_LAYER             2.22
+	#define BELOW_DOOR_LAYER            2.18
+	#define OPEN_DOOR_LAYER             2.19
+	#define BELOW_TABLE_LAYER           2.20
+	#define TABLE_LAYER                 2.21
+	#define BELOW_OBJ_LAYER             2.22
+	#define STRUCTURE_LAYER             2.23
 	// OBJ_LAYER                        3
 	#define ABOVE_OBJ_LAYER             3.01
 	#define CLOSED_DOOR_LAYER           3.02
@@ -191,8 +192,15 @@ What is the naming convention for planes or layers?
 //This is difference between planes used for atoms and effects
 #define PLANE_DIFFERENCE              3
 
-/atom
-	plane = DEFAULT_PLANE
+
+/atom/plane = DEFAULT_PLANE
+
+#define DEFAULT_APPEARANCE_FLAGS (PIXEL_SCALE)
+
+/atom/appearance_flags = DEFAULT_APPEARANCE_FLAGS
+/image/appearance_flags = DEFAULT_APPEARANCE_FLAGS
+/mutable_appearance/appearance_flags = DEFAULT_APPEARANCE_FLAGS //Inherits /image but re docs, subject to change
+
 
 /image/proc/plating_decal_layerise()
 	plane = DEFAULT_PLANE
@@ -215,7 +223,7 @@ What is the naming convention for planes or layers?
 */
 
 /obj/screen/plane_master
-	appearance_flags = PLANE_MASTER
+	appearance_flags = DEFAULT_APPEARANCE_FLAGS | PLANE_MASTER
 	screen_loc = "CENTER,CENTER"
 	globalscreen = 1
 
@@ -225,7 +233,7 @@ What is the naming convention for planes or layers?
 /obj/screen/plane_master/ghost_dummy
 	// this avoids a bug which means plane masters which have nothing to control get angry and mess with the other plane masters out of spite
 	alpha = 0
-	appearance_flags = 0
+	appearance_flags = DEFAULT_APPEARANCE_FLAGS
 	plane = OBSERVER_PLANE
 
 GLOBAL_LIST_INIT(ghost_master, list(

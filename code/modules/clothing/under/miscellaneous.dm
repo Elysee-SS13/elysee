@@ -144,13 +144,6 @@
 	worn_state = "owl"
 	item_state = "owl"
 
-/obj/item/clothing/under/johnny
-	name = "johnny~~ jumpsuit"
-	desc = "Johnny~~"
-	icon_state = "johnny"
-	worn_state = "johnny"
-	item_state = "johnny"
-
 /obj/item/clothing/under/color/rainbow
 	name = "rainbow"
 	icon_state = "rainbow"
@@ -507,7 +500,7 @@
 	item_state = "bl_suit"
 	worn_state = "charcoal_suit"
 	gender_icons = 1
-	starting_accessories = list(/obj/item/clothing/accessory/navy, /obj/item/clothing/accessory/toggleable/charcoal_jacket)
+	accessories = list(/obj/item/clothing/accessory/navy, /obj/item/clothing/accessory/toggleable/charcoal_jacket)
 
 /obj/item/clothing/under/suit_jacket/navy
 	name = "navy suit"
@@ -516,7 +509,7 @@
 	item_state = "bl_suit"
 	worn_state = "navy_suit"
 	gender_icons = 1
-	starting_accessories = list(/obj/item/clothing/accessory/red, /obj/item/clothing/accessory/toggleable/navy_jacket)
+	accessories = list(/obj/item/clothing/accessory/red, /obj/item/clothing/accessory/toggleable/navy_jacket)
 
 /obj/item/clothing/under/suit_jacket/burgundy
 	name = "burgundy suit"
@@ -525,7 +518,7 @@
 	item_state = "r_suit"
 	worn_state = "burgundy_suit"
 	gender_icons = 1
-	starting_accessories = list(/obj/item/clothing/accessory/black, /obj/item/clothing/accessory/toggleable/burgundy_jacket)
+	accessories = list(/obj/item/clothing/accessory/black, /obj/item/clothing/accessory/toggleable/burgundy_jacket)
 
 /obj/item/clothing/under/suit_jacket/checkered
 	name = "checkered suit"
@@ -534,7 +527,7 @@
 	item_state = "gy_suit"
 	worn_state = "checkered_suit"
 	gender_icons = 1
-	starting_accessories = list(/obj/item/clothing/accessory/black, /obj/item/clothing/accessory/toggleable/checkered_jacket)
+	accessories = list(/obj/item/clothing/accessory/black, /obj/item/clothing/accessory/toggleable/checkered_jacket)
 
 /obj/item/clothing/under/suit_jacket/tan
 	name = "tan suit"
@@ -543,7 +536,7 @@
 	item_state = "lb_suit"
 	worn_state = "tan_suit"
 	gender_icons = 1
-	starting_accessories = list(/obj/item/clothing/accessory/yellow, /obj/item/clothing/accessory/toggleable/tan_jacket)
+	accessories = list(/obj/item/clothing/accessory/yellow, /obj/item/clothing/accessory/toggleable/tan_jacket)
 
 /obj/item/clothing/under/serviceoveralls
 	name = "workman outfit"

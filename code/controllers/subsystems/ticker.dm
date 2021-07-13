@@ -27,6 +27,11 @@ SUBSYSTEM_DEF(ticker)
 	var/list/antag_pool = list()
 	var/looking_for_antags = 0
 
+	var/secret_force_mode = "secret"
+
+	///Set to TRUE when an admin forcefully ends the round.
+	var/forced_end = FALSE
+
 /datum/controller/subsystem/ticker/Initialize()
 	to_world("<span class='info'><B>Welcome to the pre-game lobby!</B></span>")
 	to_world("Please, setup your character and select ready. Game will start in [round(pregame_timeleft/10)] seconds")
@@ -60,6 +65,7 @@ SUBSYSTEM_DEF(ticker)
 /datum/controller/subsystem/ticker/proc/setup_tick()
 	switch(choose_gamemode())
 		if(CHOOSE_GAMEMODE_SILENT_REDO)
+			log_debug("Silently re-rolling game mode...")
 			return
 		if(CHOOSE_GAMEMODE_RETRY)
 			pregame_timeleft = 60 SECONDS
@@ -96,6 +102,9 @@ SUBSYSTEM_DEF(ticker)
 		mode.post_setup() // Drafts antags who don't override jobs.
 		to_world("<span class='info'><B>Enjoy the game!</B></span>")
 		sound_to(world, sound(GLOB.using_map.welcome_sound))
+
+		for (var/mob/new_player/player in GLOB.player_list)
+			player.new_player_panel()
 
 	if(!length(GLOB.admins))
 		send2adminirc("Round has started with no admins online.")
@@ -214,8 +223,10 @@ Helpers
 			mode_to_try = "extended"
 
 	if(!mode_to_try)
+		log_debug("Could not find a valid game mode from config or vote results.")
 		return
 	if(mode_to_try in bad_modes)
+		log_debug("Could not start game mode [mode_to_try] - Mode is listed in bad_modes.")
 		return
 
 	//Find the relevant datum, resolving secret in the process.
@@ -226,6 +237,7 @@ Helpers
 			mode_datum = config.pick_mode(secret_force_mode)
 		else if(!length(runnable_modes))  // Indicates major issues; will be handled on return.
 			bad_modes += mode_to_try
+			log_debug("Could not start game mode [mode_to_try] - No runnable modes available to start, or all options listed under bad modes.")
 			return
 		else
 			mode_datum = config.pick_mode(pickweight(runnable_modes))
@@ -235,6 +247,7 @@ Helpers
 		mode_datum = config.pick_mode(mode_to_try)
 	if(!istype(mode_datum))
 		bad_modes += mode_to_try
+		log_debug("Could not find a valid game mode for [mode_to_try].")
 		return
 
 	//Deal with jobs and antags, check that we can actually run the mode.
@@ -247,6 +260,7 @@ Helpers
 		mode_datum.fail_setup()
 		SSjobs.reset_occupations()
 		bad_modes += mode_datum.config_tag
+		log_debug("Could not start game mode [mode_to_try] ([mode_datum.name]) - Failed to meet requirements.")
 		return
 
 	//Declare victory, make an announcement.
@@ -257,7 +271,7 @@ Helpers
 		to_world("<B>The current game mode is Secret!</B>")
 		var/list/mode_names = list()
 		for (var/mode_tag in base_runnable_modes)
-			var/datum/game_mode/M = gamemode_cache[mode_tag]
+			var/datum/game_mode/M = config.gamemode_cache[mode_tag]
 			if(M)
 				mode_names += M.name
 		if (config.secret_hide_possibilities)
@@ -342,6 +356,9 @@ Helpers
 	return 0
 
 /datum/controller/subsystem/ticker/proc/game_finished()
+	if (forced_end)
+		return TRUE
+
 	if(mode.explosion_in_progress)
 		return 0
 	if(config.continous_rounds)
@@ -350,6 +367,9 @@ Helpers
 		return mode.check_finished() || (evacuation_controller.round_over() && evacuation_controller.emergency_evacuation) || universe_has_ended
 
 /datum/controller/subsystem/ticker/proc/mode_finished()
+	if (forced_end)
+		return TRUE
+
 	if(config.continous_rounds)
 		return mode.check_finished()
 	else
@@ -376,28 +396,9 @@ Helpers
 	for(var/client/C)
 		if(!C.credits)
 			C.RollCredits()
-	for(var/mob/Player in GLOB.player_list)
-		if(Player.mind && !isnewplayer(Player))
-			if(Player.stat != DEAD)
-				var/turf/playerTurf = get_turf(Player)
-				if(evacuation_controller.round_over() && evacuation_controller.emergency_evacuation)
-					if(isNotAdminLevel(playerTurf.z))
-						to_chat(Player, "<span class='info'><b>You managed to survive, but were marooned on [station_name()] as [Player.real_name]...</b></span>")
-					else
-						to_chat(Player, "<font color='green'><b>You managed to survive the events on [station_name()] as [Player.real_name].</b></font>")
-				else if(isAdminLevel(playerTurf.z))
-					to_chat(Player, "<font color='green'><b>You successfully underwent crew transfer after events on [station_name()] as [Player.real_name].</b></font>")
-				else if(issilicon(Player))
-					to_chat(Player, "<font color='green'><b>You remain operational after the events on [station_name()] as [Player.real_name].</b></font>")
-				else
-					to_chat(Player, "<span class='info'><b>You got through just another workday on [station_name()] as [Player.real_name].</b></span>")
-			else
-				if(isghost(Player))
-					var/mob/observer/ghost/O = Player
-					if(!O.started_as_observer)
-						to_chat(Player, "<font color='red'><b>You did not survive the events on [station_name()]...</b></font>")
-				else
-					to_chat(Player, "<font color='red'><b>You did not survive the events on [station_name()]...</b></font>")
+
+	GLOB.using_map.roundend_player_status()
+
 	to_world("<br>")
 
 	for(var/mob/living/silicon/ai/aiPlayer in SSmobs.mob_list)

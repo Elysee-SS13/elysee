@@ -6,9 +6,9 @@ var/global/list/image/ghost_sightless_images = list() //this is a list of images
 	desc = "It's a g-g-g-g-ghooooost!" //jinkies!
 	icon = 'icons/mob/mob.dmi'
 	icon_state = "ghost"
-	appearance_flags = KEEP_TOGETHER
+	appearance_flags = DEFAULT_APPEARANCE_FLAGS | KEEP_TOGETHER
 	blinded = 0
-	anchored = 1	//  don't get pushed around
+	anchored = TRUE	//  don't get pushed around
 	universal_speak = TRUE
 
 	mob_flags = MOB_FLAG_HOLY_BAD
@@ -85,17 +85,18 @@ var/global/list/image/ghost_sightless_images = list() //this is a list of images
 		hud_images = null
 	return ..()
 
-/mob/observer/ghost/OnSelfTopic(href_list)
-	if (href_list["track"])
-		if(istype(href_list["track"],/mob))
-			var/mob/target = locate(href_list["track"]) in SSmobs.mob_list
-			if(target)
-				start_following(target)
-		else
-			var/atom/target = locate(href_list["track"])
-			if(istype(target))
-				start_following(target)
-		return TOPIC_HANDLED
+/mob/observer/ghost/OnSelfTopic(href_list, topic_status)
+	if (topic_status == STATUS_INTERACTIVE)
+		if (href_list["track"])
+			if(istype(href_list["track"],/mob))
+				var/mob/target = locate(href_list["track"]) in SSmobs.mob_list
+				if(target)
+					start_following(target)
+			else
+				var/atom/target = locate(href_list["track"])
+				if(istype(target))
+					start_following(target)
+			return TOPIC_HANDLED
 	return ..()
 
 /*
@@ -336,7 +337,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	var/turf/t = get_turf(src)
 	if(t)
 		var/rads = SSradiation.get_rads_at_turf(t)
-		to_chat(src, "<span class='notice'>Radiation level: [rads ? rads : "0"] Roentgen.</span>")
+		to_chat(src, "<span class='notice'>Radiation level: [rads ? rads : "0"] IU/s.</span>")
 
 /mob/observer/ghost/verb/scan_target()
 	set name = "Scan Target"
@@ -369,7 +370,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 
 
 	//find a viable mouse candidate
-	var/mob/living/simple_animal/mouse/host
+	var/mob/living/simple_animal/friendly/mouse/host
 	var/obj/machinery/atmospherics/unary/vent_pump/vent_found
 	var/list/found_vents = list()
 	for(var/obj/machinery/atmospherics/unary/vent_pump/v in SSmachines.machinery)
@@ -377,7 +378,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 			found_vents.Add(v)
 	if(found_vents.len)
 		vent_found = pick(found_vents)
-		host = new /mob/living/simple_animal/mouse(vent_found.loc)
+		host = new /mob/living/simple_animal/friendly/mouse(vent_found.loc)
 	else
 		to_chat(src, "<span class='warning'>Unable to find any unwelded vents to spawn mice at.</span>")
 	if(host)
