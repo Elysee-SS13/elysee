@@ -546,14 +546,9 @@ GLOBAL_VAR_INIT(world_topic_last, world.timeofday)
 
 	s += "<b>[station_name()]</b>";
 	s += " ("
-<<<<<<< HEAD
 	s += "<a href=\"https://discord.gg/PpBKuv6P/\">" //Change this to wherever you want the hub to link to.
 //	s += "[game_version]"
 	s += "Discord"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
-=======
-	s += "<a href=\"https://forums.baystation12.net/\">" //Change this to wherever you want the hub to link to.
-	s += "Forums"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
->>>>>>> 8267cf171b60f10b51bccaa54b5b6a2323b48178
 	s += "</a>"
 	s += ")"
 

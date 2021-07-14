@@ -162,26 +162,35 @@
 	overlays += image('icons/mob/zone_sel.dmi', "[selecting]")
 
 /obj/screen/intent
-	name = "intent"
+	name = "Intent - (Click > Next) (Ctr+Click > Previous)"
 	icon = 'icons/mob/screen1_White.dmi'
 	icon_state = "intent_help"
 	screen_loc = ui_acti
-	var/intent = I_HELP
 
+	// Create an intent list to cycle through them
+	var/intent = I_HELP
+	var/intent_index = 1
+	var/list/intent_list = list(I_HELP, I_HURT, I_GRAB, I_DISARM)
+
+
+// Define what happens when user clicks on the intent button
 /obj/screen/intent/Click(var/location, var/control, var/params)
 	var/list/P = params2list(params)
-	var/icon_x = text2num(P["icon-x"])
-	var/icon_y = text2num(P["icon-y"])
-	intent = I_DISARM
-	if(icon_x <= world.icon_size/2)
-		if(icon_y <= world.icon_size/2)
-			intent = I_HURT
-		else
-			intent = I_HELP
-	else if(icon_y <= world.icon_size/2)
-		intent = I_GRAB
+
+	// If it's a left click go to next intent, if right click previous intent
+	intent_index = intent_index + (("ctrl" in P) ? -1 : 1)
+
+	// Prevent going further than needed
+	if (intent_index > intent_list.len)
+		intent_index = 1
+	if (intent_index < 1)
+		intent_index = intent_list.len
+
+	// Update intent
+	intent = intent_list[intent_index]
 	update_icon()
 	usr.a_intent = intent
+
 
 /obj/screen/intent/on_update_icon()
 	icon_state = "intent_[intent]"
