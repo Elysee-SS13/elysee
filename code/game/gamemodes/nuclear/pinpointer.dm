@@ -31,7 +31,7 @@
 	update_icon()
 
 /obj/item/pinpointer/advpinpointer/verb/toggle_sound()
-	set category = "Object"
+	set category = null
 	set name = "Toggle Pinpointer Beeping"
 	set src in view(1)
 
@@ -140,7 +140,7 @@
 //Deathsquad locator
 
 /obj/item/pinpointer/advpinpointer/verb/toggle_mode()
-	set category = "Object"
+	set category = null
 	set name = "Toggle Pinpointer Mode"
 	set src in view(1)
 

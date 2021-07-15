@@ -348,7 +348,7 @@
 
 /obj/machinery/suit_cycler/verb/leave()
 	set name = "Eject Cycler"
-	set category = "Object"
+	set category = null
 	set src in oview(1)
 
 	if (usr.incapacitated())

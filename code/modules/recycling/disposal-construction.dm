@@ -71,7 +71,7 @@
 	update()
 
 /obj/structure/disposalconstruct/proc/flip()
-	set category = "Object"
+	set category = null
 	set name = "Flip Pipe"
 	set src in view(1)
 	if(usr.incapacitated())

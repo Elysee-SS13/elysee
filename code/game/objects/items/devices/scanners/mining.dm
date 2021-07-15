@@ -49,7 +49,7 @@
 	return 1
 
 /obj/item/device/scanner/mining/verb/get_data()
-	set category = "Object"
+	set category = null
 	set name = "Get Survey Data"
 	set src in usr
 

@@ -76,7 +76,7 @@
 
 /obj/item/clothing/accessory/bowtie/verb/toggle()
 	set name = "Toggle Bowtie"
-	set category = "Object"
+	set category = null
 	set src in usr
 
 	if(usr.incapacitated())

@@ -61,7 +61,7 @@
 
 /obj/item/device/scanner/proc/print_report_verb()
 	set name = "Print Report"
-	set category = "Object"
+	set category = null
 	set src = usr
 
 	var/mob/user = usr

@@ -128,7 +128,7 @@
 /obj/item/rig/light/ninja/verb/rename_suit()
 	set name = "Name Ninja Suit"
 	set desc = "Rename your black voidsuit."
-	set category = "Object"
+	set category = null
 	var/mob/M = usr
 	if(!M.mind) return 0
 	if(M.incapacitated()) return 0
@@ -145,7 +145,7 @@
 /obj/item/rig/light/ninja/verb/rewrite_suit_desc()
 	set name = "Describe Ninja suit"
 	set desc = "Give your voidsuit a custom description."
-	set category = "Object"
+	set category = null
 	var/mob/M = usr
 	if(!M.mind) return 0
 	if(M.incapacitated()) return 0

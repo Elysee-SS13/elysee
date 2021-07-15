@@ -178,6 +178,7 @@
 * Verbs *
 ********/
 
+/*
 /mob/verb/ShowMemories()
 	set name = "Notes"
 	set category = "IC"
@@ -185,7 +186,9 @@
 		mind.ShowMemory(src)
 	else
 		to_chat(src, SPAN_WARNING("There is no mind to retrieve stored memories from."))
+*/
 
+/*
 /mob/verb/AddMemory(var/msg as message)
 	set name = "Add Note"
 	set category = "IC"
@@ -197,3 +200,4 @@
 			to_chat(src, SPAN_WARNING(error))
 		else
 			to_chat(src, SPAN_NOTICE("Note added - View it with the 'Notes' verb"))
+*/

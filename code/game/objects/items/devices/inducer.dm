@@ -190,7 +190,7 @@
 
 /obj/item/inducer/borg/verb/toggle_safety(var/mob/user)
 	set src in usr
-	set category = "Object"
+	set category = null
 	set name = "Toggle Inducer Safety"
 	if (safety())
 		failsafe = 0

@@ -318,7 +318,7 @@
 /obj/item/device/paint_sprayer/verb/choose_color()
 	set name = "Choose color"
 	set desc = "Choose a color."
-	set category = "Object"
+	set category = null
 	set src in usr
 
 	if(usr.incapacitated())
@@ -331,7 +331,7 @@
 /obj/item/device/paint_sprayer/verb/choose_preset_color()
 	set name = "Choose Preset color"
 	set desc = "Choose a preset color."
-	set category = "Object"
+	set category = null
 	set src in usr
 
 	if(usr.incapacitated())
@@ -344,7 +344,7 @@
 /obj/item/device/paint_sprayer/verb/choose_decal()
 	set name = "Choose Decal"
 	set desc = "Choose a flooring decal."
-	set category = "Object"
+	set category = null
 	set src in usr
 
 	if(usr.incapacitated())

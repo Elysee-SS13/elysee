@@ -375,7 +375,7 @@
 
 /obj/structure/closet/verb/verb_toggleopen()
 	set src in oview(1)
-	set category = "Object"
+	set category = null
 	set name = "Toggle Open"
 
 	if(!CanPhysicallyInteract(usr))
@@ -469,7 +469,7 @@
 // If we use the /obj/structure/closet/proc/togglelock variant BYOND asks the user to select an input for id_card, which is then mostly irrelevant.
 /obj/structure/closet/proc/togglelock_verb()
 	set src in oview(1) // One square distance
-	set category = "Object"
+	set category = null
 	set name = "Toggle Lock"
 
 	return togglelock(usr)

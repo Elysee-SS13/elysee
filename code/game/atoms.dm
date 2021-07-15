@@ -467,7 +467,7 @@ its easier to just keep the beam vertical.
 
 	set name = "Climb"
 	set desc = "Climbs onto an object."
-	set category = "Object"
+	set category = null
 	set src in oview(1)
 
 	do_climb(usr)

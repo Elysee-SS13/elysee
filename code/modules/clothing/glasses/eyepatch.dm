@@ -8,7 +8,7 @@
 
 /obj/item/clothing/glasses/eyepatch/verb/flip_patch()
 	set name = "Flip Patch"
-	set category = "Object"
+	set category = null
 	set src in usr
 
 	if (usr.stat || usr.restrained())

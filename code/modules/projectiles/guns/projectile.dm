@@ -304,7 +304,7 @@
 //in case the weapon has firemodes and can't unload using attack_hand()
 /obj/item/gun/projectile/verb/unload_gun()
 	set name = "Unload Ammo"
-	set category = "Object"
+	set category = null
 	set src in usr
 
 	if(usr.stat || usr.restrained()) return

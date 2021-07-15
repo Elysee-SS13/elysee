@@ -16,7 +16,7 @@
 
 /obj/item/storage/belt/verb/toggle_layer()
 	set name = "Switch Belt Layer"
-	set category = "Object"
+	set category = null
 
 	use_alt_layer = !use_alt_layer
 	update_icon()

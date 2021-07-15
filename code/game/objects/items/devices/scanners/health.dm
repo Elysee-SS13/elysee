@@ -319,7 +319,7 @@ proc/get_wound_severity(var/damage_ratio, var/can_heal_overkill = 0)
 
 /obj/item/device/scanner/health/verb/toggle_mode()
 	set name = "Switch Verbosity"
-	set category = "Object"
+	set category = null
 
 	mode = !mode
 	if(mode)

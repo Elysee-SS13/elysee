@@ -51,7 +51,7 @@
 
 /obj/machinery/papershredder/verb/empty_contents()
 	set name = "Empty bin"
-	set category = "Object"
+	set category = null
 	set src in range(1)
 
 	if(usr.stat || usr.restrained() || usr.weakened || usr.paralysis || usr.lying || usr.stunned)

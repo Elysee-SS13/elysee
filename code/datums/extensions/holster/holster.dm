@@ -110,7 +110,7 @@
 
 /atom/proc/holster_verb(var/holster_name in get_holsters())
 	set name = "Holster"
-	set category = "Object"
+	set category = null
 	set src in usr
 
 	if(usr.incapacitated())

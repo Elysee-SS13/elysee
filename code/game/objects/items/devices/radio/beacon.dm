@@ -41,7 +41,7 @@
 
 /obj/item/device/radio/beacon/verb/alter_signal(newcode as text)
 	set name = "Alter Beacon's Signal"
-	set category = "Object"
+	set category = null
 	set src in usr
 
 	var/mob/user = usr

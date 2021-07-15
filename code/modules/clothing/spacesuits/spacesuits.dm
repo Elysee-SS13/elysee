@@ -53,7 +53,7 @@
 
 /obj/item/clothing/head/helmet/space/proc/toggle_camera()
 	set name = "Toggle Helmet Camera"
-	set category = "Object"
+	set category = null
 	set src in usr
 
 	if(ispath(camera))
@@ -92,7 +92,7 @@
 
 /obj/item/clothing/head/helmet/space/proc/toggle_tint()
 	set name = "Toggle Helmet Tint"
-	set category = "Object"
+	set category = null
 	set src in usr
 
 	var/mob/user = usr

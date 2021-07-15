@@ -171,7 +171,7 @@ else if(##equipment_var) {\
 /obj/item/clothing/suit/space/void/verb/toggle_helmet()
 
 	set name = "Toggle Helmet"
-	set category = "Object"
+	set category = null
 	set src in usr
 
 	if(!istype(src.loc,/mob/living)) return
@@ -205,7 +205,7 @@ else if(##equipment_var) {\
 /obj/item/clothing/suit/space/void/verb/eject_tank()
 
 	set name = "Eject Voidsuit Tank"
-	set category = "Object"
+	set category = null
 	set src in usr
 
 	if(!istype(src.loc,/mob/living)) return

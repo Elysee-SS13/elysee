@@ -330,7 +330,7 @@
 
 /obj/item/storage/verb/toggle_gathering_mode()
 	set name = "Switch Gathering Method"
-	set category = "Object"
+	set category = null
 
 	collection_mode = !collection_mode
 	switch (collection_mode)
@@ -341,7 +341,7 @@
 
 /obj/item/storage/verb/quick_empty()
 	set name = "Empty Contents"
-	set category = "Object"
+	set category = null
 
 	if((!ishuman(usr) && (src.loc != usr)) || usr.stat || usr.restrained())
 		return

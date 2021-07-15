@@ -202,7 +202,7 @@
 
 /obj/structure/inflatable/verb/hand_deflate()
 	set name = "Deflate"
-	set category = "Object"
+	set category = null
 	set src in oview(1)
 
 	if(isobserver(usr) || usr.restrained() || !usr.Adjacent(src))

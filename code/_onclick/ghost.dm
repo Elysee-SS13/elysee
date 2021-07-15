@@ -1,4 +1,6 @@
 /client/var/inquisitive_ghost = 1
+
+/*
 /mob/observer/ghost/verb/toggle_inquisition() // warning: unexpected inquisition
 	set name = "Toggle Inquisitiveness"
 	set desc = "Sets whether your ghost examines everything on click by default"
@@ -9,6 +11,7 @@
 		to_chat(src, "<span class='notice'>You will now examine everything you click on.</span>")
 	else
 		to_chat(src, "<span class='notice'>You will no longer examine things you click on.</span>")
+*/
 
 /mob/observer/ghost/DblClickOn(var/atom/A, var/params)
 	if(can_reenter_corpse && mind && mind.current)

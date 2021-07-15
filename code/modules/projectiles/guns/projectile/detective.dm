@@ -22,7 +22,7 @@
 
 /obj/item/gun/projectile/pistol/sec/detective/verb/rename_gun()
 	set name = "Name Gun"
-	set category = "Object"
+	set category = null
 	set desc = "Rename your gun. If you're the detective."
 
 	var/mob/M = usr
@@ -44,7 +44,7 @@
 
 /obj/item/gun/projectile/pistol/sec/detective/verb/reskin_gun()
 	set name = "Reskin gun"
-	set category = "Object"
+	set category = null
 	set desc = "Click to reskin your gun."
 
 	var/mob/M = usr

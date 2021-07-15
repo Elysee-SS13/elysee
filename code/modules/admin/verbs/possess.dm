@@ -1,6 +1,6 @@
 /proc/possess(obj/O as obj)
 	set name = "Possess Obj"
-	set category = "Object"
+	set category = null
 
 	log_and_message_admins("has possessed [O]")
 
@@ -17,7 +17,7 @@
 
 /proc/release(obj/O)
 	set name = "Release Obj"
-	set category = "Object"
+	set category = null
 	//usr.loc = get_turf(usr)
 
 	if(usr.control_object && usr.name_archive) //if you have a name archived and if you are actually relassing an object

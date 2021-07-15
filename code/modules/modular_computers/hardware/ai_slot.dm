@@ -41,7 +41,7 @@
 
 /obj/item/stock_parts/computer/ai_slot/verb/eject_ai(mob/user)
 	set name = "Eject AI"
-	set category = "Object"
+	set category = null
 	set src in view(1)
 
 	if(!user)

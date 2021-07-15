@@ -305,7 +305,7 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/verb/read()
 	set name = "Read ID Card"
-	set category = "Object"
+	set category = null
 	set src in usr
 
 	to_chat(usr, text("[icon2html(src, usr)] []: The current assignment on the card is [].", src.name, src.assignment))

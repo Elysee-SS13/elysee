@@ -550,7 +550,7 @@ BLIND     // can't see anything
 	return
 
 /obj/item/clothing/mask/proc/adjust_mask(var/mob/user)
-	set category = "Object"
+	set category = null
 	set name = "Adjust mask"
 	set src in usr
 
@@ -661,7 +661,7 @@ BLIND     // can't see anything
 /obj/item/clothing/shoes/proc/remove_cuffs(var/mob/user)
 	set name = "Remove Shoe Cuffs"
 	set desc = "Get rid of those limiters and lengthen your stride."
-	set category = "Object"
+	set category = null
 	set src in usr
 
 	user = user || usr
@@ -704,7 +704,7 @@ BLIND     // can't see anything
 /obj/item/clothing/shoes/proc/remove_hidden(var/mob/user)
 	set name = "Remove Shoe Item"
 	set desc = "Pull out whatever's hidden in your foot gloves."
-	set category = "Object"
+	set category = null
 	set src in usr
 
 	user = user || usr
@@ -1005,13 +1005,13 @@ BLIND     // can't see anything
 
 /obj/item/clothing/under/verb/toggle()
 	set name = "Toggle Suit Sensors"
-	set category = "Object"
+	set category = null
 	set src in usr
 	set_sensors(usr)
 
 /obj/item/clothing/under/verb/rollsuit()
 	set name = "Roll Down Jumpsuit"
-	set category = "Object"
+	set category = null
 	set src in usr
 	if(!istype(usr, /mob/living)) return
 	if(usr.stat) return
@@ -1034,7 +1034,7 @@ BLIND     // can't see anything
 
 /obj/item/clothing/under/verb/rollsleeves()
 	set name = "Roll Up Sleeves"
-	set category = "Object"
+	set category = null
 	set src in usr
 	if(!istype(usr, /mob/living)) return
 	if(usr.stat) return

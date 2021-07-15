@@ -132,7 +132,7 @@
 		update_icon()
 
 /obj/machinery/gibber/verb/eject()
-	set category = "Object"
+	set category = null
 	set name = "Empty Gibber"
 	set src in oview(1)
 

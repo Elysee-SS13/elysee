@@ -62,7 +62,7 @@
 
 /obj/structure/ore_box/verb/empty_box()
 	set name = "Empty Ore Box"
-	set category = "Object"
+	set category = null
 	set src in view(1)
 
 	if(!istype(usr, /mob/living/carbon/human)) //Only living, intelligent creatures with hands can empty ore boxes.

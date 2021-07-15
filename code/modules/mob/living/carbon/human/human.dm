@@ -1038,7 +1038,7 @@
 	organ.take_external_damage(rand(1,3) + O.w_class, DAM_EDGE, 0)
 
 /mob/living/carbon/human/proc/remove_splints()
-	set category = "Object"
+	set category = null
 	set name = "Remove Splints"
 	set desc = "Carefully remove splints from someone's limbs."
 	set src in view(1)
@@ -1065,7 +1065,7 @@
 
 
 /mob/living/carbon/human/verb/check_pulse()
-	set category = "Object"
+	set category = null
 	set name = "Check pulse"
 	set desc = "Approximately count somebody's pulse. Requires you to stand still at least 6 seconds."
 	set src in view(1)
@@ -1098,7 +1098,7 @@
 /mob/living/carbon/human/verb/lookup()
 	set name = "Look up"
 	set desc = "If you want to know what's above."
-	set category = "IC"
+	set category = null
 
 
 	if(client && !is_physically_disabled())
@@ -1119,7 +1119,7 @@
 /mob/living/verb/lookdown()
 	set name = "Look Down"
 	set desc = "If you want to know what's below."
-	set category = "IC"
+	set category = null
 
 	if(client && !is_physically_disabled())
 		if(z_eye)
@@ -1454,7 +1454,7 @@
 	return !!(..(slipped_on,stun_duration))
 
 /mob/living/carbon/human/proc/undislocate()
-	set category = "Object"
+	set category = null
 	set name = "Undislocate Joint"
 	set desc = "Pop a joint back into place. Extremely painful."
 	set src in view(1)

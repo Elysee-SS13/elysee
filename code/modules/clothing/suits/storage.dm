@@ -34,7 +34,7 @@
 
 /obj/item/clothing/suit/storage/toggle/verb/toggle()
 	set name = "Toggle Coat Buttons"
-	set category = "Object"
+	set category = null
 	set src in usr
 	if(!CanPhysicallyInteract(usr))
 		return 0

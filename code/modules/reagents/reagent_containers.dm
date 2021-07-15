@@ -20,7 +20,7 @@
 
 /obj/item/reagent_containers/verb/set_amount_per_transfer_from_this()
 	set name = "Set transfer amount"
-	set category = "Object"
+	set category = null
 	set src in range(1)
 	if (cannot_interact(usr))
 		return

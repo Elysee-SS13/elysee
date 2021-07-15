@@ -85,7 +85,7 @@
 			node2 = null
 
 /obj/machinery/atmospherics/binary/oxyregenerator/verb/rotate_clockwise()
-	set category = "Object"
+	set category = null
 	set name = "Rotate  (Clockwise)"
 	set src in view(1)
 
@@ -95,7 +95,7 @@
 	src.set_dir(turn(src.dir, -90))
 
 /obj/machinery/atmospherics/binary/oxyregenerator/verb/rotate_anticlockwise()
-	set category = "Object"
+	set category = null
 	set name = "Rotate (Counterclockwise)"
 	set src in view(1)
 

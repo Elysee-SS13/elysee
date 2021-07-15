@@ -57,7 +57,7 @@
 /obj/machinery/portable_atmospherics/reagent_sublimator/proc/remove_tank()
 
 	set name = "Remove Gas Tank"
-	set category = "Object"
+	set category = null
 	set src in view(1)
 
 	var/mob/living/user = usr
@@ -76,7 +76,7 @@
 /obj/machinery/portable_atmospherics/reagent_sublimator/proc/remove_container()
 
 	set name = "Remove Reagent Container"
-	set category = "Object"
+	set category = null
 	set src in view(1)
 
 	var/mob/living/user = usr

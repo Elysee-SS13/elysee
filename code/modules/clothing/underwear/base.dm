@@ -102,7 +102,7 @@
 
 /obj/item/underwear/verb/RemoveSocks()
 	set name = "Remove Underwear"
-	set category = "Object"
+	set category = null
 	set src in usr
 
 	RemoveUnderwear(usr, usr)

@@ -130,7 +130,7 @@
 		StopInjecting()
 
 /obj/machinery/fusion_fuel_injector/verb/rotate_clock()
-	set category = "Object"
+	set category = null
 	set name = "Rotate Generator (Clockwise)"
 	set src in view(1)
 
@@ -140,7 +140,7 @@
 	src.dir = turn(src.dir, -90)
 
 /obj/machinery/fusion_fuel_injector/verb/rotate_anticlock()
-	set category = "Object"
+	set category = null
 	set name = "Rotate Generator (Counter-clockwise)"
 	set src in view(1)
 

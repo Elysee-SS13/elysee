@@ -85,7 +85,7 @@
 /atom/proc/RemoveLabel(var/label in get_attached_labels(src))
 	set name = "Remove Label"
 	set desc = "Used to remove labels"
-	set category = "Object"
+	set category = null
 	set src in view(1)
 
 	if(CanPhysicallyInteract(usr))

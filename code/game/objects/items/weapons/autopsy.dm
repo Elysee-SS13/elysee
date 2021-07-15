@@ -63,7 +63,7 @@
 		D.organs_scanned[O.name] = W.copy()
 
 /obj/item/autopsy_scanner/verb/print_data()
-	set category = "Object"
+	set category = null
 	set src in view(usr, 1)
 	set name = "Print Data"
 	if(usr.stat || !(istype(usr,/mob/living/carbon/human)))

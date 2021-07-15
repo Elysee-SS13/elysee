@@ -108,7 +108,7 @@
 
 /obj/item/paper/verb/user_set_language()
 	set name = "Set writing language"
-	set category = "Object"
+	set category = null
 	set src in usr
 
 	choose_language(usr)
@@ -190,7 +190,7 @@
 
 /obj/item/paper/verb/rename()
 	set name = "Rename paper"
-	set category = "Object"
+	set category = null
 	set src in usr
 
 	if((MUTATION_CLUMSY in usr.mutations) && prob(50))

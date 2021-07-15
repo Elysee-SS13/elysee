@@ -514,7 +514,7 @@
 	detail_color = COLOR_WHITE
 
 /obj/item/taperoll/bog/verb/tear_sheet()
-	set category = "Object"
+	set category = null
 	set name = "Tear Sheet"
 	set desc = "Tear a sheet of toilet paper."
 	if (usr.incapacitated())

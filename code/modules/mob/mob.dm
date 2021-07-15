@@ -306,7 +306,7 @@
 //mob verbs are faster than object verbs. See http://www.byond.com/forum/?post=1326139&page=2#comment8198716 for why this isn't atom/verb/examine()
 /mob/verb/examinate(atom/A as mob|obj|turf in view())
 	set name = "Examine"
-	set category = "IC"
+	set category = null
 
 	if((is_blind(src) || usr && usr.stat) && !isobserver(src))
 		to_chat(src, "<span class='notice'>Something is there but you can't see it.</span>")
@@ -338,7 +338,7 @@
 
 /mob/verb/pointed(atom/A as mob|obj|turf in view())
 	set name = "Point To"
-	set category = "Object"
+	set category = null
 
 	if(!src || !isturf(src.loc) || !(A in view(src.loc)))
 		return 0
@@ -371,7 +371,7 @@
 
 /mob/verb/mode()
 	set name = "Activate Held Object"
-	set category = "Object"
+	set category = null
 	set src = usr
 
 	if(hand)
@@ -411,7 +411,7 @@
 
 /client/verb/changes()
 	set name = "Changelog"
-	set category = "OOC"
+	set category = null
 	getFiles(
 		'html/88x31.png',
 		'html/auction-hammer-gavel.png',
@@ -441,7 +441,7 @@
 
 /mob/verb/cancel_camera()
 	set name = "Cancel Camera View"
-	set category = "OOC"
+	set category = null
 	unset_machine()
 	reset_view(null)
 
@@ -505,7 +505,7 @@
 /mob/verb/stop_pulling()
 
 	set name = "Stop Pulling"
-	set category = "IC"
+	set category = null
 
 	if(pulling)
 		if(ishuman(pulling))
@@ -896,7 +896,7 @@
 	. = ..()
 
 /mob/proc/yank_out_object()
-	set category = "Object"
+	set category = null
 	set name = "Yank out object"
 	set desc = "Remove an embedded item at the cost of bleeding and pain."
 	set src in view(1)

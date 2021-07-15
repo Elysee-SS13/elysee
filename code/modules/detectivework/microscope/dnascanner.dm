@@ -129,7 +129,7 @@
 	return TRUE
 
 /obj/machinery/dnaforensics/verb/toggle_lid()
-	set category = "Object"
+	set category = null
 	set name = "Toggle Lid"
 	set src in oview(1)
 

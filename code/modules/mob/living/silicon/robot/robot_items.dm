@@ -285,7 +285,7 @@
 
 /obj/item/borg/combat/shield/verb/set_shield_level()
 	set name = "Set shield level"
-	set category = "Object"
+	set category = null
 	set src in range(0)
 
 	var/N = input("How much damage should the shield absorb?") in list("5","10","25","50","75","100")

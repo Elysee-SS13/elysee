@@ -117,7 +117,7 @@
 
 /obj/item/defibrillator/verb/toggle_paddles()
 	set name = "Toggle Paddles"
-	set category = "Object"
+	set category = null
 
 	var/mob/living/carbon/human/user = usr
 	if(!paddles)

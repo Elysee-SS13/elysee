@@ -104,7 +104,7 @@
 
 /obj/item/storage/bible/verb/rename_bible()
 	set name = "Rename Bible"
-	set category = "Object"
+	set category = null
 	set desc = "Click to rename your bible."
 
 	if(!renamed)
@@ -119,7 +119,7 @@
 
 /obj/item/storage/bible/verb/set_icon()
 	set name = "Change Icon"
-	set category = "Object"
+	set category = null
 	set desc = "Click to change your book's icon."
 
 	if(!icon_changed)

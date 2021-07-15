@@ -89,7 +89,7 @@
 
 /obj/machinery/computer/modular/proc/eject_usb()
 	set name = "Eject Portable Storage"
-	set category = "Object"
+	set category = null
 	set src in view(1)
 
 	if(!CanPhysicallyInteract(usr))
@@ -128,7 +128,7 @@
 
 /obj/machinery/computer/modular/verb/emergency_shutdown()
 	set name = "Forced Shutdown"
-	set category = "Object"
+	set category = null
 	set src in view(1)
 
 	if(!CanPhysicallyInteract(usr))

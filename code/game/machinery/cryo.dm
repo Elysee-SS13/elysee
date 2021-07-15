@@ -346,7 +346,7 @@
 
 /obj/machinery/atmospherics/unary/cryo_cell/verb/move_eject()
 	set name = "Eject occupant"
-	set category = "Object"
+	set category = null
 	set src in oview(1)
 	if(usr == occupant)//If the user is inside the tube...
 		if (usr.stat == 2)//and he's not dead....
@@ -365,7 +365,7 @@
 
 /obj/machinery/atmospherics/unary/cryo_cell/verb/move_inside()
 	set name = "Move Inside"
-	set category = "Object"
+	set category = null
 	set src in oview(1)
 	for(var/mob/living/carbon/slime/M in range(1,usr))
 		if(M.Victim == usr)

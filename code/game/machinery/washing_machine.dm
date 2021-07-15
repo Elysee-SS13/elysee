@@ -38,7 +38,7 @@
 
 /obj/machinery/washing_machine/verb/start()
 	set name = "Start Washing"
-	set category = "Object"
+	set category = null
 	set src in oview(1)
 
 	if(!CanPhysicallyInteract(usr))
@@ -103,7 +103,7 @@
 
 /obj/machinery/washing_machine/verb/climb_out()
 	set name = "Climb out"
-	set category = "Object"
+	set category = null
 	set src in usr.loc
 
 	if(!CanPhysicallyInteract(usr))

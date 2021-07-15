@@ -98,7 +98,7 @@
 /atom/proc/chameleon_appearance()
 	set name = "Change Appearance"
 	set desc = "Activate the holographic appearance changing module."
-	set category = "Object"
+	set category = null
 
 	if (!CanPhysicallyInteract(usr))
 		return

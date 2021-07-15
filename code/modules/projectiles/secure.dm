@@ -55,7 +55,7 @@ GLOBAL_LIST_INIT(secure_weapons, list())
 
 /obj/item/gun/proc/reset_registration()
 	set name = "Reset Registration"
-	set category = "Object"
+	set category = null
 	set src in usr
 
 	if(issilicon(usr))

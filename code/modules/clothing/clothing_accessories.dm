@@ -161,7 +161,7 @@
 
 /obj/item/clothing/proc/removetie_verb()
 	set name = "Remove Accessory"
-	set category = "Object"
+	set category = null
 	set src in usr
 	if(!istype(usr, /mob/living)) return
 	if(usr.stat) return

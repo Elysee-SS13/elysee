@@ -32,7 +32,7 @@
 
 /obj/machinery/bodyscanner/verb/eject()
 	set src in oview(1)
-	set category = "Object"
+	set category = null
 	set name = "Eject Body Scanner"
 
 	if (usr.incapacitated())
@@ -53,7 +53,7 @@
 
 /obj/machinery/bodyscanner/verb/move_inside()
 	set src in oview(1)
-	set category = "Object"
+	set category = null
 	set name = "Enter Body Scanner"
 
 	if(!user_can_move_target_inside(usr,usr))

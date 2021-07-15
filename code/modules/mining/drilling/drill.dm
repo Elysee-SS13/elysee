@@ -237,7 +237,7 @@
 
 /obj/machinery/mining/drill/verb/unload()
 	set name = "Unload Drill"
-	set category = "Object"
+	set category = null
 	set src in oview(1)
 
 	if(usr.stat) return

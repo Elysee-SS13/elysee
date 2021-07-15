@@ -130,7 +130,7 @@
 
 /obj/item/clothing/accessory/toggleable/verb/toggle()
 	set name = "Toggle Buttons"
-	set category = "Object"
+	set category = null
 	set src in usr
 
 	if(usr.incapacitated())
@@ -268,7 +268,7 @@
 
 /obj/item/clothing/accessory/toggleable/flannel/verb/roll_up_sleeves()
 	set name = "Roll Flannel Sleeves"
-	set category = "Object"
+	set category = null
 	set src in usr
 
 	if(usr.incapacitated())
@@ -291,7 +291,7 @@
 
 /obj/item/clothing/accessory/toggleable/flannel/verb/tuck()
 	set name = "Toggle Shirt Tucking"
-	set category = "Object"
+	set category = null
 	set src in usr
 	if(!istype(usr, /mob/living)||usr.stat)
 		return

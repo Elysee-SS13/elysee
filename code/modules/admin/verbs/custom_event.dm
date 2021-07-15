@@ -28,7 +28,7 @@
 
 // normal verb for players to view info
 /client/verb/cmd_view_custom_event()
-	set category = "OOC"
+	set category = null
 	set name = "Event Info"
 
 	if(!config.event)

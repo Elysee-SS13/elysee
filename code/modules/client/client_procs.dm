@@ -416,7 +416,7 @@ client/verb/character_setup()
 
 /client/verb/toggle_fullscreen()
 	set name = "Toggle Fullscreen"
-	set category = "OOC"
+	set category = null
 
 	fullscreen = !fullscreen
 
@@ -439,7 +439,7 @@ client/verb/character_setup()
 
 /client/verb/fit_viewport()
 	set name = "Fit Viewport"
-	set category = "OOC"
+	set category = null
 	set desc = "Fit the width of the map window to match the viewport"
 
 	// Fetch aspect ratio

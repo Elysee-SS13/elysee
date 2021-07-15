@@ -209,7 +209,7 @@
 	
 /obj/item/clothing/accessory/badge/tags/skrell/verb/set_sdtf()
 	set name = "Set SDTF Name"
-	set category = "Object"
+	set category = null
 	set src in usr
 	
 	if(usr.incapacitated())

@@ -153,7 +153,7 @@
 	verb
 		get_out()
 			set name = "Eject occupant"
-			set category = "Object"
+			set category = null
 			set src in oview(1)
 			if(usr.stat != 0)
 				return
@@ -164,7 +164,7 @@
 
 		move_inside()
 			set name = "Move Inside"
-			set category = "Object"
+			set category = null
 			set src in oview(1)
 			if(usr.stat != 0 || stat & (NOPOWER|BROKEN))
 				return

@@ -15,7 +15,7 @@
 //mob verbs are faster than object verbs. See mob/verb/examine.
 /mob/living/verb/pulled(atom/movable/AM as mob|obj in oview(1))
 	set name = "Pull"
-	set category = "Object"
+	set category = null
 
 	if(AM.Adjacent(src))
 		src.start_pulling(AM)
@@ -611,7 +611,7 @@ default behaviour is:
 
 /mob/living/verb/resist()
 	set name = "Resist"
-	set category = "IC"
+	set category = null
 
 	if(!incapacitated(INCAPACITATION_KNOCKOUT) && last_resist + 2 SECONDS <= world.time)
 		last_resist = world.time

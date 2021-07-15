@@ -41,7 +41,7 @@
 
 /obj/structure/reagent_dispensers/verb/set_amount_per_transfer_from_this()
 	set name = "Set transfer amount"
-	set category = "Object"
+	set category = null
 	set src in view(1)
 	if(!CanPhysicallyInteract(usr))
 		to_chat(usr, "<span class='notice'>You're in no condition to do that!'</span>")

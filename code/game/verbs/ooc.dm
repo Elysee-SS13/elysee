@@ -13,7 +13,7 @@
 
 /client/verb/fix_chat()
 	set name = "Fix Chat"
-	set category = "OOC"
+	set category = null
 	if (!chatOutput || !istype(chatOutput))
 		var/action = alert(src, "Invalid Chat Output data found!\nRecreate data?", "Wot?", "Recreate Chat Output data", "Cancel")
 		if (action != "Recreate Chat Output data")

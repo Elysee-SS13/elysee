@@ -11,7 +11,7 @@
 
 /obj/structure/iv_drip/verb/set_amount_per_transfer_from_this()
 	set name = "Set IV transfer amount"
-	set category = "Object"
+	set category = null
 	set src in range(1)
 	if(!CanPhysicallyInteract(usr))
 		to_chat(usr, "<span class='notice'>You're in no condition to do that!'</span>")
@@ -136,7 +136,7 @@
 		attack_hand(user)
 
 /obj/structure/iv_drip/verb/drip_detach()
-	set category = "Object"
+	set category = null
 	set name = "Detach IV Drip"
 	set src in range(1)
 	
@@ -157,7 +157,7 @@
 	STOP_PROCESSING(SSobj,src)
 		
 /obj/structure/iv_drip/verb/toggle_mode()
-	set category = "Object"
+	set category = null
 	set name = "Toggle IV Mode"
 	set src in view(1)
 	if(!CanPhysicallyInteract(usr))

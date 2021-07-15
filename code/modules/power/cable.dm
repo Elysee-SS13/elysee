@@ -572,7 +572,7 @@ obj/structure/cable/proc/cableColor(var/colorC)
 
 /obj/item/stack/cable_coil/verb/make_restraint()
 	set name = "Make Cable Restraints"
-	set category = "Object"
+	set category = null
 	var/mob/M = usr
 
 	if(ishuman(M) && !M.incapacitated())
@@ -588,7 +588,7 @@ obj/structure/cable/proc/cableColor(var/colorC)
 
 /obj/item/stack/cable_coil/cyborg/verb/set_colour()
 	set name = "Change Colour"
-	set category = "Object"
+	set category = null
 
 	var/selected_type = input("Pick new colour.", "Cable Colour", null, null) as null|anything in GLOB.possible_cable_colours
 	set_cable_color(selected_type, usr)

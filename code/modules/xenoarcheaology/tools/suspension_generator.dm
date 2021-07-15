@@ -154,7 +154,7 @@
 /obj/machinery/suspension_gen/verb/rotate_ccw()
 	set src in view(1)
 	set name = "Rotate suspension gen (counter-clockwise)"
-	set category = "Object"
+	set category = null
 
 	if(anchored)
 		to_chat(usr, "<span class='warning'>You cannot rotate [src], it has been firmly fixed to the floor.</span>")
@@ -164,7 +164,7 @@
 /obj/machinery/suspension_gen/verb/rotate_cw()
 	set src in view(1)
 	set name = "Rotate suspension gen (clockwise)"
-	set category = "Object"
+	set category = null
 
 	if(anchored)
 		to_chat(usr, "<span class='warning'>You cannot rotate [src], it has been firmly fixed to the floor.</span>")

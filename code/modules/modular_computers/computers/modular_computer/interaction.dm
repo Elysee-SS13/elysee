@@ -17,7 +17,7 @@
 // Forcibly shut down the device. To be used when something bugs out and the UI is nonfunctional.
 /obj/item/modular_computer/verb/emergency_shutdown()
 	set name = "Forced Shutdown"
-	set category = "Object"
+	set category = null
 	set src in view(1)
 
 	if(usr.incapacitated() || !istype(usr, /mob/living))
@@ -41,7 +41,7 @@
 // Eject ID card from computer, if it has ID slot with card inside.
 /obj/item/modular_computer/proc/eject_usb()
 	set name = "Eject Portable Storage"
-	set category = "Object"
+	set category = null
 	set src in view(1)
 
 	if(!CanPhysicallyInteract(usr))
@@ -56,7 +56,7 @@
 
 /obj/item/modular_computer/proc/remove_pen_verb()
 	set name = "Remove Pen"
-	set category = "Object"
+	set category = null
 	set src in view(1)
 
 	remove_pen(usr)
@@ -123,7 +123,7 @@
 		if(card_slot.insert_id(I, user))
 			update_verbs()
 		return
-		
+
 	if(istype(W, /obj/item/pen) && stores_pen)
 		if(istype(stored_pen))
 			to_chat(user, "<span class='notice'>There is already a pen in [src].</span>")

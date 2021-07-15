@@ -517,7 +517,7 @@
 		brain.die()
 
 /obj/item/gun/proc/scope()
-	set category = "Object"
+	set category = null
 	set name = "Use Scope"
 	set popup_menu = 1
 
@@ -600,7 +600,7 @@
 
 /obj/item/gun/verb/toggle_safety_verb()
 	set src in usr
-	set category = "Object"
+	set category = null
 	set name = "Toggle Gun Safety"
 	if(usr == loc)
 		toggle_safety(usr)

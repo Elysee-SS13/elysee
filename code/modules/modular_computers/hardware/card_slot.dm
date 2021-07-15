@@ -49,7 +49,7 @@
 
 /obj/item/stock_parts/computer/card_slot/proc/verb_eject_id()
 	set name = "Remove ID"
-	set category = "Object"
+	set category = null
 	set src in view(1)
 
 	if(!CanPhysicallyInteract(usr))

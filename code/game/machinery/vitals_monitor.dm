@@ -225,7 +225,7 @@
 
 /obj/machinery/vitals_monitor/verb/toggle_beep()
 	set name = "Toggle Monitor Beeping"
-	set category = "Object"
+	set category = null
 	set src in view(1)
 
 	var/mob/user = usr
@@ -238,7 +238,7 @@
 
 /obj/machinery/vitals_monitor/verb/toggle_alerts()
 	set name = "Toggle Alert Annunciator"
-	set category = "Object"
+	set category = null
 	set src in view(1)
 
 	var/mob/user = usr

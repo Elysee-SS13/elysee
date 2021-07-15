@@ -604,7 +604,7 @@
 /obj/item/integrated_circuit/manipulation/ai/verb/open_menu()
 	set name = "Control Inputs"
 	set desc = "With this you can press buttons on the assembly you are attached to."
-	set category = "Object"
+	set category = null
 	set src = usr.loc
 
 	var/obj/item/device/electronic_assembly/assembly = get_object()

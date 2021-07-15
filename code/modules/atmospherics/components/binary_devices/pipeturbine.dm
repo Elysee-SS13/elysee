@@ -115,7 +115,7 @@
 			..()
 
 	verb/rotate_clockwise()
-		set category = "Object"
+		set category = null
 		set name = "Rotate Circulator (Clockwise)"
 		set src in view(1)
 
@@ -126,7 +126,7 @@
 
 
 	verb/rotate_anticlockwise()
-		set category = "Object"
+		set category = null
 		set name = "Rotate Circulator (Counterclockwise)"
 		set src in view(1)
 
@@ -253,7 +253,7 @@
 			..()
 
 	verb/rotate_clock()
-		set category = "Object"
+		set category = null
 		set name = "Rotate Motor Clockwise"
 		set src in view(1)
 
@@ -263,7 +263,7 @@
 		src.set_dir(turn(src.dir, -90))
 
 	verb/rotate_anticlock()
-		set category = "Object"
+		set category = null
 		set name = "Rotate Motor Counterclockwise"
 		set src in view(1)
 

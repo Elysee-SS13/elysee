@@ -54,7 +54,7 @@
 
 /obj/item/disk/secret_project/verb/change_codename()
 	set name = "Change project codename"
-	set category = "Object"
+	set category = null
 	set src in view(0)
 
 	if(!locked)

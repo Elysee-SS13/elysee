@@ -174,7 +174,7 @@
 
 /obj/structure/railing/verb/flip() // This will help push railing to remote places, such as open space turfs
 	set name = "Flip Railing"
-	set category = "Object"
+	set category = null
 	set src in oview(1)
 
 	if(usr.incapacitated())

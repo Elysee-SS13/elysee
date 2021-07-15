@@ -199,7 +199,7 @@ var/bomb_set
 		ui.set_auto_update(1)
 
 /obj/machinery/nuclearbomb/verb/toggle_deployable()
-	set category = "Object"
+	set category = null
 	set name = "Toggle Deployable"
 	set src in oview(1)
 

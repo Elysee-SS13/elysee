@@ -25,7 +25,7 @@
 /obj/item/gun/projectile/revolver/verb/spin_cylinder()
 	set name = "Spin cylinder"
 	set desc = "Fun when you're bored out of your skull."
-	set category = "Object"
+	set category = null
 
 	chamber_offset = 0
 	visible_message("<span class='warning'>\The [usr] spins the cylinder of \the [src]!</span>", \
