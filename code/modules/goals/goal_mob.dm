@@ -8,9 +8,9 @@
 
 /mob/verb/show_goals_verb()
 
-	set name = "Show Goals"
+	set name = "Personnage : Objectifs"
 	set desc = "Shows your round goals."
-	set category = "IC"
+	set category = "Infos"
 
 	show_goals(TRUE, TRUE)
 
@@ -38,7 +38,7 @@
 		to_chat(src, SPAN_NOTICE("<font size = 3><b>This round, you have the following personal goals:</b></font><br>[jointext(mind.summarize_goals(show_success, allow_modification, mind.current), "<br>")]"))
 	else if(prefs_no_personal_goals)
 		to_chat(src, SPAN_NOTICE("<font size = 3><b>Your preferences do not allow for personal goals.</b></font>"))
-	else 
+	else
 		to_chat(src, SPAN_NOTICE("<font size = 3><b>You have no personal goals this round.</b></font>"))
 	if(allow_modification && !prefs_no_personal_goals && LAZYLEN(mind.goals) < max_goals)
 		to_chat(src, SPAN_NOTICE("<a href='?src=\ref[mind];add_goal=1;add_goal_caller=\ref[mind.current]'>Add Random Goal</a>"))

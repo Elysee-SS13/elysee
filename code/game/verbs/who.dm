@@ -1,7 +1,7 @@
 
 /client/verb/who()
-	set name = "Who"
-	set category = "OOC"
+	set name = "Joueurs"
+	set category = "Infos"
 
 	var/msg = "<b>Current Players:</b>\n"
 

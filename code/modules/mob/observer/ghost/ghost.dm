@@ -159,7 +159,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 */
 /mob/living/verb/ghost()
 	set category = "OOC"
-	set name = "Ghost"
+	set name = "Fantôme"
 	set desc = "Relinquish your life and enter the land of the dead."
 
 	if(stat == DEAD)

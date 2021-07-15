@@ -187,7 +187,7 @@ SUBSYSTEM_DEF(vote)
 
 /mob/verb/vote()
 	set category = "OOC"
-	set name = "Vote"
+	set name = "Voter"
 
 	if(GAME_STATE < RUNLEVEL_LOBBY)
 		to_chat(src, "It's too soon to do any voting!")

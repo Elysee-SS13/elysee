@@ -394,7 +394,7 @@ client/proc/MayRespawn()
 	return 0
 
 client/verb/character_setup()
-	set name = "Character Setup"
+	set name = "Réglages : Personnage"
 	set category = "OOC"
 	if(prefs)
 		prefs.open_setup_window(usr)

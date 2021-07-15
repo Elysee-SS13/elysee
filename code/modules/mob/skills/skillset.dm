@@ -141,8 +141,8 @@
 // Show skills verb
 
 /mob/living/verb/show_skills()
-	set category = "IC"
-	set name = "Show Own Skills"
+	set category = "Infos"
+	set name = "Personnage : Compétences"
 
 	skillset.open_ui()
 

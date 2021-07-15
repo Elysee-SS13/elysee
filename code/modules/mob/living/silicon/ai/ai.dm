@@ -717,7 +717,7 @@ var/list/ai_verbs_default = list(
 
 // Pass lying down or getting up to our pet human, if we're in a rig.
 /mob/living/silicon/ai/lay_down()
-	set name = "Rest"
+	set name = "S'allonger"
 	set category = "IC"
 
 	resting = FALSE

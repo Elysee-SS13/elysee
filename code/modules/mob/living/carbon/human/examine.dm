@@ -348,9 +348,9 @@
 	pose =  sanitize(input(usr, "This is [src]. [get_visible_gender() == MALE ? "He" : get_visible_gender() == FEMALE ? "She" : "They"]...", "Pose", null)  as text)
 
 /mob/living/carbon/human/verb/set_flavor()
-	set name = "Set Flavour Text"
+	set name = "Personnage : Description"
 	set desc = "Sets an extended description of your character's features."
-	set category = "IC"
+	set category = "Infos"
 
 	var/list/HTML = list()
 	HTML += "<body>"

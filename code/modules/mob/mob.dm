@@ -962,7 +962,7 @@
 
 /mob/verb/face_direction()
 
-	set name = "Face Direction"
+	set name = "Bloquer Direction"
 	set category = "IC"
 	set src = usr
 

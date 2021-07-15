@@ -1533,7 +1533,7 @@
 	return 0
 
 /mob/living/carbon/human/verb/pull_punches()
-	set name = "Switch Stance"
+	set name = "Retenir ses coups"
 	set desc = "Try not to hurt them."
 	set category = "IC"
 	species.toggle_stance(src)

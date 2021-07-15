@@ -338,7 +338,7 @@
 	return 1
 
 /mob/living/carbon/human/verb/set_default_unarmed_attack()
-	set name = "Set Default Unarmed Attack"
+	set name = "Choisir corps à corps"
 	set category = "IC"
 	set src = usr
 

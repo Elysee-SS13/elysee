@@ -64,8 +64,8 @@
 #undef LORE_FILE
 
 /client/verb/hotkeys_help()
-	set name = "Hotkeys Help"
-	set category = "OOC"
+	set name = "Aide : Touches"
+	set category = "Infos"
 
 	var/admin = {"<font color='purple'>
 Admin:

@@ -1,11 +1,11 @@
 /mob/verb/up()
-	set name = "Move Upwards"
+	set name = "Niveau : Monter"
 	set category = "IC"
 
 	move_up()
 
 /mob/verb/down()
-	set name = "Move Down"
+	set name = "Niveau : Descendre"
 	set category = "IC"
 
 	SelfMove(DOWN)
@@ -174,7 +174,7 @@
 				return FALSE
 
 		if(location_override.get_fluid_depth() >= FLUID_DEEP)
-			if(below == loc) //We are checking above, 
+			if(below == loc) //We are checking above,
 				if(!(below.get_fluid_depth() >= 0.95 * FLUID_MAX_DEPTH)) //No salmon skipping up a stream of falling water
 					return TRUE
 			return !can_float()

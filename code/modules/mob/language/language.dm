@@ -5,13 +5,13 @@
 */
 
 /datum/language
-	var/name = "base language"  // Fluff name of language if any.
+	var/name = "langue de base"  // Fluff name of language if any.
 	var/desc = "You should not have this language." // Short description for 'Check Languages'.
-	var/speech_verb = "says"          // 'says', 'hisses', 'farts'.
-	var/ask_verb = "asks"             // Used when sentence ends in a ?
-	var/exclaim_verb = "exclaims"     // Used when sentence ends in a !
+	var/speech_verb = "dit"          // 'says', 'hisses', 'farts'.
+	var/ask_verb = "demande"             // Used when sentence ends in a ?
+	var/exclaim_verb = "s'exclame"     // Used when sentence ends in a !
 	var/whisper_verb                  // Optional. When not specified speech_verb + quietly/softly is used instead.
-	var/signlang_verb = list("signs", "gestures") // list of emotes that might be displayed if this language has NONVERBAL or SIGNLANG flags
+	var/signlang_verb = list("signe", "fait des gests") // list of emotes that might be displayed if this language has NONVERBAL or SIGNLANG flags
 	var/colour = "body"               // CSS style to use for strings in this language.
 	var/key = ""                     // Character used to speak in language eg. :o for Unathi.
 	var/flags = 0                     // Various language flags.
@@ -210,11 +210,11 @@
 
 //TBD
 /mob/verb/check_languages()
-	set name = "Check Known Languages"
-	set category = "IC"
+	set name = "Personnage : Langues"
+	set category = "Infos"
 	set src = usr
 
-	var/dat = "<b><font size = 5>Known Languages</font></b><br/><br/>"
+	var/dat = "<b><font size = 5>Langues connues</font></b><br/><br/>"
 
 	for(var/datum/language/L in languages)
 		if(!(L.flags & NONGLOBAL))

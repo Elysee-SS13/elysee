@@ -686,7 +686,7 @@ default behaviour is:
 		visible_message("<span class='danger'>[src] resists!</span>")
 
 /mob/living/verb/lay_down()
-	set name = "Rest"
+	set name = "S'allonger"
 	set category = "IC"
 
 	resting = !resting

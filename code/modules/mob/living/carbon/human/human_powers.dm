@@ -2,7 +2,7 @@
  true human verbs
 ****************/
 /mob/living/carbon/human/proc/tie_hair()
-	set name = "Tie Hair"
+	set name = "S'attacher les cheveux"
 	set desc = "Style your hair."
 	set category = "IC"
 

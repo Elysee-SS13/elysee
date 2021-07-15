@@ -17,7 +17,7 @@
 
 
 /client/verb/change_ui()
-	set name = "Change UI"
+	set name = "Réglages : Style d'UI"
 	set category = "OOC"
 	set desc = "Configure your user interface"
 

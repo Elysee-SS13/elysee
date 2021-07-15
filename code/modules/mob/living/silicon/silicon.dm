@@ -200,8 +200,8 @@
 	speech_synthesizer_langs -= removed_language
 
 /mob/living/silicon/check_languages()
-	set name = "Check Known Languages"
-	set category = "IC"
+	set name = "Personnage : Langues"
+	set category = "Infos"
 	set src = usr
 
 	var/dat = "<b><font size = 5>Known Languages</font></b><br/><br/>"
