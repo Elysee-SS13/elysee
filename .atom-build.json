@@ -1,6 +1,6 @@
 {
-"cmd": "/usr/local/bin/DreamMaker",
- "args": [ "/home/topy/Documents/elysee/elysee.dme" ],
+"cmd": "C:\\Program Files (x86)\\BYOND\\bin\\dm.exe",
+ "args": [ "C:\\Users\\Topy\\Projets\\elysee\\elysee.dme" ],
  "sh": false,
  "errorMatch":
  [
