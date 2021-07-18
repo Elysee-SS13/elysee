@@ -3184,8 +3184,3 @@
 #include "maps\~unit_tests\unit_testing.dm"
 #include "~code\global_init.dm"
 // END_INCLUDE
-
-
-// Current game map
-#include "maps\mini\mini.dm"
-#include "maps\mini\mini_define.dm"

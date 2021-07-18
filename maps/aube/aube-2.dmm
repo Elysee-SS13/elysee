@@ -77,7 +77,7 @@
 "aA" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
 	dir = 8;
-	id_tag = "bearcat_shuttle_pump_out_external"
+	id_tag = "cargo_sas_pump"
 	},
 /turf/simulated/floor/plating,
 /area/space)
@@ -210,7 +210,7 @@
 "ba" = (
 /obj/structure/table/woodentable/maple,
 /obj/item/bee_pack{
-	step_y = 3
+	pixel_y = 3
 	},
 /obj/item/device/scanner/plant,
 /obj/item/weapon/wirecutters/clippers,
@@ -405,11 +405,11 @@
 	},
 /obj/structure/table/rack,
 /obj/item/weapon/pickaxe/drill{
-	step_y = 6
+	pixel_y = 6
 	},
 /obj/item/weapon/pickaxe/drill,
 /obj/item/weapon/pickaxe/drill{
-	step_y = -6
+	pixel_y = -6
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/scrap/cargo)
@@ -937,7 +937,7 @@
 "eI" = (
 /obj/machinery/access_button/airlock_interior{
 	frequency = 1380;
-	master_tag = "bearcat_dock_port";
+	master_tag = "cargo_sas";
 	pixel_x = -23;
 	pixel_y = 8
 	},
@@ -1334,7 +1334,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/scrap/maintenance/power)
 "hA" = (
-/obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/plating,
 /area/ship/scrap/cargo)
@@ -1971,7 +1970,7 @@
 "mh" = (
 /obj/machinery/airlock_sensor{
 	frequency = 1380;
-	id_tag = "dock_port_sensor";
+	id_tag = "cargo_sas_sensor";
 	pixel_y = 36
 	},
 /turf/simulated/floor/plating,
@@ -2186,7 +2185,7 @@
 	},
 /obj/machinery/access_button/airlock_interior{
 	frequency = 1380;
-	master_tag = "bearcat_dock_port";
+	master_tag = "cargo_sas";
 	pixel_x = 21;
 	pixel_y = 8
 	},
@@ -2330,6 +2329,9 @@
 /obj/machinery/space_heater,
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/scrap/maintenance/atmos)
+"og" = (
+/turf/simulated/floor/plating,
+/area/ship/scrap/cargo)
 "oh" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor,
@@ -2730,7 +2732,7 @@
 	dir = 9
 	},
 /obj/structure/flag_corporate{
-	step_x = 7
+	pixel_x = 7
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/base/main_room)
@@ -3101,10 +3103,10 @@
 	},
 /obj/structure/closet/secure_closet/hydroponics/hydro,
 /obj/item/weapon/material/minihoe{
-	step_x = 4
+	pixel_x = 4
 	},
 /obj/item/weapon/material/hatchet{
-	step_x = -4
+	pixel_x = -4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/base/main_room)
@@ -3663,7 +3665,7 @@
 	dir = 10
 	},
 /obj/item/weapon/reagent_containers/glass/bucket/wood{
-	step_y = 10
+	pixel_y = 10
 	},
 /obj/item/weapon/reagent_containers/glass/bucket/wood,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -3991,23 +3993,23 @@
 	dir = 5
 	},
 /obj/item/weapon/storage/box/ammo/shotgunammo{
-	step_x = 8;
-	step_y = 10
+	pixel_x = 8;
+	pixel_y = 10
 	},
 /obj/item/weapon/storage/box/ammo/shotgunammo{
-	step_x = -8;
-	step_y = 10
+	pixel_x = -8;
+	pixel_y = 10
 	},
 /obj/item/weapon/storage/box/ammo/shotgunammo{
-	step_x = -8;
-	step_y = -1
+	pixel_x = -8;
+	pixel_y = -1
 	},
 /obj/item/weapon/storage/box/ammo/shotgunammo{
-	step_x = 8;
-	step_y = -4
+	pixel_x = 8;
+	pixel_y = -4
 	},
 /obj/item/weapon/storage/box/ammo/shotgunammo{
-	step_y = -8
+	pixel_y = -8
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/brig)
@@ -4420,10 +4422,10 @@
 /obj/machinery/power/apc{
 	dir = 8;
 	name = "APC Main";
-	step_x = -20
+	pixel_x = -20
 	},
 /obj/structure/flag_corporate{
-	step_x = 7
+	pixel_x = 7
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/base/main_room)
@@ -4476,15 +4478,6 @@
 	level = 2
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/ship/scrap/cargo)
-"Ei" = (
-/obj/effect/floor_decal/corner/orange{
-	dir = 5
-	},
-/obj/machinery/light/spot{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark/monotile,
 /area/ship/scrap/cargo)
 "Ep" = (
 /obj/effect/wallframe_spawn/reinforced,
@@ -4864,7 +4857,7 @@
 /obj/effect/floor_decal/industrial/warning,
 /obj/item/conveyor_switch_construct/oneway{
 	id = "aube_cargo";
-	step_y = 6
+	pixel_y = 6
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -5113,6 +5106,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/portables_connector,
+/obj/machinery/portable_atmospherics/canister/air/airlock,
 /turf/simulated/floor/plating,
 /area/space)
 "Jg" = (
@@ -6012,12 +6006,12 @@
 "OO" = (
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
 	frequency = 1380;
-	id_tag = "bearcat_dock_port";
+	id_tag = "cargo_sas";
 	pixel_y = 25;
-	tag_airpump = "dock_port_pump";
-	tag_chamber_sensor = "dock_port_sensor";
-	tag_exterior_door = "dock_port_out";
-	tag_interior_door = "dock_port_in"
+	tag_airpump = "cargo_sas_pump";
+	tag_chamber_sensor = "cargo_sas_sensor";
+	tag_exterior_door = "cargo_sas_out";
+	tag_interior_door = "cargo_sas_in"
 	},
 /turf/simulated/floor/plating,
 /area/space)
@@ -6277,6 +6271,10 @@
 /obj/structure/table/standard,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/base/main_room)
+"QA" = (
+/obj/machinery/portable_atmospherics/canister/air/airlock,
+/turf/simulated/floor/plating,
+/area/space)
 "QC" = (
 /obj/structure/hygiene/toilet{
 	dir = 1
@@ -6357,7 +6355,7 @@
 "Rf" = (
 /obj/machinery/door/airlock/external/bolted/cycling{
 	frequency = 1380;
-	id_tag = "dock_port_in"
+	id_tag = "cargo_sas_in"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
@@ -6811,7 +6809,7 @@
 /obj/effect/floor_decal/corner/red/diagonal,
 /obj/structure/table/standard,
 /obj/machinery/reagentgrinder/juicer{
-	step_y = 8
+	pixel_y = 8
 	},
 /obj/item/weapon/reagent_containers/glass/beaker/large,
 /turf/simulated/floor/tiled,
@@ -7046,7 +7044,7 @@
 "VG" = (
 /obj/machinery/door/airlock/external/bolted/cycling{
 	frequency = 1380;
-	id_tag = "dock_port_out"
+	id_tag = "cargo_sas_out"
 	},
 /turf/simulated/floor/plating,
 /area/space)
@@ -7609,7 +7607,7 @@
 /obj/machinery/power/apc{
 	dir = 1;
 	name = "APC Couloir";
-	step_y = 15
+	pixel_y = 15
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/scrap/crew/hallway/starboard)
@@ -7644,11 +7642,11 @@
 	},
 /obj/structure/table/rack,
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel{
-	step_y = 7
+	pixel_y = 7
 	},
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel,
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel{
-	step_y = -7
+	pixel_y = -7
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/brig)
@@ -7691,10 +7689,10 @@
 	dir = 5
 	},
 /obj/item/weapon/storage/box/frags{
-	step_y = 7
+	pixel_y = 7
 	},
 /obj/item/weapon/storage/box/frags{
-	step_y = -1
+	pixel_y = -1
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/brig)
@@ -158065,9 +158063,9 @@ NF
 NF
 xQ
 HM
-kQ
-Gi
-Ei
+QA
+og
+Zo
 So
 So
 So
@@ -159069,8 +159067,8 @@ IB
 np
 HM
 HM
-kQ
-Gi
+QA
+og
 vB
 ng
 op
